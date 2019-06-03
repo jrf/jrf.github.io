@@ -1,7 +1,7 @@
 # Theme-specific settings
 SITENAME = 'jrf.io'
 DOMAIN = 'jrf.io'
-BIO_TEXT = 'Connoisseur and purveyor of fine metal riffs. Aspiring interstellar achaeologist.'
+BIO_TEXT = 'Connoisseur and purveyor of fine metal riffs. Aspiring interstellar archaeologist.'
 FOOTER_TEXT = 'Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://pages.github.com">GitHub&nbsp;Pages</a>.'
 
 SITE_AUTHOR = 'jrf'
