@@ -20,6 +20,8 @@
 
 show_excerpts: true
 
+
+
 title: jrf
 # email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
@@ -43,6 +45,8 @@ minima:
   
   social_links:
     github:  jrf
+    
+  date_format: "%Y-%m-%d"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
