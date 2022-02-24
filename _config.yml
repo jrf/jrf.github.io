@@ -20,9 +20,6 @@
 
 show_excerpts: true
 
-social_links:
-  github:  jrf
-
 title: jrf
 # email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
@@ -43,6 +40,9 @@ plugins:
 
 minima:
   skin: dark
+  
+  social_links:
+    github:  jrf
 
 # Exclude from processing.
 # The following items will not be processed, by default.
