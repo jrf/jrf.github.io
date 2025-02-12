@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install rbenv
-sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
+sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev libffi-dev libyaml-dev
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
@@ -11,8 +11,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 # source ~/.bashrc
 
 # Install Ruby
-# rbenv install 3.4.1
-# rbenv global 3.4.1
+rbenv install 3.4.1
+rbenv global 3.4.1
 
 # Install Jekyll and dependencies
 # gem install bundler jekyll
