@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# ffmpeg -ss 0 -t 5 -i timegate.webm -vf "cropdetect=24:16:0" -f null -
+
+ffmpeg -i timegate.webm \
+       -vf "crop=368:352:218:50, fps=30" \
+       -pix_fmt rgb24 \
+       timegate.gif
