@@ -6,7 +6,7 @@ date:   2022-05-30 09:29:00 -0600
 categories: chronotrigger glsl
 ---
 
-![Chrono Trigger Time Gate Replica](../assets/videos/timegate.webm)
+![Chrono Trigger Time Gate Replica](../assets/videos/timegate.gif)
 
 ![Chrono Trigger Time Gate](../assets/img/timegate.png)
 
