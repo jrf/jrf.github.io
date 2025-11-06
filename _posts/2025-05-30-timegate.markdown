@@ -10,4 +10,4 @@ categories: chronotrigger glsl
 
 ![Chrono Trigger Time Gate](../assets/img/timegate.png)
 
-[Code](../assets/code/timegate.glsl)
+[Code]({{ '/assets/code/timegate.glsl' | relative_url }})

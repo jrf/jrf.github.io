@@ -8,4 +8,4 @@ categories: chaos
 
 ![Clifford Attractor](../assets/img/clifford_attractor.png)
 
-[Code](../assets/code/clifford_attractor.py)
+[Code]({{ '/assets/code/clifford_attractor.py' | relative_url }})
