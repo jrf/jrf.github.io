@@ -2,7 +2,7 @@
 layout: post
 usemathjax: true
 title:  "Fun with Chaos Attractors"
-date:   2022-05-30 09:29:00 -0600
+date:   2025-05-30 09:29:00 -0600
 categories: chaos
 ---
 
