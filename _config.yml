@@ -6,7 +6,7 @@ github_username: jrf
 theme: jekyll-theme-chirpy
 
 # Theme settings
-avatar: ./assets/img/avatar.jpg
+avatar: ./assets/img/avatar.png
 mode: dark
 
 # Basic settings
