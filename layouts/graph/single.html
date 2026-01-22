@@ -331,10 +331,26 @@
 
     // Open panel
     panelTitle.textContent = d.title;
-    iframe.src = d.id + '/';
+    iframe.src = d.id + '/?embed=1';
     panel.classList.add('open');
     overlay.classList.add('open');
   }
+
+  // Hide header/footer in iframe when loaded
+  iframe.addEventListener('load', () => {
+    try {
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+      const style = iframeDoc.createElement('style');
+      style.textContent = `
+        .nav, header.header, footer.footer, #local-graph-container, .post-nav-links { display: none !important; }
+        .main { padding-top: 0 !important; }
+        body { padding-top: 0 !important; }
+      `;
+      iframeDoc.head.appendChild(style);
+    } catch (e) {
+      // Cross-origin restriction, ignore
+    }
+  });
 
   function closePanel() {
     selectedNode = null;
