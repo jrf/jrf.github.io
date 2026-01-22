@@ -5,8 +5,9 @@ categories: [chronotrigger, glsl]
 math: true
 ---
 
-![Chrono Trigger Time Gate Replica](/videos/timegate.gif)
-
-![Chrono Trigger Time Gate](/img/timegate.png)
+<div style="display: flex; justify-content: space-around;">
+    <img src="/videos/timegate.gif" alt="Chrono Trigger Time Gate Replica" style="width: 48%;" />
+    <img src="/img/timegate.png" alt="Chrono Trigger Time Gate" style="width: 48%;" />
+</div>
 
 [Code](/code/timegate.glsl)
