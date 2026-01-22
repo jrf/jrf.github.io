@@ -4,59 +4,59 @@ title = 'Jeffrey R. Fetzer'
 theme = 'PaperMod'
 
 [params]
-  defaultTheme = "dark"
-  showReadingTime = false
-  showShareButtons = false
-  showPostNavLinks = true
-  showBreadCrumbs = true
-  showToc = true
-  math = true
-  # Only show posts on homepage, not notes
-  mainSections = ["posts"]
+defaultTheme = "dark"
+showReadingTime = false
+showShareButtons = false
+showPostNavLinks = true
+showBreadCrumbs = true
+showToc = true
+math = true
+# Only show posts on homepage, not notes
+mainSections = ["posts"]
 
-  # Homepage shows posts
-  [params.homeInfoParams]
-    Title = "Jeffrey R. Fetzer"
-    Content = "Notes on math, code, and other explorations."
+# Homepage shows posts
+[params.homeInfoParams]
+Title = "Jeffrey R. Fetzer"
+Content = "Notes on math, science, and other explorations."
 
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/jrf"
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/jrf"
 
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 5
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
-  [[menu.main]]
-    name = "Notes"
-    url = "/notes/"
-    weight = 20
-  [[menu.main]]
-    name = "Graph"
-    url = "/graph/"
-    weight = 30
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 5
+[[menu.main]]
+name = "Posts"
+url = "/posts/"
+weight = 10
+[[menu.main]]
+name = "Notes"
+url = "/notes/"
+weight = 20
+[[menu.main]]
+name = "Graph"
+url = "/graph/"
+weight = 30
 
 # Goldmark (markdown) config for math support
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
-        enable = true
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)'], ['$', '$']]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
+[markup.goldmark.renderer]
+unsafe = true
 
 [taxonomies]
-  tag = 'tags'
-  category = 'categories'
+tag = 'tags'
+category = 'categories'
 
 # Show posts on homepage
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
