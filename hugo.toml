@@ -36,6 +36,10 @@ theme = 'PaperMod'
     name = "Posts"
     url = "/posts/"
     weight = 20
+  [[menu.main]]
+    name = "Graph"
+    url = "/graph/"
+    weight = 30
 
 # Goldmark (markdown) config for math support
 [markup]

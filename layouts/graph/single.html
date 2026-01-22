@@ -1,0 +1,398 @@
+{{ define "main" }}
+<div id="graph-container">
+  <div id="graph"></div>
+  <div id="graph-info">
+    <span id="node-count"></span> notes · <span id="edge-count"></span> connections
+  </div>
+  <div id="graph-tooltip"></div>
+</div>
+
+<div id="panel-overlay"></div>
+<div id="content-panel">
+  <div id="panel-header">
+    <span id="panel-title"></span>
+    <button id="panel-close" aria-label="Close panel">&times;</button>
+  </div>
+  <iframe id="panel-iframe"></iframe>
+</div>
+
+<style>
+/* Break out of PaperMod's content container */
+.main {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.post-content {
+  max-width: 100% !important;
+}
+
+#graph-container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  min-height: 600px;
+  margin-left: calc(-50vw + 50%);
+  background: var(--code-bg);
+  overflow: hidden;
+}
+
+#graph {
+  width: 100%;
+  height: 100%;
+}
+
+#graph-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  background: var(--code-bg);
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+#graph-tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  max-width: 300px;
+  z-index: 100;
+}
+
+/* Sliding panel */
+#panel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s, visibility 0.25s;
+  z-index: 200;
+}
+
+#panel-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+#content-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65%;
+  max-width: 900px;
+  height: 100vh;
+  background: var(--theme);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+#content-panel.open {
+  transform: translateX(0);
+}
+
+#panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--entry);
+}
+
+#panel-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#panel-close {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--secondary);
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+#panel-close:hover {
+  color: var(--primary);
+}
+
+#panel-iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: var(--theme);
+}
+
+/* Node states */
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: var(--primary);
+  stroke: var(--content);
+  stroke-width: 1.5px;
+  transition: fill 0.15s;
+}
+
+.node:hover circle {
+  fill: var(--link);
+}
+
+.node.highlighted circle {
+  fill: var(--link);
+  stroke-width: 2px;
+}
+
+.node.selected circle {
+  fill: #22c55e;
+  stroke: #16a34a;
+  stroke-width: 3px;
+}
+
+.link {
+  stroke: var(--border);
+  stroke-opacity: 0.4;
+  stroke-width: 1px;
+}
+
+.link.highlighted {
+  stroke: var(--primary);
+  stroke-opacity: 0.8;
+  stroke-width: 2px;
+}
+
+.link.selected {
+  stroke: #22c55e;
+  stroke-opacity: 0.9;
+  stroke-width: 2px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #content-panel {
+    width: 100%;
+  }
+}
+</style>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(async function() {
+  const response = await fetch('/graph.json');
+  const data = await response.json();
+
+  document.getElementById('node-count').textContent = data.nodes.length;
+  document.getElementById('edge-count').textContent = data.edges.length;
+
+  const container = document.getElementById('graph');
+  const tooltip = document.getElementById('graph-tooltip');
+  const panel = document.getElementById('content-panel');
+  const overlay = document.getElementById('panel-overlay');
+  const iframe = document.getElementById('panel-iframe');
+  const panelTitle = document.getElementById('panel-title');
+  const panelClose = document.getElementById('panel-close');
+
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+
+  let selectedNode = null;
+
+  // Create SVG
+  const svg = d3.select('#graph')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr('viewBox', [0, 0, width, height]);
+
+  // Add zoom behavior
+  const g = svg.append('g');
+  svg.call(d3.zoom()
+    .extent([[0, 0], [width, height]])
+    .scaleExtent([0.2, 4])
+    .on('zoom', (event) => g.attr('transform', event.transform)));
+
+  // Create node lookup for edges
+  const nodeById = new Map(data.nodes.map(d => [d.id, d]));
+
+  // Process edges to reference node objects
+  const links = data.edges
+    .filter(e => nodeById.has(e.source) && nodeById.has(e.target))
+    .map(e => ({
+      source: nodeById.get(e.source),
+      target: nodeById.get(e.target)
+    }));
+
+  // Count connections per node for sizing
+  const connectionCount = new Map();
+  links.forEach(l => {
+    connectionCount.set(l.source.id, (connectionCount.get(l.source.id) || 0) + 1);
+    connectionCount.set(l.target.id, (connectionCount.get(l.target.id) || 0) + 1);
+  });
+
+  // Create simulation
+  const simulation = d3.forceSimulation(data.nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(60))
+    .force('charge', d3.forceManyBody().strength(-120))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(d => getRadius(d) + 2));
+
+  // Draw links
+  const link = g.append('g')
+    .attr('class', 'links')
+    .selectAll('line')
+    .data(links)
+    .join('line')
+    .attr('class', 'link');
+
+  // Draw nodes
+  const node = g.append('g')
+    .attr('class', 'nodes')
+    .selectAll('g')
+    .data(data.nodes)
+    .join('g')
+    .attr('class', 'node')
+    .call(drag(simulation));
+
+  function getRadius(d) {
+    const count = connectionCount.get(d.id) || 1;
+    return Math.min(4 + Math.sqrt(count) * 2, 16);
+  }
+
+  node.append('circle')
+    .attr('r', d => getRadius(d));
+
+  // Hover interactions
+  node.on('mouseenter', (event, d) => {
+    if (selectedNode && selectedNode.id === d.id) return;
+
+    d3.select(event.currentTarget).classed('highlighted', true);
+    link.classed('highlighted', l => l.source.id === d.id || l.target.id === d.id);
+
+    const connected = new Set();
+    links.forEach(l => {
+      if (l.source.id === d.id) connected.add(l.target.id);
+      if (l.target.id === d.id) connected.add(l.source.id);
+    });
+    node.filter(n => n.id !== selectedNode?.id).classed('highlighted', n => connected.has(n.id));
+
+    tooltip.innerHTML = `<strong>${d.title}</strong>`;
+    tooltip.style.opacity = 1;
+    tooltip.style.left = (event.pageX - container.getBoundingClientRect().left + 10) + 'px';
+    tooltip.style.top = (event.pageY - container.getBoundingClientRect().top - 30) + 'px';
+  });
+
+  node.on('mouseleave', () => {
+    node.filter(n => n.id !== selectedNode?.id).classed('highlighted', false);
+    link.filter(l => !isSelectedLink(l)).classed('highlighted', false);
+    tooltip.style.opacity = 0;
+  });
+
+  function isSelectedLink(l) {
+    return selectedNode && (l.source.id === selectedNode.id || l.target.id === selectedNode.id);
+  }
+
+  // Click to open panel
+  node.on('click', (event, d) => {
+    event.stopPropagation();
+    openPanel(d);
+  });
+
+  function openPanel(d) {
+    selectedNode = d;
+
+    // Update selection visuals
+    node.classed('selected', n => n.id === d.id);
+    link.classed('selected', l => l.source.id === d.id || l.target.id === d.id);
+
+    // Open panel
+    panelTitle.textContent = d.title;
+    iframe.src = d.id + '/';
+    panel.classList.add('open');
+    overlay.classList.add('open');
+  }
+
+  function closePanel() {
+    selectedNode = null;
+    node.classed('selected', false);
+    link.classed('selected', false);
+    panel.classList.remove('open');
+    overlay.classList.remove('open');
+    iframe.src = '';
+  }
+
+  // Close handlers
+  panelClose.addEventListener('click', closePanel);
+  overlay.addEventListener('click', closePanel);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePanel();
+  });
+
+  // Drag behavior
+  function drag(simulation) {
+    function dragstarted(event) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      event.subject.fx = event.subject.x;
+      event.subject.fy = event.subject.y;
+    }
+    function dragged(event) {
+      event.subject.fx = event.x;
+      event.subject.fy = event.y;
+    }
+    function dragended(event) {
+      if (!event.active) simulation.alphaTarget(0);
+      event.subject.fx = null;
+      event.subject.fy = null;
+    }
+    return d3.drag()
+      .on('start', dragstarted)
+      .on('drag', dragged)
+      .on('end', dragended);
+  }
+
+  // Update positions on tick
+  simulation.on('tick', () => {
+    link
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+    node
+      .attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+
+  // Handle resize
+  window.addEventListener('resize', () => {
+    const newWidth = container.clientWidth;
+    const newHeight = container.clientHeight;
+    svg.attr('width', newWidth).attr('height', newHeight);
+    simulation.force('center', d3.forceCenter(newWidth / 2, newHeight / 2));
+    simulation.alpha(0.3).restart();
+  });
+})();
+</script>
+{{ end }}

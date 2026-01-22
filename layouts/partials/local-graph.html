@@ -1,0 +1,235 @@
+{{- $currentUrl := .RelPermalink | lower | strings.TrimSuffix "/" -}}
+<div id="local-graph-container">
+  <div id="local-graph-header">
+    <span>Connected Notes</span>
+    <a href="/graph/" id="local-graph-expand" title="Open full graph">⤢</a>
+  </div>
+  <div id="local-graph"></div>
+</div>
+
+<style>
+#local-graph-container {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+#local-graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+#local-graph-expand {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+#local-graph-expand:hover {
+  color: var(--primary);
+}
+
+#local-graph {
+  width: 100%;
+  height: 280px;
+  background: var(--code-bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#local-graph .node {
+  cursor: pointer;
+}
+
+#local-graph .node circle {
+  stroke: var(--content);
+  stroke-width: 1.5px;
+  transition: fill 0.15s;
+}
+
+#local-graph .node.current circle {
+  fill: #22c55e;
+  stroke: #16a34a;
+  stroke-width: 2px;
+}
+
+#local-graph .node.neighbor circle {
+  fill: var(--primary);
+}
+
+#local-graph .node:hover circle {
+  fill: var(--link);
+}
+
+#local-graph .node text {
+  font-size: 11px;
+  fill: var(--secondary);
+  pointer-events: none;
+}
+
+#local-graph .node.current text {
+  fill: var(--primary);
+  font-weight: 600;
+}
+
+#local-graph .link {
+  stroke: var(--border);
+  stroke-opacity: 0.6;
+  stroke-width: 1.5px;
+}
+
+#local-graph-tooltip {
+  position: absolute;
+  padding: 6px 10px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 100;
+}
+</style>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(async function() {
+  const currentUrl = {{ $currentUrl | jsonify }};
+
+  const response = await fetch('/graph.json');
+  const fullData = await response.json();
+
+  // Find current node and its neighbors
+  const nodeById = new Map(fullData.nodes.map(d => [d.id, d]));
+  const currentNode = nodeById.get(currentUrl);
+
+  if (!currentNode) {
+    document.getElementById('local-graph-container').style.display = 'none';
+    return;
+  }
+
+  // Find connected nodes
+  const neighbors = new Set();
+  const localLinks = [];
+
+  fullData.edges.forEach(e => {
+    if (e.source === currentUrl && nodeById.has(e.target)) {
+      neighbors.add(e.target);
+      localLinks.push({ source: currentUrl, target: e.target });
+    }
+    if (e.target === currentUrl && nodeById.has(e.source)) {
+      neighbors.add(e.source);
+      localLinks.push({ source: e.source, target: currentUrl });
+    }
+  });
+
+  // Build local graph data
+  const localNodes = [
+    { ...currentNode, isCurrent: true },
+    ...Array.from(neighbors).map(id => ({ ...nodeById.get(id), isCurrent: false }))
+  ];
+
+  if (localNodes.length === 1) {
+    // No connections, hide the graph
+    document.getElementById('local-graph-container').style.display = 'none';
+    return;
+  }
+
+  const container = document.getElementById('local-graph');
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+
+  const svg = d3.select('#local-graph')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+  // Add tooltip
+  const tooltip = d3.select('#local-graph-container')
+    .append('div')
+    .attr('id', 'local-graph-tooltip');
+
+  const g = svg.append('g');
+
+  // Enable zoom/pan
+  svg.call(d3.zoom()
+    .extent([[0, 0], [width, height]])
+    .scaleExtent([0.5, 3])
+    .on('zoom', (event) => g.attr('transform', event.transform)));
+
+  // Create simulation
+  const simulation = d3.forceSimulation(localNodes)
+    .force('link', d3.forceLink(localLinks).id(d => d.id).distance(80))
+    .force('charge', d3.forceManyBody().strength(-200))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(30));
+
+  // Draw links
+  const link = g.append('g')
+    .selectAll('line')
+    .data(localLinks)
+    .join('line')
+    .attr('class', 'link');
+
+  // Draw nodes
+  const node = g.append('g')
+    .selectAll('g')
+    .data(localNodes)
+    .join('g')
+    .attr('class', d => `node ${d.isCurrent ? 'current' : 'neighbor'}`)
+    .call(d3.drag()
+      .on('start', (event) => {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        event.subject.fx = event.subject.x;
+        event.subject.fy = event.subject.y;
+      })
+      .on('drag', (event) => {
+        event.subject.fx = event.x;
+        event.subject.fy = event.y;
+      })
+      .on('end', (event) => {
+        if (!event.active) simulation.alphaTarget(0);
+        event.subject.fx = null;
+        event.subject.fy = null;
+      }));
+
+  node.append('circle')
+    .attr('r', d => d.isCurrent ? 10 : 7);
+
+  node.append('text')
+    .text(d => d.title.length > 20 ? d.title.slice(0, 18) + '…' : d.title)
+    .attr('dx', 12)
+    .attr('dy', 4);
+
+  // Interactions
+  node.filter(d => !d.isCurrent)
+    .on('click', (event, d) => {
+      window.location.href = d.id + '/';
+    })
+    .on('mouseenter', (event, d) => {
+      tooltip.html(`<strong>${d.title}</strong>`)
+        .style('opacity', 1)
+        .style('left', (event.offsetX + 15) + 'px')
+        .style('top', (event.offsetY - 10) + 'px');
+    })
+    .on('mouseleave', () => {
+      tooltip.style('opacity', 0);
+    });
+
+  simulation.on('tick', () => {
+    link
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+    node
+      .attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+})();
+</script>
