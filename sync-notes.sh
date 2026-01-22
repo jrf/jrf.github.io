@@ -13,6 +13,13 @@ SOURCE_DIR="Areas/mathematics"
 rm -rf "$NOTES_PATH"
 mkdir -p "$NOTES_PATH"
 
+# Create top-level notes index
+cat > "$NOTES_PATH/_index.md" << 'EOF'
+---
+title: "Notes"
+---
+EOF
+
 # Temporary file for note mappings
 MAPPING_FILE=$(mktemp)
 
@@ -42,6 +49,11 @@ find "$VAULT_PATH/$SOURCE_DIR" -name "*.md" -not -path '*/\.*' -not -name "CLAUD
     # Rename Index.md to _index.md for Hugo section pages
     if [ "$filename" = "Index" ]; then
         target_file="$(dirname "$target_file")/_index.md"
+        # Extract title from first # heading instead of using "Index"
+        heading=$(grep -m1 '^# ' "$file" | sed 's/^# //')
+        if [ -n "$heading" ]; then
+            title="$heading"
+        fi
     fi
 
     # Process note with Python script

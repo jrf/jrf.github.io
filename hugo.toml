@@ -29,12 +29,12 @@ theme = 'PaperMod'
     url = "/"
     weight = 5
   [[menu.main]]
-    name = "Notes"
-    url = "/notes/"
-    weight = 10
-  [[menu.main]]
     name = "Posts"
     url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Notes"
+    url = "/notes/"
     weight = 20
   [[menu.main]]
     name = "Graph"
