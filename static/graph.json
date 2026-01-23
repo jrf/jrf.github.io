@@ -3,677 +3,812 @@
     {
       "id": "/notes/areas/mathematics/set_theory",
       "title": "Set Theory",
-      "path": "Areas/mathematics/Set_Theory.md"
+      "path": "Areas/mathematics/Set_Theory.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/measure_theory",
       "title": "Measure Theory",
-      "path": "Areas/mathematics/Measure_Theory.md"
+      "path": "Areas/mathematics/Measure_Theory.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/topology",
       "title": "Topology",
-      "path": "Areas/mathematics/Topology.md"
+      "path": "Areas/mathematics/Topology.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/real_analysis",
       "title": "Real Analysis",
-      "path": "Areas/mathematics/Real_Analysis.md"
+      "path": "Areas/mathematics/Real_Analysis.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/complex_analysis",
       "title": "Complex Analysis",
-      "path": "Areas/mathematics/Complex_Analysis.md"
+      "path": "Areas/mathematics/Complex_Analysis.md",
+      "category": "Complex_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/abstract_algebra",
       "title": "Abstract Algebra",
-      "path": "Areas/mathematics/Abstract_Algebra.md"
+      "path": "Areas/mathematics/Abstract_Algebra.md",
+      "category": "Abstract_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/linear_algebra",
       "title": "Linear Algebra",
-      "path": "Areas/mathematics/Linear_Algebra.md"
+      "path": "Areas/mathematics/Linear_Algebra.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/functional_analysis",
       "title": "Functional Analysis",
-      "path": "Areas/mathematics/Functional_Analysis.md"
+      "path": "Areas/mathematics/Functional_Analysis.md",
+      "category": "Functional_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/proof_techniques",
       "title": "Proof Techniques",
-      "path": "Areas/mathematics/Proof_Techniques.md"
+      "path": "Areas/mathematics/Proof_Techniques.md",
+      "category": "Proof_Techniques"
     },
     {
       "id": "/notes/areas/mathematics/books/understanding_analysis",
       "title": "Understanding Analysis",
-      "path": "Areas/mathematics/books/Understanding_Analysis.md"
+      "path": "Areas/mathematics/books/Understanding_Analysis.md",
+      "category": "Books"
     },
     {
       "id": "/notes/areas/mathematics/books/prompt",
       "title": "prompt",
-      "path": "Areas/mathematics/books/prompt.md"
+      "path": "Areas/mathematics/books/prompt.md",
+      "category": "Books"
     },
     {
       "id": "/notes/areas/mathematics/books/measures_integrals_and_martingales",
       "title": "Measures Integrals and Martingales",
-      "path": "Areas/mathematics/books/Measures_Integrals_and_Martingales.md"
+      "path": "Areas/mathematics/books/Measures_Integrals_and_Martingales.md",
+      "category": "Books"
     },
     {
       "id": "/notes/areas/mathematics/books/linear_algebra_done_right",
       "title": "Linear Algebra Done Right",
-      "path": "Areas/mathematics/books/Linear_Algebra_Done_Right.md"
+      "path": "Areas/mathematics/books/Linear_Algebra_Done_Right.md",
+      "category": "Books"
     },
     {
       "id": "/notes/areas/mathematics/books/ideals_varieties_and_algorithms",
       "title": "Ideals Varieties and Algorithms",
-      "path": "Areas/mathematics/books/Ideals_Varieties_and_Algorithms.md"
+      "path": "Areas/mathematics/books/Ideals_Varieties_and_Algorithms.md",
+      "category": "Books"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/compactness",
       "title": "compactness",
-      "path": "Areas/mathematics/definitions_theorems/Topology/compactness.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/compactness.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/f-sigma_set",
       "title": "F-sigma set",
-      "path": "Areas/mathematics/definitions_theorems/Topology/F-sigma_set.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/F-sigma_set.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/g-delta_set",
       "title": "G-delta set",
-      "path": "Areas/mathematics/definitions_theorems/Topology/G-delta_set.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/G-delta_set.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/limit_point",
       "title": "limit point",
-      "path": "Areas/mathematics/definitions_theorems/Topology/limit_point.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/limit_point.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/closure",
       "title": "closure",
-      "path": "Areas/mathematics/definitions_theorems/Topology/closure.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/closure.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/open_set",
       "title": "open set",
-      "path": "Areas/mathematics/definitions_theorems/Topology/open_set.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/open_set.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/isolated_point",
       "title": "isolated point",
-      "path": "Areas/mathematics/definitions_theorems/Topology/isolated_point.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/isolated_point.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/topology/closed_set",
       "title": "closed set",
-      "path": "Areas/mathematics/definitions_theorems/Topology/closed_set.md"
+      "path": "Areas/mathematics/definitions_theorems/Topology/closed_set.md",
+      "category": "Topology"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/bijection",
       "title": "bijection",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/bijection.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/bijection.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/set_function",
       "title": "set function",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/set_function.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/set_function.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/image",
       "title": "image",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/image.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/image.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/function",
       "title": "function",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/function.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/function.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/surjection",
       "title": "surjection",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/surjection.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/surjection.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/cardinality",
       "title": "cardinality",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/cardinality.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/cardinality.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/countable",
       "title": "countable",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/countable.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/countable.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/domain",
       "title": "domain",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/domain.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/domain.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/codomain",
       "title": "codomain",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/codomain.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/codomain.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/de_morgan's_laws",
       "title": "De Morgan'S Laws",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/de_Morgan's_laws.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/de_Morgan's_laws.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/injection",
       "title": "injection",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/injection.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/injection.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/symmetric_difference",
       "title": "symmetric difference",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/symmetric_difference.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/symmetric_difference.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/pairwise_disjoint",
       "title": "pairwise disjoint",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/pairwise_disjoint.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/pairwise_disjoint.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/range",
       "title": "range",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/range.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/range.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/set_theory/preimage",
       "title": "preimage",
-      "path": "Areas/mathematics/definitions_theorems/Set_Theory/preimage.md"
+      "path": "Areas/mathematics/definitions_theorems/Set_Theory/preimage.md",
+      "category": "Set_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/proof_techniques/proof_by_contradiction",
       "title": "proof by contradiction",
-      "path": "Areas/mathematics/definitions_theorems/Proof_Techniques/proof_by_contradiction.md"
+      "path": "Areas/mathematics/definitions_theorems/Proof_Techniques/proof_by_contradiction.md",
+      "category": "Proof_Techniques"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/proof_techniques/proof_by_contrapositive",
       "title": "proof by contrapositive",
-      "path": "Areas/mathematics/definitions_theorems/Proof_Techniques/proof_by_contrapositive.md"
+      "path": "Areas/mathematics/definitions_theorems/Proof_Techniques/proof_by_contrapositive.md",
+      "category": "Proof_Techniques"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-additivity",
       "title": "sigma-additivity",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/sigma-additivity.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/sigma-additivity.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/dynkin_system",
       "title": "Dynkin system",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/Dynkin_system.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/Dynkin_system.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/indicator_function",
       "title": "indicator function",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/indicator_function.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/indicator_function.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/probability_measure",
       "title": "probability measure",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/probability_measure.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/probability_measure.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-algebra",
       "title": "sigma-algebra",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/sigma-algebra.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/sigma-algebra.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/discrete_probability_measure",
       "title": "discrete probability measure",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/discrete_probability_measure.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/discrete_probability_measure.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/measurable_space",
       "title": "measurable space",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/measurable_space.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/measurable_space.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure",
       "title": "Dirac measure",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/Dirac_measure.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/Dirac_measure.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/measure",
       "title": "measure",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/measure.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/measure.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/probability_space",
       "title": "probability space",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/probability_space.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/probability_space.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/measure_theory/borel_sigma-algebra",
       "title": "borel sigma-algebra",
-      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/borel_sigma-algebra.md"
+      "path": "Areas/mathematics/definitions_theorems/Measure_Theory/borel_sigma-algebra.md",
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/complex_analysis/complex_analysis",
       "title": "Complex Analysis",
-      "path": "Areas/mathematics/definitions_theorems/Complex_Analysis/Complex_Analysis.md"
+      "path": "Areas/mathematics/definitions_theorems/Complex_Analysis/Complex_Analysis.md",
+      "category": "Complex_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/abstract_algebra/generator",
       "title": "generator",
-      "path": "Areas/mathematics/definitions_theorems/Abstract_Algebra/generator.md"
+      "path": "Areas/mathematics/definitions_theorems/Abstract_Algebra/generator.md",
+      "category": "Abstract_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/abstract_algebra/automorphism",
       "title": "automorphism",
-      "path": "Areas/mathematics/definitions_theorems/Abstract_Algebra/automorphism.md"
+      "path": "Areas/mathematics/definitions_theorems/Abstract_Algebra/automorphism.md",
+      "category": "Abstract_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/span",
       "title": "span",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/span.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/span.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/polynomial",
       "title": "polynomial",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/polynomial.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/polynomial.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/vector_space",
       "title": "vector space",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/vector_space.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/vector_space.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/list",
       "title": "list",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/list.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/list.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent",
       "title": "linearly independent",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/linearly_independent.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/linearly_independent.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
       "title": "basis",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/basis.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/basis.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_vector_space",
       "title": "finite-dimensional vector space",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/finite-dimensional_vector_space.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/finite-dimensional_vector_space.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/infinite-dimensional_vector_space",
       "title": "infinite-dimensional vector space",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/infinite-dimensional_vector_space.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/infinite-dimensional_vector_space.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_subspace",
       "title": "finite-dimensional subspace",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/finite-dimensional_subspace.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/finite-dimensional_subspace.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/linear_combination",
       "title": "linear combination",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/linear_combination.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/linear_combination.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/subspace",
       "title": "subspace",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/subspace.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/subspace.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_dependent",
       "title": "linearly dependent",
-      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/linearly_dependent.md"
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/linearly_dependent.md",
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem_for_functional_limits",
       "title": "Algebraic Limit Theorem for Functional Limits",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Limit_Theorem_for_Functional_Limits.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Limit_Theorem_for_Functional_Limits.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/density_of_q_in_r",
       "title": "Density of Q in R",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Density_of_Q_in_R.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Density_of_Q_in_R.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/linear_transformation",
       "title": "linear transformation",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/linear_transformation.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/linear_transformation.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/order_limit_theorem",
       "title": "Order Limit Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Order_Limit_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Order_Limit_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/infimum",
       "title": "infimum",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/infimum.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/infimum.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/abel's_theorem",
       "title": "Abel'S Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Abel's_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Abel's_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_convergence",
       "title": "uniform convergence",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/uniform_convergence.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/uniform_convergence.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/geometric_series_test",
       "title": "Geometric Series Test",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Geometric_Series_Test.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Geometric_Series_Test.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/weierstrass_m-test",
       "title": "Weierstrass M-test",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Weierstrass_M-test.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Weierstrass_M-test.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_condensation_test",
       "title": "Cauchy Condensation Test",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_Condensation_Test.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_Condensation_Test.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/functional_limit",
       "title": "functional limit",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/functional_limit.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/functional_limit.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/taylor's_formula",
       "title": "Taylor'S Formula",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Taylor's_formula.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Taylor's_formula.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_differentiability_theorem",
       "title": "Algebraic Differentiability Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Differentiability_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Differentiability_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/greatest_lower_bound",
       "title": "greatest lower bound",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/greatest_lower_bound.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/greatest_lower_bound.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_continuity",
       "title": "uniform continuity",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/uniform_continuity.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/uniform_continuity.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_sequence",
       "title": "Cauchy sequence",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_sequence.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_sequence.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_limit_theorem",
       "title": "Continuous Limit Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Continuous_Limit_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Continuous_Limit_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/triangle_inequality",
       "title": "triangle inequality",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/triangle_inequality.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/triangle_inequality.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/bolzano-weierstrass_theorem",
       "title": "Bolzano-Weierstrass Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Bolzano-Weierstrass_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Bolzano-Weierstrass_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem",
       "title": "Algebraic Limit Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Limit_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Limit_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion_for_uniform_convergence",
       "title": "Cauchy Criterion for Uniform Convergence",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_Criterion_for_Uniform_Convergence.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_Criterion_for_Uniform_Convergence.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/abel's_test",
       "title": "Abel'S Test",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Abel's_Test.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Abel's_Test.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/sequential_criterion_for_functional_limits",
       "title": "Sequential Criterion for Functional Limits",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Sequential_Criterion_for_Functional_Limits.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Sequential_Criterion_for_Functional_Limits.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/disjoint",
       "title": "disjoint",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/disjoint.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/disjoint.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/baire's_theorem",
       "title": "Baire'S Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Baire's_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Baire's_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/comparison_test",
       "title": "Comparison Test",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Comparison_Test.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Comparison_Test.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/subsequence",
       "title": "subsequence",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/subsequence.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/subsequence.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/thomae_function",
       "title": "Thomae function",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Thomae_function.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Thomae_function.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_continuity_theorem",
       "title": "Term-by-term Continuity Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Term-by-term_Continuity_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Term-by-term_Continuity_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/continuity",
       "title": "continuity",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/continuity.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/continuity.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_compact_set_property",
       "title": "Nested Compact Set Property",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Nested_Compact_Set_Property.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Nested_Compact_Set_Property.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/dirichlet_function",
       "title": "Dirichlet function",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Dirichlet_function.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Dirichlet_function.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/mean_value_theorem",
       "title": "Mean Value Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Mean_Value_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Mean_Value_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/arzela-ascoli_theorem",
       "title": "Arzela-Ascoli Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Arzela-Ascoli_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Arzela-Ascoli_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/supremum",
       "title": "supremum",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/supremum.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/supremum.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound",
       "title": "upper bound",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/upper_bound.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/upper_bound.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/alternating_series_test",
       "title": "Alternating Series Test",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Alternating_Series_Test.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Alternating_Series_Test.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/archimedean_property",
       "title": "Archimedean Property",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Archimedean_Property.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Archimedean_Property.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution",
       "title": "convolution",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/convolution.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/convolution.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/convergence",
       "title": "convergence",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/convergence.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/convergence.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/ratio_test",
       "title": "Ratio Test",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Ratio_Test.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Ratio_Test.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_continuity_theorem",
       "title": "Algebraic Continuity Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Continuity_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Continuity_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_differentiability_theorem",
       "title": "Term-by-term Differentiability Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Term-by-term_Differentiability_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Term-by-term_Differentiability_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion",
       "title": "Cauchy Criterion",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_Criterion.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy_Criterion.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy's_remainder_theorem",
       "title": "Cauchy'S Remainder Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy's_Remainder_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cauchy's_Remainder_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_interval_property",
       "title": "Nested Interval Property",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Nested_Interval_Property.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Nested_Interval_Property.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/lipschitz_function",
       "title": "Lipschitz Function",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Lipschitz_Function.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Lipschitz_Function.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/epsilon-neighborhood",
       "title": "epsilon-neighborhood",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/epsilon-neighborhood.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/epsilon-neighborhood.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/heine-borel_theorem",
       "title": "Heine-Borel Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Heine-Borel_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Heine-Borel_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/l'hospital's_rule",
       "title": "L'Hospital'S Rule",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/L'Hospital's_Rule.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/L'Hospital's_Rule.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/extreme_value_theorem",
       "title": "Extreme Value Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Extreme_Value_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Extreme_Value_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/properties_of_the_integral",
       "title": "Properties of the Integral",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Properties_of_the_Integral.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Properties_of_the_Integral.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_theorem_for_functional_limits",
       "title": "Algebraic Theorem for Functional Limits",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Theorem_for_Functional_Limits.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Algebraic_Theorem_for_Functional_Limits.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/monotone_convergence_theorem",
       "title": "Monotone Convergence Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Monotone_Convergence_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Monotone_Convergence_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/axiom_of_completeness",
       "title": "axiom of completeness",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/axiom_of_completeness.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/axiom_of_completeness.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/pointwise_convergence",
       "title": "pointwise convergence",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/pointwise_convergence.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/pointwise_convergence.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/lower_bound",
       "title": "lower bound",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/lower_bound.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/lower_bound.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/interior_extremum_theorem",
       "title": "Interior Extremum Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Interior_Extremum_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Interior_Extremum_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/connected_sets",
       "title": "Connected Sets",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Connected_Sets.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Connected_Sets.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/sequence",
       "title": "sequence",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/sequence.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/sequence.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/differentiable",
       "title": "differentiable",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/differentiable.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/differentiable.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/dini's_theorem",
       "title": "Dini'S Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Dini's_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Dini's_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem",
       "title": "Continuous Extension Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Continuous_Extension_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Continuous_Extension_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/generalized_mean_value_theorem",
       "title": "Generalized Mean Value Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Generalized_Mean_Value_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Generalized_Mean_Value_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/fractal_dimension",
       "title": "fractal dimension",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/fractal_dimension.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/fractal_dimension.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem",
       "title": "Intermediate Value Theorem",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Intermediate_Value_Theorem.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Intermediate_Value_Theorem.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/cantor_set",
       "title": "Cantor set",
-      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cantor_set.md"
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Cantor_set.md",
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/tempered_distribution",
       "title": "tempered distribution",
-      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/tempered_distribution.md"
+      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/tempered_distribution.md",
+      "category": "Functional_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function",
       "title": "Schwartz function",
-      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Schwartz_function.md"
+      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Schwartz_function.md",
+      "category": "Functional_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space",
       "title": "Schwartz space",
-      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Schwartz_space.md"
+      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Schwartz_space.md",
+      "category": "Functional_Analysis"
     }
   ],
   "edges": [
@@ -6121,5 +6256,691 @@
       "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space",
       "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function"
     }
-  ]
+  ],
+  "backlinks": {
+    "/notes/areas/mathematics/definitions_theorems/set_theory/bijection": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/understanding_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/cardinality": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/countable"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/codomain": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/image",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/domain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/codomain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/range"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/countable": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/topology/f-sigma_set",
+      "/notes/areas/mathematics/definitions_theorems/topology/g-delta_set",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/discrete_probability_measure"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/domain": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/set_function",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/image",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/domain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/codomain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/range",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/functional_limit",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuity"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/function": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/bijection",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/set_function",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/image",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/surjection",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/domain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/codomain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/injection",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/range",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/preimage",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/polynomial",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/linear_transformation",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_convergence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/weierstrass_m-test",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/functional_limit",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_differentiability_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_continuity",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_limit_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/sequential_criterion_for_functional_limits",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuity",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dirichlet_function",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy's_remainder_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/lipschitz_function",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/pointwise_convergence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/sequence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/differentiable",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/image": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/image",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/domain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/codomain",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/range"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/injection": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/cardinality"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/pairwise_disjoint": [
+      "/notes/areas/mathematics/set_theory"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/preimage": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/image"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/range": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/codomain"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/set_function": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/probability_space"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/surjection": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/cardinality"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/set_theory/symmetric_difference": [
+      "/notes/areas/mathematics/set_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/borel_sigma-algebra": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/borel_sigma-algebra"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/discrete_probability_measure": [
+      "/notes/areas/mathematics/measure_theory"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/dynkin_system": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/indicator_function": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/measurable_space": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/measure": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-additivity",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/probability_measure"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/probability_measure": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/discrete_probability_measure",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/probability_space"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/probability_space": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-additivity": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-additivity"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-algebra": [
+      "/notes/areas/mathematics/measure_theory",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-algebra",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/measurable_space",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/measure"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/closed_set": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/definitions_theorems/topology/f-sigma_set",
+      "/notes/areas/mathematics/definitions_theorems/topology/closure",
+      "/notes/areas/mathematics/definitions_theorems/topology/open_set"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/closure": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/isolated_point": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/functional_limit"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/limit_point": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/definitions_theorems/topology/closure",
+      "/notes/areas/mathematics/definitions_theorems/topology/closed_set",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/functional_limit"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/open_set": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/topology/g-delta_set"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/f-sigma_set": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/books/understanding_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/g-delta_set": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/books/understanding_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/topology/compactness": [
+      "/notes/areas/mathematics/topology",
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_compact_set_property",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/arzela-ascoli_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/heine-borel_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/extreme_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dini's_theorem"
+    ],
+    "/notes/areas/mathematics/real_analysis": [
+      "/notes/areas/mathematics/topology"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/archimedean_property": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/density_of_q_in_r",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/archimedean_property"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/axiom_of_completeness": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/archimedean_property",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/monotone_convergence_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/density_of_q_in_r": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dirichlet_function"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/greatest_lower_bound": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/greatest_lower_bound"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/infimum": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/greatest_lower_bound"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/lower_bound": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/infimum",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/greatest_lower_bound"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_interval_property": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/baire's_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_interval_property"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/supremum": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/greatest_lower_bound",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/monotone_convergence_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/triangle_inequality": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/triangle_inequality"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/supremum",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/archimedean_property",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_interval_property",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem_for_functional_limits",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/alternating_series_test": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/alternating_series_test"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/bolzano-weierstrass_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/bolzano-weierstrass_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/heine-borel_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_condensation_test": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_condensation_test"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/bolzano-weierstrass_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion_for_uniform_convergence": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion_for_uniform_convergence"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_sequence": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_sequence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/comparison_test": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_condensation_test",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/comparison_test",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/ratio_test"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/convergence": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_sequence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dini's_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/geometric_series_test": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/geometric_series_test"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/monotone_convergence_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/alternating_series_test",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/monotone_convergence_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/order_limit_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/order_limit_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/pointwise_convergence": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_convergence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dini's_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/ratio_test": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/ratio_test"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/sequence": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/topology/compactness",
+      "/notes/areas/mathematics/definitions_theorems/topology/closed_set",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_convergence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_sequence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_limit_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/bolzano-weierstrass_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion_for_uniform_convergence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/abel's_test",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/subsequence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_continuity_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_compact_set_property",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/arzela-ascoli_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/alternating_series_test",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/convergence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/ratio_test",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_differentiability_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cauchy_criterion",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_interval_property",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/monotone_convergence_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/pointwise_convergence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dini's_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/subsequence": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/topology/compactness",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/bolzano-weierstrass_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/subsequence",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_compact_set_property",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/arzela-ascoli_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/heine-borel_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_continuity_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_continuity_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_differentiability_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_differentiability_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_convergence": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/abel's_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_continuity_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/arzela-ascoli_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_differentiability_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dini's_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/weierstrass_m-test": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_continuity_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_continuity_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem_for_functional_limits": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem_for_functional_limits",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_theorem_for_functional_limits"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_theorem_for_functional_limits": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_theorem_for_functional_limits"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/continuity": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/abel's_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/thomae_function",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_continuity_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/mean_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/extreme_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dini's_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/generalized_mean_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_limit_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_limit_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/dirichlet_function": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/dirichlet_function"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/epsilon-neighborhood": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/definitions_theorems/topology/limit_point",
+      "/notes/areas/mathematics/definitions_theorems/topology/open_set",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/functional_limit"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/extreme_value_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/extreme_value_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/functional_limit": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/lipschitz_function": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/lipschitz_function"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/sequential_criterion_for_functional_limits": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_limit_theorem_for_functional_limits",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/sequential_criterion_for_functional_limits"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/thomae_function": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/thomae_function"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_continuity": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/lipschitz_function",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_differentiability_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/algebraic_differentiability_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/differentiable": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/mean_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_differentiability_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/l'hospital's_rule",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/interior_extremum_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/generalized_mean_value_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/generalized_mean_value_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/l'hospital's_rule",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/generalized_mean_value_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/interior_extremum_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/interior_extremum_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/mean_value_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/mean_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/term-by-term_differentiability_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/properties_of_the_integral": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/linear_algebra_done_right"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/arzela-ascoli_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/arzela-ascoli_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/cantor_set": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/fractal_dimension",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/cantor_set"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution": [
+      "/notes/areas/mathematics/real_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/fractal_dimension": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/fractal_dimension"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/linear_transformation": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/linear_transformation"
+    ],
+    "/notes/areas/mathematics/topology": [
+      "/notes/areas/mathematics/real_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/connected_sets": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/connected_sets"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/disjoint": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/sigma-additivity",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/disjoint"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/heine-borel_theorem": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/heine-borel_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_compact_set_property": [
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/nested_compact_set_property"
+    ],
+    "/notes/areas/mathematics/complex_analysis": [
+      "/notes/areas/mathematics/complex_analysis"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/abstract_algebra/automorphism": [
+      "/notes/areas/mathematics/abstract_algebra",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/abstract_algebra/generator": [
+      "/notes/areas/mathematics/abstract_algebra"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis": [
+      "/notes/areas/mathematics/linear_algebra"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_subspace": [
+      "/notes/areas/mathematics/linear_algebra"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_vector_space": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_subspace"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/infinite-dimensional_vector_space": [
+      "/notes/areas/mathematics/linear_algebra"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/linear_combination": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/span"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_dependent": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_dependent"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/list": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/span",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_vector_space",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linear_combination",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_dependent"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/polynomial": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/span": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_vector_space",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_dependent"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/subspace": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_subspace"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/vector_space": [
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/topology/closed_set",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_vector_space",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/infinite-dimensional_vector_space",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/subspace"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function": [
+      "/notes/areas/mathematics/functional_analysis",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space": [
+      "/notes/areas/mathematics/functional_analysis",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/functional_analysis/tempered_distribution": [
+      "/notes/areas/mathematics/functional_analysis",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/proof_techniques/proof_by_contradiction": [
+      "/notes/areas/mathematics/proof_techniques",
+      "/notes/areas/mathematics/books/understanding_analysis",
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/archimedean_property"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/proof_techniques/proof_by_contrapositive": [
+      "/notes/areas/mathematics/proof_techniques",
+      "/notes/areas/mathematics/books/linear_algebra_done_right"
+    ],
+    "/notes/areas/mathematics/books/understanding_analysis": [
+      "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/definitions_theorems/topology/compactness",
+      "/notes/areas/mathematics/definitions_theorems/set_theory/cardinality",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_limit_theorem"
+    ]
+  }
 }
