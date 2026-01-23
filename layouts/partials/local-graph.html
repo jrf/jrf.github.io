@@ -49,21 +49,16 @@
 #local-graph .node circle {
   stroke: var(--content);
   stroke-width: 1.5px;
-  transition: fill 0.15s;
+  transition: fill 0.15s, stroke-width 0.15s;
 }
 
 #local-graph .node.current circle {
-  fill: #22c55e;
   stroke: #16a34a;
   stroke-width: 2px;
 }
 
-#local-graph .node.neighbor circle {
-  fill: var(--primary);
-}
-
 #local-graph .node:hover circle {
-  fill: var(--link);
+  stroke-width: 2.5px;
 }
 
 #local-graph .node text {
@@ -95,6 +90,12 @@
   transition: opacity 0.15s;
   z-index: 100;
 }
+
+#local-graph-tooltip .tooltip-category {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  margin-top: 2px;
+}
 </style>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -104,6 +105,28 @@
 
   const response = await fetch('/graph.json');
   const fullData = await response.json();
+
+  // Generate consistent colors for any category using HSL (same as main graph)
+  const categoryColorCache = {};
+
+  function stringToHue(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return Math.abs(hash) % 360;
+  }
+
+  function getCategoryColor(category) {
+    if (!category || category === 'Uncategorized') {
+      return '#6b7280'; // gray for uncategorized
+    }
+    if (!categoryColorCache[category]) {
+      const hue = stringToHue(category);
+      categoryColorCache[category] = `hsl(${hue}, 70%, 55%)`;
+    }
+    return categoryColorCache[category];
+  }
 
   // Find current node and its neighbors
   const nodeById = new Map(fullData.nodes.map(d => [d.id, d]));
@@ -200,7 +223,8 @@
       }));
 
   node.append('circle')
-    .attr('r', d => d.isCurrent ? 10 : 7);
+    .attr('r', d => d.isCurrent ? 10 : 7)
+    .attr('fill', d => getCategoryColor(d.category));
 
   node.append('text')
     .text(d => d.title.length > 20 ? d.title.slice(0, 18) + '…' : d.title)
@@ -213,7 +237,7 @@
       window.location.href = d.id + '/';
     })
     .on('mouseenter', (event, d) => {
-      tooltip.html(`<strong>${d.title}</strong>`)
+      tooltip.html(`<strong>${d.title}</strong><div class="tooltip-category">${d.category ? d.category.replace(/_/g, ' ') : ''}</div>`)
         .style('opacity', 1)
         .style('left', (event.offsetX + 15) + 'px')
         .style('top', (event.offsetY - 10) + 'px');
