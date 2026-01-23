@@ -8,6 +8,7 @@ import os
 import re
 import json
 from pathlib import Path
+from collections import defaultdict
 
 CONTENT_DIR = Path(__file__).parent.parent / "content" / "notes"
 OUTPUT_FILE = Path(__file__).parent.parent / "static" / "graph.json"
@@ -19,6 +20,41 @@ def get_title_from_frontmatter(content: str, fallback: str) -> str:
     if match:
         return match.group(1).strip()
     return fallback.replace("_", " ").replace("-", " ").title()
+
+def extract_category(filepath: Path, content_dir: Path) -> str:
+    """Extract category from file path.
+
+    Strategy:
+    - For paths containing 'definitions_theorems/TopicName/' -> TopicName
+    - For paths containing 'books/' -> Books
+    - For top-level topic files -> use filename as category
+    - Otherwise -> Uncategorized
+    """
+    rel_path = filepath.relative_to(content_dir)
+    parts = [p.lower() for p in rel_path.parts]
+    original_parts = rel_path.parts
+
+    # Check for definitions_theorems pattern
+    if "definitions_theorems" in parts:
+        idx = parts.index("definitions_theorems")
+        if len(original_parts) > idx + 1:
+            return original_parts[idx + 1]
+
+    # Check for books directory
+    if "books" in parts:
+        return "Books"
+
+    # For files directly under mathematics/ (like Set_Theory.md, Topology.md)
+    # Use the filename as category
+    if "mathematics" in parts:
+        math_idx = parts.index("mathematics")
+        # If the file is directly under mathematics/ (not in a subdirectory)
+        if len(original_parts) == math_idx + 2:  # mathematics/File.md
+            stem = filepath.stem
+            if not stem.startswith('_') and stem.lower() != 'index':
+                return stem
+
+    return "Uncategorized"
 
 def extract_links(content: str) -> list[str]:
     """Extract internal note links from markdown content."""
@@ -36,10 +72,10 @@ def path_to_url(filepath: Path, content_dir: Path) -> str:
 
 def build_graph():
     """Build the graph data structure from markdown files."""
-    nodes = {}  # url -> {id, title, path}
+    nodes = {}  # url -> {id, title, path, category}
     edges = []  # [{source, target}]
 
-    # First pass: collect all notes as nodes
+    # First pass: collect all notes as nodes with categories
     for md_file in CONTENT_DIR.rglob("*.md"):
         if md_file.name.startswith("_"):
             continue
@@ -47,11 +83,13 @@ def build_graph():
         url = path_to_url(md_file, CONTENT_DIR)
         content = md_file.read_text(encoding="utf-8")
         title = get_title_from_frontmatter(content, md_file.stem)
+        category = extract_category(md_file, CONTENT_DIR)
 
         nodes[url] = {
             "id": url,
             "title": title,
             "path": str(md_file.relative_to(CONTENT_DIR)),
+            "category": category,
         }
 
     # Second pass: extract links and build edges
@@ -71,9 +109,19 @@ def build_graph():
                     "target": target_url,
                 })
 
+    # Third pass: compute backlinks (what links TO each note)
+    backlinks = defaultdict(list)
+    for edge in edges:
+        source = edge["source"]
+        target = edge["target"]
+        # Add source to the list of backlinks for target
+        if source not in backlinks[target]:
+            backlinks[target].append(source)
+
     return {
         "nodes": list(nodes.values()),
         "edges": edges,
+        "backlinks": dict(backlinks),
     }
 
 def main():
