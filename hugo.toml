@@ -16,7 +16,7 @@ mainSections = ["posts"]
 
 # Homepage shows posts
 [params.homeInfoParams]
-Title = "Jeffrey R. Fetzer"
+Title = "Posts"
 Content = "Notes on math, science, and other explorations."
 
 [[params.socialIcons]]
