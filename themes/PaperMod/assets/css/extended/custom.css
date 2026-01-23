@@ -1,0 +1,182 @@
+/* =============================================================================
+   Obsidian Callout Styles
+   ============================================================================= */
+
+.callout {
+  margin: 1.5rem 0;
+  padding: 0;
+  border-radius: 6px;
+  border-left: 4px solid var(--border);
+  background: var(--code-bg);
+  overflow: hidden;
+}
+
+.callout-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.callout-icon {
+  font-size: 1.1rem;
+}
+
+.callout-content {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+.callout-content > *:first-child {
+  margin-top: 0;
+}
+
+.callout-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Callout type colors */
+.callout-note {
+  border-left-color: #3b82f6;
+}
+.callout-note .callout-title {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.callout-info {
+  border-left-color: #06b6d4;
+}
+.callout-info .callout-title {
+  background: rgba(6, 182, 212, 0.1);
+  color: #06b6d4;
+}
+
+.callout-tip,
+.callout-hint {
+  border-left-color: #22c55e;
+}
+.callout-tip .callout-title,
+.callout-hint .callout-title {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.callout-important {
+  border-left-color: #a855f7;
+}
+.callout-important .callout-title {
+  background: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+}
+
+.callout-warning,
+.callout-caution {
+  border-left-color: #f97316;
+}
+.callout-warning .callout-title,
+.callout-caution .callout-title {
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+
+.callout-danger {
+  border-left-color: #ef4444;
+}
+.callout-danger .callout-title {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.callout-example {
+  border-left-color: #8b5cf6;
+}
+.callout-example .callout-title {
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+}
+
+.callout-quote,
+.callout-cite {
+  border-left-color: #6b7280;
+}
+.callout-quote .callout-title,
+.callout-cite .callout-title {
+  background: rgba(107, 114, 128, 0.1);
+  color: #6b7280;
+}
+
+.callout-question,
+.callout-faq {
+  border-left-color: #eab308;
+}
+.callout-question .callout-title,
+.callout-faq .callout-title {
+  background: rgba(234, 179, 8, 0.1);
+  color: #eab308;
+}
+
+.callout-success,
+.callout-check,
+.callout-done {
+  border-left-color: #22c55e;
+}
+.callout-success .callout-title,
+.callout-check .callout-title,
+.callout-done .callout-title {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.callout-failure,
+.callout-fail,
+.callout-error {
+  border-left-color: #ef4444;
+}
+.callout-failure .callout-title,
+.callout-fail .callout-title,
+.callout-error .callout-title {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.callout-bug {
+  border-left-color: #ec4899;
+}
+.callout-bug .callout-title {
+  background: rgba(236, 72, 153, 0.1);
+  color: #ec4899;
+}
+
+.callout-abstract,
+.callout-summary,
+.callout-tldr {
+  border-left-color: #06b6d4;
+}
+.callout-abstract .callout-title,
+.callout-summary .callout-title,
+.callout-tldr .callout-title {
+  background: rgba(6, 182, 212, 0.1);
+  color: #06b6d4;
+}
+
+/* =============================================================================
+   Graph View Transitions
+   ============================================================================= */
+
+/* Smooth transitions for panel open/close are already in graph/single.html */
+
+/* Node hover/selection animations */
+.graph-node-enter {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.graph-node-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.2s, transform 0.2s;
+}
