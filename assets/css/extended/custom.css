@@ -1,0 +1,5 @@
+/* Reduce gap between home-info (social icons) and first post */
+.first-entry.home-info {
+    margin-bottom: var(--gap);
+    min-height: unset;
+}
