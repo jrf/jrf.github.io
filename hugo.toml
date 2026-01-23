@@ -40,6 +40,10 @@ weight = 20
 name = "Graph"
 url = "/graph/"
 weight = 30
+[[menu.main]]
+name = "Search"
+url = "/search/"
+weight = 40
 
 # Goldmark (markdown) config for math support
 [markup]
