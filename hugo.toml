@@ -27,6 +27,10 @@ url = "https://github.com/jrf"
 name = "x"
 url = "https://x.com/jeffreyrfetzer"
 
+[[params.socialIcons]]
+name = "instagram"
+url = "https://instagram.com/jeffreyrfetzer"
+
 [menu]
 [[menu.main]]
 name = "Home"
