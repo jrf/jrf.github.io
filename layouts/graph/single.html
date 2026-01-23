@@ -452,7 +452,7 @@
 
   svg.call(zoom);
 
-  // Restore viewport state
+  // Restore viewport state immediately on load
   function restoreViewportState() {
     try {
       const saved = localStorage.getItem('graph-viewport');
@@ -475,6 +475,9 @@
       }));
     } catch (e) {}
   }
+
+  // Restore saved viewport immediately
+  restoreViewportState();
 
   // Create node lookup for edges
   const nodeById = new Map(data.nodes.map(d => [d.id, d]));
@@ -833,13 +836,6 @@
       .attr('y2', d => d.target.y);
     node
       .attr('transform', d => `translate(${d.x},${d.y})`);
-  });
-
-  // Restore viewport after simulation settles
-  simulation.on('end', () => {
-    if (!restoreViewportState()) {
-      // If no saved state, fit to content
-    }
   });
 
   // Handle resize
