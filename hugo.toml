@@ -23,6 +23,10 @@ Content = "Notes on math, science, and other explorations."
 name = "github"
 url = "https://github.com/jrf"
 
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/jeffreyrfetzer"
+
 [menu]
 [[menu.main]]
 name = "Home"
