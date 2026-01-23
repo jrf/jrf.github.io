@@ -54,6 +54,81 @@ def convert_wikilinks(content, mapping):
     return content
 
 
+def convert_callouts(content):
+    """Convert Obsidian callouts to styled HTML divs.
+
+    Obsidian format: > [!type] Title
+                     > Content line 1
+                     > Content line 2
+
+    Output: <div class="callout callout-type">
+              <div class="callout-title">Title</div>
+              <div class="callout-content">Content</div>
+            </div>
+    """
+    # Callout type mapping to icons and display names
+    callout_icons = {
+        'note': '📝',
+        'info': 'ℹ️',
+        'tip': '💡',
+        'hint': '💡',
+        'important': '❗',
+        'warning': '⚠️',
+        'caution': '⚠️',
+        'danger': '🔴',
+        'example': '📋',
+        'quote': '💬',
+        'cite': '💬',
+        'question': '❓',
+        'faq': '❓',
+        'success': '✅',
+        'check': '✅',
+        'done': '✅',
+        'failure': '❌',
+        'fail': '❌',
+        'error': '❌',
+        'bug': '🐛',
+        'abstract': '📄',
+        'summary': '📄',
+        'tldr': '📄',
+    }
+
+    def replace_callout(match):
+        callout_type = match.group(1).lower()
+        title = match.group(2).strip() if match.group(2) else callout_type.title()
+        content_lines = match.group(3)
+
+        # Process content lines - remove leading > and whitespace
+        if content_lines:
+            lines = content_lines.split('\n')
+            processed_lines = []
+            for line in lines:
+                # Remove leading > from blockquote continuation
+                line = re.sub(r'^>\s?', '', line)
+                processed_lines.append(line)
+            inner_content = '\n'.join(processed_lines).strip()
+        else:
+            inner_content = ''
+
+        icon = callout_icons.get(callout_type, '📌')
+
+        # Build HTML output
+        html = f'<div class="callout callout-{callout_type}">\n'
+        html += f'<div class="callout-title"><span class="callout-icon">{icon}</span>{title}</div>\n'
+        if inner_content:
+            html += f'<div class="callout-content">\n\n{inner_content}\n\n</div>\n'
+        html += '</div>\n'
+
+        return html
+
+    # Match callout pattern: > [!type] optional title
+    # followed by continuation lines starting with >
+    pattern = r'^> \[!(\w+)\][ ]?([^\n]*)\n((?:^>.*\n?)*)'
+    content = re.sub(pattern, replace_callout, content, flags=re.MULTILINE)
+
+    return content
+
+
 def fix_math_blocks(content):
     """Fix math blocks for Hugo/Goldmark.
 
@@ -111,6 +186,7 @@ def process_note(input_file, mapping_file, title):
         content = f.read()
 
     content = convert_wikilinks(content, mapping)
+    content = convert_callouts(content)
     content = fix_math_blocks(content)
     content = add_frontmatter(content, title)
 
