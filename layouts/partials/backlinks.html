@@ -1,0 +1,98 @@
+{{- $currentUrl := .RelPermalink | lower | strings.TrimSuffix "/" -}}
+<div id="backlinks-container" style="display: none;">
+  <div id="backlinks-header">Referenced By</div>
+  <ul id="backlinks-list"></ul>
+</div>
+
+<style>
+#backlinks-container {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+#backlinks-header {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+#backlinks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#backlinks-list li {
+  margin-bottom: 0.5rem;
+}
+
+#backlinks-list a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+#backlinks-list a:hover {
+  color: var(--link);
+}
+
+#backlinks-list .backlink-category {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  margin-left: 0.5rem;
+}
+</style>
+
+<script>
+(async function() {
+  const currentUrl = {{ $currentUrl | jsonify }};
+
+  try {
+    const response = await fetch('/graph.json');
+    const data = await response.json();
+
+    // Check if backlinks exist for this note
+    const backlinks = data.backlinks?.[currentUrl];
+    if (!backlinks || backlinks.length === 0) {
+      return;
+    }
+
+    // Build node lookup for titles and categories
+    const nodeById = new Map(data.nodes.map(n => [n.id, n]));
+
+    // Build list items
+    const container = document.getElementById('backlinks-container');
+    const list = document.getElementById('backlinks-list');
+
+    backlinks.forEach(sourceUrl => {
+      const node = nodeById.get(sourceUrl);
+      if (node) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = sourceUrl + '/';
+        a.textContent = node.title;
+        li.appendChild(a);
+
+        if (node.category && node.category !== 'Uncategorized') {
+          const cat = document.createElement('span');
+          cat.className = 'backlink-category';
+          cat.textContent = node.category.replace(/_/g, ' ');
+          li.appendChild(cat);
+        }
+
+        list.appendChild(li);
+      }
+    });
+
+    // Show the container if we have backlinks
+    if (list.children.length > 0) {
+      container.style.display = 'block';
+    }
+  } catch (e) {
+    // Silently fail if graph.json is unavailable
+  }
+})();
+</script>
