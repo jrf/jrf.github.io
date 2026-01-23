@@ -1,5 +1,10 @@
 {{ define "main" }}
 <div id="graph-container">
+  <div id="graph-search">
+    <input type="text" id="search-input" placeholder="Search notes... (press /)" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <div id="graph-legend"></div>
   <div id="graph"></div>
   <div id="graph-info">
     <span id="node-count"></span> notes · <span id="edge-count"></span> connections
@@ -42,6 +47,129 @@
   height: 100%;
 }
 
+/* Search UI */
+#graph-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 50;
+  width: 280px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--primary);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+#search-input:focus {
+  border-color: var(--link);
+  box-shadow: 0 0 0 2px rgba(var(--link-rgb, 59, 130, 246), 0.2);
+}
+
+#search-input::placeholder {
+  color: var(--secondary);
+}
+
+#search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-top: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#search-results.open {
+  display: block;
+}
+
+.search-result {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+
+.search-result:last-child {
+  border-bottom: none;
+}
+
+.search-result:hover,
+.search-result.selected {
+  background: var(--code-bg);
+}
+
+.search-result-title {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.search-result-category {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  margin-top: 2px;
+}
+
+/* Legend */
+#graph-legend {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  z-index: 50;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.legend-title {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.legend-item:hover {
+  opacity: 0.7;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.legend-label {
+  color: var(--secondary);
+  white-space: nowrap;
+}
+
 #graph-info {
   position: absolute;
   bottom: 10px;
@@ -66,6 +194,12 @@
   transition: opacity 0.15s;
   max-width: 300px;
   z-index: 100;
+}
+
+.tooltip-category {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  margin-top: 4px;
 }
 
 /* Sliding panel */
@@ -153,31 +287,52 @@
 }
 
 .node circle {
-  fill: var(--primary);
   stroke: var(--content);
   stroke-width: 1.5px;
-  transition: fill 0.15s;
+  transition: fill 0.15s, stroke-width 0.15s;
 }
 
 .node:hover circle {
-  fill: var(--link);
+  stroke-width: 2.5px;
 }
 
 .node.highlighted circle {
-  fill: var(--link);
   stroke-width: 2px;
 }
 
 .node.selected circle {
-  fill: #22c55e;
   stroke: #16a34a;
   stroke-width: 3px;
+}
+
+.node.dimmed circle {
+  opacity: 0.2;
+}
+
+.node.search-match circle {
+  stroke: #fbbf24;
+  stroke-width: 3px;
+}
+
+/* Node labels */
+.node-label {
+  font-size: 10px;
+  fill: var(--secondary);
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.node.selected .node-label,
+.node.highlighted .node-label {
+  fill: var(--primary);
+  font-weight: 500;
 }
 
 .link {
   stroke: var(--border);
   stroke-opacity: 0.4;
   stroke-width: 1px;
+  transition: stroke-opacity 0.15s, stroke-width 0.15s;
 }
 
 .link.highlighted {
@@ -192,10 +347,22 @@
   stroke-width: 2px;
 }
 
+.link.dimmed {
+  stroke-opacity: 0.1;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   #content-panel {
     width: 100%;
+  }
+
+  #graph-legend {
+    display: none;
+  }
+
+  #graph-search {
+    width: calc(100% - 20px);
   }
 }
 </style>
@@ -216,11 +383,54 @@
   const iframe = document.getElementById('panel-iframe');
   const panelTitle = document.getElementById('panel-title');
   const panelClose = document.getElementById('panel-close');
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const legend = document.getElementById('graph-legend');
 
   const width = container.clientWidth;
   const height = container.clientHeight;
 
   let selectedNode = null;
+  let searchMatches = [];
+  let selectedSearchIndex = -1;
+  let connectedNodes = []; // For Tab navigation
+  let tabIndex = -1;
+
+  // Generate consistent colors for any category using HSL
+  const categoryColorCache = {};
+
+  function stringToHue(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return Math.abs(hash) % 360;
+  }
+
+  function getCategoryColor(category) {
+    if (!category || category === 'Uncategorized') {
+      return '#6b7280'; // gray for uncategorized
+    }
+    if (!categoryColorCache[category]) {
+      const hue = stringToHue(category);
+      categoryColorCache[category] = `hsl(${hue}, 70%, 55%)`;
+    }
+    return categoryColorCache[category];
+  }
+
+  // Build legend
+  const categories = [...new Set(data.nodes.map(n => n.category))].sort();
+  legend.innerHTML = '<div class="legend-title">Categories</div>';
+  categories.forEach(cat => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = `
+      <span class="legend-color" style="background: ${getCategoryColor(cat)}"></span>
+      <span class="legend-label">${cat.replace(/_/g, ' ')}</span>
+    `;
+    item.addEventListener('click', () => filterByCategory(cat));
+    legend.appendChild(item);
+  });
 
   // Create SVG
   const svg = d3.select('#graph')
@@ -229,12 +439,42 @@
     .attr('height', height)
     .attr('viewBox', [0, 0, width, height]);
 
-  // Add zoom behavior
+  // Add zoom behavior with state persistence
   const g = svg.append('g');
-  svg.call(d3.zoom()
+
+  const zoom = d3.zoom()
     .extent([[0, 0], [width, height]])
     .scaleExtent([0.2, 4])
-    .on('zoom', (event) => g.attr('transform', event.transform)));
+    .on('zoom', (event) => {
+      g.attr('transform', event.transform);
+      saveViewportState(event.transform);
+    });
+
+  svg.call(zoom);
+
+  // Restore viewport state
+  function restoreViewportState() {
+    try {
+      const saved = localStorage.getItem('graph-viewport');
+      if (saved) {
+        const { k, x, y } = JSON.parse(saved);
+        const transform = d3.zoomIdentity.translate(x, y).scale(k);
+        svg.call(zoom.transform, transform);
+        return true;
+      }
+    } catch (e) {}
+    return false;
+  }
+
+  function saveViewportState(transform) {
+    try {
+      localStorage.setItem('graph-viewport', JSON.stringify({
+        k: transform.k,
+        x: transform.x,
+        y: transform.y
+      }));
+    } catch (e) {}
+  }
 
   // Create node lookup for edges
   const nodeById = new Map(data.nodes.map(d => [d.id, d]));
@@ -284,7 +524,15 @@
   }
 
   node.append('circle')
-    .attr('r', d => getRadius(d));
+    .attr('r', d => getRadius(d))
+    .attr('fill', d => getCategoryColor(d.category));
+
+  // Add labels for highly-connected nodes (>15 connections)
+  node.filter(d => (connectionCount.get(d.id) || 0) > 15)
+    .append('text')
+    .attr('class', 'node-label')
+    .attr('dy', d => getRadius(d) + 12)
+    .text(d => d.title.length > 20 ? d.title.slice(0, 18) + '...' : d.title);
 
   // Hover interactions
   node.on('mouseenter', (event, d) => {
@@ -300,7 +548,7 @@
     });
     node.filter(n => n.id !== selectedNode?.id).classed('highlighted', n => connected.has(n.id));
 
-    tooltip.innerHTML = `<strong>${d.title}</strong>`;
+    tooltip.innerHTML = `<strong>${d.title}</strong><div class="tooltip-category">${d.category.replace(/_/g, ' ')}</div>`;
     tooltip.style.opacity = 1;
     tooltip.style.left = (event.pageX - container.getBoundingClientRect().left + 10) + 'px';
     tooltip.style.top = (event.pageY - container.getBoundingClientRect().top - 30) + 'px';
@@ -324,6 +572,14 @@
 
   function openPanel(d) {
     selectedNode = d;
+    tabIndex = -1;
+
+    // Build connected nodes list for Tab navigation
+    connectedNodes = [];
+    links.forEach(l => {
+      if (l.source.id === d.id) connectedNodes.push(l.target);
+      if (l.target.id === d.id) connectedNodes.push(l.source);
+    });
 
     // Update selection visuals
     node.classed('selected', n => n.id === d.id);
@@ -354,6 +610,8 @@
 
   function closePanel() {
     selectedNode = null;
+    connectedNodes = [];
+    tabIndex = -1;
     node.classed('selected', false);
     link.classed('selected', false);
     panel.classList.remove('open');
@@ -364,9 +622,185 @@
   // Close handlers
   panelClose.addEventListener('click', closePanel);
   overlay.addEventListener('click', closePanel);
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closePanel();
+
+  // Search functionality
+  function performSearch(query) {
+    if (!query.trim()) {
+      searchResults.classList.remove('open');
+      searchMatches = [];
+      selectedSearchIndex = -1;
+      node.classed('search-match', false);
+      node.classed('dimmed', false);
+      link.classed('dimmed', false);
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    searchMatches = data.nodes
+      .filter(n => n.title.toLowerCase().includes(lowerQuery))
+      .slice(0, 10);
+
+    // Highlight matching nodes
+    const matchIds = new Set(searchMatches.map(n => n.id));
+    node.classed('search-match', n => matchIds.has(n.id));
+    node.classed('dimmed', n => matchIds.size > 0 && !matchIds.has(n.id));
+    link.classed('dimmed', l => matchIds.size > 0 && !matchIds.has(l.source.id) && !matchIds.has(l.target.id));
+
+    // Update dropdown
+    if (searchMatches.length > 0) {
+      searchResults.innerHTML = searchMatches.map((n, i) => `
+        <div class="search-result${i === selectedSearchIndex ? ' selected' : ''}" data-index="${i}">
+          <div class="search-result-title">${n.title}</div>
+          <div class="search-result-category">${n.category.replace(/_/g, ' ')}</div>
+        </div>
+      `).join('');
+      searchResults.classList.add('open');
+
+      // Click handlers
+      searchResults.querySelectorAll('.search-result').forEach(el => {
+        el.addEventListener('click', () => {
+          const index = parseInt(el.dataset.index);
+          zoomToNode(searchMatches[index]);
+        });
+      });
+    } else {
+      searchResults.classList.remove('open');
+    }
+  }
+
+  function zoomToNode(targetNode) {
+    // Find the D3 node
+    const nodeData = data.nodes.find(n => n.id === targetNode.id);
+    if (!nodeData || nodeData.x === undefined) return;
+
+    // Zoom to the node
+    const scale = 2;
+    const transform = d3.zoomIdentity
+      .translate(width / 2 - nodeData.x * scale, height / 2 - nodeData.y * scale)
+      .scale(scale);
+
+    svg.transition()
+      .duration(500)
+      .call(zoom.transform, transform);
+
+    // Clear search
+    searchInput.value = '';
+    searchResults.classList.remove('open');
+    searchMatches = [];
+    selectedSearchIndex = -1;
+    node.classed('search-match', false);
+    node.classed('dimmed', false);
+    link.classed('dimmed', false);
+
+    // Open panel
+    openPanel(nodeData);
+  }
+
+  searchInput.addEventListener('input', (e) => {
+    selectedSearchIndex = -1;
+    performSearch(e.target.value);
   });
+
+  function filterByCategory(category) {
+    const matches = data.nodes.filter(n => n.category === category);
+    const matchIds = new Set(matches.map(n => n.id));
+
+    node.classed('dimmed', n => !matchIds.has(n.id));
+    link.classed('dimmed', l => !matchIds.has(l.source.id) && !matchIds.has(l.target.id));
+
+    // Clear after 3 seconds
+    setTimeout(() => {
+      node.classed('dimmed', false);
+      link.classed('dimmed', false);
+    }, 3000);
+  }
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    // "/" to focus search
+    if (e.key === '/' && document.activeElement !== searchInput) {
+      e.preventDefault();
+      searchInput.focus();
+      return;
+    }
+
+    // Escape to close panel or clear search
+    if (e.key === 'Escape') {
+      if (searchInput.value) {
+        searchInput.value = '';
+        performSearch('');
+        searchInput.blur();
+      } else if (panel.classList.contains('open')) {
+        closePanel();
+      }
+      return;
+    }
+
+    // Arrow navigation in search results
+    if (document.activeElement === searchInput && searchMatches.length > 0) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        selectedSearchIndex = Math.min(selectedSearchIndex + 1, searchMatches.length - 1);
+        updateSearchSelection();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        selectedSearchIndex = Math.max(selectedSearchIndex - 1, 0);
+        updateSearchSelection();
+      } else if (e.key === 'Enter' && selectedSearchIndex >= 0) {
+        e.preventDefault();
+        zoomToNode(searchMatches[selectedSearchIndex]);
+      }
+      return;
+    }
+
+    // Tab to cycle through connected nodes when panel is open
+    if (e.key === 'Tab' && panel.classList.contains('open') && connectedNodes.length > 0) {
+      e.preventDefault();
+      if (e.shiftKey) {
+        tabIndex = tabIndex <= 0 ? connectedNodes.length - 1 : tabIndex - 1;
+      } else {
+        tabIndex = (tabIndex + 1) % connectedNodes.length;
+      }
+      highlightTabNode(connectedNodes[tabIndex]);
+    }
+
+    // Enter to open highlighted node
+    if (e.key === 'Enter' && tabIndex >= 0 && connectedNodes.length > 0) {
+      openPanel(connectedNodes[tabIndex]);
+    }
+  });
+
+  function updateSearchSelection() {
+    searchResults.querySelectorAll('.search-result').forEach((el, i) => {
+      el.classList.toggle('selected', i === selectedSearchIndex);
+    });
+    // Scroll into view
+    const selectedEl = searchResults.querySelector('.search-result.selected');
+    if (selectedEl) {
+      selectedEl.scrollIntoView({ block: 'nearest' });
+    }
+  }
+
+  function highlightTabNode(targetNode) {
+    // Clear previous highlights
+    node.classed('highlighted', false);
+
+    // Highlight the target node
+    node.filter(n => n.id === targetNode.id).classed('highlighted', true);
+
+    // Show tooltip
+    tooltip.innerHTML = `<strong>${targetNode.title}</strong><div class="tooltip-category">${targetNode.category.replace(/_/g, ' ')}</div>`;
+    tooltip.style.opacity = 1;
+
+    // Position tooltip near the node
+    if (targetNode.x !== undefined) {
+      const transform = d3.zoomTransform(svg.node());
+      const screenX = targetNode.x * transform.k + transform.x + container.getBoundingClientRect().left;
+      const screenY = targetNode.y * transform.k + transform.y + container.getBoundingClientRect().top;
+      tooltip.style.left = (screenX - container.getBoundingClientRect().left + 10) + 'px';
+      tooltip.style.top = (screenY - container.getBoundingClientRect().top - 30) + 'px';
+    }
+  }
 
   // Drag behavior
   function drag(simulation) {
@@ -399,6 +833,13 @@
       .attr('y2', d => d.target.y);
     node
       .attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+
+  // Restore viewport after simulation settles
+  simulation.on('end', () => {
+    if (!restoreViewportState()) {
+      // If no saved state, fit to content
+    }
   });
 
   // Handle resize
