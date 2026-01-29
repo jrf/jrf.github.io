@@ -704,18 +704,35 @@
     performSearch(e.target.value);
   });
 
+  let activeCategory = null;
+
   function filterByCategory(category) {
+    // Toggle off if clicking the same category
+    if (activeCategory === category) {
+      clearCategoryFilter();
+      return;
+    }
+
+    activeCategory = category;
     const matches = data.nodes.filter(n => n.category === category);
     const matchIds = new Set(matches.map(n => n.id));
 
     node.classed('dimmed', n => !matchIds.has(n.id));
     link.classed('dimmed', l => !matchIds.has(l.source.id) && !matchIds.has(l.target.id));
 
-    // Clear after 3 seconds
-    setTimeout(() => {
-      node.classed('dimmed', false);
-      link.classed('dimmed', false);
-    }, 3000);
+    // Highlight active legend item
+    legend.querySelectorAll('.legend-item').forEach(item => {
+      item.classList.toggle('active', item.dataset.category === category);
+    });
+  }
+
+  function clearCategoryFilter() {
+    activeCategory = null;
+    node.classed('dimmed', false);
+    link.classed('dimmed', false);
+    legend.querySelectorAll('.legend-item').forEach(item => {
+      item.classList.remove('active');
+    });
   }
 
   // Keyboard navigation
