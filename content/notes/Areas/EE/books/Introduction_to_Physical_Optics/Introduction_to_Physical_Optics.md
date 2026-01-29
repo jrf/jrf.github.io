@@ -12,7 +12,7 @@ g(x,y) is defined by
 
 
 $$
-G(f_x,f_y) = \iint g(x,y), \exp{-j2\pi(f_x x + f_y y)}, dx,dy \tag{2.1-1}
+G(f_X,f_Y) = \iint g(x,y) \exp{-j2\pi(f_X x + f_Y y)}\, dx\,dy \tag{2.1-1}
 $$
 
 
@@ -22,12 +22,12 @@ The inverse Fourier transform is
 
 
 $$
-g(x,y) = \iint G(f_x,f_y), \exp{+j2\pi(f_x x + f_y y)}, df_x,df_y \tag{2.1-2}
+g(x,y) = \iint G(f_X,f_Y) \exp{+j2\pi(f_X x + f_Y y)}\, df_X\,df_Y \tag{2.1-2}
 $$
 
 
 
-Here x,y are spatial variables and f_x,f_y are spatial frequencies.
+Here $x,y$ are spatial variables and $f_X,f_Y$ are spatial frequencies.
 
 A commonly used sufficient set of existence conditions for Eq. (2.1-1) is:
 
@@ -63,7 +63,7 @@ Other commonly encountered non-integrable functions include
 
 
 $$
-g(x,y)=1, \qquad g(x,y)=\cos(2\pi f_x x) \tag{2.1-5}
+g(x,y)=1, \qquad g(x,y)=\cos(2\pi f_X x) \tag{2.1-5}
 $$
 
 
@@ -79,7 +79,7 @@ The inverse transform may be written
 
 
 $$
-g(x,y) = \iint G(f_x,f_y), \exp{j2\pi(f_x x + f_y y)}, df_x,df_y \tag{2.1-8}
+g(x,y) = \iint G(f_X,f_Y) \exp{j2\pi(f_X x + f_Y y)}\, df_X\,df_Y \tag{2.1-8}
 $$
 
 
@@ -90,7 +90,7 @@ function has phase
 
 
 $$
-2\pi(f_x x + f_y y)
+2\pi(f_X x + f_Y y)
 $$
 
 
@@ -100,7 +100,7 @@ Zero-phase lines satisfy
 
 
 $$
-f_x x + f_y y = n, \quad n\in\mathbb{Z} \tag{2.1-9}
+f_X x + f_Y y = n, \quad n\in\mathbb{Z} \tag{2.1-9}
 $$
 
 
@@ -110,7 +110,7 @@ The direction angle $\theta$ of these lines is
 
 
 $$
-\theta = \arctan\left(\frac{f_y}{f_x}\right) \tag{2.1-10}
+\theta = \arctan\left(\frac{f_Y}{f_X}\right) \tag{2.1-10}
 $$
 
 
@@ -120,7 +120,7 @@ and the spatial period is
 
 
 $$
-L = \frac{1}{\sqrt{f_x^2 + f_y^2}} \tag{2.1-11}
+L = \frac{1}{\sqrt{f_X^2 + f_Y^2}} \tag{2.1-11}
 $$
 
 
@@ -134,7 +134,7 @@ Let
 
 
 $$
-\mathcal{F}{g(x,y)} = G(f_x,f_y)
+\mathcal{F}\{g(x,y)\} = G(f_X,f_Y)
 $$
 
 
@@ -154,7 +154,7 @@ $$
 
 
 $$
-\mathcal{F}{g(x-x_0,y-y_0)} = G(f_x,f_y) e^{-j2\pi(f_x x_0 + f_y y_0)} \tag{2.1-13}
+\mathcal{F}\{g(x-x_0,y-y_0)\} = G(f_X,f_Y) e^{-j2\pi(f_X x_0 + f_Y y_0)} \tag{2.1-13}
 $$
 
 
@@ -164,7 +164,7 @@ $$
 
 
 $$
-\iint |g(x,y)|^2 dx dy = \iint |G(f_x,f_y)|^2 df_x df_y \tag{2.1-14}
+\iint |g(x,y)|^2 dx\, dy = \iint |G(f_X,f_Y)|^2 df_X\, df_Y \tag{2.1-14}
 $$
 
 
@@ -220,7 +220,7 @@ If the spatial coordinates are scaled by constants $a$ and $b$:
 
 
 $$
-\mathcal{F}\{g(ax, by)\} = \frac{1}{|ab|} G\left(\frac{f_x}{a}, \frac{f_y}{b}\right) \tag{2.1-12}
+\mathcal{F}\{g(ax, by)\} = \frac{1}{|ab|} G\left(\frac{f_X}{a}, \frac{f_Y}{b}\right) \tag{2.1-12}
 $$
 
 
@@ -234,7 +234,7 @@ For a shear transformation in the $x$-direction:
 
 
 $$
-\mathcal{F}\{g(x + \alpha y, y)\} = G(f_x, f_y - \alpha f_x)
+\mathcal{F}\{g(x + \alpha y, y)\} = G(f_X, f_Y - \alpha f_X)
 $$
 
 
@@ -260,7 +260,7 @@ then
 
 
 $$
-G(f_x,f_y) = G_x(f_x) G_y(f_y) \tag{2.1-22}
+G(f_X,f_Y) = G_X(f_X) G_Y(f_Y) \tag{2.1-22}
 $$
 
 
@@ -274,17 +274,17 @@ A function is circularly symmetric if
 
 
 $$
-g(r,\theta) = g_0(r) \tag{2.1-25}
+g(r,\theta) = g_R(r) \tag{2.1-25}
 $$
 
 
 
-The Fourier transform becomes
+The Fourier transform becomes the Fourier-Bessel transform:
 
 
 
 $$
-G(\rho) = 2\pi \int_0^\infty g_0(r) J_0(2\pi \rho r) r, dr \tag{2.1-32}
+G(\rho) = 2\pi \int_0^\infty r\, g_R(r) J_0(2\pi r \rho)\, dr \tag{2.1-32}
 $$
 
 
@@ -312,7 +312,7 @@ Its Fourier transform is the sinc function:
 
 
 $$
-\mathcal{F}\{\mathrm{rect}(x)\} = \mathrm{sinc}(f_x)
+\mathcal{F}\{\mathrm{rect}(x)\} = \mathrm{sinc}(f_X)
 $$
 
 
@@ -332,7 +332,7 @@ Note: The sinc function equals 1 at $x=0$ and has zeros at all nonzero integers.
 
 
 $$
-\mathcal{F}\{\mathrm{sinc}(x)\} = \mathrm{rect}(f_x)
+\mathcal{F}\{\mathrm{sinc}(x)\} = \mathrm{rect}(f_X)
 $$
 
 
@@ -352,7 +352,7 @@ Its Fourier transform (in the generalized sense):
 
 
 $$
-\mathcal{F}\{\mathrm{sgn}(x)\} = \frac{1}{j\pi f_x}
+\mathcal{F}\{\mathrm{sgn}(x)\} = \frac{1}{j\pi f_X}
 $$
 
 
@@ -382,7 +382,7 @@ Its Fourier transform:
 
 
 $$
-\mathcal{F}\{\mathrm{tri}(x)\} = \mathrm{sinc}^2(f_x)
+\mathcal{F}\{\mathrm{tri}(x)\} = \mathrm{sinc}^2(f_X)
 $$
 
 
@@ -404,7 +404,7 @@ This function is its own Fourier transform:
 
 
 $$
-\mathcal{F}\{\mathrm{comb}(x)\} = \mathrm{comb}(f_x)
+\mathcal{F}\{\mathrm{comb}(x)\} = \mathrm{comb}(f_X)
 $$
 
 
@@ -425,17 +425,17 @@ $$
 
 where $r = \sqrt{x^2 + y^2}$. This represents a circular aperture of unit radius.
 
-Its Fourier transform involves the first-order [Bessel function](/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function/):
+Its Fourier-Bessel transform involves the first-order [Bessel function](/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function/):
 
 
 
 $$
-\mathcal{F}\{\mathrm{circ}(r)\} = \frac{J_1(2\pi\rho)}{\rho} \tag{2.1-36}
+\mathcal{B}\{\mathrm{circ}(r)\} = \frac{J_1(2\pi\rho)}{\rho} \tag{2.1-36}
 $$
 
 
 
-where $\rho = \sqrt{f_x^2 + f_y^2}$. This result is central to diffraction theory for circular apertures.
+where $\rho = \sqrt{f_X^2 + f_Y^2}$. This result is central to diffraction theory for circular apertures.
 
 **Gaussian Function**
 
@@ -452,7 +452,7 @@ The Gaussian is its own [Fourier transform](/notes/areas/mathematics/definitions
 
 
 $$
-\mathcal{F}\{e^{-\pi x^2}\} = e^{-\pi f_x^2}
+\mathcal{F}\{e^{-\pi x^2}\} = e^{-\pi f_X^2}
 $$
 
 
@@ -462,26 +462,26 @@ This self-transform property makes Gaussians particularly useful in optics. In t
 
 
 $$
-\mathcal{F}\{e^{-\pi(x^2 + y^2)}\} = e^{-\pi(f_x^2 + f_y^2)}
+\mathcal{F}\{e^{-\pi(x^2 + y^2)}\} = e^{-\pi(f_X^2 + f_Y^2)}
 $$
 
 
 
 **Table of Common Fourier Transform Pairs**
 
-| Function $g(x)$ | Transform $G(f_x)$ |
+| Function $g(x)$ | Transform $G(f_X)$ |
 |-----------------|-------------------|
-| $\mathrm{rect}(x)$ | $\mathrm{sinc}(f_x)$ |
-| $\mathrm{sinc}(x)$ | $\mathrm{rect}(f_x)$ |
-| $\mathrm{tri}(x)$ | $\mathrm{sinc}^2(f_x)$ |
-| $\mathrm{comb}(x)$ | $\mathrm{comb}(f_x)$ |
-| $e^{-\pi x^2}$ | $e^{-\pi f_x^2}$ |
-| $\mathrm{sgn}(x)$ | $\frac{1}{j\pi f_x}$ |
+| $\mathrm{rect}(x)$ | $\mathrm{sinc}(f_X)$ |
+| $\mathrm{sinc}(x)$ | $\mathrm{rect}(f_X)$ |
+| $\mathrm{tri}(x)$ | $\mathrm{sinc}^2(f_X)$ |
+| $\mathrm{comb}(x)$ | $\mathrm{comb}(f_X)$ |
+| $e^{-\pi x^2}$ | $e^{-\pi f_X^2}$ |
+| $\mathrm{sgn}(x)$ | $\frac{1}{j\pi f_X}$ |
 | $\delta(x)$ | $1$ |
-| $1$ | $\delta(f_x)$ |
-| $e^{j2\pi f_0 x}$ | $\delta(f_x - f_0)$ |
-| $\cos(2\pi f_0 x)$ | $\frac{1}{2}[\delta(f_x - f_0) + \delta(f_x + f_0)]$ |
-| $\sin(2\pi f_0 x)$ | $\frac{1}{2j}[\delta(f_x - f_0) - \delta(f_x + f_0)]$ |
+| $1$ | $\delta(f_X)$ |
+| $e^{j2\pi f_0 x}$ | $\delta(f_X - f_0)$ |
+| $\cos(2\pi f_0 x)$ | $\frac{1}{2}[\delta(f_X - f_0) + \delta(f_X + f_0)]$ |
+| $\sin(2\pi f_0 x)$ | $\frac{1}{2j}[\delta(f_X - f_0) - \delta(f_X + f_0)]$ |
 
 ⸻
 
@@ -506,7 +506,7 @@ The **local spatial frequencies** are defined as the spatial rates of change of 
 
 
 $$
-f_x^{(\text{local})}(x,y) = \frac{1}{2\pi} \frac{\partial \phi}{\partial x} \tag{2.2-2}
+f_X^{(\ell)}(x,y) = \frac{1}{2\pi} \frac{\partial \phi}{\partial x} \tag{2.2-2}
 $$
 
 
@@ -514,7 +514,7 @@ $$
 
 
 $$
-f_y^{(\text{local})}(x,y) = \frac{1}{2\pi} \frac{\partial \phi}{\partial y} \tag{2.2-3}
+f_Y^{(\ell)}(x,y) = \frac{1}{2\pi} \frac{\partial \phi}{\partial y} \tag{2.2-3}
 $$
 
 
@@ -523,7 +523,7 @@ $$
 
 For a simple complex exponential $g(x,y) = e^{j2\pi(f_0 x + g_0 y)}$:
 - The phase is $\phi(x,y) = 2\pi(f_0 x + g_0 y)$
-- The local frequencies are constant: $f_x^{(\text{local})} = f_0$, $f_y^{(\text{local})} = g_0$
+- The local frequencies are constant: $f_X^{(\ell)} = f_0$, $f_Y^{(\ell)} = g_0$
 
 For more complex functions, the local frequency varies with position, representing how the "instantaneous" oscillation rate changes across the function.
 
@@ -544,7 +544,7 @@ The local frequency is:
 
 
 $$
-f_x^{(\text{local})}(x) = \frac{1}{2\pi} \frac{d}{dx}(\pi \alpha x^2) = \alpha x \tag{2.2-5}
+f_X^{(\ell)}(x) = \frac{1}{2\pi} \frac{d}{dx}(\pi \alpha x^2) = \alpha x \tag{2.2-5}
 $$
 
 
@@ -558,31 +558,31 @@ The **Wigner distribution function** provides a joint space-frequency representa
 
 
 $$
-W_g(x, f_x) = \int_{-\infty}^{\infty} g\left(x + \frac{x'}{2}\right) g^*\left(x - \frac{x'}{2}\right) e^{-j2\pi f_x x'} dx' \tag{2.2-6}
+W_g(x, f_X) = \int_{-\infty}^{\infty} g\left(x + \frac{x'}{2}\right) g^*\left(x - \frac{x'}{2}\right) e^{-j2\pi f_X x'} dx' \tag{2.2-6}
 $$
 
 
 
 **Properties of the Wigner Distribution:**
 
-1. **Real-valued**: $W_g(x, f_x)$ is always real, though it can be negative.
+1. **Real-valued**: $W_g(x, f_X)$ is always real, though it can be negative.
 
 2. **Marginal distributions**:
-   - Integrating over frequency yields the intensity: $\int W_g(x, f_x) df_x = |g(x)|^2$
-   - Integrating over space yields the power spectrum: $\int W_g(x, f_x) dx = |G(f_x)|^2$
+   - Integrating over frequency yields the intensity: $\int W_g(x, f_X) df_X = |g(x)|^2$
+   - Integrating over space yields the power spectrum: $\int W_g(x, f_X) dx = |G(f_X)|^2$
 
 3. **Energy**:
 
 
 $$
-\iint W_g(x, f_x) dx\, df_x = \int |g(x)|^2 dx = \int |G(f_x)|^2 df_x \tag{2.2-7}
+\iint W_g(x, f_X) dx\, df_X = \int |g(x)|^2 dx = \int |G(f_X)|^2 df_X \tag{2.2-7}
 $$
 
 
 
 4. **Shift properties**:
-   - Spatial shift: $g(x-x_0) \to W_g(x-x_0, f_x)$
-   - Frequency shift: $g(x)e^{j2\pi f_0 x} \to W_g(x, f_x - f_0)$
+   - Spatial shift: $g(x-x_0) \to W_g(x-x_0, f_X)$
+   - Frequency shift: $g(x)e^{j2\pi f_0 x} \to W_g(x, f_X - f_0)$
 
 **Uncertainty Principle:**
 
@@ -591,12 +591,12 @@ The Wigner distribution illustrates the fundamental trade-off between spatial an
 
 
 $$
-\Delta x \cdot \Delta f_x \geq \frac{1}{4\pi} \tag{2.2-8}
+\Delta x \cdot \Delta f_X \geq \frac{1}{4\pi} \tag{2.2-8}
 $$
 
 
 
-where $\Delta x$ and $\Delta f_x$ are the standard deviations in space and frequency respectively.
+where $\Delta x$ and $\Delta f_X$ are the standard deviations in space and frequency respectively.
 
 The Gaussian function achieves the minimum uncertainty product (equality in the above relation), making it the optimally localized function in the joint space-frequency domain.
 
@@ -605,7 +605,7 @@ The Gaussian function achieves the minimum uncertainty product (equality in the 
 
 
 $$
-W_g(x, y, f_x, f_y) = \iint g\left(x+\frac{x'}{2}, y+\frac{y'}{2}\right) g^*\left(x-\frac{x'}{2}, y-\frac{y'}{2}\right) e^{-j2\pi(f_x x' + f_y y')} dx' dy' \tag{2.2-9}
+W_g(x, y; f_X, f_Y) = \iint g\left(x+\frac{x'}{2}, y+\frac{y'}{2}\right) g^*\left(x-\frac{x'}{2}, y-\frac{y'}{2}\right) e^{-j2\pi(f_X x' + f_Y y')} dx'\, dy' \tag{2.2-9}
 $$
 
 
@@ -687,7 +687,7 @@ Taking Fourier transforms,
 
 
 $$
-G_2(f_x,f_y) = H(f_x,f_y) G_1(f_x,f_y) \tag{2.3-10}
+G_2(f_X,f_Y) = H(f_X,f_Y) G_1(f_X,f_Y) \tag{2.3-10}
 $$
 
 
@@ -697,7 +697,7 @@ where
 
 
 $$
-H(f_x,f_y) = \iint h(x,y) e^{-j2\pi(f_x x + f_y y)} dx dy \tag{2.3-11}
+H(f_X,f_Y) = \iint h(\xi,\eta) e^{-j2\pi(f_X \xi + f_Y \eta)} d\xi\, d\eta \tag{2.3-11}
 $$
 
 
@@ -723,7 +723,7 @@ The spectrum is
 
 
 $$
-G_s(f_x,f_y) = \frac{1}{XY} \sum_{n,m} G\left(f_x-\frac{n}{X}, f_y-\frac{m}{Y}\right) \tag{2.4-2}
+G_s(f_X,f_Y) = \frac{1}{XY} \sum_{n,m} G\left(f_X-\frac{n}{X}, f_Y-\frac{m}{Y}\right) \tag{2.4-2}
 $$
 
 
@@ -809,7 +809,7 @@ The DFT approximates samples of the continuous Fourier transform at frequencies:
 
 
 $$
-f_m = \frac{m}{N \Delta x}, \quad m = 0, 1, \ldots, N-1 \tag{2.5-4}
+f_{X,m} = \frac{m}{N \Delta x}, \quad m = 0, 1, \ldots, N-1 \tag{2.5-4}
 $$
 
 
@@ -831,7 +831,7 @@ where $L = N \Delta x$ is the total length of the sampled region.
 - Number of samples: $N$
 - Total spatial extent: $L = N \Delta x$
 - Frequency sampling interval: $\Delta f = 1/L$
-- Maximum frequency (Nyquist): $f_{\max} = 1/(2\Delta x)$
+- Maximum frequency (Nyquist): $f_{X,\max} = 1/(2\Delta x)$
 
 2.5.3 Properties of the DFT
 
@@ -947,7 +947,7 @@ The **Projection-Slice Theorem** (also called the Fourier Slice Theorem or Centr
 
 2.6.1 Statement of the Theorem
 
-Consider a two-dimensional function $g(x,y)$ with Fourier transform $G(f_x, f_y)$.
+Consider a two-dimensional function $g(x,y)$ with Fourier transform $G(f_X, f_Y)$.
 
 A **projection** of $g$ onto the $x$-axis is:
 
@@ -964,7 +964,7 @@ The one-dimensional Fourier transform of this projection is:
 
 
 $$
-P_0(f_x) = \int_{-\infty}^{\infty} p_0(x) \, e^{-j2\pi f_x x} \, dx \tag{2.6-2}
+P_0(f_X) = \int_{-\infty}^{\infty} p_0(x) \, e^{-j2\pi f_X x} \, dx \tag{2.6-2}
 $$
 
 
@@ -974,7 +974,7 @@ $$
 
 
 $$
-P_0(f_x) = G(f_x, 0) \tag{2.6-3}
+P_0(f_X) = G(f_X, 0) \tag{2.6-3}
 $$
 
 
@@ -986,7 +986,7 @@ That is, the 1D Fourier transform of the projection equals the 2D Fourier transf
 
 
 $$
-P_0(f_x) = \int_{-\infty}^{\infty} \left[ \int_{-\infty}^{\infty} g(x,y) \, dy \right] e^{-j2\pi f_x x} \, dx
+P_0(f_X) = \int_{-\infty}^{\infty} \left[ \int_{-\infty}^{\infty} g(x,y) \, dy \right] e^{-j2\pi f_X x} \, dx
 $$
 
 
@@ -994,7 +994,7 @@ $$
 
 
 $$
-= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y) \, e^{-j2\pi f_x x} \, dx \, dy
+= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y) \, e^{-j2\pi f_X x} \, dx \, dy
 $$
 
 
@@ -1002,7 +1002,7 @@ $$
 
 
 $$
-= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y) \, e^{-j2\pi(f_x x + 0 \cdot y)} \, dx \, dy = G(f_x, 0) \tag{2.6-4}
+= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x,y) \, e^{-j2\pi(f_X x + 0 \cdot y)} \, dx \, dy = G(f_X, 0) \tag{2.6-4}
 $$
 
 
@@ -1034,7 +1034,7 @@ By the rotation property of Fourier transforms, the generalized projection-slice
 
 
 $$
-P_\theta(f_{x'}) = G(f_{x'} \cos\theta, \, f_{x'} \sin\theta) \tag{2.6-7}
+P_\theta(f) = G(f \cos\theta, \, f \sin\theta) \tag{2.6-7}
 $$
 
 
@@ -1048,7 +1048,7 @@ The 1D transform of the projection at angle $\theta$ equals the 2D transform eva
 In CT imaging, X-ray projections are measured at many angles around an object. Each projection provides a slice of the 2D Fourier transform. By measuring enough projections:
 
 1. Collect projection data $p_\theta(x')$ for many angles $\theta$
-2. Compute 1D Fourier transforms to obtain slices $G(f_{x'}\cos\theta, f_{x'}\sin\theta)$
+2. Compute 1D Fourier transforms to obtain slices $G(f\cos\theta, f\sin\theta)$
 3. Interpolate these radial slices onto a Cartesian grid
 4. Apply 2D inverse Fourier transform to reconstruct $g(x,y)$
 
@@ -1064,7 +1064,7 @@ Cryo-electron microscopy uses projections of molecular structures at different o
 
 2.6.4 Three-Dimensional Extension
 
-For a 3D function $g(x,y,z)$ with 3D Fourier transform $G(f_x, f_y, f_z)$:
+For a 3D function $g(x,y,z)$ with 3D Fourier transform $G(f_X, f_Y, f_Z)$:
 
 A 2D projection (integral along the $z$-axis):
 
@@ -1081,7 +1081,7 @@ Has 2D Fourier transform:
 
 
 $$
-P(f_x, f_y) = G(f_x, f_y, 0) \tag{2.6-9}
+P(f_X, f_Y) = G(f_X, f_Y, 0) \tag{2.6-9}
 $$
 
 
@@ -1096,19 +1096,19 @@ In many physical measurements, only the magnitude (intensity) of a Fourier trans
 
 2.7.1 The Phase Problem
 
-Given measurements of $|G(f_x, f_y)|^2$ (the power spectrum or intensity), can we recover $g(x,y)$?
+Given measurements of $|G(f_X, f_Y)|^2$ (the power spectrum or intensity), can we recover $g(x,y)$?
 
 The Fourier transform can be written:
 
 
 
 $$
-G(f_x, f_y) = |G(f_x, f_y)| e^{j\phi(f_x, f_y)} \tag{2.7-1}
+G(f_X, f_Y) = |G(f_X, f_Y)| e^{j\phi(f_X, f_Y)} \tag{2.7-1}
 $$
 
 
 
-where $\phi(f_x, f_y)$ is the phase. Measuring only $|G|$ leaves $\phi$ unknown.
+where $\phi(f_X, f_Y)$ is the phase. Measuring only $|G|$ leaves $\phi$ unknown.
 
 **Why phase matters:**
 
@@ -1118,7 +1118,7 @@ The phase of a Fourier transform carries crucial structural information about th
 
 Without additional constraints, the phase problem is severely underdetermined. Known ambiguities include:
 
-1. **Spatial shift**: If $g(x,y) \to G(f_x, f_y)$, then $g(x-x_0, y-y_0) \to G(f_x, f_y) e^{-j2\pi(f_x x_0 + f_y y_0)}$
+1. **Spatial shift**: If $g(x,y) \to G(f_X, f_Y)$, then $g(x-x_0, y-y_0) \to G(f_X, f_Y) e^{-j2\pi(f_X x_0 + f_Y y_0)}$
    - Shifting in space only changes the phase, not the magnitude
 
 2. **Conjugate reflection**: $g^*(-x, -y)$ has the same Fourier magnitude as $g(x,y)$
@@ -1133,7 +1133,7 @@ Under certain conditions, uniqueness can be established:
 
 **Gerchberg-Saxton Algorithm:**
 
-For problems where both $|g(x,y)|$ and $|G(f_x, f_y)|$ are known (e.g., in electron microscopy):
+For problems where both $|g(x,y)|$ and $|G(f_X, f_Y)|$ are known (e.g., in electron microscopy):
 
 1. Start with initial guess $g^{(0)}(x,y)$ using known magnitude and random phase
 2. Fourier transform: $G^{(k)} = \mathcal{F}\{g^{(k)}\}$
