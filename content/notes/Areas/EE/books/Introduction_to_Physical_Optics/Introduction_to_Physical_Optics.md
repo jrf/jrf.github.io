@@ -144,7 +144,7 @@ $$
 
 
 $$
-\mathcal{F}{a g_1 + b g_2} = a G_1 + b G_2 \tag{2.1-12}
+\mathcal{F}{a g_1 + b g_2} = a G_1 + b G_2
 $$
 
 
@@ -220,7 +220,7 @@ If the spatial coordinates are scaled by constants $a$ and $b$:
 
 
 $$
-\mathcal{F}\{g(ax, by)\} = \frac{1}{|ab|} G\left(\frac{f_x}{a}, \frac{f_y}{b}\right) \tag{2.1-20a}
+\mathcal{F}\{g(ax, by)\} = \frac{1}{|ab|} G\left(\frac{f_x}{a}, \frac{f_y}{b}\right) \tag{2.1-12}
 $$
 
 
@@ -234,7 +234,7 @@ For a shear transformation in the $x$-direction:
 
 
 $$
-\mathcal{F}\{g(x + \alpha y, y)\} = G(f_x, f_y - \alpha f_x) \tag{2.1-20b}
+\mathcal{F}\{g(x + \alpha y, y)\} = G(f_x, f_y - \alpha f_x)
 $$
 
 
@@ -302,7 +302,7 @@ The one-dimensional rectangle function is defined as:
 
 
 $$
-\mathrm{rect}(x) = \begin{cases} 1 & |x| \leq \frac{1}{2} \\ 0 & \text{otherwise} \end{cases} \tag{2.1-33}
+\mathrm{rect}(x) = \begin{cases} 1 & |x| \leq \frac{1}{2} \\ 0 & \text{otherwise} \end{cases}
 $$
 
 
@@ -312,7 +312,7 @@ Its Fourier transform is the sinc function:
 
 
 $$
-\mathcal{F}\{\mathrm{rect}(x)\} = \mathrm{sinc}(f_x) \tag{2.1-34}
+\mathcal{F}\{\mathrm{rect}(x)\} = \mathrm{sinc}(f_x)
 $$
 
 
@@ -322,7 +322,7 @@ $$
 
 
 $$
-\mathrm{sinc}(x) = \frac{\sin(\pi x)}{\pi x} \tag{2.1-35}
+\mathrm{sinc}(x) = \frac{\sin(\pi x)}{\pi x}
 $$
 
 
@@ -342,7 +342,7 @@ $$
 
 
 $$
-\mathrm{sgn}(x) = \begin{cases} +1 & x > 0 \\ 0 & x = 0 \\ -1 & x < 0 \end{cases} \tag{2.1-36}
+\mathrm{sgn}(x) = \begin{cases} +1 & x > 0 \\ 0 & x = 0 \\ -1 & x < 0 \end{cases}
 $$
 
 
@@ -352,7 +352,7 @@ Its Fourier transform (in the generalized sense):
 
 
 $$
-\mathcal{F}\{\mathrm{sgn}(x)\} = \frac{1}{j\pi f_x} \tag{2.1-37}
+\mathcal{F}\{\mathrm{sgn}(x)\} = \frac{1}{j\pi f_x}
 $$
 
 
@@ -362,7 +362,7 @@ $$
 
 
 $$
-\mathrm{tri}(x) = \begin{cases} 1 - |x| & |x| \leq 1 \\ 0 & |x| > 1 \end{cases} \tag{2.1-38}
+\mathrm{tri}(x) = \begin{cases} 1 - |x| & |x| \leq 1 \\ 0 & |x| > 1 \end{cases}
 $$
 
 
@@ -382,7 +382,7 @@ Its Fourier transform:
 
 
 $$
-\mathcal{F}\{\mathrm{tri}(x)\} = \mathrm{sinc}^2(f_x) \tag{2.1-39}
+\mathcal{F}\{\mathrm{tri}(x)\} = \mathrm{sinc}^2(f_x)
 $$
 
 
@@ -394,7 +394,7 @@ The comb function is an infinite series of equally spaced [delta functions](/not
 
 
 $$
-\mathrm{comb}(x) = \sum_{n=-\infty}^{\infty} \delta(x - n) \tag{2.1-40}
+\mathrm{comb}(x) = \sum_{n=-\infty}^{\infty} \delta(x - n)
 $$
 
 
@@ -404,7 +404,7 @@ This function is its own Fourier transform:
 
 
 $$
-\mathcal{F}\{\mathrm{comb}(x)\} = \mathrm{comb}(f_x) \tag{2.1-41}
+\mathcal{F}\{\mathrm{comb}(x)\} = \mathrm{comb}(f_x)
 $$
 
 
@@ -418,7 +418,7 @@ The two-dimensional circle function:
 
 
 $$
-\mathrm{circ}(r) = \begin{cases} 1 & r \leq 1 \\ 0 & r > 1 \end{cases} \tag{2.1-42}
+\mathrm{circ}(r) = \begin{cases} 1 & r \leq 1 \\ 0 & r > 1 \end{cases}
 $$
 
 
@@ -430,7 +430,7 @@ Its Fourier transform involves the first-order [Bessel function](/notes/areas/ma
 
 
 $$
-\mathcal{F}\{\mathrm{circ}(r)\} = \frac{J_1(2\pi\rho)}{\rho} \tag{2.1-43}
+\mathcal{F}\{\mathrm{circ}(r)\} = \frac{J_1(2\pi\rho)}{\rho} \tag{2.1-36}
 $$
 
 
@@ -442,7 +442,7 @@ where $\rho = \sqrt{f_x^2 + f_y^2}$. This result is central to diffraction theor
 
 
 $$
-g(x) = e^{-\pi x^2} \tag{2.1-44}
+g(x) = e^{-\pi x^2}
 $$
 
 
@@ -452,7 +452,7 @@ The Gaussian is its own [Fourier transform](/notes/areas/mathematics/definitions
 
 
 $$
-\mathcal{F}\{e^{-\pi x^2}\} = e^{-\pi f_x^2} \tag{2.1-45}
+\mathcal{F}\{e^{-\pi x^2}\} = e^{-\pi f_x^2}
 $$
 
 
@@ -907,6 +907,7 @@ $$
 This decomposition reduces the problem to two DFTs of length $N/2$, applied recursively.
 
 **Computational efficiency:**
+
 | Method | Operations |
 |--------|------------|
 | Direct DFT | $N^2$ |

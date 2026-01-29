@@ -127,7 +127,7 @@ True.
 
 Graphically:
 
-![](graphics/UA/1.2.5a.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/1.2.5a.png)
 
 In words:
 
@@ -145,7 +145,7 @@ If $x \in A^{c} \cup B^{c}$, then $x \in A^{c}$ *or* $x \in B^{c}$. This means t
 
 > Show $\left. (A \cup B) \right.^{c} = A^{c} \cap B^{c}$ by demonstrating inclusion both ways.
 
-![](graphics/UA/1.2.5c.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/1.2.5c.png)
 
 We need to show two things to demonstrate inclusion both ways:
 
@@ -333,11 +333,11 @@ To show this, plot $x^{2}$ using the following Mathematica command:
 
 where the $x$-axis runs from -2 to 2, and so the values on the $y$-axis run from 0 to 4.
 
-![](graphics/UA/1.2.9-1.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/1.2.9-1.png)
 
 and $f:\left. \lbrack - 1,1\rbrack \right. \rightarrow \left. \lbrack 0,1\rbrack \right.$.
 
-![](graphics/UA/1.2.9-2.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/1.2.9-2.png)
 
 Now, $A \cap B = \left. \lbrack 0,1\rbrack \right.$, and so $f^{- 1}\left. (A \cap B) \right. = f^{- 1}\left. \left( \left. \lbrack 0,1\rbrack \right. \right) \right. = \left. \lbrack - 1,1\rbrack \right..$
 
@@ -562,7 +562,7 @@ Let $s_{a} = \sup A$ and $s_{b} = \sup B$.
 
 Now let $\epsilon = s_{b} - s_{a} > 0$. By Lemma 1.3.8, there exists an element $b \in B$ satisfying $s_{b} - \epsilon < b$, which implies that $s_{a} < b$. Because $s_{a}$ is an [upper_bound](/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound/) for $A$, then $b$ is an [upper_bound](/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound/) as well.
 
-![](graphics/UA/1.3.9a.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/1.3.9a.png)
 
 ### (b)
 
@@ -582,13 +582,13 @@ True.
 
 Since $B \supseteq A$, all elements of $B$ are elements of $A$, thus $\sup A \leq b\quad\forall b \in B$. By Definition 1.3.2 part (ii), for some $c \in R$ that is an [upper_bound](/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound/) for $B$, $b \leq c\quad\forall b \in B$. Because $\sup B$ is an [upper_bound](/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound/) for $A$, $\sup A \leq \sup B$.
 
-![](graphics/UA/1.3.11a.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/1.3.11a.png)
 
 ### (b)
 
 > If $\sup A < \inf B$ for sets $A$ and $B$, then there exists a $c \in \mathbb{R}$ satisfying $a < c, < b\quad\forall a \in A\mathrm{\text{ and }}\forall b \in B$.
 
-![](graphics/UA/1.3.11b.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/1.3.11b.png)
 
 ### (c)
 
@@ -1446,7 +1446,7 @@ because both $s_{n},S \in I_{n}$.
 
 Some depictions of this are shown on the next page.
 
-![](graphics/UA/2.7.1b.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/2.7.1b.png)
 
 ### (c)
 
@@ -1965,7 +1965,7 @@ For each $s \in \left. \lbrack 0,2\rbrack \right.$, the line $x + y = s$ must in
 
 To argue by indiction, suppose that we can find $x_{n},y_{n} \in C_{n}$ such that $x_{n} + y_{n} = s$. To show that this must hold for $n + 1$, let's focus attention on a square from the $n$th stage where $x_{n} + y_{n} = s$ holds (i.e., where $x + y = s$ intersects an $n$th stage square). Moving to the $\left. (n + 1) \right.$th stage means removing the open middle third of this shaded region. But this results in a situation precisely like the one in Figure 3.1, implying that the line $x + y = s$ must intersect a $\left. (n + 1) \right.$st stage square. This shows that there exist $x_{n + 1},y_{n + 1} \in C_{n + 1}$ where $x_{n + 1} + y_{n + 1} = s$.
 
-![](graphics/UA/3.3.7a.png)
+![](/images/notes/Areas/mathematics/books/graphics/UA/3.3.7a.png)
 
 ### (b)
 

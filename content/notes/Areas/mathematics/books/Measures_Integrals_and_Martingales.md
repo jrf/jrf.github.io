@@ -118,7 +118,7 @@ Thus, $\mathcal{l}\left. (I) \right. = \mathcal{l}\left. \lbrack 0,1\rbrack \rig
 
 > Let $K_{0} \subseteq \mathbb{R}$ be a line of length 1. We get $K_{1}$ by replacing the middle third of $K_{0}$ by the sides of an equilateral triangle. By iterating this procedure we get the curves $K_{0},K_{1},K_{2},\ldots,K_{n}$ (see below) which defines in the limit the Koch_snowflake $K_{\infty}$. Find the length of $K_{n}$ and $K_{\infty}$.
 >
-> ![](./graphics/MIM/1.4.png)
+> ![](/images/notes/Areas/mathematics/books/graphics/MIM/1.4.png)
 
 In each step, the total length increases by the factor $4/3$, since we remove the middle interval with length $1/3$ and replace it with two copies constituting the sides of an equilateral triangle with length $2/3$. Thus,
 
@@ -148,7 +148,7 @@ $$
 
 > Let $S_{0} \subseteq \mathbb{R}^{2}$ be a solid equilateral triangle. We get $S_{1}$ by removing the middle triangle whose vertices are the midpoints of the sides of $S_{1}$. By repeating this procedure with the four triangles which make up $S_{1}$ etc, we get $S_{0},S_{1},S_{2},\ldots,S_{n}$ (see below). The Sierpinksi_triangle is $S_{\infty} = \bigcap_{n = 0}^{\infty}S_{n}$. Find the area of $S_{n}$ and $S$ if the side-length of $S_{0}$ is $s = 1$.
 >
-> ![](./graphics/MIM/1.5.png)
+> ![](/images/notes/Areas/mathematics/books/graphics/MIM/1.5.png)
 
 In each step the total area is decreased by factor $3/4$, since we remove the middle triangle with area $1/4$. Thus
 

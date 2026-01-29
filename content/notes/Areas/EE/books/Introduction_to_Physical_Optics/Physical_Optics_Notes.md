@@ -74,7 +74,7 @@ This is simply equivalent to treating the input $g_1(\bar{x}_1)$ as an infinite 
 <div class="callout-title"><span class="callout-icon">📋</span>Linear System and Superposition</div>
 <div class="callout-content">
 
-![Linear system diagram](images/linear_system.svg)
+![Linear system diagram](/images/notes/Areas/EE/books/Introduction_to_Physical_Optics/images/linear_system.svg)
 
 **Input plane (blue):** Point sources $g_1(\bar{x}_0)\delta(\bar{x}_1 - \bar{x}_0)$ represented as dots. Each point is a [delta function](/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function/) weighted by the input function $g_1(\bar{x}_1)$.
 
@@ -233,7 +233,7 @@ Capacitors, resistors, etc. do not age - their behavior doesn't depend on absolu
 <div class="callout-content">
 
 Assume magnification is unity, and ignore inversion.
-![Lens imaging system with finite resolution](images/lens_finite_resolution.svg)
+![Lens imaging system with finite resolution](/images/notes/Areas/EE/books/Introduction_to_Physical_Optics/images/lens_finite_resolution.svg)
 
 Point objects in the object plane (dots 1, 2, 3) are imaged through a lens onto the image plane. Due to **diffraction** and **aberrations**, each point does not map to a perfect point — instead it spreads into an **Airy disk** pattern (concentric rings). This spreading is described by the **point spread function (PSF)** of the system. The finite size of the PSF limits the system's ability to resolve fine details.
 
@@ -612,7 +612,7 @@ $$
 
 The phasor diagram provides the **geometric explanation** for the orthogonality of complex exponentials and for the appearance of the delta function.
 
-![Phasor interpretation of Fourier orthogonality](images/phasor_orthogonality.svg)
+![Phasor interpretation of Fourier orthogonality](/images/notes/Areas/EE/books/Introduction_to_Physical_Optics/images/phasor_orthogonality.svg)
 
 **Consequence for LSI Systems: Diagonalization in Frequency**
 
@@ -765,7 +765,7 @@ $$
 | Eigenfunctions | $e^{j2\pi fx}$ | $x^{j2\pi f}$ |
 | Transform | Fourier | Mellin |
 
-![Fourier vs Mellin eigenfunctions](images/fourier_vs_mellin_eigenfunctions.svg)
+![Fourier vs Mellin eigenfunctions](/images/notes/Areas/EE/books/Introduction_to_Physical_Optics/images/fourier_vs_mellin_eigenfunctions.svg)
 
 **Connection to Fourier Transform**
 
@@ -951,7 +951,7 @@ $$
 
 representing wavefronts tilted at an angle determined by the ratio $f_y/f_x$.
 
-![Grid pattern vs tilted plane wave](images/grid_vs_plane_wave.svg)
+![Grid pattern vs tilted plane wave](/images/notes/Areas/EE/books/Introduction_to_Physical_Optics/images/grid_vs_plane_wave.svg)
 
 **The Problem with Sines:**
 
@@ -1068,7 +1068,7 @@ down. The spatial Fourier transform of an arbitrary two-dimensional field can be
 - The **angle** of the plane wave corresponds to the spatial frequency
 - The **amplitude and phase** of the plane wave corresponds to the complex Fourier component associated with that spatial frequency
 
-![Plane Wave Geometry: Angle to Spatial Frequency](images/plane_wave_geometry.svg)
+![Plane Wave Geometry: Angle to Spatial Frequency](/images/notes/Areas/EE/books/Introduction_to_Physical_Optics/images/plane_wave_geometry.svg)
 
 <div class="callout callout-example">
 <div class="callout-title"><span class="callout-icon">📋</span>Sanity Check: Limiting Cases</div>
@@ -1091,7 +1091,7 @@ Verify that $f_x = \frac{\cos\theta}{\lambda}$ behaves correctly at extreme angl
 </div>
 </div>
 
-![Sanity Check: Limiting Cases](images/sanity_check_limiting_cases.svg)
+![Sanity Check: Limiting Cases](/images/notes/Areas/EE/books/Introduction_to_Physical_Optics/images/sanity_check_limiting_cases.svg)
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Aside</div>

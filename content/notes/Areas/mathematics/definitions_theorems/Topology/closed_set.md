@@ -18,4 +18,4 @@ The union of a finite collection of closed sets is closed.
 
 ### (ii)
 
-The interinterion of an arbitrary collection of closed sets is closed
+The intersection of an arbitrary collection of closed sets is closed

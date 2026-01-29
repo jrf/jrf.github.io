@@ -14,7 +14,7 @@ $$
 
 
 
-has a non-empty interinterion. That is to say
+has a non-empty intersection. That is to say
 
 
 
@@ -50,4 +50,4 @@ $$
 
 Now, consider a particular $I_{n} = \left. \left\lbrack a_{n},b_{n} \right\rbrack \right.$. Because $x$ is an [upper_bound](/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound/) for $A$, we have $a_{n} \leq x$. The fact that each $b_{n}$ is an [upper_bound](/notes/areas/mathematics/definitions_theorems/real_analysis/upper_bound/) for $A$ and that $x$ is the least upper bound implies $x \leq b_{n}$.
 
-All together then, we have $a_{n} \leq x \leq b_{n}$, which means $x \in I_{n}$ for every choice of $n \in \mathbb{N}$. Hence, $x \in {\bigcap(n = 1)}^{\infty}I_{n}$, and the interinterion is not empty.
+All together then, we have $a_{n} \leq x \leq b_{n}$, which means $x \in I_{n}$ for every choice of $n \in \mathbb{N}$. Hence, $x \in {\bigcap(n = 1)}^{\infty}I_{n}$, and the intersection is not empty.

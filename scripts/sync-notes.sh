@@ -60,8 +60,11 @@ for SOURCE_DIR in "${SOURCE_DIRS[@]}"; do
             fi
         fi
 
+        # Get relative directory for image path conversion
+        note_rel_dir=$(dirname "$rel_path")
+
         # Process note with Python script
-        python3 "$SCRIPT_DIR/process_note.py" "$file" "$MAPPING_FILE" "$title" > "$target_file"
+        python3 "$SCRIPT_DIR/process_note.py" "$file" "$MAPPING_FILE" "$title" "$note_rel_dir" > "$target_file"
 
         echo "Synced: $rel_path"
     done

@@ -10,4 +10,4 @@ A [function](/notes/areas/mathematics/definitions_theorems/set_theory/function/)
 
 In other words, the property of being *surjective* ensures that every element of $Y$ corresponds to something in $X$.
 
-![](/images/notes/Areas/mathematics/graphics/misc/surjection.png)
+![](/images/notes/Areas/mathematics/definitions_theorems/Set_Theory/graphics/misc/surjection.png)

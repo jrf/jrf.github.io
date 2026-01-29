@@ -65,7 +65,7 @@ def convert_relative_links(content, mapping):
         if path.startswith(('http://', 'https://', '#', '/')):
             return match.group(0)
 
-        # Skip image links
+        # Skip image links (handled separately)
         if re.search(r'\.(png|jpg|jpeg|gif|svg|webp)$', path, re.IGNORECASE):
             return match.group(0)
 
@@ -83,6 +83,39 @@ def convert_relative_links(content, mapping):
 
     # Match markdown links: [text](path)
     content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', replace_relative, content)
+
+    return content
+
+
+def convert_image_paths(content, note_rel_dir):
+    """Convert relative image paths to absolute /images/notes/ paths.
+
+    Args:
+        content: The markdown content
+        note_rel_dir: The note's directory relative to vault (e.g., 'Areas/mathematics/books')
+    """
+    def replace_image(match):
+        alt_text = match.group(1)
+        path = match.group(2)
+
+        # Skip already-absolute paths and external URLs
+        if path.startswith(('/', 'http://', 'https://')):
+            return match.group(0)
+
+        # Only process image files
+        if not re.search(r'\.(png|jpg|jpeg|gif|svg|webp)$', path, re.IGNORECASE):
+            return match.group(0)
+
+        # Remove leading ./ if present
+        path = re.sub(r'^\./', '', path)
+
+        # Build absolute path: /images/notes/{note_dir}/{image_path}
+        absolute_path = f'/images/notes/{note_rel_dir}/{path}'
+
+        return f'![{alt_text}]({absolute_path})'
+
+    # Match image links: ![alt](path)
+    content = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', replace_image, content)
 
     return content
 
@@ -211,7 +244,7 @@ def add_frontmatter(content, title):
     return f'---\ntitle: "{title}"\n---\n\n{content}'
 
 
-def process_note(input_file, mapping_file, title):
+def process_note(input_file, mapping_file, title, note_rel_dir):
     """Process a single note file."""
     mapping = load_mapping(mapping_file)
 
@@ -220,6 +253,7 @@ def process_note(input_file, mapping_file, title):
 
     content = convert_wikilinks(content, mapping)
     content = convert_relative_links(content, mapping)
+    content = convert_image_paths(content, note_rel_dir)
     content = convert_callouts(content)
     content = fix_math_blocks(content)
     content = add_frontmatter(content, title)
@@ -228,8 +262,8 @@ def process_note(input_file, mapping_file, title):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 4:
-        print(f'Usage: {sys.argv[0]} <input_file> <mapping_file> <title>', file=sys.stderr)
+    if len(sys.argv) != 5:
+        print(f'Usage: {sys.argv[0]} <input_file> <mapping_file> <title> <note_rel_dir>', file=sys.stderr)
         sys.exit(1)
 
-    process_note(sys.argv[1], sys.argv[2], sys.argv[3])
+    process_note(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])

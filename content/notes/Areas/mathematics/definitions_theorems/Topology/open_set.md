@@ -16,15 +16,15 @@ The union of an arbitrary collection of open sets is open.
 
 Proof: see [here](https://www.youtube.com/watch?v=rv-EKaHef0Q).
 
-![](/images/notes/Areas/mathematics/graphics/UA/union_open_sets.png)
+![](/images/notes/Areas/mathematics/definitions_theorems/Topology/graphics/UA/union_open_sets.png)
 
 ### (ii)
 
-The interinterion of a finite collection of open sets is open.
+The intersection of a finite collection of open sets is open.
 
 Proof: see [here](https://www.youtube.com/watch?v=LUlPknpNvEo).
 
-![](/images/notes/Areas/mathematics/graphics/UA/intersection_open_sets.png)
+![](/images/notes/Areas/mathematics/definitions_theorems/Topology/../graphics/UA/intersection_open_sets.png)
 
 ### (iii)
 

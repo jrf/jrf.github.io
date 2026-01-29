@@ -6,7 +6,7 @@ title: "pairwise disjoint"
 
 ## Definition
 
-For some collection of sets $S_{1},S_{2},\ldots,S_{n}$, we say that these sets are *pairwise disjoint* if any two of these sets have empty interinterion.
+For some collection of sets $S_{1},S_{2},\ldots,S_{n}$, we say that these sets are *pairwise disjoint* if any two of these sets have empty intersection.
 
 # Related Articles
 
