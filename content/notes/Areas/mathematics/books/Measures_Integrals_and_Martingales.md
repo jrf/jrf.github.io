@@ -1025,7 +1025,7 @@ Checking the conditions for a measure, we have:
 
 (M${}_{1}$): Since $\varnothing$ contains no points, $x \notin \varnothing$ and so $\delta_{x}\left. (\varnothing) \right. = 0$.
 
-(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}} \subseteq \mathcal{A}$ be a sequence of pairwise disjoint [measurable sets](measure). If $x \in \bigcup_{j \in \mathbb{N}}A_{j}$, $j_{0}$ with $x \in A_{j_{0}}$, i.e. that there is exactly one such set (and no more, since all sets that we are considering are pairwise disjoint) that contains $x$. Hence,
+(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}} \subseteq \mathcal{A}$ be a sequence of pairwise disjoint [measurable sets](/notes/areas/mathematics/definitions_theorems/measure_theory/measure/). If $x \in \bigcup_{j \in \mathbb{N}}A_{j}$, $j_{0}$ with $x \in A_{j_{0}}$, i.e. that there is exactly one such set (and no more, since all sets that we are considering are pairwise disjoint) that contains $x$. Hence,
 
 
 

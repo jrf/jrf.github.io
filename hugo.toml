@@ -18,6 +18,7 @@ mainSections = ["posts"]
 [params.homeInfoParams]
 Title = "Posts"
 Content = "Notes on math, science, and other explorations."
+imageUrl = "/img/avatar.png"
 
 [[params.socialIcons]]
 name = "github"

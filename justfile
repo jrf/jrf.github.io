@@ -49,3 +49,14 @@ check: build
 # Watch for changes and rebuild (without serving)
 watch:
     hugo --watch
+
+# Sync notes from Obsidian vault
+sync:
+    ./scripts/sync-notes.sh
+
+# Build the graph.json for note visualization
+graph:
+    python3 ./scripts/build_graph.py
+
+# Sync notes and rebuild graph
+sync-all: sync graph

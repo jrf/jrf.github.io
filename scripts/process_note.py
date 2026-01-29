@@ -54,6 +54,39 @@ def convert_wikilinks(content, mapping):
     return content
 
 
+def convert_relative_links(content, mapping):
+    """Convert relative markdown links to absolute /notes/ paths."""
+    # Match [text](path) where path contains ../ or ends with .md
+    def replace_relative(match):
+        display = match.group(1)
+        path = match.group(2)
+
+        # Skip external links, anchors, and already-absolute paths
+        if path.startswith(('http://', 'https://', '#', '/')):
+            return match.group(0)
+
+        # Skip image links
+        if re.search(r'\.(png|jpg|jpeg|gif|svg|webp)$', path, re.IGNORECASE):
+            return match.group(0)
+
+        # Extract filename without .md extension
+        filename = path.split('/')[-1]
+        filename = re.sub(r'\.md$', '', filename)
+
+        # Look up in mapping
+        url = mapping.get(filename)
+        if url:
+            return f'[{display}]({hugo_url(url)})'
+
+        # Return original if not found
+        return match.group(0)
+
+    # Match markdown links: [text](path)
+    content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', replace_relative, content)
+
+    return content
+
+
 def convert_callouts(content):
     """Convert Obsidian callouts to styled HTML divs.
 
@@ -186,6 +219,7 @@ def process_note(input_file, mapping_file, title):
         content = f.read()
 
     content = convert_wikilinks(content, mapping)
+    content = convert_relative_links(content, mapping)
     content = convert_callouts(content)
     content = fix_math_blocks(content)
     content = add_frontmatter(content, title)

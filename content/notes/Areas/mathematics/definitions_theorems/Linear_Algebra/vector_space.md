@@ -20,6 +20,6 @@ A *vector space* is a set $V$ along with an addition on $V$ and a scalar multipl
 
 6.  Distributive properties: $a\left. (u + v) \right. = au + av$ and $\left. (a + b) \right.v = av + bv$ for all $a,b \in \mathbb{F}$ and all $u,v \in V$
 
-![](./graphics/misc/vector_space.png)
+![](/images/notes/Areas/mathematics/graphics/misc/vector_space.png)
 
 ## Related Articles

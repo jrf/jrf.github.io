@@ -319,6 +319,12 @@
       "category": "Abstract_Algebra"
     },
     {
+      "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "title": "eigenvalue",
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/eigenvalue.md",
+      "category": "Linear_Algebra"
+    },
+    {
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/span",
       "title": "span",
       "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/span.md",
@@ -340,6 +346,12 @@
       "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/list",
       "title": "list",
       "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/list.md",
+      "category": "Linear_Algebra"
+    },
+    {
+      "id": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "title": "eigenfunction",
+      "path": "Areas/mathematics/definitions_theorems/Linear_Algebra/eigenfunction.md",
       "category": "Linear_Algebra"
     },
     {
@@ -739,6 +751,12 @@
       "category": "Real_Analysis"
     },
     {
+      "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/absolutely_integrable",
+      "title": "absolutely integrable",
+      "path": "Areas/mathematics/definitions_theorems/Real_Analysis/absolutely_integrable.md",
+      "category": "Real_Analysis"
+    },
+    {
       "id": "/notes/areas/mathematics/definitions_theorems/real_analysis/connected_sets",
       "title": "Connected Sets",
       "path": "Areas/mathematics/definitions_theorems/Real_Analysis/Connected_Sets.md",
@@ -799,6 +817,30 @@
       "category": "Functional_Analysis"
     },
     {
+      "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function",
+      "title": "Bessel function",
+      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Bessel_function.md",
+      "category": "Functional_Analysis"
+    },
+    {
+      "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "title": "Fourier transform",
+      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Fourier_transform.md",
+      "category": "Functional_Analysis"
+    },
+    {
+      "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "title": "Dirac delta function",
+      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Dirac_delta_function.md",
+      "category": "Functional_Analysis"
+    },
+    {
+      "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/parseval_theorem",
+      "title": "Parseval theorem",
+      "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Parseval_theorem.md",
+      "category": "Functional_Analysis"
+    },
+    {
       "id": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function",
       "title": "Schwartz function",
       "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Schwartz_function.md",
@@ -809,6 +851,54 @@
       "title": "Schwartz space",
       "path": "Areas/mathematics/definitions_theorems/Functional_Analysis/Schwartz_space.md",
       "category": "Functional_Analysis"
+    },
+    {
+      "id": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "title": "Physical Optics Notes",
+      "path": "Areas/EE/books/Introduction_to_Physical_Optics/Physical_Optics_Notes.md",
+      "category": "Books"
+    },
+    {
+      "id": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "title": "Introduction to Physical Optics",
+      "path": "Areas/EE/books/Introduction_to_Physical_Optics/Introduction_to_Physical_Optics.md",
+      "category": "Books"
+    },
+    {
+      "id": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "title": "linear shift-invariant system",
+      "path": "Areas/EE/definitions_theorems/Signals_Systems/linear_shift-invariant_system.md",
+      "category": "Signals_Systems"
+    },
+    {
+      "id": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "title": "point spread function",
+      "path": "Areas/EE/definitions_theorems/Signals_Systems/point_spread_function.md",
+      "category": "Signals_Systems"
+    },
+    {
+      "id": "/notes/areas/ee/definitions_theorems/signals_systems/whittaker-shannon_sampling_theorem",
+      "title": "Whittaker-Shannon sampling theorem",
+      "path": "Areas/EE/definitions_theorems/Signals_Systems/Whittaker-Shannon_sampling_theorem.md",
+      "category": "Signals_Systems"
+    },
+    {
+      "id": "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "title": "superposition",
+      "path": "Areas/EE/definitions_theorems/Signals_Systems/superposition.md",
+      "category": "Signals_Systems"
+    },
+    {
+      "id": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "title": "impulse response",
+      "path": "Areas/EE/definitions_theorems/Signals_Systems/impulse_response.md",
+      "category": "Signals_Systems"
+    },
+    {
+      "id": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function",
+      "title": "transfer function",
+      "path": "Areas/EE/definitions_theorems/Signals_Systems/transfer_function.md",
+      "category": "Signals_Systems"
     }
   ],
   "edges": [
@@ -3854,6 +3944,10 @@
     },
     {
       "source": "/notes/areas/mathematics/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/definitions_theorems/measure_theory/measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/definitions_theorems/measure_theory/measurable_space"
     },
     {
@@ -5317,6 +5411,26 @@
       "target": "/notes/areas/mathematics/definitions_theorems/measure_theory/borel_sigma-algebra"
     },
     {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/vector_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/subspace"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent"
+    },
+    {
       "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/span",
       "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/linear_combination"
     },
@@ -5331,6 +5445,54 @@
     {
       "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/polynomial",
       "target": "/notes/areas/mathematics/definitions_theorems/set_theory/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/set_theory/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/set_theory/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/subspace"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/set_theory/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis"
     },
     {
       "source": "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent",
@@ -6121,6 +6283,10 @@
       "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/differentiable"
     },
     {
+      "source": "/notes/areas/mathematics/definitions_theorems/real_analysis/absolutely_integrable",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
       "source": "/notes/areas/mathematics/definitions_theorems/real_analysis/connected_sets",
       "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/connected_sets"
     },
@@ -6229,6 +6395,98 @@
       "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/cantor_set"
     },
     {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/set_theory/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/abstract_algebra/automorphism"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/tempered_distribution"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/set_theory/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/set_theory/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/tempered_distribution"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/parseval_theorem",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
       "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function",
       "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function"
     },
@@ -6246,6 +6504,10 @@
     },
     {
       "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space",
       "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/tempered_distribution"
     },
     {
@@ -6255,6 +6517,638 @@
     {
       "source": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space",
       "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/whittaker-shannon_sampling_theorem"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/parseval_theorem"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/absolutely_integrable"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/parseval_theorem"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/whittaker-shannon_sampling_theorem"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/parseval_theorem"
+    },
+    {
+      "source": "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/whittaker-shannon_sampling_theorem"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/linear_combination"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "target": "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "target": "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function",
+      "target": "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    },
+    {
+      "source": "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function",
+      "target": "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution"
     }
   ],
   "backlinks": {
@@ -6308,6 +7202,7 @@
       "/notes/areas/mathematics/definitions_theorems/set_theory/range",
       "/notes/areas/mathematics/definitions_theorems/set_theory/preimage",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/polynomial",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
       "/notes/areas/mathematics/definitions_theorems/real_analysis/linear_transformation",
       "/notes/areas/mathematics/definitions_theorems/real_analysis/uniform_convergence",
       "/notes/areas/mathematics/definitions_theorems/real_analysis/weierstrass_m-test",
@@ -6326,6 +7221,8 @@
       "/notes/areas/mathematics/definitions_theorems/real_analysis/differentiable",
       "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_extension_theorem",
       "/notes/areas/mathematics/definitions_theorems/real_analysis/intermediate_value_theorem",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
       "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function",
       "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
     ],
@@ -6376,7 +7273,8 @@
     "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure": [
       "/notes/areas/mathematics/measure_theory",
       "/notes/areas/mathematics/books/measures_integrals_and_martingales",
-      "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure"
+      "/notes/areas/mathematics/definitions_theorems/measure_theory/dirac_measure",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function"
     ],
     "/notes/areas/mathematics/definitions_theorems/measure_theory/discrete_probability_measure": [
       "/notes/areas/mathematics/measure_theory"
@@ -6797,7 +7695,16 @@
       "/notes/areas/mathematics/definitions_theorems/real_analysis/cantor_set"
     ],
     "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution": [
-      "/notes/areas/mathematics/real_analysis"
+      "/notes/areas/mathematics/real_analysis",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
     ],
     "/notes/areas/mathematics/definitions_theorems/real_analysis/fractal_dimension": [
       "/notes/areas/mathematics/real_analysis",
@@ -6839,13 +7746,15 @@
     ],
     "/notes/areas/mathematics/definitions_theorems/abstract_algebra/automorphism": [
       "/notes/areas/mathematics/abstract_algebra",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
       "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
     ],
     "/notes/areas/mathematics/definitions_theorems/abstract_algebra/generator": [
       "/notes/areas/mathematics/abstract_algebra"
     ],
     "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis": [
-      "/notes/areas/mathematics/linear_algebra"
+      "/notes/areas/mathematics/linear_algebra",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction"
     ],
     "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_subspace": [
       "/notes/areas/mathematics/linear_algebra"
@@ -6862,7 +7771,8 @@
     "/notes/areas/mathematics/definitions_theorems/linear_algebra/linear_combination": [
       "/notes/areas/mathematics/linear_algebra",
       "/notes/areas/mathematics/books/linear_algebra_done_right",
-      "/notes/areas/mathematics/definitions_theorems/linear_algebra/span"
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/span",
+      "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
     ],
     "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_dependent": [
       "/notes/areas/mathematics/linear_algebra",
@@ -6871,6 +7781,7 @@
     "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent": [
       "/notes/areas/mathematics/linear_algebra",
       "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_independent",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/linearly_dependent"
@@ -6900,12 +7811,15 @@
     "/notes/areas/mathematics/definitions_theorems/linear_algebra/subspace": [
       "/notes/areas/mathematics/linear_algebra",
       "/notes/areas/mathematics/books/linear_algebra_done_right",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_subspace"
     ],
     "/notes/areas/mathematics/definitions_theorems/linear_algebra/vector_space": [
       "/notes/areas/mathematics/linear_algebra",
       "/notes/areas/mathematics/books/linear_algebra_done_right",
       "/notes/areas/mathematics/definitions_theorems/topology/closed_set",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/basis",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/finite-dimensional_vector_space",
       "/notes/areas/mathematics/definitions_theorems/linear_algebra/infinite-dimensional_vector_space",
@@ -6914,15 +7828,20 @@
     "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function": [
       "/notes/areas/mathematics/functional_analysis",
       "/notes/areas/mathematics/definitions_theorems/real_analysis/convolution",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
       "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_function",
       "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
     ],
     "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space": [
       "/notes/areas/mathematics/functional_analysis",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
       "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
     ],
     "/notes/areas/mathematics/definitions_theorems/functional_analysis/tempered_distribution": [
       "/notes/areas/mathematics/functional_analysis",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
       "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space"
     ],
     "/notes/areas/mathematics/definitions_theorems/proof_techniques/proof_by_contradiction": [
@@ -6941,6 +7860,80 @@
       "/notes/areas/mathematics/definitions_theorems/topology/compactness",
       "/notes/areas/mathematics/definitions_theorems/set_theory/cardinality",
       "/notes/areas/mathematics/definitions_theorems/real_analysis/continuous_limit_theorem"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue": [
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction": [
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenvalue",
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform": [
+      "/notes/areas/mathematics/definitions_theorems/linear_algebra/eigenfunction",
+      "/notes/areas/mathematics/definitions_theorems/real_analysis/absolutely_integrable",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/fourier_transform",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/parseval_theorem",
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/schwartz_space",
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "/notes/areas/ee/definitions_theorems/signals_systems/superposition"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function": [
+      "/notes/areas/mathematics/definitions_theorems/functional_analysis/dirac_delta_function",
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    ],
+    "/notes/areas/ee/definitions_theorems/signals_systems/superposition": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "/notes/areas/ee/definitions_theorems/signals_systems/superposition",
+      "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    ],
+    "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response",
+      "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function"
+    ],
+    "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system",
+      "/notes/areas/ee/definitions_theorems/signals_systems/point_spread_function",
+      "/notes/areas/ee/definitions_theorems/signals_systems/impulse_response"
+    ],
+    "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/ee/definitions_theorems/signals_systems/transfer_function": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics",
+      "/notes/areas/ee/definitions_theorems/signals_systems/linear_shift-invariant_system"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/functional_analysis/bessel_function": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics"
+    ],
+    "/notes/areas/ee/definitions_theorems/signals_systems/whittaker-shannon_sampling_theorem": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/functional_analysis/parseval_theorem": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/physical_optics_notes",
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics"
+    ],
+    "/notes/areas/mathematics/definitions_theorems/real_analysis/absolutely_integrable": [
+      "/notes/areas/ee/books/introduction_to_physical_optics/introduction_to_physical_optics"
     ]
   }
 }

@@ -10,4 +10,4 @@ A [function](/notes/areas/mathematics/definitions_theorems/set_theory/function/)
 
 In other words, the property of being *injective* means that no two elements of $X$ correspond to the same element of $Y$.
 
-![](./graphics/misc/injection.png)
+![](/images/notes/Areas/mathematics/graphics/misc/injection.png)
