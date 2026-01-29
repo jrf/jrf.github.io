@@ -157,6 +157,19 @@
   opacity: 0.7;
 }
 
+.legend-item.active {
+  background: var(--code-bg);
+  border-radius: 4px;
+  margin-left: -4px;
+  margin-right: -4px;
+  padding: 2px 4px;
+}
+
+.legend-item.active .legend-label {
+  color: var(--primary);
+  font-weight: 500;
+}
+
 .legend-color {
   width: 12px;
   height: 12px;
@@ -395,6 +408,7 @@
   let selectedSearchIndex = -1;
   let connectedNodes = []; // For Tab navigation
   let tabIndex = -1;
+  let activeCategory = null;
 
   // Generate consistent colors for any category using HSL
   const categoryColorCache = {};
@@ -424,6 +438,7 @@
   categories.forEach(cat => {
     const item = document.createElement('div');
     item.className = 'legend-item';
+    item.dataset.category = cat;
     item.innerHTML = `
       <span class="legend-color" style="background: ${getCategoryColor(cat)}"></span>
       <span class="legend-label">${cat.replace(/_/g, ' ')}</span>
@@ -437,7 +452,13 @@
     .append('svg')
     .attr('width', width)
     .attr('height', height)
-    .attr('viewBox', [0, 0, width, height]);
+    .attr('viewBox', [0, 0, width, height])
+    .on('click', (event) => {
+      // Clear category filter when clicking on graph background
+      if (event.target.tagName === 'svg' && activeCategory) {
+        clearCategoryFilter();
+      }
+    });
 
   // Add zoom behavior with state persistence
   const g = svg.append('g');
@@ -628,6 +649,11 @@
 
   // Search functionality
   function performSearch(query) {
+    // Clear any active category filter when searching
+    if (activeCategory) {
+      clearCategoryFilter();
+    }
+
     if (!query.trim()) {
       searchResults.classList.remove('open');
       searchMatches = [];
@@ -704,8 +730,6 @@
     performSearch(e.target.value);
   });
 
-  let activeCategory = null;
-
   function filterByCategory(category) {
     // Toggle off if clicking the same category
     if (activeCategory === category) {
@@ -744,12 +768,14 @@
       return;
     }
 
-    // Escape to close panel or clear search
+    // Escape to close panel, clear search, or clear category filter
     if (e.key === 'Escape') {
       if (searchInput.value) {
         searchInput.value = '';
         performSearch('');
         searchInput.blur();
+      } else if (activeCategory) {
+        clearCategoryFilter();
       } else if (panel.classList.contains('open')) {
         closePanel();
       }
