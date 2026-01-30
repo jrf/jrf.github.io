@@ -25,34 +25,34 @@ def extract_category(filepath: Path, content_dir: Path) -> str:
     """Extract category from file path.
 
     Strategy:
-    - For paths containing 'definitions_theorems/TopicName/' -> TopicName
+    - For paths containing 'definitions/' -> use parent of definitions (TopicName)
     - For paths containing 'books/' -> Books
-    - For top-level topic files -> use filename as category
+    - For topic files like TopicName/TopicName.md -> use TopicName
     - Otherwise -> Uncategorized
     """
     rel_path = filepath.relative_to(content_dir)
     parts = [p.lower() for p in rel_path.parts]
     original_parts = rel_path.parts
 
-    # Check for definitions_theorems pattern
-    if "definitions_theorems" in parts:
-        idx = parts.index("definitions_theorems")
-        if len(original_parts) > idx + 1:
-            return original_parts[idx + 1]
+    # Check for definitions pattern: TopicName/definitions/file.md
+    if "definitions" in parts:
+        idx = parts.index("definitions")
+        if idx > 0:
+            return original_parts[idx - 1]
 
     # Check for books directory
     if "books" in parts:
         return "Books"
 
-    # For files directly under mathematics/ (like Set_Theory.md, Topology.md)
-    # Use the filename as category
-    if "mathematics" in parts:
-        math_idx = parts.index("mathematics")
-        # If the file is directly under mathematics/ (not in a subdirectory)
-        if len(original_parts) == math_idx + 2:  # mathematics/File.md
-            stem = filepath.stem
-            if not stem.startswith('_') and stem.lower() != 'index':
-                return stem
+    # For topic files like mathematics/TopicName/TopicName.md or
+    # electrical_engineering/TopicName/TopicName.md
+    # The topic is the parent directory
+    if len(original_parts) >= 3:
+        # Path structure: Area/TopicName/File.md
+        area = parts[1] if len(parts) > 1 else None
+        if area and filepath.stem.lower() != 'index' and not filepath.stem.startswith('_'):
+            # Return the topic directory name (second-to-last component)
+            return original_parts[-2]
 
     return "Uncategorized"
 

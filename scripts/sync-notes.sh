@@ -8,7 +8,7 @@ VAULT_PATH="/Users/fetzer.jeffrey/repos/jrfwiki"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 HUGO_PATH="${HUGO_PATH:-$(dirname "$SCRIPT_DIR")}"
 NOTES_PATH="$HUGO_PATH/content/notes"
-SOURCE_DIRS=("Areas/mathematics" "Areas/EE")
+SOURCE_DIRS=("Areas/mathematics" "Areas/electrical_engineering")
 
 # Clean existing notes
 rm -rf "$NOTES_PATH"
