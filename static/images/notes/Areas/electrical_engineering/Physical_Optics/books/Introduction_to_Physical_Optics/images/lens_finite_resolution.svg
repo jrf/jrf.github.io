@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="850" height="450" viewBox="0 0 850 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#2563eb"/>
+    </marker>
+    <!-- Airy disk gradient (for blur effect) -->
+    <radialGradient id="airy1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1"/>
+      <stop offset="30%" style="stop-color:#dc2626;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#dc2626;stop-opacity:0.3"/>
+      <stop offset="70%" style="stop-color:#dc2626;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="450" fill="#fefefe"/>
+
+  <!-- ============ OPTICAL AXIS ============ -->
+  <line x1="50" y1="200" x2="800" y2="200" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- ============ OBJECT PLANE (Left) ============ -->
+
+  <!-- Vertical axis -->
+  <line x1="150" y1="50" x2="150" y2="350" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- x₁ axis arrow (diagonal, pointing up-right) -->
+  <line x1="150" y1="200" x2="220" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="225" y="95" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#2563eb">x̄₁</text>
+
+  <!-- Point objects (small filled circles) -->
+  <!-- Point 1 - upper left, off axis -->
+  <circle cx="95" cy="120" r="6" fill="#2563eb"/>
+  <text x="75" y="115" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#2563eb">1</text>
+
+  <!-- Point 2 - on the vertical axis, upper -->
+  <circle cx="150" cy="100" r="6" fill="#2563eb"/>
+  <text x="160" y="95" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#2563eb">2</text>
+
+  <!-- Point 3 - on the vertical axis, lower -->
+  <circle cx="150" cy="280" r="6" fill="#2563eb"/>
+  <text x="160" y="290" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#2563eb">3</text>
+
+  <!-- Label: Object -->
+  <text x="120" y="380" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#2563eb">Object</text>
+
+  <!-- ============ LENS (Center) ============ -->
+
+  <!-- Lens shape (ellipse) -->
+  <ellipse cx="400" cy="200" rx="25" ry="100" fill="none" stroke="#2563eb" stroke-width="3"/>
+
+  <!-- Label: Lens -->
+  <text x="375" y="330" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#2563eb">Lens</text>
+
+  <!-- ============ IMAGE PLANE (Right) ============ -->
+
+  <!-- Vertical axis -->
+  <line x1="650" y1="50" x2="650" y2="350" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- x̄₂ axis arrow (diagonal, pointing up-right) -->
+  <line x1="650" y1="200" x2="720" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="725" y="95" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#2563eb">x̄₂</text>
+
+  <!-- Airy disk patterns (concentric circles representing PSF blur) -->
+
+  <!-- Image of Point 1 -->
+  <circle cx="595" cy="120" r="28" fill="url(#airy1)"/>
+  <circle cx="595" cy="120" r="20" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="595" cy="120" r="12" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="595" cy="120" r="4" fill="#dc2626"/>
+  <text x="555" y="115" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#dc2626">1</text>
+
+  <!-- Image of Point 2 -->
+  <circle cx="650" cy="100" r="28" fill="url(#airy1)"/>
+  <circle cx="650" cy="100" r="20" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="650" cy="100" r="12" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="650" cy="100" r="4" fill="#dc2626"/>
+  <text x="680" y="95" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#dc2626">2</text>
+
+  <!-- Image of Point 3 -->
+  <circle cx="650" cy="280" r="28" fill="url(#airy1)"/>
+  <circle cx="650" cy="280" r="20" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="650" cy="280" r="12" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="650" cy="280" r="4" fill="#dc2626"/>
+  <text x="680" y="290" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#dc2626">3</text>
+
+  <!-- Label: Image -->
+  <text x="620" y="365" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#2563eb">Image</text>
+  <text x="580" y="385" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#6b7280">(degraded by diffraction,</text>
+  <text x="595" y="400" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#6b7280">aberrations, etc.)</text>
+
+  <!-- Visual style -->
+  <style>
+    line, path { stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+</svg>
