@@ -28,7 +28,7 @@
       "id": "/notes/areas/mathematics/books/prompt",
       "title": "prompt",
       "path": "Areas/mathematics/books/prompt.md",
-      "category": "Books"
+      "category": "mathematics"
     },
     {
       "id": "/notes/areas/mathematics/complex_analysis/complex_analysis",
@@ -106,7 +106,7 @@
       "id": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "title": "Understanding Analysis",
       "path": "Areas/mathematics/Real_Analysis/books/Understanding_Analysis.md",
-      "category": "Books"
+      "category": "Real_Analysis"
     },
     {
       "id": "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem_for_functional_limits",
@@ -520,7 +520,7 @@
       "id": "/notes/areas/mathematics/linear_algebra/books/linear_algebra_done_right",
       "title": "Linear Algebra Done Right",
       "path": "Areas/mathematics/Linear_Algebra/books/Linear_Algebra_Done_Right.md",
-      "category": "Books"
+      "category": "Linear_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue",
@@ -610,7 +610,7 @@
       "id": "/notes/areas/mathematics/abstract_algebra/books/ideals_varieties_and_algorithms",
       "title": "Ideals Varieties and Algorithms",
       "path": "Areas/mathematics/Abstract_Algebra/books/Ideals_Varieties_and_Algorithms.md",
-      "category": "Books"
+      "category": "Abstract_Algebra"
     },
     {
       "id": "/notes/areas/mathematics/abstract_algebra/definitions/generator",
@@ -634,7 +634,7 @@
       "id": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "title": "Measures Integrals and Martingales",
       "path": "Areas/mathematics/Measure_Theory/books/Measures_Integrals_and_Martingales.md",
-      "category": "Books"
+      "category": "Measure_Theory"
     },
     {
       "id": "/notes/areas/mathematics/measure_theory/definitions/sigma-additivity",
@@ -868,13 +868,13 @@
       "id": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "title": "Physical Optics Notes",
       "path": "Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/Physical_Optics_Notes.md",
-      "category": "Books"
+      "category": "Physical_Optics"
     },
     {
       "id": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/introduction_to_physical_optics",
       "title": "Introduction to Physical Optics",
       "path": "Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/Introduction_to_Physical_Optics.md",
-      "category": "Books"
+      "category": "Physical_Optics"
     },
     {
       "id": "/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system",

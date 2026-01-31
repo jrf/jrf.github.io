@@ -40,8 +40,11 @@ def extract_category(filepath: Path, content_dir: Path) -> str:
         if idx > 0:
             return original_parts[idx - 1]
 
-    # Check for books directory
+    # Check for books directory - use the topic (parent of books)
     if "books" in parts:
+        idx = parts.index("books")
+        if idx > 0:
+            return original_parts[idx - 1]
         return "Books"
 
     # For topic files like mathematics/TopicName/TopicName.md or
