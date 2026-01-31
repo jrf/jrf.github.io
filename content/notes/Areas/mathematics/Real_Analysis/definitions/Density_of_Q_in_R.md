@@ -2,7 +2,7 @@
 title: "Density of Q in R"
 ---
 
-# Density_of_\$bb(Q)\$_in_\$bb(R)\$ {#density-of-mathbbq-in-mathbbr}
+# Density of $\mathbb{Q}$ in $\mathbb{R}$
 
 Theorem: For every two real numbers $a$ and $b$ with $a < b$, there exists a rational number $r$ satisfying $a < r < b$.
 

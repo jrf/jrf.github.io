@@ -6,7 +6,7 @@ title: "compactness"
 
 ## Definition
 
-A set $K \subseteq \mathbb{R}$ is *compact* if every [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) in $K$ has a [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) that converges to a limit that is also in $K$. ([Understanding_Analysis](/notes/areas/mathematics/real_analysis/books/understanding_analysis/) -- Abbott)
+A set $K \subseteq \mathbb{R}$ is *compact* if every [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) in $K$ has a [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) that converges to a [limit](/notes/areas/mathematics/real_analysis/definitions/limit/) that is also in $K$. ([Understanding_Analysis](/notes/areas/mathematics/real_analysis/books/understanding_analysis/) -- Abbott)
 
 ## Related Articles
 

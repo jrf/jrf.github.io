@@ -2,9 +2,9 @@
 title: "Algebraic Differentiability Theorem"
 ---
 
-# [Algebraic_Differentiability_Theorem](/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem/) {#algebraic-partialerentiability-theorem}
+# Algebraic Differentiability Theorem
 
-Let $f$ and $g$ be [function](/notes/areas/mathematics/set_theory/definitions/function/)s defined on an interval $A$, and assume both are partialerentiable at some point $c \in A$. Then,
+Let $f$ and $g$ be [function](/notes/areas/mathematics/set_theory/definitions/function/)s defined on an interval $A$, and assume both are [differentiable](/notes/areas/mathematics/real_analysis/definitions/differentiable/) at some point $c \in A$. Then,
 
 1.  $\left. (f + g) \right.'\left. (c) \right. = f'\left. (c) \right. + g'\left. (c) \right.$
 

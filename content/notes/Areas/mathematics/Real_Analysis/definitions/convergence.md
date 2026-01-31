@@ -2,7 +2,7 @@
 title: "convergence"
 ---
 
-# Convergence_of_a_Sequence
+# Convergence of a Sequence
 
 ## Definition
 

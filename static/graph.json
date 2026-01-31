@@ -469,6 +469,12 @@
       "category": "Real_Analysis"
     },
     {
+      "id": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "title": "limit",
+      "path": "Areas/mathematics/Real_Analysis/definitions/limit.md",
+      "category": "Real_Analysis"
+    },
+    {
       "id": "/notes/areas/mathematics/real_analysis/definitions/sequence",
       "title": "sequence",
       "path": "Areas/mathematics/Real_Analysis/definitions/sequence.md",
@@ -601,6 +607,12 @@
       "category": "Linear_Algebra"
     },
     {
+      "id": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "title": "eigenvector",
+      "path": "Areas/mathematics/Linear_Algebra/definitions/eigenvector.md",
+      "category": "Linear_Algebra"
+    },
+    {
       "id": "/notes/areas/mathematics/linear_algebra/definitions/linearly_dependent",
       "title": "linearly dependent",
       "path": "Areas/mathematics/Linear_Algebra/definitions/linearly_dependent.md",
@@ -619,21 +631,27 @@
       "category": "Abstract_Algebra"
     },
     {
+      "id": "/notes/areas/mathematics/abstract_algebra/definitions/invariant",
+      "title": "invariant",
+      "path": "Areas/mathematics/Abstract_Algebra/definitions/invariant.md",
+      "category": "Abstract_Algebra"
+    },
+    {
       "id": "/notes/areas/mathematics/abstract_algebra/definitions/automorphism",
       "title": "automorphism",
       "path": "Areas/mathematics/Abstract_Algebra/definitions/automorphism.md",
       "category": "Abstract_Algebra"
     },
     {
-      "id": "/notes/areas/mathematics/complex_analysis/definitions/complex_analysis",
-      "title": "Complex Analysis",
-      "path": "Areas/mathematics/Complex_Analysis/definitions/Complex_Analysis.md",
-      "category": "Complex_Analysis"
-    },
-    {
       "id": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "title": "Measures Integrals and Martingales",
       "path": "Areas/mathematics/Measure_Theory/books/Measures_Integrals_and_Martingales.md",
+      "category": "Measure_Theory"
+    },
+    {
+      "id": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake",
+      "title": "Koch snowflake",
+      "path": "Areas/mathematics/Measure_Theory/definitions/Koch_snowflake.md",
       "category": "Measure_Theory"
     },
     {
@@ -649,9 +667,21 @@
       "category": "Measure_Theory"
     },
     {
+      "id": "/notes/areas/mathematics/measure_theory/definitions/stochastic_process",
+      "title": "stochastic process",
+      "path": "Areas/mathematics/Measure_Theory/definitions/stochastic_process.md",
+      "category": "Measure_Theory"
+    },
+    {
       "id": "/notes/areas/mathematics/measure_theory/definitions/indicator_function",
       "title": "indicator function",
       "path": "Areas/mathematics/Measure_Theory/definitions/indicator_function.md",
+      "category": "Measure_Theory"
+    },
+    {
+      "id": "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle",
+      "title": "Sierpinski triangle",
+      "path": "Areas/mathematics/Measure_Theory/definitions/Sierpinski_triangle.md",
       "category": "Measure_Theory"
     },
     {
@@ -670,6 +700,12 @@
       "id": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure",
       "title": "discrete probability measure",
       "path": "Areas/mathematics/Measure_Theory/definitions/discrete_probability_measure.md",
+      "category": "Measure_Theory"
+    },
+    {
+      "id": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "title": "discrete probability space",
+      "path": "Areas/mathematics/Measure_Theory/definitions/discrete_probability_space.md",
       "category": "Measure_Theory"
     },
     {
@@ -721,9 +757,21 @@
       "category": "Set_Theory"
     },
     {
+      "id": "/notes/areas/mathematics/set_theory/definitions/map",
+      "title": "map",
+      "path": "Areas/mathematics/Set_Theory/definitions/map.md",
+      "category": "Set_Theory"
+    },
+    {
       "id": "/notes/areas/mathematics/set_theory/definitions/set_function",
       "title": "set function",
       "path": "Areas/mathematics/Set_Theory/definitions/set_function.md",
+      "category": "Set_Theory"
+    },
+    {
+      "id": "/notes/areas/mathematics/set_theory/definitions/subset",
+      "title": "subset",
+      "path": "Areas/mathematics/Set_Theory/definitions/subset.md",
       "category": "Set_Theory"
     },
     {
@@ -736,6 +784,18 @@
       "id": "/notes/areas/mathematics/set_theory/definitions/function",
       "title": "function",
       "path": "Areas/mathematics/Set_Theory/definitions/function.md",
+      "category": "Set_Theory"
+    },
+    {
+      "id": "/notes/areas/mathematics/set_theory/definitions/set",
+      "title": "set",
+      "path": "Areas/mathematics/Set_Theory/definitions/set.md",
+      "category": "Set_Theory"
+    },
+    {
+      "id": "/notes/areas/mathematics/set_theory/definitions/recursion",
+      "title": "recursion",
+      "path": "Areas/mathematics/Set_Theory/definitions/recursion.md",
       "category": "Set_Theory"
     },
     {
@@ -781,6 +841,12 @@
       "category": "Set_Theory"
     },
     {
+      "id": "/notes/areas/mathematics/set_theory/definitions/index_set",
+      "title": "index set",
+      "path": "Areas/mathematics/Set_Theory/definitions/index_set.md",
+      "category": "Set_Theory"
+    },
+    {
       "id": "/notes/areas/mathematics/set_theory/definitions/symmetric_difference",
       "title": "symmetric difference",
       "path": "Areas/mathematics/Set_Theory/definitions/symmetric_difference.md",
@@ -790,6 +856,12 @@
       "id": "/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint",
       "title": "pairwise disjoint",
       "path": "Areas/mathematics/Set_Theory/definitions/pairwise_disjoint.md",
+      "category": "Set_Theory"
+    },
+    {
+      "id": "/notes/areas/mathematics/set_theory/definitions/aleph_null",
+      "title": "aleph null",
+      "path": "Areas/mathematics/Set_Theory/definitions/aleph_null.md",
       "category": "Set_Theory"
     },
     {
@@ -1057,10 +1129,6 @@
     {
       "source": "/notes/areas/mathematics/measure_theory/measure_theory",
       "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
-    },
-    {
-      "source": "/notes/areas/mathematics/complex_analysis/complex_analysis",
-      "target": "/notes/areas/mathematics/complex_analysis/definitions/complex_analysis"
     },
     {
       "source": "/notes/areas/mathematics/abstract_algebra/abstract_algebra",
@@ -4012,11 +4080,11 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem",
-      "target": "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem"
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem",
-      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+      "target": "/notes/areas/mathematics/real_analysis/definitions/differentiable"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/greatest_lower_bound",
@@ -4060,11 +4128,11 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem",
-      "target": "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem"
+      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem",
-      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem",
@@ -4108,11 +4176,11 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion_for_uniform_convergence",
-      "target": "/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion_for_uniform_convergence"
+      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion_for_uniform_convergence",
-      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/abel's_test",
@@ -4533,6 +4601,50 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/connected_sets",
       "target": "/notes/areas/mathematics/real_analysis/definitions/connected_sets"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/convergence"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/functional_limit"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/convergence"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/functional_limit"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/limit",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/continuity"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/sequence",
@@ -5692,6 +5804,10 @@
     },
     {
       "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue",
       "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction"
     },
     {
@@ -5887,6 +6003,34 @@
       "target": "/notes/areas/mathematics/linear_algebra/definitions/vector_space"
     },
     {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/vector_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/linearly_independent"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/linearly_independent"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/vector_space"
+    },
+    {
       "source": "/notes/areas/mathematics/linear_algebra/definitions/linearly_dependent",
       "target": "/notes/areas/mathematics/linear_algebra/definitions/list"
     },
@@ -5915,12 +6059,28 @@
       "target": "/notes/areas/mathematics/linear_algebra/definitions/span"
     },
     {
+      "source": "/notes/areas/mathematics/abstract_algebra/definitions/invariant",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/abstract_algebra/definitions/invariant",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/abstract_algebra/definitions/invariant",
+      "target": "/notes/areas/mathematics/abstract_algebra/definitions/automorphism"
+    },
+    {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/abstract_algebra/definitions/invariant"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
@@ -5945,6 +6105,10 @@
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/real_analysis/definitions/cantor_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
@@ -5953,6 +6117,14 @@
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/real_analysis/definitions/fractal_dimension"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
@@ -6012,6 +6184,10 @@
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/index_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/set_theory/definitions/symmetric_difference"
     },
     {
@@ -6020,7 +6196,15 @@
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/map"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/set_theory/definitions/preimage"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/map"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
@@ -6028,7 +6212,7 @@
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
+      "target": "/notes/areas/mathematics/set_theory/definitions/map"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
@@ -6061,6 +6245,14 @@
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/map"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
@@ -6211,6 +6403,18 @@
       "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
     },
     {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/cantor_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/fractal_dimension"
+    },
+    {
       "source": "/notes/areas/mathematics/measure_theory/definitions/sigma-additivity",
       "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-additivity"
     },
@@ -6227,8 +6431,40 @@
       "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/dynkin_system",
+      "target": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/stochastic_process",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/probability_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/stochastic_process",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/probability_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/stochastic_process",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/probability_measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/cantor_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/fractal_dimension"
+    },
+    {
       "source": "/notes/areas/mathematics/measure_theory/definitions/probability_measure",
       "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/probability_measure",
+      "target": "/notes/areas/mathematics/set_theory/definitions/map"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/definitions/probability_measure",
@@ -6247,6 +6483,38 @@
       "target": "/notes/areas/mathematics/measure_theory/definitions/probability_measure"
     },
     {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/probability_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "target": "/notes/areas/mathematics/set_theory/definitions/countable"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "target": "/notes/areas/mathematics/set_theory/definitions/countable"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/probability_space"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "target": "/notes/areas/mathematics/set_theory/definitions/countable"
+    },
+    {
       "source": "/notes/areas/mathematics/measure_theory/definitions/measurable_space",
       "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
     },
@@ -6260,7 +6528,15 @@
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/definitions/measure",
+      "target": "/notes/areas/mathematics/set_theory/definitions/map"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/measure",
       "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/definitions/probability_space",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/stochastic_process"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/definitions/probability_space",
@@ -6283,12 +6559,72 @@
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/domain"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/codomain"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/image"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/injection"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/surjection"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/bijection"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/domain"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/codomain"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/map",
+      "target": "/notes/areas/mathematics/set_theory/definitions/image"
+    },
+    {
       "source": "/notes/areas/mathematics/set_theory/definitions/set_function",
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
       "source": "/notes/areas/mathematics/set_theory/definitions/set_function",
       "target": "/notes/areas/mathematics/set_theory/definitions/domain"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/subset",
+      "target": "/notes/areas/mathematics/set_theory/definitions/set"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/subset",
+      "target": "/notes/areas/mathematics/set_theory/definitions/set"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/subset",
+      "target": "/notes/areas/mathematics/set_theory/definitions/cardinality"
     },
     {
       "source": "/notes/areas/mathematics/set_theory/definitions/image",
@@ -6339,6 +6675,30 @@
       "target": "/notes/areas/mathematics/set_theory/definitions/image"
     },
     {
+      "source": "/notes/areas/mathematics/set_theory/definitions/set",
+      "target": "/notes/areas/mathematics/set_theory/definitions/cardinality"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/set",
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/set",
+      "target": "/notes/areas/mathematics/set_theory/definitions/subset"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/recursion",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/cantor_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/recursion",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/cantor_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/recursion",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
+    },
+    {
       "source": "/notes/areas/mathematics/set_theory/definitions/surjection",
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
@@ -6361,6 +6721,10 @@
     {
       "source": "/notes/areas/mathematics/set_theory/definitions/countable",
       "target": "/notes/areas/mathematics/set_theory/definitions/cardinality"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/countable",
+      "target": "/notes/areas/mathematics/set_theory/definitions/aleph_null"
     },
     {
       "source": "/notes/areas/mathematics/set_theory/definitions/domain",
@@ -6439,6 +6803,34 @@
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
+      "source": "/notes/areas/mathematics/set_theory/definitions/index_set",
+      "target": "/notes/areas/mathematics/set_theory/definitions/countable"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/index_set",
+      "target": "/notes/areas/mathematics/set_theory/definitions/cardinality"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/aleph_null",
+      "target": "/notes/areas/mathematics/set_theory/definitions/cardinality"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/aleph_null",
+      "target": "/notes/areas/mathematics/set_theory/definitions/countable"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/aleph_null",
+      "target": "/notes/areas/mathematics/set_theory/definitions/cardinality"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/aleph_null",
+      "target": "/notes/areas/mathematics/set_theory/definitions/countable"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/definitions/aleph_null",
+      "target": "/notes/areas/mathematics/set_theory/definitions/bijection"
+    },
+    {
       "source": "/notes/areas/mathematics/set_theory/definitions/range",
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
@@ -6496,6 +6888,10 @@
     },
     {
       "source": "/notes/areas/mathematics/topology/definitions/compactness",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/limit"
+    },
+    {
+      "source": "/notes/areas/mathematics/topology/definitions/compactness",
       "target": "/notes/areas/mathematics/real_analysis/books/understanding_analysis"
     },
     {
@@ -6517,6 +6913,14 @@
     {
       "source": "/notes/areas/mathematics/topology/definitions/limit_point",
       "target": "/notes/areas/mathematics/real_analysis/definitions/epsilon-neighborhood"
+    },
+    {
+      "source": "/notes/areas/mathematics/topology/definitions/closure",
+      "target": "/notes/areas/mathematics/set_theory/definitions/set"
+    },
+    {
+      "source": "/notes/areas/mathematics/topology/definitions/closure",
+      "target": "/notes/areas/mathematics/set_theory/definitions/set"
     },
     {
       "source": "/notes/areas/mathematics/topology/definitions/closure",
@@ -7267,16 +7671,23 @@
     ],
     "/notes/areas/mathematics/set_theory/definitions/bijection": [
       "/notes/areas/mathematics/set_theory/set_theory",
-      "/notes/areas/mathematics/real_analysis/books/understanding_analysis"
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/set_theory/definitions/map",
+      "/notes/areas/mathematics/set_theory/definitions/aleph_null"
     ],
     "/notes/areas/mathematics/set_theory/definitions/cardinality": [
       "/notes/areas/mathematics/set_theory/set_theory",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
-      "/notes/areas/mathematics/set_theory/definitions/countable"
+      "/notes/areas/mathematics/set_theory/definitions/subset",
+      "/notes/areas/mathematics/set_theory/definitions/set",
+      "/notes/areas/mathematics/set_theory/definitions/countable",
+      "/notes/areas/mathematics/set_theory/definitions/index_set",
+      "/notes/areas/mathematics/set_theory/definitions/aleph_null"
     ],
     "/notes/areas/mathematics/set_theory/definitions/codomain": [
       "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/set_theory/definitions/map",
       "/notes/areas/mathematics/set_theory/definitions/image",
       "/notes/areas/mathematics/set_theory/definitions/domain",
       "/notes/areas/mathematics/set_theory/definitions/codomain",
@@ -7287,6 +7698,9 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure",
+      "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space",
+      "/notes/areas/mathematics/set_theory/definitions/index_set",
+      "/notes/areas/mathematics/set_theory/definitions/aleph_null",
       "/notes/areas/mathematics/topology/definitions/f-sigma_set",
       "/notes/areas/mathematics/topology/definitions/g-delta_set"
     ],
@@ -7295,6 +7709,7 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/functional_limit",
       "/notes/areas/mathematics/real_analysis/definitions/continuity",
+      "/notes/areas/mathematics/set_theory/definitions/map",
       "/notes/areas/mathematics/set_theory/definitions/set_function",
       "/notes/areas/mathematics/set_theory/definitions/image",
       "/notes/areas/mathematics/set_theory/definitions/domain",
@@ -7315,6 +7730,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/uniform_continuity",
       "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion_for_uniform_convergence",
       "/notes/areas/mathematics/real_analysis/definitions/sequential_criterion_for_functional_limits",
       "/notes/areas/mathematics/real_analysis/definitions/continuity",
       "/notes/areas/mathematics/real_analysis/definitions/dirichlet_function",
@@ -7322,6 +7738,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/cauchy's_remainder_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/lipschitz_function",
       "/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence",
+      "/notes/areas/mathematics/real_analysis/definitions/limit",
       "/notes/areas/mathematics/real_analysis/definitions/sequence",
       "/notes/areas/mathematics/real_analysis/definitions/differentiable",
       "/notes/areas/mathematics/real_analysis/definitions/continuous_extension_theorem",
@@ -7330,8 +7747,10 @@
       "/notes/areas/mathematics/linear_algebra/definitions/polynomial",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction",
       "/notes/areas/mathematics/set_theory/definitions/bijection",
+      "/notes/areas/mathematics/set_theory/definitions/map",
       "/notes/areas/mathematics/set_theory/definitions/set_function",
       "/notes/areas/mathematics/set_theory/definitions/image",
+      "/notes/areas/mathematics/set_theory/definitions/set",
       "/notes/areas/mathematics/set_theory/definitions/surjection",
       "/notes/areas/mathematics/set_theory/definitions/domain",
       "/notes/areas/mathematics/set_theory/definitions/codomain",
@@ -7341,6 +7760,7 @@
     ],
     "/notes/areas/mathematics/set_theory/definitions/image": [
       "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/set_theory/definitions/map",
       "/notes/areas/mathematics/set_theory/definitions/image",
       "/notes/areas/mathematics/set_theory/definitions/domain",
       "/notes/areas/mathematics/set_theory/definitions/codomain",
@@ -7349,6 +7769,7 @@
     "/notes/areas/mathematics/set_theory/definitions/injection": [
       "/notes/areas/mathematics/set_theory/set_theory",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/set_theory/definitions/map",
       "/notes/areas/mathematics/set_theory/definitions/cardinality"
     ],
     "/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint": [
@@ -7373,6 +7794,7 @@
     "/notes/areas/mathematics/set_theory/definitions/surjection": [
       "/notes/areas/mathematics/set_theory/set_theory",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/set_theory/definitions/map",
       "/notes/areas/mathematics/set_theory/definitions/cardinality"
     ],
     "/notes/areas/mathematics/set_theory/definitions/symmetric_difference": [
@@ -7391,7 +7813,8 @@
       "/notes/areas/mathematics/linear_algebra/books/linear_algebra_done_right"
     ],
     "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales": [
-      "/notes/areas/mathematics/measure_theory/measure_theory"
+      "/notes/areas/mathematics/measure_theory/measure_theory",
+      "/notes/areas/mathematics/measure_theory/definitions/dynkin_system"
     ],
     "/notes/areas/mathematics/measure_theory/definitions/dirac_measure": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
@@ -7408,7 +7831,8 @@
       "/notes/areas/mathematics/measure_theory/definitions/borel_sigma-algebra"
     ],
     "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure": [
-      "/notes/areas/mathematics/measure_theory/measure_theory"
+      "/notes/areas/mathematics/measure_theory/measure_theory",
+      "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space"
     ],
     "/notes/areas/mathematics/measure_theory/definitions/indicator_function": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
@@ -7421,6 +7845,7 @@
     ],
     "/notes/areas/mathematics/measure_theory/definitions/measure": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
+      "/notes/areas/mathematics/abstract_algebra/definitions/invariant",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "/notes/areas/mathematics/measure_theory/definitions/sigma-additivity",
       "/notes/areas/mathematics/measure_theory/definitions/probability_measure"
@@ -7428,12 +7853,15 @@
     "/notes/areas/mathematics/measure_theory/definitions/probability_measure": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/stochastic_process",
       "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure",
       "/notes/areas/mathematics/measure_theory/definitions/probability_space"
     ],
     "/notes/areas/mathematics/measure_theory/definitions/probability_space": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/stochastic_process",
+      "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space"
     ],
     "/notes/areas/mathematics/measure_theory/definitions/sigma-additivity": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
@@ -7447,16 +7875,14 @@
       "/notes/areas/mathematics/measure_theory/definitions/measurable_space",
       "/notes/areas/mathematics/measure_theory/definitions/measure"
     ],
-    "/notes/areas/mathematics/complex_analysis/definitions/complex_analysis": [
-      "/notes/areas/mathematics/complex_analysis/complex_analysis"
-    ],
     "/notes/areas/mathematics/abstract_algebra/books/ideals_varieties_and_algorithms": [
       "/notes/areas/mathematics/abstract_algebra/abstract_algebra"
     ],
     "/notes/areas/mathematics/abstract_algebra/definitions/automorphism": [
       "/notes/areas/mathematics/abstract_algebra/abstract_algebra",
       "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform",
-      "/notes/areas/mathematics/functional_analysis/definitions/schwartz_space"
+      "/notes/areas/mathematics/functional_analysis/definitions/schwartz_space",
+      "/notes/areas/mathematics/abstract_algebra/definitions/invariant"
     ],
     "/notes/areas/mathematics/abstract_algebra/definitions/generator": [
       "/notes/areas/mathematics/abstract_algebra/abstract_algebra"
@@ -7472,6 +7898,7 @@
       "/notes/areas/mathematics/linear_algebra/linear_algebra",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction",
+      "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "/notes/areas/electrical_engineering/signals_systems/definitions/superposition"
     ],
@@ -7479,6 +7906,7 @@
       "/notes/areas/mathematics/linear_algebra/linear_algebra",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction",
+      "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
     ],
     "/notes/areas/mathematics/linear_algebra/definitions/finite-dimensional_subspace": [
@@ -7509,6 +7937,7 @@
       "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue",
       "/notes/areas/mathematics/linear_algebra/definitions/linearly_independent",
       "/notes/areas/mathematics/linear_algebra/definitions/basis",
+      "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
       "/notes/areas/mathematics/linear_algebra/definitions/linearly_dependent"
     ],
     "/notes/areas/mathematics/linear_algebra/definitions/list": [
@@ -7548,6 +7977,7 @@
       "/notes/areas/mathematics/linear_algebra/definitions/finite-dimensional_vector_space",
       "/notes/areas/mathematics/linear_algebra/definitions/infinite-dimensional_vector_space",
       "/notes/areas/mathematics/linear_algebra/definitions/subspace",
+      "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
       "/notes/areas/mathematics/topology/definitions/closed_set"
     ],
     "/notes/areas/mathematics/real_analysis/books/understanding_analysis": [
@@ -7565,14 +7995,14 @@
     "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem",
       "/notes/areas/mathematics/linear_algebra/books/linear_algebra_done_right"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem_for_functional_limits",
-      "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem"
+      "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/limit"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem_for_functional_limits": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -7611,7 +8041,10 @@
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/fractal_dimension",
       "/notes/areas/mathematics/real_analysis/definitions/cantor_set",
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake",
+      "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle",
+      "/notes/areas/mathematics/set_theory/definitions/recursion"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/cauchy_condensation_test": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -7626,8 +8059,7 @@
     ],
     "/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion_for_uniform_convergence": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
-      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion_for_uniform_convergence"
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -7653,8 +8085,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/continuous_extension_theorem"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem": [
-      "/notes/areas/mathematics/real_analysis/real_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem"
+      "/notes/areas/mathematics/real_analysis/real_analysis"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/density_of_q_in_r": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -7782,6 +8213,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/term-by-term_continuity_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/mean_value_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/extreme_value_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/limit",
       "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/continuous_extension_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/generalized_mean_value_theorem",
@@ -7791,6 +8223,7 @@
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence",
+      "/notes/areas/mathematics/real_analysis/definitions/limit",
       "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/convolution": [
@@ -7808,6 +8241,7 @@
     "/notes/areas/mathematics/real_analysis/definitions/differentiable": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/mean_value_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/term-by-term_differentiability_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/l'hospital's_rule",
@@ -7830,11 +8264,14 @@
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/fractal_dimension",
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake",
+      "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/functional_limit": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
-      "/notes/areas/mathematics/real_analysis/books/understanding_analysis"
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/limit"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/greatest_lower_bound": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -7883,7 +8320,9 @@
       "/notes/areas/mathematics/real_analysis/definitions/nested_interval_property",
       "/notes/areas/mathematics/real_analysis/definitions/monotone_convergence_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence",
+      "/notes/areas/mathematics/real_analysis/definitions/limit",
       "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "/notes/areas/mathematics/set_theory/definitions/recursion",
       "/notes/areas/mathematics/topology/definitions/compactness",
       "/notes/areas/mathematics/topology/definitions/closed_set"
     ],
@@ -7981,6 +8420,47 @@
       "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform",
       "/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function",
       "/notes/areas/mathematics/functional_analysis/definitions/schwartz_space"
+    ],
+    "/notes/areas/mathematics/linear_algebra/definitions/eigenvector": [
+      "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue"
+    ],
+    "/notes/areas/mathematics/abstract_algebra/definitions/invariant": [
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+    ],
+    "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake": [
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle"
+    ],
+    "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle": [
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/index_set": [
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/map": [
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/probability_measure",
+      "/notes/areas/mathematics/measure_theory/definitions/measure"
+    ],
+    "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space": [
+      "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure"
+    ],
+    "/notes/areas/mathematics/measure_theory/definitions/stochastic_process": [
+      "/notes/areas/mathematics/measure_theory/definitions/probability_space"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/set": [
+      "/notes/areas/mathematics/set_theory/definitions/subset",
+      "/notes/areas/mathematics/topology/definitions/closure"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/subset": [
+      "/notes/areas/mathematics/set_theory/definitions/set"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/aleph_null": [
+      "/notes/areas/mathematics/set_theory/definitions/countable"
+    ],
+    "/notes/areas/mathematics/real_analysis/definitions/limit": [
+      "/notes/areas/mathematics/topology/definitions/compactness"
     ],
     "/notes/areas/electrical_engineering/signals_systems/definitions/whittaker-shannon_sampling_theorem": [
       "/notes/areas/electrical_engineering/signals_systems/signals_systems",

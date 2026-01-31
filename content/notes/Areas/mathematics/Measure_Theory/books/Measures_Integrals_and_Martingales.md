@@ -10,7 +10,7 @@ The least we should expect from a reasonable [measure](/notes/areas/mathematics/
 
 2.  Additive, i.e. $\mu\left. (A \cup B) \right. = \mu\left. (A) \right. + \mu\left. (B) \right.$ whenever $A \cap B = \varnothing$ (finite additivity).
 
-With the additional property that the [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $\mu$ is invariant under congruences and translations.
+With the additional property that the [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $\mu$ is [invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) under congruences and translations.
 
 # Prologue: Exercises
 
@@ -116,9 +116,9 @@ Thus, $\mathcal{l}\left. (I) \right. = \mathcal{l}\left. \lbrack 0,1\rbrack \rig
 
 ## Exercise 1.4
 
-> Let $K_{0} \subseteq \mathbb{R}$ be a line of length 1. We get $K_{1}$ by replacing the middle third of $K_{0}$ by the sides of an equilateral triangle. By iterating this procedure we get the curves $K_{0},K_{1},K_{2},\ldots,K_{n}$ (see below) which defines in the limit the Koch_snowflake $K_{\infty}$. Find the length of $K_{n}$ and $K_{\infty}$.
+> Let $K_{0} \subseteq \mathbb{R}$ be a line of length 1. We get $K_{1}$ by replacing the middle third of $K_{0}$ by the sides of an equilateral triangle. By iterating this procedure we get the curves $K_{0},K_{1},K_{2},\ldots,K_{n}$ (see below) which defines in the limit the [Koch_snowflake](/notes/areas/mathematics/measure_theory/definitions/koch_snowflake/) $K_{\infty}$. Find the length of $K_{n}$ and $K_{\infty}$.
 >
-> ![](/images/notes/Areas/mathematics/Measure_Theory/books/graphics/MIM/1.4.png)
+> ![](/images/notes/Areas/mathematics/Measure_Theory/books/../../graphics/MIM/1.4.png)
 
 In each step, the total length increases by the factor $4/3$, since we remove the middle interval with length $1/3$ and replace it with two copies constituting the sides of an equilateral triangle with length $2/3$. Thus,
 
@@ -134,7 +134,7 @@ In particular, $\lim\limits_{n \rightarrow \infty}\mathcal{l}\left. \left( K_{n}
 
 Again, [sigma-additivity](/notes/areas/mathematics/measure_theory/definitions/sigma-additivity/) comes in the form of a limit (compare with Exercise 1.2).
 
-Aside: from our course in discrete dynamical systems, we know that the [fractal_dimension](/notes/areas/mathematics/real_analysis/definitions/fractal_dimension/) of the Koch_snowflake is
+Aside: from our course in discrete dynamical systems, we know that the [fractal_dimension](/notes/areas/mathematics/real_analysis/definitions/fractal_dimension/) of the [Koch_snowflake](/notes/areas/mathematics/measure_theory/definitions/koch_snowflake/) is
 
 
 
@@ -146,9 +146,9 @@ $$
 
 ## Exercise 1.5
 
-> Let $S_{0} \subseteq \mathbb{R}^{2}$ be a solid equilateral triangle. We get $S_{1}$ by removing the middle triangle whose vertices are the midpoints of the sides of $S_{1}$. By repeating this procedure with the four triangles which make up $S_{1}$ etc, we get $S_{0},S_{1},S_{2},\ldots,S_{n}$ (see below). The Sierpinksi_triangle is $S_{\infty} = \bigcap_{n = 0}^{\infty}S_{n}$. Find the area of $S_{n}$ and $S$ if the side-length of $S_{0}$ is $s = 1$.
+> Let $S_{0} \subseteq \mathbb{R}^{2}$ be a solid equilateral triangle. We get $S_{1}$ by removing the middle triangle whose vertices are the midpoints of the sides of $S_{1}$. By repeating this procedure with the four triangles which make up $S_{1}$ etc, we get $S_{0},S_{1},S_{2},\ldots,S_{n}$ (see below). The [Sierpinski_triangle](/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle/) is $S_{\infty} = \bigcap_{n = 0}^{\infty}S_{n}$. Find the area of $S_{n}$ and $S$ if the side-length of $S_{0}$ is $s = 1$.
 >
-> ![](/images/notes/Areas/mathematics/Measure_Theory/books/graphics/MIM/1.5.png)
+> ![](/images/notes/Areas/mathematics/Measure_Theory/books/../../graphics/MIM/1.5.png)
 
 In each step the total area is decreased by factor $3/4$, since we remove the middle triangle with area $1/4$. Thus
 
@@ -457,7 +457,7 @@ $$
 
 
 
-Check that for $A,B,A_{i} \subseteq X,i \in I$ (arbitrary index_set) the following equalities hold:
+Check that for $A,B,A_{i} \subseteq X,i \in I$ (arbitrary [index_set](/notes/areas/mathematics/set_theory/definitions/index_set/)) the following equalities hold:
 
 ### (i)
 
@@ -750,7 +750,7 @@ $$
 
 ## Exercise 2.7
 
-> Let $f:X \rightarrow Y$ be a map, $A \subseteq X$ and $B \subseteq Y$. Show that, in general
+> Let $f:X \rightarrow Y$ be a [map](/notes/areas/mathematics/set_theory/definitions/map/), $A \subseteq X$ and $B \subseteq Y$. Show that, in general
 >
 > 
 
@@ -814,7 +814,7 @@ On the other hand...
 
 ## Exercise 2.8
 
-> Let $f$ and $g$ be two injective maps. Show that $f \circ g$, if it exists, is injective.
+> Let $f$ and $g$ be two injective [map](/notes/areas/mathematics/set_theory/definitions/map/)s. Show that $f \circ g$, if it exists, is injective.
 
 Assume that for $x,y$ we have $\left. (f \circ g) \right.\left. (x) \right. = \left. (f \circ g) \right.\left. (y) \right.$. Since $f$ is injective, we conclude that
 
@@ -842,7 +842,7 @@ showing that $f \circ g$ is injective.
 
 > Show that the following sets have the same [cardinality](/notes/areas/mathematics/set_theory/definitions/cardinality/) as $\mathbb{N}$: $\{ m \in \mathbb{N}:m\mathrm{\text{ is odd}}\},\mathbb{N} \times \mathbb{Z},\mathbb{Q}^{m}\left. \left( m \in \mathbb{N} \right) \right.,\bigcup_{m \in \mathbb{N}}\mathbb{Q}^{m}$.
 
-Part 1: Call the set of odd numbers $\mathcal{O}$. Every odd number is of the form $2k - 1$ where $k \in \mathbb{N}$. We are done, if we can show that the map $f:\mathbb{N} \rightarrow \mathcal{O},k \mapsto 2k - 1$ is bijective. surjectivity is clear as $f\left. \left( \mathbb{N} \right) \right. = \mathcal{O}$. For injectivity, we take $i,j \in \mathbb{N}$ such that $f\left. (i) \right. = f\left. (j) \right.$. The latter means that $2i - 1 = 2j - 1$, so $i = j$, i.e. injectivity.
+Part 1: Call the set of odd numbers $\mathcal{O}$. Every odd number is of the form $2k - 1$ where $k \in \mathbb{N}$. We are done, if we can show that the [map](/notes/areas/mathematics/set_theory/definitions/map/) $f:\mathbb{N} \rightarrow \mathcal{O},k \mapsto 2k - 1$ is bijective. surjectivity is clear as $f\left. \left( \mathbb{N} \right) \right. = \mathcal{O}$. For injectivity, we take $i,j \in \mathbb{N}$ such that $f\left. (i) \right. = f\left. (j) \right.$. The latter means that $2i - 1 = 2j - 1$, so $i = j$, i.e. injectivity.
 
 # Chapter 3: [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/)s -- Exercises
 
@@ -904,7 +904,7 @@ Proof:
 
 Restating 3.3(vii):
 
-> Pre-image of [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/): Let $f:X \rightarrow X'$ be a map and let $\mathcal{A}'$ be a [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/) in $X'$. Then
+> Pre-image of [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/): Let $f:X \rightarrow X'$ be a [map](/notes/areas/mathematics/set_theory/definitions/map/) and let $\mathcal{A}'$ be a [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/) in $X'$. Then
 >
 > 
 

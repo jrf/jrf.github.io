@@ -57,6 +57,6 @@ This is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspac
 
 ## Related Articles
 
-- eigenvector
+- [eigenvector](/notes/areas/mathematics/linear_algebra/definitions/eigenvector/)
 - [eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)
 - [linearly_independent](/notes/areas/mathematics/linear_algebra/definitions/linearly_independent/)

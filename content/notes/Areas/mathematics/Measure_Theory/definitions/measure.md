@@ -6,7 +6,7 @@ title: "measure"
 
 ## Definition
 
-A (positive) *measure* $\mu$ on $X$ is a map $\mu:\mathcal{A} \rightarrow \left. \lbrack 0,\infty\rbrack \right.$ satisfying the following conditions:
+A (positive) *measure* $\mu$ on $X$ is a [map](/notes/areas/mathematics/set_theory/definitions/map/) $\mu:\mathcal{A} \rightarrow \left. \lbrack 0,\infty\rbrack \right.$ satisfying the following conditions:
 
 1.  (M${}_{0}$): $\mathcal{A}$ is a [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/) in $X$.
 

@@ -16,4 +16,4 @@ $$
 
 
 
-defines a [probability_measure](/notes/areas/mathematics/measure_theory/definitions/probability_measure/). The triplet $\left. \left( \Omega,\mathcal{P}\left. (\Omega) \right.,\mathbb{P} \right) \right.$ is called a discrete_probability_space.
+defines a [probability_measure](/notes/areas/mathematics/measure_theory/definitions/probability_measure/). The triplet $\left. \left( \Omega,\mathcal{P}\left. (\Omega) \right.,\mathbb{P} \right) \right.$ is called a [discrete_probability_space](/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space/).

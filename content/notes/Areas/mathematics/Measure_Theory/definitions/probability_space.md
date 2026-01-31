@@ -6,7 +6,7 @@ title: "probability space"
 
 ## Definition
 
-A *probability space* $\left. \left( \Omega,\mathcal{F},P \right) \right.$ is a mathematical construct that provides a formal model of a stochastic_process. It consists of three elements:
+A *probability space* $\left. \left( \Omega,\mathcal{F},P \right) \right.$ is a mathematical construct that provides a formal model of a [stochastic_process](/notes/areas/mathematics/measure_theory/definitions/stochastic_process/). It consists of three elements:
 
 1.  $\Omega$: A sample space or set of all possible outcomes.
 

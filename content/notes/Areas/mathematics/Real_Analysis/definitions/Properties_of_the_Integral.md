@@ -2,7 +2,9 @@
 title: "Properties of the Integral"
 ---
 
-# Properties_of_the_Integral_\\(Abbott_--_Theorem_7.4.2)
+# Properties of the Integral
+
+> From Abbott, Theorem 7.4.2
 
 Assume $f$ and $g$ are integrable functions on the interval $\left. \lbrack a,b\rbrack \right.$.
 

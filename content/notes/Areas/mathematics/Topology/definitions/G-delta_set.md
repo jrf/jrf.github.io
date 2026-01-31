@@ -2,7 +2,7 @@
 title: "G-delta set"
 ---
 
-# \$G_delta\$_set
+# $G_\delta$ Set
 
 ## Definition
 

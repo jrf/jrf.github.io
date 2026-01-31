@@ -2,7 +2,7 @@
 title: "Dynkin system"
 ---
 
-# Dynkin_System
+# Dynkin System
 
 ## Definition
 
@@ -16,7 +16,7 @@ A family $\mathcal{D} \subseteq \mathcal{P}\left. (X) \right.$ is a *Dynkin syst
 
 where $\sqcup$ represents the union of disjoint sets.
 
-We have that $\varnothing \in \mathcal{D}$ and that finite disjoint unions are again in $\mathcal{D}:D,E \in \mathcal{D} \Longrightarrow D \cap E = \varnothing \Longrightarrow D \sqcup E \in D$. Of course, every $\sigma$-algebra is a Dynkin system, but the converse is, in general, wrong (See Measures,_Integrals_and_Martingales -- Exercises 5.1 and 5.2).
+We have that $\varnothing \in \mathcal{D}$ and that finite disjoint unions are again in $\mathcal{D}:D,E \in \mathcal{D} \Longrightarrow D \cap E = \varnothing \Longrightarrow D \sqcup E \in D$. Of course, every $\sigma$-algebra is a Dynkin system, but the converse is, in general, wrong (See [Measures_Integrals_and_Martingales](/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales/) -- Exercises 5.1 and 5.2).
 
 ## Theorems
 

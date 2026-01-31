@@ -2,7 +2,7 @@
 title: "differentiable"
 ---
 
-# Differentiable {#partialerentiable}
+# Differentiable
 
 ## Definition
 
@@ -16,4 +16,4 @@ $$
 
 
 
-provided that this limit exists. In this case, we say that $g$ is *partialerentiable* at $c$. If $g'$ exists for all points $c \in A$, we say that $g$ is *partialerentiable* on $A$.
+provided that this limit exists. In this case, we say that $g$ is *differentiable* at $c$. If $g'$ exists for all points $c \in A$, we say that $g$ is *differentiable* on $A$.

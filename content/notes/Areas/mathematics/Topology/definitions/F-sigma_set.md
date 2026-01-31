@@ -2,7 +2,7 @@
 title: "F-sigma set"
 ---
 
-# \$F_sigma\$_set
+# $F_\sigma$ Set
 
 ## Definition
 
