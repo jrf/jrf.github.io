@@ -17,7 +17,7 @@ mainSections = ["posts"]
 # Homepage shows posts
 [params.homeInfoParams]
 Title = "Posts"
-Content = "Notes on math, science, and other explorations."
+Content = "Musings on math, science, and other explorations."
 imageUrl = "/img/avatar.png"
 
 [[params.socialIcons]]
