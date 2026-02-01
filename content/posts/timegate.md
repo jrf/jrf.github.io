@@ -10,4 +10,8 @@ math: true
     <img src="/img/timegate.png" alt="Chrono Trigger Time Gate" style="width: 48%;" />
 </div>
 
-[Code](/code/timegate.glsl)
+The time gates in Chrono Trigger have a distinctive swirling blue portal effect. This shader recreates that look using layered sine waves, procedural hash noise for texture, and a spiral distortion centered slightly off-axis. The color gradient shifts from deep blue at the edges through cyan to near-white at the peaks, with a soft vignette that fades the portal into darkness at the rim.
+
+The effect pixelates the output to 6x6 blocks for a retro SNES feel.
+
+[Code](/code/timegate/)

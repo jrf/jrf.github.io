@@ -56,6 +56,10 @@ weight = 40
 
 # Goldmark (markdown) config for math support
 [markup]
+[markup.highlight]
+style = "tokyonight-moon"
+lineNos = true
+lineNumbersInTable = false
 [markup.goldmark]
 [markup.goldmark.extensions]
 [markup.goldmark.extensions.passthrough]
