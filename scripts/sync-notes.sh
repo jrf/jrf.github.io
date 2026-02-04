@@ -28,7 +28,7 @@ echo "Building note index..."
 
 # First pass: build mapping of note names to URLs
 for SOURCE_DIR in "${SOURCE_DIRS[@]}"; do
-    find "$VAULT_PATH/$SOURCE_DIR" -name "*.md" -not -path '*/\.*' -not -name "CLAUDE.md" | while read -r file; do
+    find "$VAULT_PATH/$SOURCE_DIR" -name "*.md" -not -path '*/\.*' -not -path '*/lean/*' -not -name "CLAUDE.md" | while read -r file; do
         rel_path="${file#$VAULT_PATH/}"
         url_path="/notes/${rel_path%.md}/"
         filename=$(basename "$file" .md)
@@ -41,7 +41,7 @@ echo "Converting notes..."
 
 # Second pass: copy files and convert wikilinks
 for SOURCE_DIR in "${SOURCE_DIRS[@]}"; do
-    find "$VAULT_PATH/$SOURCE_DIR" -name "*.md" -not -path '*/\.*' -not -name "CLAUDE.md" | while read -r file; do
+    find "$VAULT_PATH/$SOURCE_DIR" -name "*.md" -not -path '*/\.*' -not -path '*/lean/*' -not -name "CLAUDE.md" | while read -r file; do
         rel_path="${file#$VAULT_PATH/}"
         target_dir="$NOTES_PATH/$(dirname "$rel_path")"
         mkdir -p "$target_dir"
@@ -80,7 +80,7 @@ mkdir -p "$IMAGES_PATH"
 echo "Copying images..."
 
 for SOURCE_DIR in "${SOURCE_DIRS[@]}"; do
-    find "$VAULT_PATH/$SOURCE_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" -o -iname "*.svg" -o -iname "*.webp" \) -not -path '*/\.*' | while read -r file; do
+    find "$VAULT_PATH/$SOURCE_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" -o -iname "*.svg" -o -iname "*.webp" \) -not -path '*/\.*' -not -path '*/lean/*' | while read -r file; do
         rel_path="${file#$VAULT_PATH/$SOURCE_DIR/}"
         target_dir="$IMAGES_PATH/$SOURCE_DIR/$(dirname "$rel_path")"
         mkdir -p "$target_dir"

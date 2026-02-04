@@ -97,12 +97,6 @@
       "category": "Functional_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/lean/prompt",
-      "title": "prompt",
-      "path": "Areas/mathematics/Real_Analysis/lean/prompt.md",
-      "category": "lean"
-    },
-    {
       "id": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "title": "Understanding Analysis",
       "path": "Areas/mathematics/Real_Analysis/books/Understanding_Analysis.md",
