@@ -10,4 +10,4 @@ A [function](/notes/areas/mathematics/set_theory/definitions/function/) $f:X \ri
 
 In other words, the property of being *surjective* ensures that every element of $Y$ corresponds to something in $X$.
 
-![](/images/notes/Areas/mathematics/Set_Theory/definitions/../../graphics/misc/surjection.png)
+![](/images/notes/Areas/mathematics/Set_Theory/definitions/../graphics/surjection.png)

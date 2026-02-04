@@ -25,12 +25,6 @@
       "category": "Measure_Theory"
     },
     {
-      "id": "/notes/areas/mathematics/books/prompt",
-      "title": "prompt",
-      "path": "Areas/mathematics/books/prompt.md",
-      "category": "mathematics"
-    },
-    {
       "id": "/notes/areas/mathematics/complex_analysis/complex_analysis",
       "title": "Complex Analysis",
       "path": "Areas/mathematics/Complex_Analysis/Complex_Analysis.md",
@@ -101,6 +95,12 @@
       "title": "Schwartz space",
       "path": "Areas/mathematics/Functional_Analysis/definitions/Schwartz_space.md",
       "category": "Functional_Analysis"
+    },
+    {
+      "id": "/notes/areas/mathematics/real_analysis/lean/prompt",
+      "title": "prompt",
+      "path": "Areas/mathematics/Real_Analysis/lean/prompt.md",
+      "category": "lean"
     },
     {
       "id": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",

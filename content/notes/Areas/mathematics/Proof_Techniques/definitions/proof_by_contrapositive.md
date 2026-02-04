@@ -18,6 +18,6 @@ In the Euler diagram shown, if something is in $A$, it must be in $B$ as well. S
 
 It is also clear that anything that is not within $B$ cannot be within $A$, either. This statement, which can be expressed as: $\neg B \rightarrow \neg A$ is the contrapositive of the above statement. Therefore, one can say that $\left. (A \rightarrow B) \right. \leftrightarrow \left. (\neg B \rightarrow \neg A) \right.$.
 
-![](/images/notes/Areas/mathematics/Proof_Techniques/definitions/../../graphics/misc/1024px-Venn_A_subset_B.svg.png)
+![](/images/notes/Areas/mathematics/Proof_Techniques/definitions/../graphics/1024px-Venn_A_subset_B.svg.png)
 
 ## Related Articles

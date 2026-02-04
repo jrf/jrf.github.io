@@ -10,4 +10,4 @@ A [function](/notes/areas/mathematics/set_theory/definitions/function/) $f:X \ri
 
 In other words, the property of being *injective* means that no two elements of $X$ correspond to the same element of $Y$.
 
-![](/images/notes/Areas/mathematics/Set_Theory/definitions/../../graphics/misc/injection.png)
+![](/images/notes/Areas/mathematics/Set_Theory/definitions/../graphics/injection.png)
