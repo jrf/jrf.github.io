@@ -931,6 +931,54 @@
       "category": "Physical_Optics"
     },
     {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "title": "Hankel transform",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/Hankel_transform.md",
+      "category": "Physical_Optics"
+    },
+    {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "title": "plane wave",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/plane_wave.md",
+      "category": "Physical_Optics"
+    },
+    {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion",
+      "title": "Nyquist criterion",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/Nyquist_criterion.md",
+      "category": "Physical_Optics"
+    },
+    {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/holography",
+      "title": "holography",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/holography.md",
+      "category": "Physical_Optics"
+    },
+    {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "title": "Fraunhofer diffraction",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/Fraunhofer_diffraction.md",
+      "category": "Physical_Optics"
+    },
+    {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
+      "title": "Airy disk",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/Airy_disk.md",
+      "category": "Physical_Optics"
+    },
+    {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction",
+      "title": "Fresnel diffraction",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/Fresnel_diffraction.md",
+      "category": "Physical_Optics"
+    },
+    {
+      "id": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence",
+      "title": "coherence",
+      "path": "Areas/electrical_engineering/Physical_Optics/definitions/coherence.md",
+      "category": "Physical_Optics"
+    },
+    {
       "id": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "title": "Physical Optics Notes",
       "path": "Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/Physical_Optics_Notes.md",
@@ -6981,6 +7029,106 @@
       "target": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/introduction_to_physical_optics"
     },
     {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/bessel_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/bessel_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion",
+      "target": "/notes/areas/electrical_engineering/signals_systems/definitions/whittaker-shannon_sampling_theorem"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/holography",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/holography",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/bessel_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
+      "target": "/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/holography"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/holography"
+    },
+    {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/electrical_engineering/signals_systems/definitions/superposition"
     },
@@ -7023,6 +7171,10 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -7359,6 +7511,10 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -7379,6 +7535,14 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/mathematics/functional_analysis/definitions/bessel_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -7394,7 +7558,15 @@
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -7414,11 +7586,11 @@
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
-      "target": "/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function"
+      "target": "/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
-      "target": "/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system"
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -7893,6 +8065,7 @@
       "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "/notes/areas/electrical_engineering/signals_systems/definitions/superposition"
     ],
@@ -8367,6 +8540,8 @@
     ],
     "/notes/areas/mathematics/functional_analysis/definitions/bessel_function": [
       "/notes/areas/mathematics/functional_analysis/functional_analysis",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/introduction_to_physical_optics"
     ],
@@ -8386,6 +8561,10 @@
       "/notes/areas/mathematics/functional_analysis/definitions/schwartz_space",
       "/notes/areas/mathematics/real_analysis/definitions/absolutely_integrable",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/coherence",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/introduction_to_physical_optics",
       "/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function",
@@ -8458,6 +8637,7 @@
     ],
     "/notes/areas/electrical_engineering/signals_systems/definitions/whittaker-shannon_sampling_theorem": [
       "/notes/areas/electrical_engineering/signals_systems/signals_systems",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/introduction_to_physical_optics"
     ],
@@ -8476,6 +8656,7 @@
     ],
     "/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function": [
       "/notes/areas/electrical_engineering/signals_systems/signals_systems",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system",
       "/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function",
@@ -8497,6 +8678,40 @@
     ],
     "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/introduction_to_physical_optics": [
       "/notes/areas/electrical_engineering/physical_optics/physical_optics"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk": [
+      "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction": [
+      "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction": [
+      "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/coherence": [
+      "/notes/areas/electrical_engineering/physical_optics/definitions/holography",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave": [
+      "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/holography": [
+      "/notes/areas/electrical_engineering/physical_optics/definitions/coherence",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform": [
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion": [
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
     ]
   }
 }

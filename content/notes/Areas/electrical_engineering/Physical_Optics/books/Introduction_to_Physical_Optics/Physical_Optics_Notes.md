@@ -6,9 +6,9 @@ title: "Physical Optics Notes"
 
 ## I. Introduction
 
-Physical optics is the study of the wave nature of light. Diffraction, polarization, coherence and interferometry are all physical optics effects, and play a key role in many modern optical systems. The first half of this course will be devoted to studying the key concepts of physical optics.
+Physical optics is the study of the wave nature of light. Diffraction, polarization, [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) and interferometry are all physical optics effects, and play a key role in many modern optical systems. The first half of this course will be devoted to studying the key concepts of physical optics.
 
-In the early 1960's, the mathematics of linear systems was applied to physical optics, providing a new and powerful way of analyzing optical systems. This analysis technique is now known as Fourier optics. With the tools of Fourier optics we will be able to explain the intricacies of holography, understand how astronomers can get incredibly detailed images of distant galaxies using radio telescopes separated by thousands of kilometers (a technique called Very Long Baseline Interferometry), calculate the diffraction effects of microscopes which limit their resolution, understand Synthetic Aperture Radar, describe methods of "seeing through" a turbulent atmosphere, understand how optical pattern recognition machines work, and much more. Before we start, however, it is useful to review the most important aspects of linear systems theory.
+In the early 1960's, the mathematics of linear systems was applied to physical optics, providing a new and powerful way of analyzing optical systems. This analysis technique is now known as Fourier optics. With the tools of Fourier optics we will be able to explain the intricacies of [holography](/notes/areas/electrical_engineering/physical_optics/definitions/holography/), understand how astronomers can get incredibly detailed images of distant galaxies using radio telescopes separated by thousands of kilometers (a technique called Very Long Baseline Interferometry), calculate the diffraction effects of microscopes which limit their resolution, understand Synthetic Aperture Radar, describe methods of "seeing through" a turbulent atmosphere, understand how optical pattern recognition machines work, and much more. Before we start, however, it is useful to review the most important aspects of linear systems theory.
 
 ## II. Linear Systems
 
@@ -80,7 +80,7 @@ This is simply equivalent to treating the input $g_1(\bar{x}_1)$ as an infinite 
 
 **Linear system $\mathcal{L}$:** The operator that transforms input to output (e.g., an imaging lens).
 
-**Output plane (red):** Each input point produces an **Airy disk pattern** — the [point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/) $h(\bar{x}_2; \bar{x}_0)$. The concentric circles represent diffraction rings caused by the finite aperture:
+**Output plane (red):** Each input point produces an **[Airy disk](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/) pattern** — the [point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/) $h(\bar{x}_2; \bar{x}_0)$. The concentric circles represent diffraction rings caused by the finite aperture:
 - Central dot = bright central maximum
 - Surrounding rings = diffraction fringes (intensity decreasing outward)
 
@@ -106,7 +106,7 @@ The delta function "sifts out" the value of $f$ at $x_0$. In the integral above,
 </div>
 </div>
 
-# Superposition Integral
+### Superposition Integral
 
 **Input → Output:**
 
@@ -239,8 +239,8 @@ Point objects in the object plane (dots 1, 2, 3) are imaged through a lens onto 
 
 </div>
 </div>
-# Shift-Invariant Systems
- 
+### Shift-Invariant Systems
+
 Assume $\mathcal{L}\{g_1(x_1, y_1)\} = g_2(x_2, y_2)$, where $g_1(x_1, y_1)$ is the object, $g_2(x_2, y_2)$ is the image, and $\mathcal{L}$ represents the imaging process.
 
 **Shift invariance** implies:
@@ -297,7 +297,7 @@ $$
 
 
 Thus, the entire system can be described by a single **[point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/)** $h(\bar{x}_2)$. The **[superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/)** integral now becomes
-# Convolution Integral
+### Convolution Integral
 
 
 
@@ -355,7 +355,7 @@ Choose basis functions that are orthogonal and complete.
 </div>
 
 But what do we choose for these simple waveforms? Ideally, we would like to choose a waveform that is unaffected by the linear operator (except to be multiplied by a complex constant). Then, as each waveform is passed through the operator the effect of the operator is particularly easy to calculate.
-# Eigenfunctions of Linear Operators
+### Eigenfunctions of Linear Operators
 
 The set of functions which are unaffected by a linear operator (except to be multiplied by a complex constant) are called the **[eigenfunctions](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/) of the operator**.
 
@@ -487,7 +487,7 @@ $$
 
 
 Now consider a shifted version of this
-# Complex Exponentials as Eigenfunctions
+### Complex Exponentials as Eigenfunctions
 
 
 
@@ -559,7 +559,7 @@ which satisfies the **[eigenfunction](/notes/areas/mathematics/linear_algebra/de
 
 In general, the family of **[eigenfunctions](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** is given by complex exponentials of all frequencies $\bar{f}$. They are orthonormal and complete.
 - $|e^{j\theta}| = 1$ for all $\theta$
-- Got Legendre, Laguerre polynomials, etc. as alternatives
+- Other orthonormal bases exist (Legendre, Laguerre, Hermite polynomials), but complex exponentials are special because they are eigenfunctions of **shift-invariant** operators
 
 </div>
 </div>
@@ -810,7 +810,7 @@ This gives $\tilde{G}(\bar{f})$ by integrating over all $\bar{x}$. Inverse gives
 Each weighted **[eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** is run through the **[linear shift invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** system. The effect of the system is to multiply each of the **[eigenfunctions](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** by a complex number $H(\bar{f})$, where H takes on different values for each different **[eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)**. The function $H(\bar{f})$ is called the **[transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)** of the linear system.
 
 After passing through the operator a single **[eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** waveform becomes
-# Individual Eigenfunction Response
+### Individual Eigenfunction Response
 
 
 
@@ -895,15 +895,6 @@ $$
 </div>
 
 ## IV. Properties of the Spatial Fourier Transform
-
-<div class="callout callout-info">
-<div class="callout-title"><span class="callout-icon">ℹ️</span>See opposite page</div>
-<div class="callout-content">
-
-Points to Fourier pairs
-
-</div>
-</div>
 
 ### A. Spatial Frequency
 
@@ -991,9 +982,18 @@ Complex exponentials are the natural basis for [Fourier analysis](/notes/areas/m
 </div>
 </div>
 
-# Relationship Between Angular Plane Waves and Fourier Transform
+### Relationship Between Angular Plane Waves and Fourier Transform
 
-A solution to the Helmholtz equation for wave propagation is given by a **plane wave**:
+<div class="callout callout-tip">
+<div class="callout-title"><span class="callout-icon">💡</span>Preview</div>
+<div class="callout-content">
+
+This section introduces the connection between spatial frequencies and plane wave angles. For a complete worked example with propagation through an aperture, see [Complete Example: Tilted Plane Wave Through Circular Aperture](#complete-example-tilted-plane-wave-through-circular-aperture).
+
+</div>
+</div>
+
+A solution to the Helmholtz equation for wave propagation is given by a **[plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/)**:
 
 
 
@@ -1051,20 +1051,18 @@ $$
 
 
 
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Spatial Frequency vs Radian Frequency</div>
 <div class="callout-content">
 
-- $k_x = k\cos\theta$ = radian frequency
-- $\therefore$ cycles/mm $\Rightarrow k\cos\theta$
-- $f_x = \frac{\cos\theta}{2\pi}$
+- Radian frequency: $k_x = k\cos\theta = \frac{2\pi}{\lambda}\cos\theta$
+- Spatial frequency (cycles/cm): $f_x = \frac{\cos\theta}{\lambda}$
+- Relation: $k_x = 2\pi f_x$
 
 </div>
 </div>
 
-It is clear that negative and positive frequencies correspond to plane waves travelling either up or
-
-down. The spatial Fourier transform of an arbitrary two-dimensional field can be thought of as a **linear superposition of plane waves**, where:
+Negative and positive frequencies correspond to plane waves travelling in opposite directions (e.g., upward vs downward tilted). The spatial Fourier transform of an arbitrary two-dimensional field can be thought of as a **linear superposition of plane waves**, where:
 - The **angle** of the plane wave corresponds to the spatial frequency
 - The **amplitude and phase** of the plane wave corresponds to the complex Fourier component associated with that spatial frequency
 
@@ -1094,10 +1092,10 @@ Verify that $f_x = \frac{\cos\theta}{\lambda}$ behaves correctly at extreme angl
 ![Sanity Check: Limiting Cases](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/sanity_check_limiting_cases.svg)
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Aside</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Convolution Theorem Reminder</div>
 <div class="callout-content">
 
-We just saw transforms for the operator. By the convolution theorem:
+For LSI systems, convolution in space becomes multiplication in frequency:
 
 
 $$
@@ -1105,12 +1103,12 @@ $$
 $$
 
 
-where $h(\bar{x}) = \mathcal{F}^{-1}\{\tilde{H}(\bar{f})\}$
+where $\tilde{H}(\bar{f}) = \mathcal{F}\{h(\bar{x})\}$ is the transfer function.
 
 </div>
 </div>
 
-## C. Causality
+## Causality (Spatial vs Temporal)
 
 In time series analysis, **causality** states that the value of the output at time $t_0$ does not depend on future values of the input $t > t_0$. This relationship requires all **[impulse responses](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/)** to be nonsymmetric, and thus the **[transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)** must be complex.
 
@@ -1134,7 +1132,7 @@ For real **[transfer function](/notes/areas/electrical_engineering/signals_syste
 | Complex/Odd | Complex/Odd |
 
 When a linear system is analyzed as a function of spatial variables, **causality no longer is required**. Values to the "right" of a point can effect the value of the point just as easily as values to the "left". The point spread function can then be symmetric, and **real transfer functions are possible**.
-# Two-Dimensionality
+## Two-Dimensionality and Separability
 
 The most obvious difference between a temporal and spatial Fourier transform is the two-dimensional aspect of the latter. If we write the forward Fourier transform as:
 
@@ -1169,10 +1167,6 @@ $$
 $$
 
 
-
-<div class="callout callout-tip">
-<div class="callout-title"><span class="callout-icon">💡</span>Separation in product of one-dimensional F.T.'s</div>
-</div>
 
 ## Circular Symmetry and Polar Coordinates
 
@@ -1215,9 +1209,9 @@ $$
 $$
 
 
-# Hankel Transform
+### Derivation of Hankel Transform
 
-But since:
+Since:
 
 
 $$
@@ -1273,25 +1267,18 @@ $$
 
 
 
-This is called the **zero order Hankel transform**, or sometimes the **Fourier-Bessel transform**.
-
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
-<div class="callout-content">
-
-$J_0$ = Transform of a circle
-$\Rightarrow$ $D_0$ properties
-
-</div>
-</div>
+This is called the **zero order [Hankel transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/)**, or sometimes the **Fourier-Bessel transform**.
 
 ## V. Sampling Theorem
 
 <div class="callout callout-tip">
 <div class="callout-title"><span class="callout-icon">💡</span>Good practice in Fourier transforms</div>
-</div>
+<div class="callout-content">
 
 It is often useful to represent a light field by an array of samples taken on a discrete set of points. The sampling theorem can be used to specify the sampling rate, as well as prescribe a recipe for recovering the original continuous function.
+
+</div>
+</div>
 
 <div class="callout callout-important">
 <div class="callout-title"><span class="callout-icon">❗</span>Sampling Theorem</div>
@@ -1304,7 +1291,7 @@ If a signal is **band-limited**, and it is sampled at a rate greater than or equ
 
 ![Sampling Theorem](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/sampling_theorem.svg)
 
-# Sampling Theorem Proof
+### Sampling Theorem Proof
 
 A function $g(x,y)$ is **band-limited** if its Fourier transform $\tilde{G}(f_x, f_y)$ has compact support, i.e.:
 
@@ -1345,7 +1332,7 @@ Form a sampled version of $f(x,y)$ by multiplying with a sampling function:
 
 
 $$
-g_s(x,y) = g(x,y) \cdot \text{comb}\left(\frac{x}{a}\right) \cdot \text{comb}\left(\frac{y}{b}\right)
+g_s(x,y) = g(x,y) \cdot \frac{\text{comb}(x/a)}{a} \cdot \frac{\text{comb}(y/b)}{b}
 $$
 
 
@@ -1375,7 +1362,7 @@ Hence:
 
 
 $$
-\mathcal{F}\{g_s(x,y)\} = \tilde{G}_s(f_x, f_y) = \tilde{G}(f_x, f_y) ** (a \cdot \text{comb}(af_x) \cdot b \cdot \text{comb}(bf_y))
+\mathcal{F}\{g_s(x,y)\} = \tilde{G}_s(f_x, f_y) = \tilde{G}(f_x, f_y) ** \left(\frac{a \cdot \text{comb}(af_x)}{a} \cdot \frac{b \cdot \text{comb}(bf_y)}{b}\right)
 $$
 
 
@@ -1384,8 +1371,10 @@ where $**$ is a two-dimensional convolution.
 
 The result shows:
 - Continuous spectrum $\tilde{G}(f_x)$ gets replicated at intervals of $\frac{1}{a}$
-- Sampled spectrum shows folding at Nyquist frequency
-# Nyquist Criterion
+- Sampled spectrum shows **folding** at the **folding frequency** $B_x$
+- The **Nyquist frequency** is $\frac{1}{a}$ (the sampling rate)
+
+### Nyquist Criterion
 
 It is clear from the figure that the aliases will not overlap if:
 
@@ -1407,7 +1396,7 @@ $$
 
 
 
-This is the **Nyquist Criterion**.
+This is the **[Nyquist Criterion](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/)**.
 
 In real space, the Nyquist criterion says that the **highest frequency component** in the x direction (frequency $B_x$), must be **sampled at least twice**.
 
@@ -1433,7 +1422,9 @@ $$
 
 
 
-where $\text{sinc}(x) = \frac{\sin(\pi x)}{\pi x}$
+where $\text{sinc}(x) = \frac{\sin(\pi x)}{\pi x}$ and $\text{rect}(x) = \begin{cases} 1, & |x| \leq \frac{1}{2} \\ 0, & \text{otherwise} \end{cases}$
+
+Note: $\text{rect}(x/a)$ is a rectangle of width $a$ centered at the origin.
 
 This is a statement of the **[Whittaker-Shannon Sampling Theorem](/notes/areas/electrical_engineering/signals_systems/definitions/whittaker-shannon_sampling_theorem/)**.
 
@@ -1445,7 +1436,8 @@ Interpolation is given by weighting local values and averaging. When $a = \frac{
 
 </div>
 </div>
-# Aliasing
+
+### Aliasing
 
 What happens when the Nyquist criterion is violated? **Aliasing** results, where high frequencies fold over and look like lower ones.
 
@@ -1482,7 +1474,7 @@ Has some excellent tables of F.T. properties and pairs
 
 </div>
 </div>
-# Aliasing in Practice
+### Aliasing in Practice
 
 <div class="callout callout-warning">
 <div class="callout-title"><span class="callout-icon">⚠️</span>Note on Aliasing</div>
@@ -1530,17 +1522,22 @@ After sampling:
 
 </div>
 </div>
-# EE 5621 Course Notes
-
-**J. Leger**
-
-**Spring 2009**
-
 ---
 
-# Fourier Theorems
+## VII. Fourier Transform Reference
 
-## 1. Linearity
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Reference Material</div>
+<div class="callout-content">
+
+The following sections contain key theorems, special functions, and properties used throughout physical optics.
+
+</div>
+</div>
+
+### Fourier Theorems
+
+#### 1. Linearity
 
 
 
@@ -1550,7 +1547,7 @@ $$
 
 
 
-## 2. Similarity Theorem (Scaling Theorem)
+#### 2. Similarity Theorem (Scaling Theorem)
 
 If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$
 
@@ -1565,7 +1562,7 @@ Lens aperture and focus spot are F.T. related. Thus, increase in lens size $\Rig
 </div>
 </div>
 
-### 3. Shift Theorem
+#### 3. Shift Theorem
 
 If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$
 
@@ -1581,7 +1578,7 @@ $E_x = \exp\left[-j\frac{2\pi}{\lambda}\cos\theta\right]$ shifts the delta in fr
 </div>
 </div>
 
-### 4. [Parseval's Theorem](/notes/areas/mathematics/functional_analysis/definitions/parseval_theorem/)
+#### 4. [Parseval's Theorem](/notes/areas/mathematics/functional_analysis/definitions/parseval_theorem/)
 
 If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$
 
@@ -1605,7 +1602,7 @@ Energy in signal = Energy in frequency
 </div>
 </div>
 
-### 5. [Convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) Theorem
+#### 5. [Convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) Theorem
 
 If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$ and $\mathcal{F}\{h(x,y)\} = H(f_x, f_y)$
 
@@ -1619,7 +1616,7 @@ $$
 
 
 
-### 6. Autocorrelation Theorem
+#### 6. Autocorrelation Theorem
 
 If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$, then:
 
@@ -1641,7 +1638,7 @@ $$
 
 
 
-### 7. Fourier Integral Theorem
+#### 7. Fourier Integral Theorem
 
 
 
@@ -1652,7 +1649,7 @@ $$
 
 
 for all points of $g(x,y)$ that are continuous.
-# Special Functions
+### Special Functions
 
 
 
@@ -1696,7 +1693,9 @@ $$
 
 ---
 
-## Fourier-Bessel Transform of circ(r)
+<div class="callout callout-example">
+<div class="callout-title"><span class="callout-icon">📋</span>Fourier-Bessel Transform of circ(r)</div>
+<div class="callout-content">
 
 
 
@@ -1706,34 +1705,141 @@ $$
 
 
 
-**Change of variables:** Let $r' = 2\pi\rho r$, then:
-- $dr = \dfrac{dr'}{2\pi\rho}$
-- When $r = 0 \Rightarrow r' = 0$
-- When $r = 1 \Rightarrow r' = 2\pi\rho$
+**Goal:** Get the argument of $J_0$ to just be the variable we're integrating over.
+
+**Change of variables (u-substitution):**
+1. Pick substitution: Let $u = 2\pi\rho r$ (the thing inside $J_0$)
+2. Solve for the old variable: $r = \dfrac{u}{2\pi\rho}$
+3. Find $dr$: Differentiate both sides: $dr = \dfrac{du}{2\pi\rho}$
+4. Convert limits:
+   - When $r = 0$: $u = 2\pi\rho(0) = 0$
+   - When $r = 1$: $u = 2\pi\rho(1) = 2\pi\rho$
+5. Substitute everything:
+
+
+$$
+\int_0^{2\pi\rho} \underbrace{\frac{u}{2\pi\rho}}_{r} \cdot J_0(\underbrace{u}_{2\pi r\rho}) \cdot \underbrace{\frac{du}{2\pi\rho}}_{dr}
+$$
+
+
+6. Simplify:
+
+
+$$
+= \frac{1}{(2\pi\rho)^2} \int_0^{2\pi\rho} u \cdot J_0(u) \, du
+$$
+
+
+
+**Summary:**
+
+
+$$
+\mathcal{B}\{\text{circ}(r)\} = \frac{1}{2\pi\rho^2} \int_0^{2\pi\rho} r' \, J_0(r') \, dr'
+$$
+
+
 
 **Bessel identity:** $\int_0^x z \, J_0(z) \, dz = x \, J_1(x)$
 
+**Therefore:**
 
 
 $$
-\Rightarrow \mathcal{B}\{\text{circ}(r)\} = \frac{1}{2\pi\rho^2} \int_0^{2\pi\rho} r' \, J_0(r') \, dr'
+\mathcal{B}\{\text{circ}(r)\} = \frac{1}{2\pi\rho^2} \int_0^{2\pi\rho} r' \, J_0(r') \, dr' = \frac{J_1(2\pi\rho)}{\rho}
 $$
 
 
-
-
-
-$$
-= \frac{J_1(2\pi\rho)}{\rho}
-$$
-
-
-
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Naming conventions</div>
-<div class="callout-content">
 
 This result is known as the **Airy pattern**, **jinc function**, or **sombrero function**. It describes the diffraction pattern of a circular aperture.
+
+</div>
+</div>
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Identity for $J_0(a)$</div>
+<div class="callout-content">
+
+
+
+$$
+\int_0^{2\pi} \exp(-ia\cos\theta) \, d\theta = 2\pi J_0(a)
+$$
+
+
+
+When $a = 0$:
+
+
+$$
+2\pi = 2\pi J_0(0)
+$$
+
+
+so $J_0(0) = 1$.
+
+</div>
+</div>
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Properties of $J_1$ and limit evaluation</div>
+<div class="callout-content">
+
+The Bessel function $J_1(x)$ has the series expansion:
+
+
+$$
+J_1(x) = \frac{x}{2} - \frac{x^3}{16} + \cdots
+$$
+
+
+
+Therefore:
+
+
+$$
+\frac{J_1(2\pi\rho)}{\rho} = \frac{2\pi\rho}{2\rho} + \cdots = \pi
+$$
+
+
+
+Hence:
+
+
+$$
+\lim_{\rho \to 0} \frac{J_1(2\pi\rho)}{\rho} = \pi
+$$
+
+
+
+This gives the central maximum of the Airy pattern.
+
+</div>
+</div>
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Fourier transform at zero frequency</div>
+<div class="callout-content">
+
+Let $\mathcal{F}\{g(x)\} = G(f_x)$. Then:
+
+
+$$
+G(f_x) = \int g(x) \exp(-i2\pi f_x x) \, dx
+$$
+
+
+
+At zero frequency:
+
+
+$$
+G(0) = \int g(x) \, dx
+$$
+
+
+
+The Fourier transform at $f_x = 0$ equals the total area under $g(x)$.
 
 </div>
 </div>
@@ -1741,9 +1847,9 @@ This result is known as the **Airy pattern**, **jinc function**, or **sombrero f
 ### Physical Significance
 
 In Fourier optics, this result describes:
-- The **Fraunhofer diffraction pattern** of a circular aperture
+- The **[Fraunhofer diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction/) pattern** of a circular aperture
 - The **[point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/)** of a circular lens
-- The fundamental limit of optical resolution (Airy disk)
+- The fundamental limit of optical resolution ([Airy disk](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/))
 
 ### Related Topics
 
@@ -1753,7 +1859,7 @@ In Fourier optics, this result describes:
 
 ---
 
-# Properties of Delta Functions
+### Properties of Delta Functions
 
 ## 1. Defining Properties
 
@@ -1871,7 +1977,7 @@ $\mathcal{F}^{-1}\{1\} = \delta(x)$
 
 </div>
 </div>
-# Properties of Convolution
+### Properties of Convolution
 
 ## Commutative
 
@@ -1957,7 +2063,7 @@ $$
 If $f(x) * h(x) = g(x)$
 
 then $f\left(\frac{x}{b}\right) * h\left(\frac{x}{b}\right) = |b| \, g\left(\frac{x}{b}\right)$
-# Example of Scaling Theorem
+### Example of Scaling Theorem
 
 Let $f(x) = h(x) = \text{rect}(x)$
 
@@ -1994,7 +2100,7 @@ $$
 Area with no shift $= 1 \times 2 = 2$
 
 The triangle function now extends from $-2$ to $2$ with peak value of $2$ at $x = 0$.
-# Examples of Convolutions in Two Dimensions
+### Examples of Convolutions in Two Dimensions
 
 ## i) $f(x,y) * \delta(x,y)$ - Perfect Sampling
 
@@ -2054,7 +2160,7 @@ $$
 
 
 Detector receives line response: y-dependence is averaged out, result is only a function of x.
-# Line Response and Transfer Function
+### Line Response and Transfer Function
 
 <div class="callout callout-important">
 <div class="callout-title"><span class="callout-icon">❗</span>Important</div>
@@ -2155,7 +2261,7 @@ The line spread function is the derivative of the edge response
 
 </div>
 </div>
-# Transfer Function from Line and Edge Response
+### Transfer Function from Line and Edge Response
 
 Finally:
 
@@ -2218,13 +2324,20 @@ We use that the delta function can be thought of as generating all frequencies s
 
 </div>
 </div>
-# Diffraction Theory Fundamentals
+## VIII. Diffraction Theory Fundamentals
+
+*Lecture start: 2025-02-05*
 
 - Sound waves in gas require **scalar** values (scalar diff. theory)
 - EM waves are **vectors** (vector theory)
 
 ## Maxwell's Equations (Current & Source-free)
 
+<div class="callout callout-abstract">
+<div class="callout-title"><span class="callout-icon">📄</span>Maxwell's Equations</div>
+<div class="callout-content">
+
+**Faraday's Law** (changing $\vec{H}$ induces $\vec{E}$):
 
 
 $$
@@ -2233,6 +2346,7 @@ $$
 
 
 
+**Ampère's Law** (changing $\vec{E}$ induces $\vec{H}$):
 
 
 $$
@@ -2241,8 +2355,7 @@ $$
 
 
 
-$H$ = Magnetic Field Intensity
-
+**Gauss's Law for Electricity** (no free charges):
 
 
 $$
@@ -2251,13 +2364,19 @@ $$
 
 
 
+**Gauss's Law for Magnetism** (no magnetic monopoles):
 
 
 $$
 \nabla \cdot \mu_0 \vec{H} = 0
 $$
 
- (Non-magnetic)
+
+
+where $H$ is the magnetic field intensity.
+
+</div>
+</div>
 
 ## Derivation of Wave Equation
 
@@ -2266,20 +2385,14 @@ We have:
 
 
 $$
-\nabla \times (\nabla \times \vec{E}) = -\mu \cdot \nabla \times \left(\frac{\partial \vec{H}}{\partial t}\right)
+\nabla \times (\nabla \times \vec{E}) = -\mu \cdot \nabla \times \left(\frac{\partial \vec{H}}{\partial t}\right) = -\mu_0 \epsilon(r) \frac{\partial^2 \vec{E}}{\partial t^2}
 $$
 
 
 
-
-
-$$
-= -\mu_0 \epsilon(r) \frac{\partial^2 \vec{E}}{\partial t^2}
-$$
-
-
-
-But (vector identity):
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Vector Identity</div>
+<div class="callout-content">
 
 
 
@@ -2289,32 +2402,61 @@ $$
 
 
 
+</div>
+</div>
 
-
-$$
-\therefore \quad \nabla^2 \vec{E} - \nabla\left(\nabla \cdot \frac{\vec{D}}{\epsilon(r)}\right) - \mu_0 \epsilon(r) \frac{\partial^2 \vec{E}}{\partial t^2} = 0
-$$
-
-
-
-If medium is **homogeneous**, $\epsilon(r) = \text{constant}$
-
-and $\left[\nabla \cdot \frac{\vec{D}}{\epsilon(r)}\right] = \frac{1}{\epsilon}[\nabla \cdot \vec{D}] = 0$
-
-and we have:
+Therefore:
 
 
 
 $$
-\boxed{\nabla^2 \vec{E} - \mu_0 \epsilon \frac{\partial^2 \vec{E}}{\partial t^2} = 0}
+\nabla^2 \vec{E} - \nabla\left(\nabla \cdot \frac{\vec{D}}{\epsilon(r)}\right) - \mu_0 \epsilon(r) \frac{\partial^2 \vec{E}}{\partial t^2} = 0
 $$
 
 
 
-**Homogeneous Wave Equation**
-# Scalar Wave Equation
+If medium is **homogeneous**, $\epsilon(r) = \text{constant}$, then:
 
-Let $n = \left(\frac{\epsilon}{\epsilon_0}\right)^{1/2}$, $c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}$, $\mu_0 \epsilon = \mu_0 n^2 \epsilon_0 = \frac{n^2}{c^2}$
+
+
+$$
+\nabla \cdot \frac{\vec{D}}{\epsilon(r)} = \frac{1}{\epsilon}[\nabla \cdot \vec{D}] = 0
+$$
+
+
+
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Homogeneous Wave Equation</div>
+<div class="callout-content">
+
+
+
+$$
+\nabla^2 \vec{E} - \mu_0 \epsilon \frac{\partial^2 \vec{E}}{\partial t^2} = 0
+$$
+
+
+
+</div>
+</div>
+### Scalar Wave Equation
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Refractive Index</div>
+<div class="callout-content">
+
+
+
+$$
+n = \sqrt{\frac{\epsilon}{\epsilon_0}}
+$$
+
+
+
+Also: $c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}$ (speed of light), so $\mu_0 \epsilon = \mu_0 n^2 \epsilon_0 = \frac{n^2}{c^2}$
+
+</div>
+</div>
 
 Then, for each component of the vector $E_x, E_y, E_z$, we have:
 
@@ -2326,24 +2468,26 @@ $$
 
 
 
+where the wave propagation speed is $c/n$.
+
 <div class="callout callout-warning">
-<div class="callout-title"><span class="callout-icon">⚠️</span>Note</div>
+<div class="callout-title"><span class="callout-icon">⚠️</span>Assumptions for Scalar Wave Equation</div>
 <div class="callout-content">
 
-If there are variations in $\epsilon(r)$ (such as a phase grating, etc.) the medium is **not** homogeneous and in general we have an extra term in the wave equation from $\nabla\left(\nabla \cdot \frac{\vec{D}}{\epsilon(r)}\right)$. This term couples the vector components and makes the vector problem more difficult.
+1. $n(r)$ must not change significantly over a distance $\lambda$
+2. All apertures must be $\geq \lambda$
+3. Observations not too close to the aperture
+4. Polarization state is linear and unaffected by diffraction
+
+![Grating assumption](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/grating_assumption.svg)
+![Aperture assumption](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/aperture_assumption.svg)
+
+If $\epsilon(r)$ varies (e.g., phase grating), the medium is **not** homogeneous and an extra term $\nabla\left(\nabla \cdot \frac{\vec{D}}{\epsilon(r)}\right)$ couples vector components, making the problem more difficult.
 
 </div>
 </div>
 
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Boundary Conditions</div>
-<div class="callout-content">
-
-- A similar effect occurs when boundary conditions are imposed (aperture w.r.t. $\lambda$ (or $\epsilon(r) \approx$ constant across $\lambda$))
-- The cross term can be neglected. This allows us to use a **scalar wave equation**:
-
-</div>
-</div>
+When these assumptions hold, the cross term can be neglected and we can use a **scalar wave equation**:
 
 
 
@@ -2353,78 +2497,79 @@ $$
 
 
 
-where $E$ is a scalar that represents the amplitude of some field component.
+where $E$ is a scalar representing the amplitude of a single field component.
+### Helmholtz Equation (Frequency-Domain Form)
 
-<div class="callout callout-tip">
-<div class="callout-title"><span class="callout-icon">💡</span>Tip</div>
+Starting from the wave equation:
+
+
+
+$$
+\nabla^2 E - \frac{n^2}{c_0^2} \frac{\partial^2 E}{\partial t^2} = 0
+$$
+
+
+
+**Take the time Fourier transform** of the equation.
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Derivative mappings</div>
 <div class="callout-content">
 
-- The scalar theory is accurate as long as diffracting structures are large with respect to $\lambda$ and are not observed too close to the aperture
-- The scalar theory assumes that the **polarization state is linear** and is not affected by diffraction
+
+
+$$
+\frac{\partial}{\partial t}(\cdot) \to j2\pi f(\cdot) = j\omega(\cdot)
+$$
+
+
+
+
+$$
+\frac{\partial^2}{\partial t^2}(\cdot) \to (j2\pi f)^2(\cdot) = -\omega^2(\cdot)
+$$
+
+
 
 </div>
 </div>
-# Helmholtz Equation
 
-Consider wave equation:
-
-
-
-$$
-\nabla^2 u - \frac{n^2}{c^2} \frac{\partial^2 u}{\partial t^2} = 0
-$$
-
-
-
-($u$ = Scalar electric or magnetic field)
-
-Take F.T. w.r.t. time of equation:
+Thus:
 
 
 
 $$
-\frac{\partial^2}{\partial t^2} \xrightarrow{\mathcal{F}} (j2\pi f)^2 = -\omega^2
+\nabla^2 \hat{u}(\bar{r},\omega) + \frac{n^2 \omega^2}{c_0^2} \hat{u}(\bar{r},\omega) = 0
 $$
 
 
 
-
-
-$$
-u(\bar{r},t) \xrightarrow{\mathcal{F}} \hat{u}(\bar{r},\omega)
-$$
-
-
-
-Then wave equation becomes:
+**Define the wavenumber:**
 
 
 
 $$
-\nabla^2 \hat{u}(\bar{r},\omega) + \frac{n^2 \omega^2}{c^2} \hat{u}(\bar{r},\omega) = 0
+k = \frac{n\omega}{c_0} = \frac{2\pi n}{\lambda}
 $$
 
 
 
+Therefore, the Helmholtz equation is:
 
-
-$$
-= k^2
-$$
-
-
-
-or:
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Helmholtz Equation</div>
+<div class="callout-content">
 
 
 
 $$
-\boxed{\nabla^2 \hat{u}(\bar{r},\omega) + k^2 \hat{u}(\bar{r},\omega) = 0}
+\nabla^2 \hat{u}(\bar{r},\omega) + k^2 \hat{u}(\bar{r},\omega) = 0
 $$
 
 
 
-**Helmholtz Equation**
+</div>
+</div>
 
 ## Monochromatic Wave
 
@@ -2469,7 +2614,8 @@ $$
 
 
 where $a(x,y,z)$ is real.
-# Complex Amplitude
+
+### Complex Amplitude
 
 We denote the complex amplitude as the amplitude of one of these delta functions (use $\delta(\nu + \nu_0)$):
 
@@ -2543,7 +2689,8 @@ $$
 $$
 
 
-# Returning to Time Signal (Alternative Method)
+
+### Returning to Time Signal (Alternative Method)
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Note</div>
@@ -2595,72 +2742,112 @@ $\Rightarrow$ We care about amplitude and phase separately, as the real part is 
 
 </div>
 </div>
-# Plane Waves (Monochromatic, Polarized)
 
-Recall 1st quarter: we had a general solution to the Helmholtz equation:
+### Plane-Wave Solutions of the Helmholtz Equation
 
-
-
-$$
-\nabla^2 \hat{u}(r) + k^2 \hat{u}(r) = 0, \quad \bar{r} = (x,y,z)
-$$
-
-
+The Helmholtz equation is:
 
 
 
 $$
-\Rightarrow \hat{u}(\bar{r}) = \hat{C} e^{j\vec{k} \cdot \bar{r}}, \quad \vec{k} = (k_x, k_y, k_z)
+\nabla^2 \hat{u}(\bar{r}) + k^2 \hat{u}(\bar{r}) = 0
 $$
 
 
+
+A plane-wave solution is:
+
+
+
+$$
+\hat{u}(\bar{r}) = \hat{C} e^{j\vec{k} \cdot \bar{r}}
+$$
+
+
+
+where the wavevector is $\vec{k} = (k_x, k_y, k_z)$.
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>We have already shown this satisfies the Helmholtz equation</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Plane Wave Solution</div>
 <div class="callout-content">
 
 This is a **plane wave solution** to our E-M wave (or sound wave) in free space (3-dim).
-
-$\vec{k}$ is the direction of propagation, and $\hat{C}$ is a complex constant.
+- $\vec{k}$ is the direction of propagation
+- $\hat{C}$ is a complex constant
 
 </div>
 </div>
 
-## Plane Wave Representation
+## Alternative Expression
 
-We can express plane waves with a slightly different notation:
-
-
-
-$$
-\hat{C} = |A| e^{j\phi}, \quad \vec{k} = (k_x, k_y, k_z) = |\vec{k}|(\gamma_x, \gamma_y, \gamma_z)
-$$
-
-
-
-where $\gamma$ are the direction cosines, i.e., $\gamma_x = \cos\theta = \frac{k_x}{|\vec{k}|}$, where $\theta$ is angle from x axis, etc.
-
-Then:
+Let the complex amplitude be written as:
 
 
 
 $$
-\hat{u}(x,y,z) = A e^{j\phi} e^{j\vec{k}(\gamma_x, \gamma_y, \gamma_z) \cdot (x,y,z)}
+\hat{C} = |A| e^{j\phi}
 $$
 
 
 
+Write the wavevector as:
+
 
 
 $$
-= A e^{j[\vec{k}(\gamma_x x + \gamma_y y + \gamma_z z) + \phi]}
+\vec{k} = (k_x, k_y, k_z) = k(\gamma_x, \gamma_y, \gamma_z)
+$$
+
+
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Direction Cosines</div>
+<div class="callout-content">
+
+
+
+$$
+\gamma_x = \cos\theta_x, \quad \gamma_y = \cos\theta_y, \quad \gamma_z = \cos\theta_z
+$$
+
+
+
+where $\theta_x$, $\theta_y$, $\theta_z$ are angles from the respective axes.
+
+</div>
+</div>
+
+## Plane Wave in Cartesian Coordinates
+
+Thus:
+
+
+
+$$
+\hat{u}(x,y,z) = A e^{j\phi} e^{jk(\gamma_x x + \gamma_y y + \gamma_z z)}
+$$
+
+
+
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Plane-Wave Expression (Final Form)</div>
+<div class="callout-content">
+
+
+
+$$
+\hat{u}(x,y,z) = A e^{j[k(\gamma_x x + \gamma_y y + \gamma_z z) + \phi]}
 $$
 
 
 
 - $A$ is the amplitude of the wave field
 - $\phi$ is the phase at the origin
-# Plane Wave Time Domain and Direction Cosines
+
+</div>
+</div>
+
+### Plane Wave Time Domain and Direction Cosines
 
 The real field distribution is obtained by inverse Fourier transforming (in temporal frequency), this spatial distribution multiplied by $\frac{\delta(\nu+\nu_0) + \delta(\nu-\nu_0)}{2}$.
 
@@ -2682,29 +2869,32 @@ $$
 
 
 
-## Direction Cosine Constraint
+## Direction Cosines Normalization
 
 Recall: $\vec{k} = |\vec{k}|(\gamma_x, \gamma_y, \gamma_z)$
 
-and $\vec{k} \cdot \vec{k} = |\vec{k}|^2 (\gamma_x, \gamma_y, \gamma_z) \cdot (\gamma_x, \gamma_y, \gamma_z)$
-
-
-
-$$
-= |\vec{k}|^2 (\gamma_x^2 + \gamma_y^2 + \gamma_z^2) = |\vec{k}|^2
-$$
-
-
-
+Then:
 
 
 $$
-\therefore \boxed{\gamma_x^2 + \gamma_y^2 + \gamma_z^2 = 1}
+\vec{k} \cdot \vec{k} = |\vec{k}|^2 (\gamma_x, \gamma_y, \gamma_z) \cdot (\gamma_x, \gamma_y, \gamma_z) = |\vec{k}|^2 (\gamma_x^2 + \gamma_y^2 + \gamma_z^2)
 $$
 
 
 
-**Property of Direction Cosines**
+But also $\vec{k} \cdot \vec{k} = |\vec{k}|^2$. Therefore:
+
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Direction Cosines Normalization</div>
+<div class="callout-content">
+
+
+
+$$
+\gamma_x^2 + \gamma_y^2 + \gamma_z^2 = 1
+$$
+
+
 
 
 
@@ -2714,116 +2904,171 @@ $$
 
 
 
-From last quarter, we recall:
+</div>
+</div>
 
-- $\gamma_x^2 + \gamma_y^2 < 1 \Rightarrow$ plane wave propagating generally in $+z$ direction
-- $\gamma_x^2 + \gamma_y^2 > 1 \Rightarrow$ evanescent wave (cutoff)
-  - $\Rightarrow \gamma_z^2 < 0$
-  - or $\gamma_z$ is imaginary $= -j\kappa$, $\kappa$ = real
-  - $\therefore e^{-jk\gamma_z z} = e^{-jk(-j\kappa)z} = e^{-\kappa z}$ (exponential decay)
-# Plane Wave Propagation
+## Propagating vs. Evanescent Components
 
-## Free Space Propagation
+**Case 1: Propagating wave**
 
-At $z = z_0$:
+If $\gamma_x^2 + \gamma_y^2 < 1$, then $\gamma_z$ is real and $e^{jk\gamma_z z}$ represents a **propagating wave** in the $+z$ direction.
 
+**Case 2: Evanescent wave**
 
-$$
-u(x,y,z_0) = A e^{j\phi} e^{jkz_0} e^{jk(k_x x + k_y y)} \quad \text{(constant)}
-$$
-
-
+If $\gamma_x^2 + \gamma_y^2 > 1$, then $\gamma_z$ is imaginary. Write $\gamma_z = j\alpha$ where $\alpha > 0$. Then:
 
 
 
 $$
-\Rightarrow u(x,y,z = z_1) = A e^{j\phi} e^{jkz_1} e^{jk(k_x x + k_y y)}
+e^{jk\gamma_z z} = e^{jk(j\alpha)z} = e^{-k\alpha z}
 $$
 
 
 
-**Eigenvalue** $= e^{jk k_z (z_1 - z_0)}$
+<div class="callout callout-warning">
+<div class="callout-title"><span class="callout-icon">⚠️</span>Evanescent Field</div>
+<div class="callout-content">
 
-## General Description of Field at $z = z_1$
-
-In general:
-
-
-$$
-u(x,y,z) = A e^{jk(\gamma_x x + \gamma_y y + \gamma_z z) + \phi}
-$$
-
-
+The field amplitude decays exponentially with $z$:
 
 
 $$
-= A e^{j\phi} e^{jk\gamma_z z_1} e^{jk(\gamma_x x + \gamma_y y)}
+e^{-k\alpha z}
 $$
 
 
+This is an **evanescent** (exponentially decaying) field that does not propagate.
 
+</div>
+</div>
 
+### Plane Wave Propagation
 
-$$
-u(x,y,z_1) = A e^{j\phi} e^{jk\gamma_z z_1} e^{jk(\gamma_x x + \gamma_y y)}
-$$
+## Eigenfunctions of Free-Space Propagation
 
+The transverse plane wave factor $e^{jk(\gamma_x x + \gamma_y y)}$ is an **eigenfunction** of the free-space propagation operator.
 
+### Why This Works
 
-If we let $\phi = -k\gamma_z z_1$, we have:
+Write the field at the input plane as:
 
 
 
 $$
-\boxed{u(x,y,z_1) = A e^{jk(\gamma_x x + \gamma_y y)}}
+\hat{u}(x,y,z_0) = A e^{j\phi} e^{jk\gamma_z z_0} e^{jk(\gamma_x x + \gamma_y y)}
 $$
 
 
 
-**Description of a plane wave in the plane $z = z_1$ (phase is measured at constant z-plane)**
+Propagating from $z_0$ to $z_1$ multiplies the field by the transfer function:
+
+
+
+$$
+H = e^{jk\gamma_z(z_1 - z_0)}
+$$
+
+
+
+Thus the output is:
+
+
+
+$$
+\hat{u}(x,y,z_1) = e^{jk\gamma_z(z_1 - z_0)} \cdot \hat{u}(x,y,z_0)
+$$
+
+
+
+Substituting the input field:
+
+
+
+$$
+\hat{u}(x,y,z_1) = A e^{j\phi} e^{jk\gamma_z z_1} e^{jk(\gamma_x x + \gamma_y y)}
+$$
+
+
+
+### Eigenvalue Interpretation
+
+Since propagation acts as:
+
+
+
+$$
+e^{jk(\gamma_x x + \gamma_y y)} \to e^{jk\gamma_z(z_1 - z_0)} \cdot e^{jk(\gamma_x x + \gamma_y y)}
+$$
+
+
+
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Eigenfunction/Eigenvalue of Free-Space Propagation</div>
+<div class="callout-content">
+
+**Eigenfunction:** $e^{jk(\gamma_x x + \gamma_y y)}$
+
+**Eigenvalue:** $e^{jk\gamma_z(z_1 - z_0)}$
+
+</div>
+</div>
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Eigenvalue depends on propagation distance</div>
 <div class="callout-content">
 
-We see now that plane waves are the **eigenfunctions of the free space propagation operator** - i.e., if we start with a plane wave at $z_0$, we end up with a plane wave at $z_1$ multiplied by a complex constant $e^{jk\gamma_z(z_1-z_0)}$
+Unlike typical eigenvalue problems where eigenvalues are fixed constants, here we have a *parameterized family* of propagation operators — one for each distance $(z_1 - z_0)$.
+- The **eigenfunction** (transverse spatial pattern) stays the same
+- The **eigenvalue** (phase shift) accumulates with distance
+
+This is why plane waves are useful: they maintain their shape while propagating, just picking up phase.
 
 </div>
 </div>
 
-<div class="callout callout-important">
-<div class="callout-title"><span class="callout-icon">❗</span>Important</div>
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Physical Meaning</div>
 <div class="callout-content">
 
-Note that this exponential is a function of $|\gamma_z|$ as well as the propagation distance $(z_1 - z_0)$
+- Each transverse plane wave propagates independently
+- Free space does not mix spatial frequencies
+- Propagation only adds a phase (or decay) along $z$
+
+This is the foundation of:
+- Angular spectrum theory
+- Fresnel / Fraunhofer diffraction
+- Fourier-optics propagation models
 
 </div>
 </div>
 
-Since the **[eigenvalue](/notes/areas/mathematics/linear_algebra/definitions/eigenvalue/)** describes the **[transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)** we have the **[transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)** of propagation given by:
+### Transfer Function of Propagation
+
+Since the **[eigenvalue](/notes/areas/mathematics/linear_algebra/definitions/eigenvalue/)** describes the **[transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)**:
 
 
 
 $$
-H(\gamma_x, \gamma_y) = \exp\left[jk\gamma_z(z_1 - z_0)\right] = \exp\left[jk\sqrt{1-(\gamma_x + \gamma_y)(z_1-z_0)}\right]
+H(\gamma_x, \gamma_y) = \exp\left[jk\gamma_z(z_1 - z_0)\right] = \exp\left[jk\sqrt{1-(\gamma_x^2 + \gamma_y^2)}(z_1-z_0)\right]
 $$
 
 
 
-where $\gamma_x + \gamma_y^2 \leq 1$ (non-evanescent)
-# Complex Amplitude and Amplitude Transmittance
+where $\gamma_x^2 + \gamma_y^2 \leq 1$ (non-evanescent)
 
-Consider complex amplitude (monochromatic, within time removed) at a plane $z = z_i$:
+### Complex Amplitude and Amplitude Transmittance
+
+Consider complex amplitude (monochromatic, with time dependence removed) at a plane $z = z_i$:
 
 
 
 $$
-u(x,y,z_i) = u_i(x,y) \leftarrow \text{2-dim function of electric field in the z-plane}
+u(x,y,z_i) = u_i(x,y)
 $$
 
 
 
-$\Rightarrow$ We define the **complex amplitude transmittance** as:
+We define the **complex amplitude transmittance** as:
 
 
 
@@ -2834,17 +3079,68 @@ $$
 
 
 where:
-- $u_i^+(x,y) = u(x,y,z+\epsilon) \leftarrow$ right side of aperture
-- $u_i^-(x,y) = u(x,y,z-\epsilon) \leftarrow$ left side of aperture
+- $u_i^-(x,y)$ = field just before the aperture (incident)
+- $u_i^+(x,y)$ = field just after the aperture (transmitted)
 
-## Interpretation of Amplitude Transmittance
+![Amplitude Transmittance](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/amplitude_transmittance.svg)
 
-- If the aperture is a **hole in a piece of metal**, obviously $t_i(x,y) = 1$ where the hole is and $t_i(x,y) = 0$ where the hole isn't.
+## Why t = 1 Inside, t = 0 Outside
 
-- If the "aperture" is a **piece of film** (perfectly flat), $t_i(x,y)$ describes the dark and light pattern on the film.
+<div class="callout callout-example">
+<div class="callout-title"><span class="callout-icon">📋</span>Aperture Transmittance</div>
+<div class="callout-content">
 
-- If the "aperture" is a **clear piece of film** that is not flat, but $|t_i(x,y)| = 1$, $t_i(x,y)$ is complex, representing the different **phase delays** suffered by $u_i^-(x,y)$ traveling through different thicknesses.
-# Transmitted Field and Angular Plane Wave Spectrum
+**Inside the aperture (the hole):** The wave passes through unchanged
+
+
+$$
+u^+(x,y) = u^-(x,y) \Rightarrow t_i(x,y) = 1
+$$
+
+
+
+**Outside the aperture (opaque screen):** The wave is blocked
+
+
+$$
+u^+(x,y) = 0 \Rightarrow t_i(x,y) = 0
+$$
+
+
+
+</div>
+</div>
+
+Therefore, for an ideal aperture:
+
+
+
+$$
+t_i(x,y) = \begin{cases} 1, & (x,y) \text{ inside aperture} \\ 0, & (x,y) \text{ outside aperture} \end{cases}
+$$
+
+
+
+This is often called the **aperture function** or **pupil function**.
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Why This Matters</div>
+<div class="callout-content">
+
+Because the transmitted field is $u^+(x,y) = t_i(x,y) \cdot u^-(x,y)$, the aperture literally **multiplies** the field.
+
+This is why apertures turn into **convolutions in Fourier space** — the gateway to diffraction theory.
+
+</div>
+</div>
+
+## Other Types of Transmittance
+
+- **Film (amplitude mask):** $t_i(x,y)$ describes the dark/light pattern; $0 \leq |t_i| \leq 1$
+
+- **Phase object (clear but not flat):** $|t_i(x,y)| = 1$ but $t_i$ is complex, representing different **phase delays** from varying thickness
+
+### Transmitted Field and Angular Plane Wave Spectrum
 
 If we know the amplitude transmittance $t_i(x,y)$ and the incident wave field $u_i(x,y)$, we obviously can calculate the transmitted complex field:
 
@@ -2860,140 +3156,255 @@ $$
 <div class="callout-title"><span class="callout-icon">ℹ️</span>This is our case of interest</div>
 </div>
 
-## Example: Plane Wave Through Circular Aperture
+## Complete Example: Tilted Plane Wave Through Circular Aperture
+
+This section provides a complete angular-spectrum analysis of an oblique plane wave passing through a circular aperture.
+
+### Setup and Notation
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Notation</div>
+<div class="callout-content">
+
+- Transverse coordinate: $\mathbf{r} = (x, y)$
+- Spatial frequency: $\mathbf{f} = (f_x, f_y)$
+- Wavenumber: $k = n\omega/c_0 = 2\pi/\lambda$
+- Direction cosines: $\boldsymbol{\gamma} = (\gamma_x, \gamma_y, \gamma_z)$ with $\gamma_x^2 + \gamma_y^2 + \gamma_z^2 = 1$
+- Transverse spatial frequency of tilted plane wave: $\mathbf{f}_0 = \frac{k}{2\pi}(\gamma_x, \gamma_y)$
+
+</div>
+</div>
+
+### Step 1: Incident Plane Wave at Object Plane $z = z_0$
+
+A plane wave incident obliquely arrives at the object plane with the transverse factor:
 
 
 
 $$
-u_i^-(x,y) = A e^{jk\gamma_x x}
+u^-(x,y) = A e^{j\phi} e^{jk(\gamma_x x + \gamma_y y)} = A_0 e^{j2\pi \mathbf{f}_0 \cdot \mathbf{r}}
+$$
+
+
+
+where $A_0 = A e^{j\phi}$ and $\mathbf{r} = (x, y)$.
+
+### Step 2: Aperture Transmittance
+
+Take a circular aperture of radius $a = d/2$. The transmittance is:
+
+
+
+$$
+t(\mathbf{r}) = \text{circ}\left(\frac{\|\mathbf{r}\|}{a}\right) = \begin{cases} 1, & \|\mathbf{r}\| \leq a \\ 0, & \|\mathbf{r}\| > a \end{cases}
+$$
+
+
+
+The transmitted field immediately after the aperture is:
+
+
+
+$$
+u^+(\mathbf{r}) = u^-(\mathbf{r}) \cdot t(\mathbf{r}) = A_0 e^{j2\pi \mathbf{f}_0 \cdot \mathbf{r}} \cdot t(\mathbf{r})
+$$
+
+
+
+### Step 3: Angular Spectrum Representation
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>2D Fourier Transform Convention</div>
+<div class="callout-content">
+
+
+
+$$
+\mathcal{F}\{g(\mathbf{r})\}(\mathbf{f}) = \iint_{\mathbb{R}^2} g(\mathbf{r}) e^{-j2\pi \mathbf{f} \cdot \mathbf{r}} \, d^2\mathbf{r}
 $$
 
 
 
 
-
 $$
-t_i(x,y) = \text{cyl}\left(\frac{\sqrt{x^2+y^2}}{d}\right) = \text{circ}\left(\frac{\sqrt{x^2+y^2}}{d/2}\right)
-$$
-
-
-
-
-
-$$
-\therefore \quad u_i^+(x,y) = u_i^-(x,y) \cdot t_i(x,y) = A e^{jk\gamma_x x} \cdot \text{cyl}\left(\frac{\sqrt{x^2+y^2}}{d}\right)
+g(\mathbf{r}) = \iint_{\mathbb{R}^2} \mathcal{F}\{g\}(\mathbf{f}) e^{j2\pi \mathbf{f} \cdot \mathbf{r}} \, d^2\mathbf{f}
 $$
 
 
 
+</div>
+</div>
 
-
-$$
-= \text{circ}\left(\frac{\sqrt{x^2+y^2}}{d/2}\right)
-$$
-
-
-
-## Angular Plane Wave Spectrum
-
-Consider the complex field at $z = z_i$:
+Using the **modulation/shift property**:
 
 
 
 $$
-\Rightarrow u_i(x,y)
+\mathcal{F}\{e^{j2\pi \mathbf{f}_0 \cdot \mathbf{r}} \cdot t(\mathbf{r})\}(\mathbf{f}) = T(\mathbf{f} - \mathbf{f}_0)
 $$
 
 
 
-We can express this as an inverse Fourier transform using a Fourier synthesis:
+where $T(\mathbf{f}) = \mathcal{F}\{t\}(\mathbf{f})$ is the aperture's Fourier transform.
+
+Therefore the angular spectrum of the transmitted field is:
 
 
 
 $$
-u_i(x,y) = \iint_{-\infty}^{\infty} \tilde{U}_i(z,\eta) e^{j\pi(zx+\eta y)} \, dz \, d\eta
+U^+(\mathbf{f}) = A_0 \, T(\mathbf{f} - \mathbf{f}_0)
 $$
 
 
 
-where $\tilde{U}_i(z,\eta) = \mathcal{F}\{u_i(x,y)\}$
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Key Insight</div>
+<div class="callout-content">
 
-Recall the expression for a plane wave at $z = z_i$:
+The plane-wave factor **shifts** the aperture spectrum: the aperture's FT is centered at $\mathbf{f}_0$ (not at the origin).
 
+</div>
+</div>
 
+### Step 4: Fourier Transform of Circular Aperture
 
-$$
-C \exp[jk(\gamma_x x + \gamma_y y)]
-$$
-
-
-
-
-
-$$
-= C \exp\left[j2\pi\left(\frac{\gamma_x x}{\lambda} + \frac{\gamma_y y}{\lambda}\right)\right]
-$$
-
-
-
-## Relationship Between Angle and Spatial Frequency
-
-Let $\gamma_x = \lambda\xi$ and $\gamma_y = \lambda\eta$
-
-Check dimensions: $\gamma_x \rightarrow \text{cm}$, $\lambda \rightarrow \text{cm}$, $\xi \rightarrow \text{cm}^{-1}$
-
-Then the Fourier synthesis can be viewed as a decomposition into a sum of plane waves (each with direction cosines):
+The 2D FT of a circular aperture of radius $a$ is radially symmetric:
 
 
 
 $$
-(\gamma_x, \gamma_y, \gamma_z) = (\lambda\xi, \lambda\eta, \sqrt{1-\lambda^2(\xi^2+\eta^2)})
+T(\mathbf{f}) = \mathcal{F}\{t\}(\mathbf{f}) = a^2 \frac{J_1(2\pi a \rho)}{\rho}, \quad \rho = \|\mathbf{f}\|
+$$
+
+
+
+Thus:
+
+
+
+$$
+U^+(\mathbf{f}) = A_0 \, a^2 \frac{J_1(2\pi a \|\mathbf{f} - \mathbf{f}_0\|)}{\|\mathbf{f} - \mathbf{f}_0\|}
+$$
+
+
+
+The angular spectrum is the **Airy-like radial profile centered at $\mathbf{f}_0$**.
+
+### Step 5: Free-Space Propagation from $z_0$ to $z_1$
+
+Propagation multiplies each spectral component by the transfer factor:
+
+
+
+$$
+H(\mathbf{f}; \Delta z) = \exp(jk_z(\mathbf{f}) \Delta z), \quad \Delta z = z_1 - z_0
+$$
+
+
+
+with:
+
+
+
+$$
+k_z(\mathbf{f}) = \sqrt{k^2 - (2\pi f_x)^2 - (2\pi f_y)^2}
+$$
+
+
+
+<div class="callout callout-warning">
+<div class="callout-title"><span class="callout-icon">⚠️</span>Evanescent Components</div>
+<div class="callout-content">
+
+If $|2\pi \mathbf{f}| > k$ then $k_z$ is imaginary → evanescent decay.
+
+</div>
+</div>
+
+The propagated angular spectrum is:
+
+
+
+$$
+U(\mathbf{f}; z_1) = U^+(\mathbf{f}) \cdot H(\mathbf{f}; \Delta z) = A_0 \, T(\mathbf{f} - \mathbf{f}_0) \, e^{jk_z(\mathbf{f}) \Delta z}
+$$
+
+
+
+### Step 6: Field at Output Plane $z = z_1$
+
+The field is the inverse 2D FT:
+
+
+
+$$
+u(\mathbf{r}, z_1) = \iint_{\mathbb{R}^2} U(\mathbf{f}; z_1) e^{j2\pi \mathbf{f} \cdot \mathbf{r}} \, d^2\mathbf{f}
+$$
+
+
+
+Change variable $\mathbf{s} = \mathbf{f} - \mathbf{f}_0$:
+
+
+
+$$
+u(\mathbf{r}, z_1) = A_0 e^{j2\pi \mathbf{f}_0 \cdot \mathbf{r}} \iint_{\mathbb{R}^2} T(\mathbf{s}) e^{jk_z(\mathbf{s} + \mathbf{f}_0) \Delta z} e^{j2\pi \mathbf{s} \cdot \mathbf{r}} \, d^2\mathbf{s}
 $$
 
 
 
 <div class="callout callout-important">
-<div class="callout-title"><span class="callout-icon">❗</span>Important</div>
+<div class="callout-title"><span class="callout-icon">❗</span>Two Key Observations</div>
 <div class="callout-content">
 
-This means that the 2-dim distribution $u_i(x,y)$ can be synthesized by **combining plane waves of all different angles**, where the magnitude and phase of each plane wave is given by $\tilde{U}_i(\xi,\eta) \leftarrow$ the "**plane wave spectrum**"
+1. The prefactor $e^{j2\pi \mathbf{f}_0 \cdot \mathbf{r}} = e^{jk(\gamma_x x + \gamma_y y)}$ is the **plane-wave tilt preserved** across propagation
+2. The integral contains the aperture FT multiplied by propagation phase — different spatial frequencies accumulate different phase, reshaping the transverse profile
 
 </div>
 </div>
 
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Spatial Frequency and Angle</div>
+### Step 7: Special/Limiting Cases
+
+**Case (a): Small aperture** — If $T(\mathbf{s})$ is sharply peaked around $\mathbf{s} = 0$, approximate $k_z(\mathbf{s} + \mathbf{f}_0) \approx k_z(\mathbf{f}_0)$. The plane-wave factor acts almost like a true eigenfunction.
+
+**Case (b): Fraunhofer (far-field)** — For large $\Delta z$, the field reduces to the FT of the exit pupil at scaled coordinates. The far-field intensity is $|T(\mathbf{f} - \mathbf{f}_0)|^2$ — the **Airy disk pattern shifted by incidence angle**.
+
+**Case (c): Evanescent components** — If $\|\mathbf{f} - \mathbf{f}_0\| > k/(2\pi)$, then $k_z$ is imaginary and that component decays as $\exp(-|\text{Im}\, k_z| \Delta z)$. High spatial frequencies (fine details) are attenuated.
+
+### Step 8: Final Expression
+
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Angular Spectrum Formula: Circular Aperture</div>
 <div class="callout-content">
-
-- $\xi = \frac{\gamma_x}{\lambda} = \frac{\cos\theta_x}{\lambda}$ — spatial frequency
-- Note: Angle is measured w.r.t. x-axis. Searching the spatial frequency is written as $\xi = \frac{\sin\theta}{\lambda}$, but this is for $\theta$ measured to z-axis.
-
-</div>
-</div>
-
-## Angular Plane Wave Spectrum Formula
-
-We have by Fourier transformation the amplitude and phase of these plane waves given by:
 
 
 
 $$
-\boxed{\tilde{U}_i(\xi,\eta) = \iint_{-\infty}^{\infty} u_i(x,y) e^{-j2\pi(\xi x + \eta y)} \, dx \, dy}
+u(\mathbf{r}, z_1) = A_0 e^{j2\pi \mathbf{f}_0 \cdot \mathbf{r}} \iint_{\mathbb{R}^2} \left[ a^2 \frac{J_1(2\pi a \|\mathbf{s}\|)}{\|\mathbf{s}\|} \right] e^{jk_z(\mathbf{s} + \mathbf{f}_0) \Delta z} e^{j2\pi \mathbf{s} \cdot \mathbf{r}} \, d^2\mathbf{s}
 $$
 
 
 
-**Angular Plane Wave Spectrum**
+where $\mathbf{s} = \mathbf{f} - \mathbf{f}_0$.
 
-<div class="callout callout-tip">
-<div class="callout-title"><span class="callout-icon">💡</span>Tip</div>
+</div>
+</div>
+
+### Physics Summary
+
+<div class="callout callout-abstract">
+<div class="callout-title"><span class="callout-icon">📄</span>Key Takeaways</div>
 <div class="callout-content">
 
-Amplitude at $z_i$ given by summing all plane waves. Each is delayed a different amount. Lenses of Interest. The angle of the wave determines its delay.
+- A transverse plane-wave factor $e^{jk(\gamma_x x + \gamma_y y)}$ **shifts** the aperture FT: the pattern is centered at $\mathbf{f}_0$
+- Propagation **multiplies** each spectral component by $e^{jk_z \Delta z}$: this produces phase changes (and evanescent decay) that reshape the field
+- In the **far field**, the pattern is the shifted FT of the aperture — for a circle, that's the **Airy pattern displaced by incidence angle**
+- The plane-wave transverse factor is a **carrier**: it survives as $e^{j2\pi \mathbf{f}_0 \cdot \mathbf{r}}$ in the output, but the aperture imprint and propagation phase determine the transverse envelope
 
 </div>
 </div>
-# Propagation Transfer Function
+
+### Propagation Transfer Function
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Note</div>
@@ -3286,7 +3697,7 @@ $$
 
 ## Fresnel Approximation
 
-This is the **Fresnel Approach**. However, to simplify things, we first restrict the angular plane waves to small angles ($\gamma_x \ll 1$, $\gamma_y \ll 1$):
+This is the **[Fresnel](/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction/) Approach**. However, to simplify things, we first restrict the angular plane waves to small angles ($\gamma_x \ll 1$, $\gamma_y \ll 1$):
 
 
 
@@ -3852,6 +4263,7 @@ $$
 
 
 where $\rho = \sqrt{x^2 + y^2}$
+
 # Fraunhofer Diffraction - Airy Pattern
 
 The intensity pattern follows a sombrero function:
