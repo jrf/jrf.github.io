@@ -1062,6 +1062,10 @@
     },
     {
       "source": "/notes/areas/mathematics/set_theory/set_theory",
+      "target": "/notes/areas/mathematics/set_theory/definitions/aleph_null"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/set_theory",
       "target": "/notes/areas/mathematics/set_theory/definitions/bijection"
     },
     {
@@ -1090,7 +1094,15 @@
     },
     {
       "source": "/notes/areas/mathematics/set_theory/set_theory",
+      "target": "/notes/areas/mathematics/set_theory/definitions/index_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/set_theory",
       "target": "/notes/areas/mathematics/set_theory/definitions/injection"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/set_theory",
+      "target": "/notes/areas/mathematics/set_theory/definitions/map"
     },
     {
       "source": "/notes/areas/mathematics/set_theory/set_theory",
@@ -1106,7 +1118,19 @@
     },
     {
       "source": "/notes/areas/mathematics/set_theory/set_theory",
+      "target": "/notes/areas/mathematics/set_theory/definitions/recursion"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/set_theory",
+      "target": "/notes/areas/mathematics/set_theory/definitions/set"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/set_theory",
       "target": "/notes/areas/mathematics/set_theory/definitions/set_function"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/set_theory",
+      "target": "/notes/areas/mathematics/set_theory/definitions/subset"
     },
     {
       "source": "/notes/areas/mathematics/set_theory/set_theory",
@@ -1138,11 +1162,23 @@
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/measure_theory",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/measure_theory",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/measure_theory",
       "target": "/notes/areas/mathematics/measure_theory/definitions/borel_sigma-algebra"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/measure_theory",
       "target": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/measure_theory",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/measure_theory",
@@ -1173,6 +1209,10 @@
       "target": "/notes/areas/mathematics/measure_theory/definitions/sigma-algebra"
     },
     {
+      "source": "/notes/areas/mathematics/measure_theory/measure_theory",
+      "target": "/notes/areas/mathematics/measure_theory/definitions/stochastic_process"
+    },
+    {
       "source": "/notes/areas/mathematics/abstract_algebra/abstract_algebra",
       "target": "/notes/areas/mathematics/abstract_algebra/books/ideals_varieties_and_algorithms"
     },
@@ -1183,6 +1223,10 @@
     {
       "source": "/notes/areas/mathematics/abstract_algebra/abstract_algebra",
       "target": "/notes/areas/mathematics/abstract_algebra/definitions/generator"
+    },
+    {
+      "source": "/notes/areas/mathematics/abstract_algebra/abstract_algebra",
+      "target": "/notes/areas/mathematics/abstract_algebra/definitions/invariant"
     },
     {
       "source": "/notes/areas/mathematics/linear_algebra/linear_algebra",
@@ -1199,6 +1243,10 @@
     {
       "source": "/notes/areas/mathematics/linear_algebra/linear_algebra",
       "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue"
+    },
+    {
+      "source": "/notes/areas/mathematics/linear_algebra/linear_algebra",
+      "target": "/notes/areas/mathematics/linear_algebra/definitions/eigenvector"
     },
     {
       "source": "/notes/areas/mathematics/linear_algebra/linear_algebra",
@@ -1451,6 +1499,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/infimum"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/limit"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -7029,6 +7081,38 @@
       "target": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/introduction_to_physical_optics"
     },
     {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/holography"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave"
+    },
+    {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
       "target": "/notes/areas/mathematics/functional_analysis/definitions/bessel_function"
     },
@@ -7835,6 +7919,10 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/topology/definitions/g-delta_set"
     ],
+    "/notes/areas/mathematics/set_theory/definitions/aleph_null": [
+      "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/set_theory/definitions/countable"
+    ],
     "/notes/areas/mathematics/set_theory/definitions/bijection": [
       "/notes/areas/mathematics/set_theory/set_theory",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -7932,11 +8020,21 @@
       "/notes/areas/mathematics/set_theory/definitions/codomain",
       "/notes/areas/mathematics/set_theory/definitions/range"
     ],
+    "/notes/areas/mathematics/set_theory/definitions/index_set": [
+      "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+    ],
     "/notes/areas/mathematics/set_theory/definitions/injection": [
       "/notes/areas/mathematics/set_theory/set_theory",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "/notes/areas/mathematics/set_theory/definitions/map",
       "/notes/areas/mathematics/set_theory/definitions/cardinality"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/map": [
+      "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/probability_measure",
+      "/notes/areas/mathematics/measure_theory/definitions/measure"
     ],
     "/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint": [
       "/notes/areas/mathematics/set_theory/set_theory"
@@ -7952,10 +8050,22 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/set_theory/definitions/codomain"
     ],
+    "/notes/areas/mathematics/set_theory/definitions/recursion": [
+      "/notes/areas/mathematics/set_theory/set_theory"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/set": [
+      "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/set_theory/definitions/subset",
+      "/notes/areas/mathematics/topology/definitions/closure"
+    ],
     "/notes/areas/mathematics/set_theory/definitions/set_function": [
       "/notes/areas/mathematics/set_theory/set_theory",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "/notes/areas/mathematics/measure_theory/definitions/probability_space"
+    ],
+    "/notes/areas/mathematics/set_theory/definitions/subset": [
+      "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/set_theory/definitions/set"
     ],
     "/notes/areas/mathematics/set_theory/definitions/surjection": [
       "/notes/areas/mathematics/set_theory/set_theory",
@@ -7992,6 +8102,16 @@
       "/notes/areas/mathematics/measure_theory/measure_theory",
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
     ],
+    "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake": [
+      "/notes/areas/mathematics/measure_theory/measure_theory",
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle"
+    ],
+    "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle": [
+      "/notes/areas/mathematics/measure_theory/measure_theory",
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake"
+    ],
     "/notes/areas/mathematics/measure_theory/definitions/borel_sigma-algebra": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
       "/notes/areas/mathematics/measure_theory/definitions/borel_sigma-algebra"
@@ -7999,6 +8119,10 @@
     "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
       "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space"
+    ],
+    "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space": [
+      "/notes/areas/mathematics/measure_theory/measure_theory",
+      "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure"
     ],
     "/notes/areas/mathematics/measure_theory/definitions/indicator_function": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
@@ -8041,6 +8165,10 @@
       "/notes/areas/mathematics/measure_theory/definitions/measurable_space",
       "/notes/areas/mathematics/measure_theory/definitions/measure"
     ],
+    "/notes/areas/mathematics/measure_theory/definitions/stochastic_process": [
+      "/notes/areas/mathematics/measure_theory/measure_theory",
+      "/notes/areas/mathematics/measure_theory/definitions/probability_space"
+    ],
     "/notes/areas/mathematics/abstract_algebra/books/ideals_varieties_and_algorithms": [
       "/notes/areas/mathematics/abstract_algebra/abstract_algebra"
     ],
@@ -8052,6 +8180,10 @@
     ],
     "/notes/areas/mathematics/abstract_algebra/definitions/generator": [
       "/notes/areas/mathematics/abstract_algebra/abstract_algebra"
+    ],
+    "/notes/areas/mathematics/abstract_algebra/definitions/invariant": [
+      "/notes/areas/mathematics/abstract_algebra/abstract_algebra",
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
     ],
     "/notes/areas/mathematics/linear_algebra/books/linear_algebra_done_right": [
       "/notes/areas/mathematics/linear_algebra/linear_algebra"
@@ -8075,6 +8207,10 @@
       "/notes/areas/mathematics/linear_algebra/definitions/eigenfunction",
       "/notes/areas/mathematics/linear_algebra/definitions/eigenvector",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/mathematics/linear_algebra/definitions/eigenvector": [
+      "/notes/areas/mathematics/linear_algebra/linear_algebra",
+      "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue"
     ],
     "/notes/areas/mathematics/linear_algebra/definitions/finite-dimensional_subspace": [
       "/notes/areas/mathematics/linear_algebra/linear_algebra"
@@ -8449,6 +8585,10 @@
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/greatest_lower_bound"
     ],
+    "/notes/areas/mathematics/real_analysis/definitions/limit": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/topology/definitions/compactness"
+    ],
     "/notes/areas/mathematics/real_analysis/definitions/linear_transformation": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -8594,47 +8734,6 @@
       "/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function",
       "/notes/areas/mathematics/functional_analysis/definitions/schwartz_space"
     ],
-    "/notes/areas/mathematics/linear_algebra/definitions/eigenvector": [
-      "/notes/areas/mathematics/linear_algebra/definitions/eigenvalue"
-    ],
-    "/notes/areas/mathematics/abstract_algebra/definitions/invariant": [
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
-    ],
-    "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake": [
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
-      "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle"
-    ],
-    "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle": [
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
-      "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake"
-    ],
-    "/notes/areas/mathematics/set_theory/definitions/index_set": [
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
-    ],
-    "/notes/areas/mathematics/set_theory/definitions/map": [
-      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
-      "/notes/areas/mathematics/measure_theory/definitions/probability_measure",
-      "/notes/areas/mathematics/measure_theory/definitions/measure"
-    ],
-    "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_space": [
-      "/notes/areas/mathematics/measure_theory/definitions/discrete_probability_measure"
-    ],
-    "/notes/areas/mathematics/measure_theory/definitions/stochastic_process": [
-      "/notes/areas/mathematics/measure_theory/definitions/probability_space"
-    ],
-    "/notes/areas/mathematics/set_theory/definitions/set": [
-      "/notes/areas/mathematics/set_theory/definitions/subset",
-      "/notes/areas/mathematics/topology/definitions/closure"
-    ],
-    "/notes/areas/mathematics/set_theory/definitions/subset": [
-      "/notes/areas/mathematics/set_theory/definitions/set"
-    ],
-    "/notes/areas/mathematics/set_theory/definitions/aleph_null": [
-      "/notes/areas/mathematics/set_theory/definitions/countable"
-    ],
-    "/notes/areas/mathematics/real_analysis/definitions/limit": [
-      "/notes/areas/mathematics/topology/definitions/compactness"
-    ],
     "/notes/areas/electrical_engineering/signals_systems/definitions/whittaker-shannon_sampling_theorem": [
       "/notes/areas/electrical_engineering/signals_systems/signals_systems",
       "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion",
@@ -8680,37 +8779,45 @@
       "/notes/areas/electrical_engineering/physical_optics/physical_optics"
     ],
     "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
       "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform",
       "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
     ],
     "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
       "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
       "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk",
       "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
     ],
     "/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
       "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave",
       "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
     ],
-    "/notes/areas/electrical_engineering/physical_optics/definitions/coherence": [
-      "/notes/areas/electrical_engineering/physical_optics/definitions/holography",
-      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
-    ],
-    "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave": [
-      "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
-      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
-    ],
-    "/notes/areas/electrical_engineering/physical_optics/definitions/holography": [
-      "/notes/areas/electrical_engineering/physical_optics/definitions/coherence",
-      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
-    ],
     "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
     ],
     "/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/coherence": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/holography",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/holography": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/coherence",
+      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
+    ],
+    "/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave": [
+      "/notes/areas/electrical_engineering/physical_optics/physical_optics",
+      "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction",
       "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes"
     ]
   }

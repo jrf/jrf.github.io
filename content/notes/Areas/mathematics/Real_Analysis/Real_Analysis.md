@@ -10,6 +10,7 @@ This is a Map of Contents for all topics related to Real Analysis.
 
 - [Understanding Analysis](/notes/areas/mathematics/real_analysis/books/understanding_analysis/)
 
+
 ## Definitions & Theorems
 
 - [Abel's Test](/notes/areas/mathematics/real_analysis/definitions/abels_test/)
@@ -70,6 +71,7 @@ This is a Map of Contents for all topics related to Real Analysis.
 - [Functional Limit](/notes/areas/mathematics/real_analysis/definitions/functional_limit/)
 - [Greatest Lower Bound](/notes/areas/mathematics/real_analysis/definitions/greatest_lower_bound/)
 - [Infimum](/notes/areas/mathematics/real_analysis/definitions/infimum/)
+- [Limit](/notes/areas/mathematics/real_analysis/definitions/limit/)
 - [Linear Transformation](/notes/areas/mathematics/real_analysis/definitions/linear_transformation/)
 - [Lower Bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/)
 - [Pointwise Convergence](/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence/)
