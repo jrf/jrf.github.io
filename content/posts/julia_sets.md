@@ -196,8 +196,8 @@ Each value of $c$ produces a different fractal. Connected Julia sets correspond 
     const rect = mandelbrotCanvas.getBoundingClientRect();
     const px = (x - rect.left) / rect.width;
     const py = 1 - (y - rect.top) / rect.height;
-    c[0] = (px - 0.5) * 2.5 * 2 - 0.5;
-    c[1] = (py - 0.5) * 2.5 * 2;
+    c[0] = (px - 0.5) * 2.5 - 0.5;
+    c[1] = (py - 0.5) * 2.5;
     cValueEl.textContent = `c = ${c[0].toFixed(3)} ${c[1] >= 0 ? '+' : '-'} ${Math.abs(c[1]).toFixed(3)}i`;
     center = [0, 0];
     zoom = 0.35;
