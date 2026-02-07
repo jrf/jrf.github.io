@@ -8,6 +8,7 @@
   <div id="graph"></div>
   <div id="graph-info">
     <span id="node-count"></span> notes · <span id="edge-count"></span> connections
+    <button id="reset-view" title="Reset view (R)">Reset</button>
   </div>
   <div id="graph-tooltip"></div>
 </div>
@@ -193,6 +194,25 @@
   padding: 4px 8px;
   border-radius: 4px;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#reset-view {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--secondary);
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+#reset-view:hover {
+  background: var(--tertiary);
+  color: var(--primary);
 }
 
 #graph-tooltip {
@@ -500,6 +520,50 @@
   // Restore saved viewport immediately
   restoreViewportState();
 
+  // Reset view function - fit all nodes in view with zoom
+  function resetView() {
+    // Calculate bounding box of all nodes
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    data.nodes.forEach(n => {
+      if (n.x !== undefined && n.y !== undefined) {
+        minX = Math.min(minX, n.x);
+        minY = Math.min(minY, n.y);
+        maxX = Math.max(maxX, n.x);
+        maxY = Math.max(maxY, n.y);
+      }
+    });
+
+
+    if (minX === Infinity) {
+      svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+      return;
+    }
+
+    // Add padding
+    const padding = 80;
+    const boxWidth = (maxX - minX) + padding * 2;
+    const boxHeight = (maxY - minY) + padding * 2;
+    const centerX = (minX + maxX) / 2;
+    const centerY = (minY + maxY) / 2;
+
+    // Scale to fit
+    const scale = Math.min(width / boxWidth, height / boxHeight);
+
+    // Same pattern as zoomToNode
+    const transform = d3.zoomIdentity
+      .translate(width / 2 - centerX * scale, height / 2 - centerY * scale)
+      .scale(scale);
+
+
+    svg.transition()
+      .duration(500)
+      .call(zoom.transform, transform);
+    localStorage.removeItem('graph-viewport');
+  }
+
+  // Reset button handler
+  document.getElementById('reset-view').addEventListener('click', resetView);
+
   // Create node lookup for edges
   const nodeById = new Map(data.nodes.map(d => [d.id, d]));
 
@@ -765,6 +829,13 @@
     if (e.key === '/' && document.activeElement !== searchInput) {
       e.preventDefault();
       searchInput.focus();
+      return;
+    }
+
+    // "R" to reset view (when not typing in search, and no modifiers)
+    if ((e.key === 'r' || e.key === 'R') && document.activeElement !== searchInput && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      e.preventDefault();
+      resetView();
       return;
     }
 

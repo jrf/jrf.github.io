@@ -15,8 +15,16 @@ OUTPUT_FILE = Path(__file__).parent.parent / "static" / "graph.json"
 
 def get_title_from_frontmatter(content: str, fallback: str) -> str:
     """Extract title from YAML frontmatter, or use fallback."""
-    match = re.search(r'^---\s*\n.*?^title:\s*["\']?([^"\'\n]+)["\']?\s*$.*?^---',
+    # Match quoted titles (handles apostrophes inside)
+    match = re.search(r'^---\s*\n.*?^title:\s*"([^"\n]+)"\s*$.*?^---',
                       content, re.MULTILINE | re.DOTALL)
+    if not match:
+        match = re.search(r"^---\s*\n.*?^title:\s*'([^'\n]+)'\s*$.*?^---",
+                          content, re.MULTILINE | re.DOTALL)
+    if not match:
+        # Unquoted title (no quotes or apostrophes)
+        match = re.search(r'^---\s*\n.*?^title:\s*([^\n]+?)\s*$.*?^---',
+                          content, re.MULTILINE | re.DOTALL)
     if match:
         return match.group(1).strip()
     return fallback.replace("_", " ").replace("-", " ").title()
@@ -70,7 +78,8 @@ def path_to_url(filepath: Path, content_dir: Path) -> str:
     """Convert a file path to its URL path."""
     rel_path = filepath.relative_to(content_dir.parent)
     # Remove .md extension and convert to URL
-    url = "/" + str(rel_path.with_suffix("")).lower()
+    # Also remove apostrophes to match Hugo's URL generation
+    url = "/" + str(rel_path.with_suffix("")).lower().replace("'", "")
     return url
 
 def build_graph():

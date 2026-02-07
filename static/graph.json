@@ -133,8 +133,8 @@
       "category": "Real_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/definitions/abel's_theorem",
-      "title": "Abel'S Theorem",
+      "id": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem",
+      "title": "Abel's Theorem",
       "path": "Areas/mathematics/Real_Analysis/definitions/Abel's_Theorem.md",
       "category": "Real_Analysis"
     },
@@ -169,8 +169,8 @@
       "category": "Real_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/definitions/taylor's_formula",
-      "title": "Taylor'S Formula",
+      "id": "/notes/areas/mathematics/real_analysis/definitions/taylors_formula",
+      "title": "Taylor's formula",
       "path": "Areas/mathematics/Real_Analysis/definitions/Taylor's_formula.md",
       "category": "Real_Analysis"
     },
@@ -229,8 +229,8 @@
       "category": "Real_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/definitions/abel's_test",
-      "title": "Abel'S Test",
+      "id": "/notes/areas/mathematics/real_analysis/definitions/abels_test",
+      "title": "Abel's Test",
       "path": "Areas/mathematics/Real_Analysis/definitions/Abel's_Test.md",
       "category": "Real_Analysis"
     },
@@ -247,8 +247,8 @@
       "category": "Real_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/definitions/baire's_theorem",
-      "title": "Baire'S Theorem",
+      "id": "/notes/areas/mathematics/real_analysis/definitions/baires_theorem",
+      "title": "Baire's Theorem",
       "path": "Areas/mathematics/Real_Analysis/definitions/Baire's_Theorem.md",
       "category": "Real_Analysis"
     },
@@ -367,8 +367,8 @@
       "category": "Real_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/definitions/cauchy's_remainder_theorem",
-      "title": "Cauchy'S Remainder Theorem",
+      "id": "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem",
+      "title": "Cauchy's Remainder Theorem",
       "path": "Areas/mathematics/Real_Analysis/definitions/Cauchy's_Remainder_Theorem.md",
       "category": "Real_Analysis"
     },
@@ -397,8 +397,8 @@
       "category": "Real_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/definitions/l'hospital's_rule",
-      "title": "L'Hospital'S Rule",
+      "id": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule",
+      "title": "L'Hospital's Rule",
       "path": "Areas/mathematics/Real_Analysis/definitions/L'Hospital's_Rule.md",
       "category": "Real_Analysis"
     },
@@ -481,8 +481,8 @@
       "category": "Real_Analysis"
     },
     {
-      "id": "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
-      "title": "Dini'S Theorem",
+      "id": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
+      "title": "Dini's Theorem",
       "path": "Areas/mathematics/Real_Analysis/definitions/Dini's_Theorem.md",
       "category": "Real_Analysis"
     },
@@ -823,8 +823,8 @@
       "category": "Set_Theory"
     },
     {
-      "id": "/notes/areas/mathematics/set_theory/definitions/de_morgan's_laws",
-      "title": "De Morgan'S Laws",
+      "id": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws",
+      "title": "de Morgan's laws",
       "path": "Areas/mathematics/Set_Theory/definitions/de_Morgan's_laws.md",
       "category": "Set_Theory"
     },
@@ -1082,6 +1082,10 @@
     },
     {
       "source": "/notes/areas/mathematics/set_theory/set_theory",
+      "target": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws"
+    },
+    {
+      "source": "/notes/areas/mathematics/set_theory/set_theory",
       "target": "/notes/areas/mathematics/set_theory/definitions/domain"
     },
     {
@@ -1298,6 +1302,14 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_test"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/algebraic_continuity_theorem"
     },
     {
@@ -1330,11 +1342,19 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/baires_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/bolzano-weierstrass_theorem"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/cantor_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -1374,6 +1394,10 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/dirichlet_function"
     },
     {
@@ -1399,6 +1423,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/intermediate_value_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -1435,6 +1463,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/sequential_criterion_for_functional_limits"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/real_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/taylors_formula"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -2438,6 +2470,14 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_test"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_test"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/convergence"
     },
     {
@@ -2447,6 +2487,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/comparison_test"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_test"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -2679,6 +2723,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/topology/definitions/open_set"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/baires_theorem"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -3322,6 +3370,10 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/differentiable"
     },
     {
@@ -3339,6 +3391,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/generalized_mean_value_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -3479,6 +3535,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -3918,7 +3978,23 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/real_analysis/definitions/convergence"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -3930,7 +4006,19 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/taylors_formula"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/differentiable"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -3954,11 +4042,7 @@
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "target": "/notes/areas/mathematics/real_analysis/definitions/differentiable"
-    },
-    {
-      "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "target": "/notes/areas/mathematics/set_theory/definitions/function"
+      "target": "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -4089,11 +4173,15 @@
       "target": "/notes/areas/mathematics/real_analysis/definitions/lower_bound"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/abel's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/uniform_convergence"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/abel's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/abels_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/continuity"
     },
     {
@@ -4171,6 +4259,10 @@
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/functional_limit",
       "target": "/notes/areas/mathematics/set_theory/definitions/domain"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/taylors_formula",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/taylors_formula"
     },
     {
       "source": "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem",
@@ -4277,7 +4369,11 @@
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/abel's_test",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/abels_test",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/abels_test"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/abels_test",
       "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
     },
     {
@@ -4293,7 +4389,11 @@
       "target": "/notes/areas/mathematics/real_analysis/definitions/disjoint"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/baire's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/baires_theorem",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/baires_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/baires_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/nested_interval_property"
     },
     {
@@ -4557,7 +4657,11 @@
       "target": "/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/cauchy's_remainder_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem",
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
@@ -4613,11 +4717,15 @@
       "target": "/notes/areas/mathematics/real_analysis/definitions/bolzano-weierstrass_theorem"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/l'hospital's_rule",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule",
       "target": "/notes/areas/mathematics/real_analysis/definitions/differentiable"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/l'hospital's_rule",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule",
       "target": "/notes/areas/mathematics/real_analysis/definitions/generalized_mean_value_theorem"
     },
     {
@@ -4749,27 +4857,31 @@
       "target": "/notes/areas/mathematics/set_theory/definitions/function"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
+    },
+    {
+      "source": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "target": "/notes/areas/mathematics/topology/definitions/compactness"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/sequence"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/continuity"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/convergence"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "source": "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "target": "/notes/areas/mathematics/real_analysis/definitions/uniform_convergence"
     },
     {
@@ -6234,6 +6346,10 @@
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/real_analysis/books/understanding_analysis"
     },
     {
@@ -6266,7 +6382,27 @@
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "target": "/notes/areas/mathematics/set_theory/definitions/symmetric_difference"
+    },
+    {
+      "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
+      "target": "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws"
     },
     {
       "source": "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
@@ -7902,7 +8038,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/arzela-ascoli_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/heine-borel_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/extreme_value_theorem",
-      "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem"
+      "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
     ],
     "/notes/areas/mathematics/topology/definitions/isolated_point": [
       "/notes/areas/mathematics/topology/topology",
@@ -7958,6 +8094,10 @@
       "/notes/areas/mathematics/topology/definitions/f-sigma_set",
       "/notes/areas/mathematics/topology/definitions/g-delta_set"
     ],
+    "/notes/areas/mathematics/set_theory/definitions/de_morgans_laws": [
+      "/notes/areas/mathematics/set_theory/set_theory",
+      "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales"
+    ],
     "/notes/areas/mathematics/set_theory/definitions/domain": [
       "/notes/areas/mathematics/set_theory/set_theory",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -7989,7 +8129,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/continuity",
       "/notes/areas/mathematics/real_analysis/definitions/dirichlet_function",
       "/notes/areas/mathematics/real_analysis/definitions/convolution",
-      "/notes/areas/mathematics/real_analysis/definitions/cauchy's_remainder_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/lipschitz_function",
       "/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence",
       "/notes/areas/mathematics/real_analysis/definitions/limit",
@@ -8290,6 +8430,16 @@
       "/notes/areas/mathematics/set_theory/definitions/cardinality",
       "/notes/areas/mathematics/topology/definitions/compactness"
     ],
+    "/notes/areas/mathematics/real_analysis/definitions/abels_test": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/abels_test"
+    ],
+    "/notes/areas/mathematics/real_analysis/definitions/abels_theorem": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/abels_theorem"
+    ],
     "/notes/areas/mathematics/real_analysis/definitions/algebraic_continuity_theorem": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/algebraic_continuity_theorem",
@@ -8334,6 +8484,11 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/arzela-ascoli_theorem"
     ],
+    "/notes/areas/mathematics/real_analysis/definitions/baires_theorem": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/baires_theorem"
+    ],
     "/notes/areas/mathematics/real_analysis/definitions/bolzano-weierstrass_theorem": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -8348,6 +8503,11 @@
       "/notes/areas/mathematics/measure_theory/definitions/koch_snowflake",
       "/notes/areas/mathematics/measure_theory/definitions/sierpinski_triangle",
       "/notes/areas/mathematics/set_theory/definitions/recursion"
+    ],
+    "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/cauchys_remainder_theorem"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/cauchy_condensation_test": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -8395,6 +8555,11 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/dirichlet_function"
     ],
+    "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
+    ],
     "/notes/areas/mathematics/real_analysis/definitions/dirichlet_function": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
@@ -8408,7 +8573,7 @@
     "/notes/areas/mathematics/real_analysis/definitions/generalized_mean_value_theorem": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/l'hospital's_rule",
+      "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule",
       "/notes/areas/mathematics/real_analysis/definitions/generalized_mean_value_theorem"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/geometric_series_test": [
@@ -8430,6 +8595,11 @@
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/intermediate_value_theorem"
+    ],
+    "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/lipschitz_function": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -8456,7 +8626,7 @@
     "/notes/areas/mathematics/real_analysis/definitions/nested_interval_property": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/baire's_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/baires_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/nested_interval_property"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/order_limit_theorem": [
@@ -8478,6 +8648,11 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/algebraic_limit_theorem_for_functional_limits",
       "/notes/areas/mathematics/real_analysis/definitions/sequential_criterion_for_functional_limits"
+    ],
+    "/notes/areas/mathematics/real_analysis/definitions/taylors_formula": [
+      "/notes/areas/mathematics/real_analysis/real_analysis",
+      "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
+      "/notes/areas/mathematics/real_analysis/definitions/taylors_formula"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/term-by-term_continuity_theorem": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -8511,13 +8686,13 @@
     "/notes/areas/mathematics/real_analysis/definitions/continuity": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/abel's_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/abels_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/thomae_function",
       "/notes/areas/mathematics/real_analysis/definitions/term-by-term_continuity_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/mean_value_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/extreme_value_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/limit",
-      "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/continuous_extension_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/generalized_mean_value_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/intermediate_value_theorem"
@@ -8527,7 +8702,7 @@
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence",
       "/notes/areas/mathematics/real_analysis/definitions/limit",
-      "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem"
+      "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/convolution": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -8547,7 +8722,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/mean_value_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/term-by-term_differentiability_theorem",
-      "/notes/areas/mathematics/real_analysis/definitions/l'hospital's_rule",
+      "/notes/areas/mathematics/real_analysis/definitions/lhospitals_rule",
       "/notes/areas/mathematics/real_analysis/definitions/interior_extremum_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/generalized_mean_value_theorem"
     ],
@@ -8604,7 +8779,7 @@
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
       "/notes/areas/mathematics/real_analysis/definitions/uniform_convergence",
-      "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem"
+      "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/sequence": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
@@ -8614,7 +8789,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/continuous_limit_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/bolzano-weierstrass_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion_for_uniform_convergence",
-      "/notes/areas/mathematics/real_analysis/definitions/abel's_test",
+      "/notes/areas/mathematics/real_analysis/definitions/abels_test",
       "/notes/areas/mathematics/real_analysis/definitions/subsequence",
       "/notes/areas/mathematics/real_analysis/definitions/term-by-term_continuity_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/nested_compact_set_property",
@@ -8628,7 +8803,7 @@
       "/notes/areas/mathematics/real_analysis/definitions/monotone_convergence_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence",
       "/notes/areas/mathematics/real_analysis/definitions/limit",
-      "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem",
       "/notes/areas/mathematics/set_theory/definitions/recursion",
       "/notes/areas/mathematics/topology/definitions/compactness",
       "/notes/areas/mathematics/topology/definitions/closed_set"
@@ -8664,11 +8839,11 @@
     "/notes/areas/mathematics/real_analysis/definitions/uniform_convergence": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/abel's_theorem",
+      "/notes/areas/mathematics/real_analysis/definitions/abels_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/term-by-term_continuity_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/arzela-ascoli_theorem",
       "/notes/areas/mathematics/real_analysis/definitions/term-by-term_differentiability_theorem",
-      "/notes/areas/mathematics/real_analysis/definitions/dini's_theorem"
+      "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"
     ],
     "/notes/areas/mathematics/real_analysis/definitions/upper_bound": [
       "/notes/areas/mathematics/real_analysis/real_analysis",
