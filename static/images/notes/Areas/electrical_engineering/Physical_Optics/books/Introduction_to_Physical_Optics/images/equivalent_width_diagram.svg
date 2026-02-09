@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 320">
+  <!-- Background -->
+  <rect width="550" height="320" fill="white"/>
+
+  <!-- Title -->
+  <text x="275" y="25" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Equivalent Width / Equivalent Area</text>
+
+  <!-- LEFT SIDE: Original function g(x) -->
+  <g transform="translate(40, 60)">
+    <!-- Axes -->
+    <line x1="0" y1="150" x2="180" y2="150" stroke="black" stroke-width="1.5"/>
+    <line x1="90" y1="150" x2="90" y2="10" stroke="black" stroke-width="1.5"/>
+
+    <!-- Arrow heads -->
+    <polygon points="180,150 174,146 174,154" fill="black"/>
+    <polygon points="90,10 86,16 94,16" fill="black"/>
+
+    <!-- Axis labels -->
+    <text x="175" y="168" font-family="serif" font-size="14" font-style="italic">x</text>
+    <text x="72" y="22" font-family="serif" font-size="14" font-style="italic">g</text>
+
+    <!-- Smooth Gaussian bell curve - control points at peak have same y for flat top -->
+    <path d="M 10,150
+             C 40,150 60,40 90,40
+             C 120,40 140,150 170,150
+             Z"
+          fill="#3498db" fill-opacity="0.3" stroke="#2980b9" stroke-width="2"/>
+
+    <!-- g(0) label -->
+    <text x="100" y="45" font-family="serif" font-size="11" font-style="italic" fill="#c0392b">g(0)</text>
+
+    <!-- Label below -->
+    <text x="90" y="185" font-family="sans-serif" font-size="11" text-anchor="middle">Original function g(x)</text>
+    <text x="90" y="200" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#555">Area = ∫g(x)dx</text>
+  </g>
+
+  <!-- EQUALS SIGN -->
+  <g transform="translate(250, 135)">
+    <text x="0" y="0" font-family="sans-serif" font-size="28" font-weight="bold" fill="#555">=</text>
+  </g>
+
+  <!-- RIGHT SIDE: Equivalent rectangle -->
+  <g transform="translate(310, 60)">
+    <!-- Axes -->
+    <line x1="0" y1="150" x2="180" y2="150" stroke="black" stroke-width="1.5"/>
+    <line x1="90" y1="150" x2="90" y2="10" stroke="black" stroke-width="1.5"/>
+
+    <!-- Arrow heads -->
+    <polygon points="180,150 174,146 174,154" fill="black"/>
+    <polygon points="90,10 86,16 94,16" fill="black"/>
+
+    <!-- Axis labels -->
+    <text x="175" y="168" font-family="serif" font-size="14" font-style="italic">x</text>
+    <text x="72" y="22" font-family="serif" font-size="14" font-style="italic">g</text>
+
+    <!-- Rectangle (centered at origin) -->
+    <rect x="45" y="40" width="90" height="110" fill="#27ae60" fill-opacity="0.3" stroke="#1e8449" stroke-width="2"/>
+
+    <!-- g(0) height bracket on left -->
+    <line x1="38" y1="40" x2="38" y2="150" stroke="#c0392b" stroke-width="1.5"/>
+    <line x1="35" y1="40" x2="41" y2="40" stroke="#c0392b" stroke-width="1.5"/>
+    <line x1="35" y1="150" x2="41" y2="150" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="22" y="100" font-family="serif" font-size="11" font-style="italic" fill="#c0392b">g(0)</text>
+
+    <!-- Δx width bracket on bottom -->
+    <line x1="45" y1="158" x2="135" y2="158" stroke="#6c3483" stroke-width="1.5"/>
+    <line x1="45" y1="155" x2="45" y2="161" stroke="#6c3483" stroke-width="1.5"/>
+    <line x1="135" y1="155" x2="135" y2="161" stroke="#6c3483" stroke-width="1.5"/>
+    <text x="90" y="175" font-family="serif" font-size="12" text-anchor="middle" fill="#6c3483">Δx</text>
+
+    <!-- Label below -->
+    <text x="90" y="200" font-family="sans-serif" font-size="11" text-anchor="middle">Equivalent rectangle</text>
+  </g>
+
+  <!-- Bottom caption -->
+  <text x="275" y="290" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#333">
+    Both shapes have the same area: Δx = ∫g(x)dx / g(0)
+  </text>
+</svg>

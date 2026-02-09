@@ -387,9 +387,9 @@ $$
 
 
 
-**Comb Function (Shah Function)**
+**[Comb Function](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) (Shah Function)**
 
-The comb function is an infinite series of equally spaced [delta functions](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/):
+The [comb function](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) is an infinite series of equally spaced [delta functions](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/):
 
 
 

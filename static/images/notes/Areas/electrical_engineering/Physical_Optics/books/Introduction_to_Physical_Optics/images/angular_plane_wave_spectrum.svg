@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <!-- Background -->
+  <rect x="0" y="0" width="720" height="420" fill="#fefefe"/>
+
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1f2937"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="30" font-family="Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1f2937">Angular Plane Wave Spectrum</text>
+
+  <!-- ===== LEFT SIDE: Spatial Domain ===== -->
+
+  <text x="180" y="60" font-family="Georgia, serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">Spatial Domain</text>
+
+  <!-- Axes -->
+  <line x1="180" y1="280" x2="180" y2="90" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="60" y1="200" x2="300" y2="200" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="170" y="85" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1f2937">x</text>
+  <text x="310" y="205" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1f2937">z</text>
+
+  <!-- Plane at z_i -->
+  <line x1="180" y1="100" x2="180" y2="280" stroke="#2563eb" stroke-width="3"/>
+  <text x="165" y="295" font-family="Georgia, serif" font-size="14" fill="#2563eb">z = zᵢ</text>
+
+  <!-- Complex wavefront blob -->
+  <path d="M 150 180
+           Q 140 150, 160 130
+           Q 180 115, 200 125
+           Q 220 135, 215 160
+           Q 225 185, 210 210
+           Q 195 235, 170 230
+           Q 145 225, 150 180"
+        fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- Label for u_i(x,y) -->
+  <line x1="225" y1="155" x2="270" y2="130" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="275" y="125" font-family="Georgia, serif" font-size="15" font-style="italic" fill="#2563eb">uᵢ(x,y)</text>
+  <text x="275" y="143" font-family="Georgia, serif" font-size="12" fill="#6b7280">complex field</text>
+  <text x="275" y="158" font-family="Georgia, serif" font-size="12" fill="#6b7280">at plane zᵢ</text>
+
+  <!-- ===== CENTER: Fourier Transform Arrows ===== -->
+
+  <line x1="320" y1="180" x2="390" y2="180" stroke="#059669" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="355" y="170" font-family="Georgia, serif" font-size="14" fill="#059669">ℱ</text>
+
+  <line x1="390" y1="220" x2="320" y2="220" stroke="#059669" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="355" y="240" font-family="Georgia, serif" font-size="12" fill="#059669">ℱ⁻¹</text>
+
+  <!-- ===== RIGHT SIDE: Frequency Domain ===== -->
+
+  <text x="540" y="60" font-family="Georgia, serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">Frequency Domain (Angular Spectrum)</text>
+
+  <!-- Axes -->
+  <line x1="540" y1="280" x2="540" y2="90" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="420" y1="200" x2="660" y2="200" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="550" y="85" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#1f2937">fᵧ (or η)</text>
+  <text x="665" y="205" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#1f2937">fₓ (or ξ)</text>
+
+  <!-- Spectrum representation (peaked distribution) -->
+  <ellipse cx="540" cy="200" rx="60" ry="50" fill="#fecaca" fill-opacity="0.5" stroke="#dc2626" stroke-width="2"/>
+  <ellipse cx="540" cy="200" rx="35" ry="30" fill="#fecaca" fill-opacity="0.7" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="540" cy="200" r="8" fill="#dc2626"/>
+
+  <!-- Label for U_i -->
+  <line x1="575" y1="155" x2="620" y2="130" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="625" y="125" font-family="Georgia, serif" font-size="15" font-style="italic" fill="#dc2626">Uᵢ(ξ,η)</text>
+  <text x="625" y="143" font-family="Georgia, serif" font-size="12" fill="#6b7280">angular spectrum</text>
+  <text x="625" y="158" font-family="Georgia, serif" font-size="12" fill="#6b7280">(plane wave amplitudes)</text>
+
+  <!-- ===== BOTTOM: Key Relations ===== -->
+
+  <rect x="40" y="320" width="640" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="360" y="345" font-family="Georgia, serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1f2937">
+    Spatial Frequency ↔ Propagation Direction
+  </text>
+
+  <text x="180" y="375" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#1f2937">
+    ξ = fₓ = cos θₓ / λ
+  </text>
+  <text x="180" y="395" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#1f2937">
+    η = fᵧ = cos θᵧ / λ
+  </text>
+
+  <line x1="320" y1="360" x2="320" y2="400" stroke="#d1d5db" stroke-width="1"/>
+
+  <text x="520" y="375" font-family="Georgia, serif" font-size="13" text-anchor="middle" fill="#6b7280">
+    Each point (ξ, η) in the spectrum represents
+  </text>
+  <text x="520" y="395" font-family="Georgia, serif" font-size="13" text-anchor="middle" fill="#6b7280">
+    a plane wave propagating at angles (θₓ, θᵧ)
+  </text>
+
+  <style>
+    line, path { stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+</svg>

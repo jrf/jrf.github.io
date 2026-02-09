@@ -50,9 +50,15 @@ The [delta function](/notes/areas/mathematics/functional_analysis/definitions/di
 </div>
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Point spread functions also called Green's Function in PDEs</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Connection to Green's Functions</div>
 <div class="callout-content">
 
+The point spread function in optics is mathematically identical to the **Green's function** in differential equations. Both describe the system's response to a point source (impulse):
+
+- **Optics:** Input a point of light $\delta(\bar{x} - \bar{x}_0)$ → output is the PSF $h(\bar{x}; \bar{x}_0)$
+- **PDEs:** Apply a point source to a differential equation → output is the Green's function $G(\bar{x}; \bar{x}_0)$
+
+In both cases, the response to an arbitrary input is found by superposition (convolution with the source distribution). This unifies optical imaging theory with the mathematical framework of linear PDEs.
 In PDEs, the Green's function $G(\bar{x}; \bar{x}_0)$ is the solution when the source is a [delta function](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/): $L\{G\} = \delta(\bar{x} - \bar{x}_0)$. The [point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/) is the same concept—the system's response to a point source, which lets you build up the response to any input via [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/).
 
 </div>
@@ -346,10 +352,14 @@ To understand why the **[Fourier transform](/notes/areas/mathematics/functional_
 3. Sum the result at the end
 
 <div class="callout callout-tip">
-<div class="callout-title"><span class="callout-icon">💡</span>Tip</div>
+<div class="callout-title"><span class="callout-icon">💡</span>Choosing Good Basis Functions</div>
 <div class="callout-content">
 
-Choose basis functions that are orthogonal and complete.
+**Orthogonal:** Basis functions should be mutually orthogonal (zero inner product between different basis functions). This makes finding coefficients easy — the inner product with each basis function extracts only that component's weight, with no crosstalk from other components.
+
+**Complete:** The basis should span the entire function space. Any function in the space must be expressible as a sum of basis functions. Completeness ensures no information is lost in the decomposition.
+
+Complex exponentials $e^{j2\pi\bar{f}\cdot\bar{x}}$ satisfy both: they are orthogonal (different frequencies integrate to zero) and complete (any square-integrable function can be represented).
 
 </div>
 </div>
@@ -370,10 +380,14 @@ $$
 This is the **Eigenfunction Equation**.
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Contrast with delta function</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Contrast: Delta Function vs Eigenfunction Input</div>
 <div class="callout-content">
 
-Using delta functions as input produces complicated output. Eigenfunctions produce clean, scaled output.
+Two ways to characterize a linear system:
+
+**Delta function input:** A point source $\delta(\bar{x})$ contains all frequencies equally. The system responds with its **impulse response** (point spread function) — a complicated pattern mixing all the system's frequency responses together. Useful for measuring the system, but the output shape bears no resemblance to the input.
+
+**Eigenfunction input:** A complex exponential $e^{j2\pi\bar{f}\cdot\bar{x}}$ is a single pure frequency. The system responds with the *same* exponential, merely scaled by $H(\bar{f})$. The output shape is identical to the input — this is what makes eigenfunctions special.
 
 </div>
 </div>
@@ -799,10 +813,12 @@ $$
 
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Analysis and Synthesis</div>
 <div class="callout-content">
 
-This gives $\tilde{G}(\bar{f})$ by integrating over all $\bar{x}$. Inverse gives $G(\bar{f})$.
+**Forward transform (analysis):** To find the amplitude $\tilde{G}(\bar{f})$ of a particular frequency component, multiply the input by that frequency's eigenfunction $e^{-j2\pi\bar{f}\cdot\bar{x}}$ and integrate over all space. The integral extracts how much of that frequency is present — all other frequencies integrate to zero (orthogonality).
+
+**Inverse transform (synthesis):** To reconstruct $g(\bar{x})$ from its spectrum, sum all eigenfunctions weighted by their amplitudes $\tilde{G}(\bar{f})$. This is done by the inverse Fourier transform.
 
 </div>
 </div>
@@ -833,10 +849,14 @@ $$
 This is the **Inverse Fourier Transform** (sum of results).
 
 <div class="callout callout-example">
-<div class="callout-title"><span class="callout-icon">📋</span>Example</div>
+<div class="callout-title"><span class="callout-icon">📋</span>Biological Fourier Analysis: The Cochlea</div>
 <div class="callout-content">
 
-Cochlea of ear performs F.T.
+The cochlea (inner ear) performs a physical Fourier transform on incoming sound. The basilar membrane varies in stiffness along its length:
+- **Base (stiff):** Resonates at high frequencies
+- **Apex (flexible):** Resonates at low frequencies
+
+Each position along the membrane responds maximally to a specific frequency, mapping frequency → position. Hair cells at each location detect the local vibration amplitude, effectively measuring $|G(f)|$ at that frequency. The brain receives a spatially-encoded frequency spectrum — a biological spectrum analyzer.
 
 </div>
 </div>
@@ -845,37 +865,20 @@ Cochlea of ear performs F.T.
 <div class="callout-title"><span class="callout-icon">📋</span>Frequency Decomposition Through an **[LSI](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** System</div>
 <div class="callout-content">
 
-**Block diagram:** ($\mathcal{L}$ = **[LSI](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** operator)
-```
-      g₁(x)
-   (arbitrary signal)
-        │
-        ▼
-    ┌────────┐
-    │   ℒ    │
-    └────────┘
-        │
-        ▼
-      g₂(x)
-```
+![Frequency decomposition through LSI system](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/lsi_frequency_decomposition.svg)
+
+The input signal $g_1(x)$ is decomposed via [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) into frequency components. Each component passes through the system independently — the [LSI](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) operator multiplies each by the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) $H(f)$ at that frequency:
+
 
 
 $$
-g_2(\bar{x}) = \mathcal{L}\{g_1(\bar{x})\}
+G_1(f)e^{j2\pi f x} \xrightarrow{\mathcal{L}} G_1(f)H(f)e^{j2\pi f x}
 $$
 
 
 
-**Decomposition of the input signal** $g_1(\bar{x})$ into frequency components:
-- Let $G_1(\bar{f}) = \mathcal{F}\{g_1\}$ be the **input** spectrum
+The output is the inverse Fourier transform (recombination) of all modified components:
 
-| Component | Waveform | Transformation |
-|-----------|----------|----------------|
-| Low frequency $f_1$ | `~~~~~` (slow oscillation) | $G_1(f_1)e^{j2\pi f_1 x} \xrightarrow{\mathcal{L}} G_1(f_1)H(f_1)e^{j2\pi f_1 x}$ |
-| Medium frequency $f_2$ | `~~~` (medium oscillation) | $G_1(f_2)e^{j2\pi f_2 x} \xrightarrow{\mathcal{L}} G_1(f_2)H(f_2)e^{j2\pi f_2 x}$ |
-| High frequency $f_3$ | `~` (fast oscillation) | $G_1(f_3)e^{j2\pi f_3 x} \xrightarrow{\mathcal{L}} G_1(f_3)H(f_3)e^{j2\pi f_3 x}$ |
-
-**Reassembly at the output (Inverse [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)):**
 
 
 $$
@@ -883,13 +886,12 @@ g_2(\bar{x}) = \int \underbrace{G_1(\bar{f}) H(\bar{f})}_{G_2(\bar{f})} \exp[j 2
 $$
 
 
-*Note: Can also write as $\int G_2(\bar{f}) \exp[j 2\pi \bar{f}\cdot\bar{x}] \, d\bar{f}$ where $G_2 = G_1 \cdot H$ is the output spectrum.*
 
 **Key insights:**
 - Each spatial frequency passes through independently
 - Frequencies are not mixed by the **[LSI](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** system
 - Each component is multiplied by $H(f)$ (the **[transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)**)
-- The output is the recombination of all modified components
+- Complex exponentials are [eigenfunctions](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/) — they pass through unchanged in form, just scaled
 
 </div>
 </div>
@@ -1068,6 +1070,19 @@ Negative and positive frequencies correspond to plane waves travelling in opposi
 
 ![Plane Wave Geometry: Angle to Spatial Frequency](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/plane_wave_geometry.svg)
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Understanding the Diagram</div>
+<div class="callout-content">
+
+The diagram shows a plane wave with wavevector $\mathbf{k}$ tilted at angle $\theta$ from the x-axis. The dashed blue lines are **wavefronts** (surfaces of constant phase), perpendicular to $\mathbf{k}$.
+
+As you move along the x-axis at observation plane $z_0$, you cross successive wavefronts. The spacing between crossings is the **apparent wavelength** $\lambda_x = \lambda / \cos\theta$, which is always larger than $\lambda$ (wavefronts appear "stretched" when viewed obliquely).
+
+The **spatial frequency** $f_x = \cos\theta / \lambda$ is just the reciprocal — how many cycles per unit length you see along x. A steeper tilt (larger $\theta$) means fewer crossings per unit length, hence lower spatial frequency.
+
+</div>
+</div>
+
 <div class="callout callout-example">
 <div class="callout-title"><span class="callout-icon">📋</span>Sanity Check: Limiting Cases</div>
 <div class="callout-content">
@@ -1090,6 +1105,17 @@ Verify that $f_x = \frac{\cos\theta}{\lambda}$ behaves correctly at extreme angl
 </div>
 
 ![Sanity Check: Limiting Cases](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/sanity_check_limiting_cases.svg)
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Reading the Diagram</div>
+<div class="callout-content">
+
+**Left (θ = 90°):** The wavevector $\mathbf{k}$ points along $z$, so wavefronts are vertical lines. Moving along the x-axis, you stay on the same wavefront — no phase variation, hence $f_x = 0$.
+
+**Right (θ = 0°):** The wavevector $\mathbf{k}$ points along $x$, so wavefronts are horizontal. Moving along x, you cross every wavefront at maximum rate — one cycle per wavelength, hence $f_x = 1/\lambda$.
+
+</div>
+</div>
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Convolution Theorem Reminder</div>
@@ -1291,6 +1317,19 @@ If a signal is **band-limited**, and it is sampled at a rate greater than or equ
 
 ![Sampling Theorem](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/sampling_theorem.svg)
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Reading the Diagram</div>
+<div class="callout-content">
+
+**Top row (Real Space):** Sampling is multiplication of the continuous signal $g(x)$ by a comb function (a train of delta functions spaced by $a$). The result $g_s(x)$ is a series of impulses whose heights equal the signal values at sample points.
+
+**Bottom row (Fourier Space):** Multiplication in real space becomes [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) in Fourier space. Convolving the band-limited spectrum $\tilde{G}(f)$ with a comb creates **spectral replicas** centered at multiples of $1/a$.
+
+**Right panel (Nyquist Criterion):** If replicas are spaced far enough apart ($1/a \geq 2B$), they don't overlap and the original spectrum can be recovered with a low-pass filter. If they overlap (**aliasing**), high frequencies masquerade as low frequencies and perfect recovery is impossible.
+
+</div>
+</div>
+
 ### Sampling Theorem Proof
 
 A function $g(x,y)$ is **band-limited** if its Fourier transform $\tilde{G}(f_x, f_y)$ has compact support, i.e.:
@@ -1307,7 +1346,7 @@ where $B_x$ and $B_y$ are the bandlimits.
 
 ## Proof of Sampling Theorem
 
-Define a **sampling function**:
+Define a **sampling function** (the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/)):
 
 
 
@@ -1349,10 +1388,21 @@ $$
 where $\mathcal{F}$ is the Forward Fourier Transform.
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Why Sampling Creates Spectral Replicas</div>
 <div class="callout-content">
 
-Analogous to a grating - delta function transforms. Used **Convolution Theorem**: $\mathcal{F}\{g(x) \cdot h(x)\} = \mathcal{F}\{g(x)\} * \mathcal{F}\{h(x)\}$
+**The key insight:** Sampling is multiplication by a comb. By the convolution theorem:
+
+
+$$
+\mathcal{F}\{g(x) \cdot \text{comb}(x)\} = \mathcal{F}\{g(x)\} * \mathcal{F}\{\text{comb}(x)\} = G(f) * \text{comb}(f)
+$$
+
+
+
+Convolving any function with a comb produces periodic copies of that function centered at each delta spike. This is why the spectrum of a sampled signal consists of the original spectrum repeated at intervals of $1/a$ (the sampling frequency).
+
+**Grating analogy:** A diffraction grating is a periodic structure (like a comb in transmission). It produces discrete diffraction orders — the same mathematics explains both phenomena.
 
 </div>
 </div>
@@ -1429,10 +1479,16 @@ Note: $\text{rect}(x/a)$ is a rectangle of width $a$ centered at the origin.
 This is a statement of the **[Whittaker-Shannon Sampling Theorem](/notes/areas/electrical_engineering/signals_systems/definitions/whittaker-shannon_sampling_theorem/)**.
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Why Sinc is the Perfect Interpolator</div>
 <div class="callout-content">
 
-Interpolation is given by weighting local values and averaging. When $a = \frac{1}{2B_x}$, all others are zero.
+The sinc function has a special property: $\text{sinc}(n) = 0$ for all nonzero integers $n$, but $\text{sinc}(0) = 1$.
+
+When samples are spaced at the Nyquist interval $\Delta x = \frac{1}{2B_x}$, each sinc kernel centered on a sample point:
+- Equals **1** at that sample location
+- Equals **0** at all other sample locations
+
+This means each sample contributes its value only at its own position, with no interference from neighboring samples. Between samples, the sincs overlap and sum to produce the smooth interpolated curve. This is the unique interpolation that perfectly reconstructs a bandlimited signal.
 
 </div>
 </div>
@@ -1445,8 +1501,14 @@ What happens when the Nyquist criterion is violated? **Aliasing** results, where
 <div class="callout-title"><span class="callout-icon">⚠️</span>Aliasing</div>
 <div class="callout-content">
 
-- Pinstripe suits on T.V.
-- Spatial pictures show aliasing artifacts
+When a signal contains frequencies above the Nyquist limit ($f > f_s/2$), those frequencies don't simply disappear — they **fold back** into the sampled spectrum, masquerading as lower frequencies. This is aliasing.
+
+**Common examples:**
+- **Pinstripe suits on TV:** The fine stripes have spatial frequencies exceeding the camera sensor's sampling rate. The result is moiré patterns — false low-frequency waves that shimmer and shift as the person moves.
+- **Wagon wheel effect:** In film (24 fps), a wheel spinning faster than 12 rotations/second appears to rotate backwards — high temporal frequency aliased to a negative low frequency.
+- **Digital images of fine textures:** Brick walls, fabric weaves, or screen doors photographed with insufficient resolution show false patterns not present in the original scene.
+
+Aliasing is irreversible — once frequencies are folded together, they cannot be separated. The only prevention is to **bandlimit the signal before sampling** (anti-aliasing filter).
 
 </div>
 </div>
@@ -1467,58 +1529,87 @@ Notice the important additional results which can be seen from the above proof o
 | $\text{circ}(r) = \begin{cases} 1, & r < 1 \\ 0, & \text{else} \end{cases}$ | $\frac{J_1(2\pi\rho)}{\rho}$ |
 
 <div class="callout callout-tip">
-<div class="callout-title"><span class="callout-icon">💡</span>Gaskill</div>
+<div class="callout-title"><span class="callout-icon">💡</span>Reference: Gaskill's Tables</div>
 <div class="callout-content">
 
-Has some excellent tables of F.T. properties and pairs
+*Linear Systems, Fourier Transforms, and Optics* by Jack D. Gaskill contains comprehensive tables of:
+- Fourier transform pairs (1D and 2D)
+- Transform theorems and properties
+- Special functions used in optics (rect, sinc, circ, comb, etc.)
+
+These tables are invaluable for quickly looking up transforms without rederiving them.
 
 </div>
 </div>
 ### Aliasing in Practice
 
 <div class="callout callout-warning">
-<div class="callout-title"><span class="callout-icon">⚠️</span>Note on Aliasing</div>
+<div class="callout-title"><span class="callout-icon">⚠️</span>Aliasing is Irreversible</div>
 <div class="callout-content">
 
-If image is not low-pass filtered before sampling, aliased frequencies **cannot** be separated from original ones (unless assumptions are made about spectrum)
+If a signal is not bandlimited (low-pass filtered) before sampling, aliased frequencies **cannot** be separated from the original spectrum afterward.
+
+**Why:** Aliasing folds high frequencies on top of low frequencies. Once mixed, they occupy the same frequency bins. Without prior knowledge of the original spectrum, there is no way to determine which components are "real" and which are aliases.
+
+**Prevention:** Always apply an anti-aliasing (low-pass) filter before sampling to remove frequencies above $f_s/2$.
 
 </div>
 </div>
 
 ## Anti-Aliasing Filter Chain
 
+The standard signal processing chain to avoid aliasing:
+
 ```
-Real Continuous Image → Low Pass Filter → Sampler →
+Continuous   →   Low-Pass    →   Sampler   →   Digital
+  Image          Filter           (CCD)        Signal
+              (anti-alias)
 ```
 
-The imaging system acts like a **low-pass filter**. For complete elimination of aliasing, this must restrict the bandwidth to $\frac{1}{2}$ the Nyquist frequency.
-
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Why This Order Matters</div>
 <div class="callout-content">
 
-Spatial averaging at the detector as well as misfocusing the optical system can reduce the bandwidth
+The low-pass filter **must come before sampling**. Once high frequencies alias into the baseband, they're indistinguishable from the original signal — no amount of post-processing can undo aliasing.
+
+The filter must restrict bandwidth to less than $\frac{1}{2}$ the sampling frequency (Nyquist limit). If the sampling rate is $f_s$, frequencies above $f_s/2$ will fold back.
+
+</div>
+</div>
+
+In optical systems, several mechanisms naturally provide anti-aliasing:
+
+| Mechanism | How it works |
+|-----------|--------------|
+| **Optical blur (PSF)** | Finite aperture limits resolution, attenuating high frequencies |
+| **Detector integration** | Each pixel averages over its area, acting as a spatial low-pass filter |
+| **Intentional defocus** | Spreading the PSF further reduces bandwidth |
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Optical Systems as Low-Pass Filters</div>
+<div class="callout-content">
+
+The imaging optics themselves act as a low-pass filter — the [optical transfer function](/notes/areas/electrical_engineering/physical_optics/definitions/optical_transfer_function/) cuts off at $1/\lambda F$ for a diffraction-limited system. This is why well-designed cameras often don't need separate anti-aliasing filters: the optics already band-limit the image.
 
 </div>
 </div>
 
 ## Aliasing of Noise
 
-Assume signal satisfies Nyquist, but noise does not:
+Even if the signal satisfies Nyquist, broadband noise may not:
 
-- **Signal**: Band-limited spectrum
-- **Noise**: Broad spectrum extending beyond Nyquist
+| Component | Spectrum | After Sampling |
+|-----------|----------|----------------|
+| **Signal** | Band-limited (within Nyquist) | Clean replicated copies |
+| **Noise** | Broadband (extends beyond Nyquist) | Aliases fold into signal band |
 
-After sampling:
-- **Sampled Signal**: Clean replicated spectrum
-- **Sampled Noise**: Aliased noise folding into signal band
-
-<div class="callout callout-important">
-<div class="callout-title"><span class="callout-icon">❗</span>Important</div>
+<div class="callout callout-warning">
+<div class="callout-title"><span class="callout-icon">⚠️</span>Noise Aliasing Increases Noise Power</div>
 <div class="callout-content">
 
-- Noise will alias into sampled signal, adding to the noise power
-- It is better to **low-pass the signal+noise first** to eliminate as much noise as possible to increase the S/N ratio
+High-frequency noise that would normally be outside the signal band folds back and adds to the in-band noise. This **degrades the signal-to-noise ratio**.
+
+**Solution:** Low-pass filter the signal+noise together *before* sampling. This eliminates out-of-band noise before it can alias, improving SNR even though it slightly blurs the signal.
 
 </div>
 </div>
@@ -1554,10 +1645,15 @@ If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$
 then $\mathcal{F}\{g(ax, by)\} = \frac{1}{|ab|} G\left(\frac{f_x}{a}, \frac{f_y}{b}\right)$
 
 <div class="callout callout-example">
-<div class="callout-title"><span class="callout-icon">📋</span>Example</div>
+<div class="callout-title"><span class="callout-icon">📋</span>Lens Aperture and Focus Spot</div>
 <div class="callout-content">
 
-Lens aperture and focus spot are F.T. related. Thus, increase in lens size $\Rightarrow$ decrease in spot size.
+The focal spot of a lens is the Fourier transform of its aperture (in the Fraunhofer limit). The similarity theorem directly predicts:
+
+- **Larger aperture** (scale up by $a > 1$) → spectrum scales down by $1/a$ → **smaller, tighter focus**
+- **Smaller aperture** → **larger, more spread-out focus**
+
+This is why telescope mirrors and camera lenses are made as large as practical — a bigger aperture means sharper resolution. The diffraction limit $\theta \approx \lambda/D$ is just this scaling relationship.
 
 </div>
 </div>
@@ -1568,12 +1664,24 @@ If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$
 
 then $\mathcal{F}\{g(x-a, y-b)\} = G(f_x, f_y) \exp[-j2\pi(f_x a + f_y b)]$
 
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Prism</div>
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>What This Means</div>
 <div class="callout-content">
 
-$E(x) = 1$ transforms to delta at origin
-$E_x = \exp\left[-j\frac{2\pi}{\lambda}\cos\theta\right]$ shifts the delta in frequency
+Shifting a function in space doesn't change the magnitude of its spectrum — only the phase. The shift $(a, b)$ adds a linear phase ramp $\exp[-j2\pi(f_x a + f_y b)]$ across the frequency domain.
+
+</div>
+</div>
+
+<div class="callout callout-example">
+<div class="callout-title"><span class="callout-icon">📋</span>Prism as a Frequency Shifter</div>
+<div class="callout-content">
+
+A uniform field $E(x) = 1$ has a spectrum that's a delta at the origin (zero frequency — no spatial variation).
+
+A prism tilts the wavefront, multiplying by $\exp\left[-j\frac{2\pi}{\lambda}x\sin\theta\right]$. By the **dual** of the shift theorem (multiplication by exponential ↔ shift in frequency), this moves the delta to a new location in frequency space.
+
+The prism doesn't change the amplitude distribution — it shifts the angular spectrum, steering the beam.
 
 </div>
 </div>
@@ -1592,12 +1700,15 @@ $$
 
 
 
-<div class="callout callout-important">
-<div class="callout-title"><span class="callout-icon">❗</span>Important</div>
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Why This Matters</div>
 <div class="callout-content">
 
-Energy in signal = Energy in frequency
-(F.T. is energy-preserving, i.e., it is a unitary operator)
+The total energy (integrated intensity) is the same whether computed in the spatial domain or the frequency domain. This has practical consequences:
+
+- **Power conservation:** Light passing through a lossless optical system conserves total power. Parseval's theorem ensures our Fourier-based models respect this.
+- **Spectral analysis:** To find how much power is in a given spatial frequency band, integrate $|G(f_x, f_y)|^2$ over that band — no need to transform back to real space.
+- **Unitarity:** The Fourier transform (with proper normalization) is a unitary operator, meaning it preserves inner products and norms. This is why frequency-domain and spatial-domain descriptions are equally valid.
 
 </div>
 </div>
@@ -1611,10 +1722,33 @@ then:
 
 
 $$
-\mathcal{F}\left\{\iint_{-\infty}^{\infty} g(z,\eta)h(x-z, y-\eta) \, dzd\eta\right\} = G(f_x, f_y) H(f_x, f_y)
+\mathcal{F}\{g * h\} = G \cdot H
 $$
 
 
+
+or equivalently:
+
+
+
+$$
+\mathcal{F}\left\{\iint_{-\infty}^{\infty} g(\xi,\eta)h(x-\xi, y-\eta) \, d\xi d\eta\right\} = G(f_x, f_y) H(f_x, f_y)
+$$
+
+
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Why This Matters</div>
+<div class="callout-content">
+
+Convolution in real space becomes multiplication in frequency space (and vice versa). This is arguably the most important theorem in Fourier optics:
+
+- **Imaging:** The output image is the input convolved with the [PSF](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/). In frequency space, this is just multiplication by the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/).
+- **Diffraction:** The far-field pattern is the Fourier transform of the aperture. Multiplying apertures (masking) becomes convolution in the far field.
+- **Computation:** Convolution is $O(N^2)$ directly, but FFT → multiply → IFFT is $O(N \log N)$.
+
+</div>
+</div>
 
 #### 6. Autocorrelation Theorem
 
@@ -1623,20 +1757,47 @@ If $\mathcal{F}\{g(x,y)\} = G(f_x, f_y)$, then:
 
 
 $$
-\mathcal{F}\left\{\iint_{-\infty}^{\infty} g(z,\eta) g^*(z-x, \eta-y) \, dzd\eta\right\} = |G(f_x, f_y)|^2
+\mathcal{F}\{g \star g^*\} = |G(f_x, f_y)|^2
 $$
 
 
 
-Also:
+where $\star$ denotes correlation (convolution with the conjugate-reversed function):
 
 
 
 $$
-\mathcal{F}\{|g(x,y)|^2\} = \iint G(z,\eta) G^*(z-f_x, \eta-f_y) \, dzd\eta
+\mathcal{F}\left\{\iint_{-\infty}^{\infty} g(\xi,\eta) g^*(\xi-x, \eta-y) \, d\xi d\eta\right\} = |G(f_x, f_y)|^2
 $$
 
 
+
+The dual relation (Wiener-Khinchin):
+
+
+
+$$
+\mathcal{F}\{|g(x,y)|^2\} = G \star G^* = \iint G(\xi,\eta) G^*(\xi-f_x, \eta-f_y) \, d\xi d\eta
+$$
+
+
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>What Autocorrelation Measures</div>
+<div class="callout-content">
+
+The **autocorrelation** measures how similar a function is to a shifted version of itself. It peaks at zero shift (perfect overlap) and decays as the shift increases.
+
+- **First equation:** The Fourier transform of the autocorrelation is the **power spectrum** $|G|^2$. This is the Wiener-Khinchin theorem — fundamental to spectral analysis and coherence theory.
+- **Second equation:** The Fourier transform of the intensity $|g|^2$ is the autocorrelation of the spectrum.
+
+In optics, autocorrelation appears in:
+- Coherence measurements (temporal and spatial)
+- Speckle statistics
+- Optical transfer function (OTF) as autocorrelation of the pupil function
+
+</div>
+</div>
 
 #### 7. Fourier Integral Theorem
 
@@ -1649,7 +1810,10 @@ $$
 
 
 for all points of $g(x,y)$ that are continuous.
+
 ### Special Functions
+
+#### Rectangle Function (rect)
 
 
 
@@ -1659,6 +1823,14 @@ $$
 
 
 
+**Shape:** A flat-topped pulse of width 1 centered at the origin.
+
+**Fourier transform:** $\mathcal{F}\{\text{rect}(x)\} = \text{sinc}(f_x)$
+
+**In optics:** Models slit apertures, uniform illumination, and ideal bandpass filters.
+
+#### Sinc Function
+
 
 
 $$
@@ -1667,13 +1839,29 @@ $$
 
 
 
+**Shape:** An oscillating function that decays as $1/x$, with zeros at all nonzero integers. The central lobe has width 2; sidelobes alternate in sign.
+
+**Fourier transform:** $\mathcal{F}\{\text{sinc}(x)\} = \text{rect}(f_x)$
+
+**In optics:** The diffraction pattern of a slit; the ideal interpolation kernel for bandlimited signals (Shannon reconstruction).
+
+#### Triangle Function (Λ)
+
 
 
 $$
-\Lambda(x) = \begin{cases} 1 - |x|, & |x| \leq 1 \\ 0, & \text{else} \end{cases} \quad \text{(Triangle function)}
+\Lambda(x) = \begin{cases} 1 - |x|, & |x| \leq 1 \\ 0, & \text{else} \end{cases}
 $$
 
 
+
+**Shape:** A symmetric triangle (tent) of width 2 and height 1.
+
+**Fourier transform:** $\mathcal{F}\{\Lambda(x)\} = \text{sinc}^2(f_x)$
+
+**In optics:** The autocorrelation of a rect (two rects convolved); appears in coherence theory and the MTF of defocused systems.
+
+#### [Comb Function](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) (Shah)
 
 
 
@@ -1683,13 +1871,27 @@ $$
 
 
 
+**Shape:** An infinite train of equally-spaced [delta functions](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/) at integer positions.
+
+**Fourier transform:** $\mathcal{F}\{\text{comb}(x)\} = \text{comb}(f_x)$ — the comb is its own Fourier transform.
+
+**In optics:** Represents sampling (multiplying by comb samples a function); diffraction gratings; the reason sampled spectra are periodic.
+
+#### Circle Function (circ)
+
 
 
 $$
-\text{circ}\left(\sqrt{x^2 + y^2}\right) = \begin{cases} 1, & \sqrt{x^2 + y^2} \leq 1 \\ 0, & \text{else} \end{cases}
+\text{circ}(r) = \text{circ}\left(\sqrt{x^2 + y^2}\right) = \begin{cases} 1, & r \leq 1 \\ 0, & \text{else} \end{cases}
 $$
 
 
+
+**Shape:** A uniform disk of radius 1 in 2D.
+
+**Fourier transform:** $\mathcal{F}\{\text{circ}(r)\} = \dfrac{J_1(2\pi\rho)}{\rho}$ (the Airy pattern / jinc function)
+
+**In optics:** Models circular apertures and lenses. Its transform is the [Airy disk](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/) — the fundamental diffraction limit for circular pupils.
 
 ---
 
@@ -1857,9 +2059,28 @@ In Fourier optics, this result describes:
 - [Fraunhofer Diffraction](#fraunhofer-diffraction---airy-pattern)
 - [Optical Transfer Function](#optical-transfer-function-otf)
 
+### Useful Fourier Pairs for Apertures
+
+When apertures are scaled, the similarity theorem applies. These are the most common Fourier pairs in diffraction calculations:
+
+| Aperture | Function | Fourier Transform |
+|----------|----------|-------------------|
+| Rectangular (width $a$, height $b$) | $\text{rect}\left(\dfrac{x}{a}, \dfrac{y}{b}\right)$ | $ab \cdot \text{sinc}(a\xi) \cdot \text{sinc}(b\eta)$ |
+| Square (side $a$) | $\text{rect}\left(\dfrac{x}{a}, \dfrac{y}{a}\right)$ | $a^2 \cdot \text{sinc}(a\xi, a\eta)$ |
+| Circular (radius $r_0$) | $\text{circ}\left(\dfrac{r}{r_0}\right)$ | $\pi r_0^2 \cdot \dfrac{2J_1(2\pi r_0 \rho)}{2\pi r_0 \rho}$ |
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Scaling Relationship</div>
+<div class="callout-content">
+
+Larger apertures produce narrower diffraction patterns (and vice versa). The product of aperture size and diffraction spread is constant — this is the Fourier uncertainty principle in action.
+
+</div>
+</div>
+
 ---
 
-### Properties of Delta Functions
+### Properties of [Delta Functions](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/)
 
 ## 1. Defining Properties
 
@@ -1878,6 +2099,15 @@ $$
 $$
 
 
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Sifting Property</div>
+<div class="callout-content">
+
+The second equation is the **sifting property**: the delta function "sifts out" the value of $f$ at the spike location $x_0$. This is the defining property that makes delta functions useful — they sample a function at a single point.
+
+</div>
+</div>
 
 ## 2. Scaling Properties
 
@@ -1913,6 +2143,15 @@ $$
 
 
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Why Scaling Produces a Factor of $|a|$</div>
+<div class="callout-content">
+
+The delta function must always integrate to 1. If you compress it horizontally by factor $a$, it becomes narrower — but the area must stay the same, so the height must increase by $|a|$. Conversely, $\delta(ax)$ is $a$ times narrower, so it must be divided by $|a|$ to preserve unit area.
+
+</div>
+</div>
+
 ## 3. Properties in Products
 
 
@@ -1947,6 +2186,15 @@ $$
 
  is not defined
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Freezing Property</div>
+<div class="callout-content">
+
+The first equation is the **freezing property**: when you multiply $f(x)$ by $\delta(x - x_0)$, the delta "freezes" the value of $f$ at $x_0$. Since the delta is zero everywhere except at $x_0$, only the value $f(x_0)$ matters. The result is a delta spike of strength $f(x_0)$.
+
+</div>
+</div>
+
 ## 4. Integral Properties
 
 
@@ -1965,19 +2213,38 @@ $$
 
 
 
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Convolution</div>
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Delta Convolution</div>
 <div class="callout-content">
 
-$\delta(x) * \delta(x) = \delta(x)$
-
-Proof: $\mathcal{F}\{\delta(x) * \delta(x)\} = 1 \cdot 1 = 1$
-
-$\mathcal{F}^{-1}\{1\} = \delta(x)$
+The second integral is a [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/): $\delta(x) * \delta(x - x_0) = \delta(x - x_0)$. Convolving with a shifted delta just shifts the function — the delta acts as a "copy and shift" operator.
 
 </div>
 </div>
-### Properties of Convolution
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Convolution of Delta with Itself</div>
+<div class="callout-content">
+
+
+
+$$
+\delta(x) * \delta(x) = \delta(x)
+$$
+
+
+
+**Proof via Fourier transform:**
+1. $\mathcal{F}\{\delta(x)\} = 1$ (delta transforms to a constant)
+2. $\mathcal{F}\{\delta * \delta\} = \mathcal{F}\{\delta\} \cdot \mathcal{F}\{\delta\} = 1 \cdot 1 = 1$ (convolution theorem)
+3. $\mathcal{F}^{-1}\{1\} = \delta(x)$
+
+**Interpretation:** The delta function is the identity element for convolution — convolving any function with $\delta$ returns that function unchanged. Convolving $\delta$ with itself just returns $\delta$.
+
+</div>
+</div>
+
+### Properties of [Convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/)
 
 ## Commutative
 
@@ -2002,6 +2269,15 @@ If $f(x) * h(x) = g(x)$
 
 then $f(x - x_0) * h(x) = g(x - x_0)$
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Why Shift Invariance Matters</div>
+<div class="callout-content">
+
+Shifting the input shifts the output by the same amount. This is the defining property of [LSI systems](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) — the system behaves the same regardless of where the input is located.
+
+</div>
+</div>
+
 ## Associative
 
 
@@ -2011,8 +2287,8 @@ $$
 
 
 
-<div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout callout-warning">
+<div class="callout-title"><span class="callout-icon">⚠️</span>Multiplication and Convolution Don't Mix</div>
 <div class="callout-content">
 
 $[v(x) \cdot w(x)] * h(x) \neq v(x) \cdot [w(x) * h(x)]$
@@ -2033,6 +2309,15 @@ $$
 
 
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Delta as Identity</div>
+<div class="callout-content">
+
+The delta function is the identity element for convolution — convolving with $\delta$ leaves the function unchanged. This is analogous to multiplying by 1 or adding 0.
+
+</div>
+</div>
+
 ## Derivatives
 
 
@@ -2046,17 +2331,51 @@ where $\delta^{(k)} = \frac{d^k \delta(x)}{dx^k}$ ($k$ = derivative)
 
 and $f^{(k)} = \frac{d^k f(x)}{dx^k}$
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Differentiation via Convolution</div>
+<div class="callout-content">
+
+Convolving with the derivative of a delta differentiates the function. This works because convolution commutes with differentiation:
+
+
+
+$$
+\frac{d}{dx}[f * g] = f * \frac{dg}{dx} = \frac{df}{dx} * g
+$$
+
+
+
+Setting $g = \delta$ and using $f * \delta = f$ gives the result. In practice, this means you can compute derivatives by convolving with an approximation to $\delta'$ (a difference kernel like $[1, -1]$).
+
+</div>
+</div>
+
 ## Repeated Convolution
 
+Convolving multiple functions together produces a result that tends toward a Gaussian, regardless of the original shapes (provided they have finite variance):
+
+
 
 $$
-f_1(x) * f_2(x) * f_3(x) * \cdots \rightarrow \text{Gaussian}
+f_1(x) * f_2(x) * f_3(x) * \cdots * f_n(x) \xrightarrow{n \to \infty} \text{Gaussian}
 $$
 
 
+
+Each convolution "smooths" the result further. Sharp features get rounded, asymmetries cancel out, and the characteristic bell curve emerges. After just a few convolutions, even rectangular or triangular functions look nearly Gaussian.
 
 <div class="callout callout-info">
 <div class="callout-title"><span class="callout-icon">ℹ️</span>Central Limit Theorem</div>
+<div class="callout-content">
+
+This is the [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) form of the Central Limit Theorem. In probability, convolution corresponds to summing independent random variables — the PDF of a sum is the convolution of the individual PDFs.
+
+No matter what shape the original distributions have (as long as they have finite variance), their repeated convolution approaches a Gaussian. This is why:
+- The Gaussian appears so often in nature (many small independent effects add up)
+- Diffraction patterns from complex apertures often have Gaussian-like envelopes
+- Repeated imaging through imperfect systems tends toward Gaussian blur
+
+</div>
 </div>
 
 ## Scaling
@@ -2131,10 +2450,21 @@ $$
 Detector receives: $g(x,y) = f(x,y) * b(x,y) = f(x,y) \otimes b(x,y)$
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-title"><span class="callout-icon">📝</span>When Convolution Equals Correlation</div>
 <div class="callout-content">
 
-If $b(x,y)$ is symmetric, convolution and correlation are identical
+If $b(x,y)$ is symmetric (i.e., $b(-x,-y) = b(x,y)$), then convolution and correlation are identical:
+
+
+$$
+f * b = f \star b
+$$
+
+
+
+**Why:** Correlation is defined as convolution with the **flipped** function: $f \star b = f * b(-x,-y)$. If $b$ is already symmetric, flipping does nothing, so the two operations coincide.
+
+**In optics:** Many PSFs are symmetric (e.g., Airy disk, Gaussian blur), so imaging can be described equivalently as convolution or correlation with the PSF.
 
 </div>
 </div>
@@ -2254,10 +2584,24 @@ $$
 
 
 <div class="callout callout-tip">
-<div class="callout-title"><span class="callout-icon">💡</span>Tip</div>
+<div class="callout-title"><span class="callout-icon">💡</span>Measuring the Line Spread Function</div>
 <div class="callout-content">
 
-The line spread function is the derivative of the edge response
+The line spread function $\ell_x(x)$ equals the derivative of the edge response $e_x(x)$:
+
+
+$$
+\ell_x(x) = \frac{d}{dx} e_x(x)
+$$
+
+
+
+**Why this matters practically:** Edges are easier to create than thin lines. To measure an optical system's LSF:
+1. Image a sharp edge (knife-edge test)
+2. Measure the blurred edge response $e_x(x)$
+3. Differentiate numerically to get the LSF
+
+This avoids the difficulty of creating a perfectly thin, uniform line source.
 
 </div>
 </div>
@@ -2944,9 +3288,34 @@ This is an **evanescent** (exponentially decaying) field that does not propagate
 
 ### Plane Wave Propagation
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Free Space as a Linear System</div>
+<div class="callout-content">
+
+![Free space propagation](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/free_space_propagation.svg)
+
+The diagram shows two transverse planes (z₀ and z₁) perpendicular to the optical axis, with free space between them. A field at the input plane z₀ propagates to produce a field at z₁.
+
+This can be abstracted as a **linear system** — the same framework used for electronic filters. Because free space propagation is linear and shift-invariant, it has a [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):
+
+
+
+$$
+H(\gamma_x, \gamma_y) = e^{jk\gamma_z(z_1 - z_0)}
+$$
+
+
+
+The **input field** is the optical field distribution at the starting plane $z_0$ — what you feed into the "system." The **output field** is what you get at $z_1$ after propagation. Comparing input to output, the only change is the phase factor $e^{jk\gamma_z z_0} \to e^{jk\gamma_z z_1}$ — the transverse pattern $e^{jk(\gamma_x x + \gamma_y y)}$ stays identical.
+
+This is the [eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/) property: plane waves pass through free space unchanged in shape, just phase-shifted by the [eigenvalue](/notes/areas/mathematics/linear_algebra/definitions/eigenvalue/). This framing connects wave optics to Fourier optics: decompose any input field into plane waves (angular spectrum), propagate each by multiplying by $H$, then recombine — exactly like filtering in signal processing.
+
+</div>
+</div>
+
 ## Eigenfunctions of Free-Space Propagation
 
-The transverse plane wave factor $e^{jk(\gamma_x x + \gamma_y y)}$ is an **eigenfunction** of the free-space propagation operator.
+The transverse plane wave factor $e^{jk(\gamma_x x + \gamma_y y)}$ is an **[eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** of the free-space propagation operator.
 
 ### Why This Works
 
@@ -3013,6 +3382,44 @@ $$
 </div>
 </div>
 
+<div class="callout callout-example">
+<div class="callout-title"><span class="callout-icon">📋</span>Analogy with Linear Algebra Eigenvectors</div>
+<div class="callout-content">
+
+Recall from linear algebra: if $\mathbf{v}$ is an [eigenvector](/notes/areas/mathematics/linear_algebra/definitions/eigenvector/) of matrix $A$, then:
+
+
+
+$$
+A\mathbf{v} = \lambda \mathbf{v}
+$$
+
+
+
+The matrix doesn't rotate or distort $\mathbf{v}$ — it just scales it by $\lambda$.
+
+**Same thing here.** The propagation operator $\mathcal{P}$ acts on the transverse pattern:
+
+
+
+$$
+\mathcal{P}\{e^{jk(\gamma_x x + \gamma_y y)}\} = \underbrace{e^{jk\gamma_z(z_1-z_0)}}_{\text{eigenvalue}} \cdot e^{jk(\gamma_x x + \gamma_y y)}
+$$
+
+
+
+The shape in $(x,y)$ is unchanged. Only a phase factor multiplies it.
+
+**Why this matters:**
+- Plane waves don't diffract or spread — they just accumulate phase
+- Free space doesn't mix spatial frequencies — each propagates independently
+- Any field can be decomposed into plane waves, each propagated separately, then recombined
+
+This is why Fourier optics works: propagation is "diagonal" in the plane-wave basis, just like [LSI](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) systems are diagonal in the complex exponential (frequency) basis for time signals.
+
+</div>
+</div>
+
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Eigenvalue depends on propagation distance</div>
 <div class="callout-content">
@@ -3056,6 +3463,49 @@ $$
 
 where $\gamma_x^2 + \gamma_y^2 \leq 1$ (non-evanescent)
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>From Eigenvalue to FFT-Based Propagation</div>
+<div class="callout-content">
+
+This transfer function is the bridge connecting eigenfunction theory to computational propagation:
+
+**The conceptual chain:**
+
+
+
+$$
+\text{Plane waves as eigenfunctions} \to \text{Eigenvalues as phase factors}
+$$
+
+
+
+
+$$
+\to \text{Transfer function} \to \text{FFT-based propagation}
+$$
+
+
+
+**Frequency-domain propagation:** Since each plane-wave component propagates independently, propagation becomes multiplication in spatial-frequency space:
+
+
+
+$$
+\tilde{U}(f_x, f_y; z_1) = H(f_x, f_y) \cdot \tilde{U}(f_x, f_y; z_0)
+$$
+
+
+
+This is the **angular spectrum method**: take the 2D Fourier transform of the input field, multiply by $H$, then inverse transform to get the output field.
+
+**Why the square root matters:** The factor $\sqrt{1 - \gamma_x^2 - \gamma_y^2}$ comes from the dispersion relation (Helmholtz equation), ensuring the wavevector magnitude equals $k = 2\pi/\lambda$. When $\gamma_x^2 + \gamma_y^2 > 1$, the square root becomes imaginary, giving exponential decay — this is how the formulation naturally handles:
+- Near-field (evanescent) components
+- Spatial-frequency cutoffs at $1/\lambda$
+- The transition from propagating to decaying waves
+
+</div>
+</div>
+
 ### Complex Amplitude and Amplitude Transmittance
 
 Consider complex amplitude (monochromatic, with time dependence removed) at a plane $z = z_i$:
@@ -3083,6 +3533,15 @@ where:
 - $u_i^+(x,y)$ = field just after the aperture (transmitted)
 
 ![Amplitude Transmittance](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/amplitude_transmittance.svg)
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Reading the Diagram</div>
+<div class="callout-content">
+
+The diagram shows a cross-section of an opaque screen with an aperture (hole) at plane $z_0$. The gray regions block light ($t = 0$), while the opening transmits it unchanged ($t = 1$). The complex amplitude transmittance $t_i(x,y) = u^+/u^-$ is the ratio of transmitted to incident field at each point.
+
+</div>
+</div>
 
 ## Why t = 1 Inside, t = 0 Outside
 
@@ -3139,6 +3598,332 @@ This is why apertures turn into **convolutions in Fourier space** — the gatewa
 - **Film (amplitude mask):** $t_i(x,y)$ describes the dark/light pattern; $0 \leq |t_i| \leq 1$
 
 - **Phase object (clear but not flat):** $|t_i(x,y)| = 1$ but $t_i$ is complex, representing different **phase delays** from varying thickness
+
+## Angular Plane Wave Spectrum
+
+The **angular plane wave spectrum** is the fundamental concept connecting spatial patterns to propagating waves. Any complex field distribution $u_i(x,y)$ at a plane $z = z_i$ can be decomposed into a superposition of plane waves traveling in different directions.
+
+![Angular Plane Wave Spectrum](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/angular_plane_wave_spectrum.svg)
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Diagram Explanation</div>
+<div class="callout-content">
+
+This figure illustrates the duality between **spatial domain** and **frequency domain** representations of an optical field:
+
+- **Left (Spatial Domain):** The complex field $u_i(x,y)$ at a plane $z = z_i$, shown as an arbitrary wavefront. This is the physical field distribution—what a detector would measure in amplitude and phase at that plane.
+
+- **Right (Frequency Domain):** The angular spectrum $U_i(\xi, \eta)$, shown as a peaked distribution in frequency space. The center (origin) represents low spatial frequencies (slowly varying features, nearly on-axis propagation), while points farther from the origin represent higher spatial frequencies (fine detail, steep propagation angles).
+
+- **Center Arrows:** The Fourier transform $\mathcal{F}$ converts from spatial to frequency domain; the inverse $\mathcal{F}^{-1}$ converts back. These are exact, lossless transformations—no information is lost.
+
+- **Bottom Box:** The crucial physical interpretation: spatial frequency $\xi = \cos\theta_x / \lambda$ directly encodes propagation direction. A point $(\xi, \eta)$ in the spectrum represents a plane wave component traveling at angles $(\theta_x, \theta_y)$ from the coordinate axes. Higher frequencies correspond to steeper angles.
+
+</div>
+</div>
+
+### Fourier Transform Relationship
+
+The angular spectrum $U_i(\xi, \eta)$ and the spatial field $u_i(x,y)$ form a [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) pair:
+
+
+
+$$
+U_i(\xi, \eta) = \mathcal{F}\{u_i(x,y)\} = \iint u_i(x,y) \, e^{-j2\pi(\xi x + \eta y)} \, dx \, dy
+$$
+
+
+
+
+
+$$
+u_i(x,y) = \mathcal{F}^{-1}\{U_i(\xi, \eta)\} = \iint U_i(\xi, \eta) \, e^{j2\pi(\xi x + \eta y)} \, d\xi \, d\eta
+$$
+
+
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Physical Interpretation</div>
+<div class="callout-content">
+
+The inverse transform shows that $u_i(x,y)$ is a weighted sum of complex exponentials $e^{j2\pi(\xi x + \eta y)}$. Each exponential is the transverse part of a plane wave. The spectrum $U_i(\xi, \eta)$ gives the complex amplitude (magnitude and phase) of each plane wave component.
+
+</div>
+</div>
+
+### Connecting Spatial Frequency to Propagation Angle
+
+A plane wave propagating in direction $(\gamma_x, \gamma_y, \gamma_z)$ has the form:
+
+
+
+$$
+C \exp\left[jk(\gamma_x x + \gamma_y y + \gamma_z z)\right]
+$$
+
+
+
+At a fixed plane $z = z_i$, the transverse part is:
+
+
+
+$$
+C \exp\left[jk(\gamma_x x + \gamma_y y)\right] = C \exp\left[j2\pi\left(\frac{\gamma_x}{\lambda} x + \frac{\gamma_y}{\lambda} y\right)\right]
+$$
+
+
+
+Comparing with the Fourier basis $e^{j2\pi(\xi x + \eta y)}$, the spatial frequencies are:
+
+
+
+$$
+\boxed{\xi = \frac{\gamma_x}{\lambda} = \frac{\cos\theta_x}{\lambda} = f_x}
+$$
+
+
+
+
+
+$$
+\boxed{\eta = \frac{\gamma_y}{\lambda} = \frac{\cos\theta_y}{\lambda} = f_y}
+$$
+
+
+
+where $\gamma_x = \cos\theta_x$ and $\gamma_y = \cos\theta_y$ are the direction cosines (angles measured from the $x$ and $y$ axes).
+
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Key Insight: Frequency = Direction</div>
+<div class="callout-content">
+
+Each point $(\xi, \eta)$ in the angular spectrum corresponds to a plane wave propagating at a specific angle. Low spatial frequencies (near the origin) represent waves traveling nearly parallel to the $z$-axis. High spatial frequencies represent steeply tilted waves.
+
+The constraint $\gamma_x^2 + \gamma_y^2 + \gamma_z^2 = 1$ means:
+- If $\xi^2 + \eta^2 < 1/\lambda^2$: **propagating wave** (real $\gamma_z$)
+- If $\xi^2 + \eta^2 > 1/\lambda^2$: **evanescent wave** (imaginary $\gamma_z$, exponential decay)
+
+</div>
+</div>
+
+<div class="callout callout-example">
+<div class="callout-title"><span class="callout-icon">📋</span>Cosine Grating Decomposition</div>
+<div class="callout-content">
+
+Consider a 1D cosine grating as the input field:
+
+
+$$
+u_i(x,y) = \cos(2\pi f_0 x)
+$$
+
+
+
+The angular plane-wave spectrum is:
+
+
+$$
+U_i(\xi,\eta) = \iint u_i(x,y) \, e^{-j2\pi(\xi x + \eta y)} \, dx \, dy
+$$
+
+
+
+Using the Fourier transform of a cosine:
+
+
+$$
+\cos(2\pi f_0 x) = \frac{1}{2}\left(e^{j2\pi f_0 x} + e^{-j2\pi f_0 x}\right)
+$$
+
+
+
+we obtain:
+
+
+$$
+U_i(\xi,\eta) = \frac{1}{2}\Big[\delta(\xi - f_0) + \delta(\xi + f_0)\Big] \, \delta(\eta)
+$$
+
+
+
+Using the angular-frequency relations $\xi = \cos\theta_x / \lambda$ and $\eta = \cos\theta_y / \lambda$:
+
+
+$$
+U_i(\xi,\eta) = \frac{1}{2}\left[\delta\!\left(\frac{\cos\theta_x}{\lambda} - f_0\right) + \delta\!\left(\frac{\cos\theta_x}{\lambda} + f_0\right)\right] \delta\!\left(\frac{\cos\theta_y}{\lambda}\right)
+$$
+
+
+
+**Physical interpretation:** The cosine grating consists of exactly **two plane waves** propagating symmetrically at angles $\pm\theta_x$ where $\cos\theta_x = \lambda f_0$. The delta functions at $\pm f_0$ in frequency space correspond to these two discrete propagation directions. Higher grating frequencies $f_0$ mean steeper propagation angles.
+
+</div>
+</div>
+
+### Why This Matters
+
+The angular spectrum representation is powerful because:
+
+1. **Propagation becomes multiplication:** Each plane wave component propagates independently, just multiplied by the transfer function $H(\xi, \eta) = e^{jk\gamma_z \Delta z}$
+
+2. **Diffraction is natural:** The finite extent of an aperture spreads the angular spectrum, causing the beam to diverge
+
+3. **Computation is efficient:** Propagation via FFT → multiply by $H$ → IFFT is $O(N \log N)$
+
+### Angular Spectrum Diffraction Formulation
+
+The complete recipe for propagating a field from plane $z = z_i$ to plane $z = z_o$ using the angular spectrum method:
+
+**Step 1: Input field and its angular spectrum**
+
+The input field $u_i(x,y)$ at plane $z = z_i$ has angular spectrum:
+
+
+
+$$
+U_i(\xi, \eta) = \iint u_i(x,y) \, e^{-j2\pi(\xi x + \eta y)} \, dx \, dy
+$$
+
+
+
+**Step 2: Diffraction transfer function**
+
+The transfer function for propagation through distance $\Delta z = z_o - z_i$ is:
+
+
+
+$$
+H(\xi, \eta) = \exp\left[jk(z_o - z_i)\sqrt{1 - \lambda^2(\xi^2 + \eta^2)}\right]
+$$
+
+
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Propagating vs Evanescent</div>
+<div class="callout-content">
+
+- When $\xi^2 + \eta^2 < 1/\lambda^2$: the square root is real → propagating wave (phase accumulation)
+- When $\xi^2 + \eta^2 > 1/\lambda^2$: the square root is imaginary → evanescent wave (exponential decay)
+
+</div>
+</div>
+
+**Step 3: Propagation in frequency domain**
+
+Multiply the angular spectrum by the transfer function:
+
+
+
+$$
+U_o(\xi, \eta) = U_i(\xi, \eta) \cdot H(\xi, \eta)
+$$
+
+
+
+**Step 4: Output field via inverse transform**
+
+The output field at plane $z = z_o$ is:
+
+
+
+$$
+u_o(x,y) = \mathcal{F}^{-1}\{U_i(\xi, \eta) \cdot H(\xi, \eta)\}
+$$
+
+
+
+Explicitly:
+
+
+
+$$
+u_o(x,y) = \iint U_i(\xi, \eta) \exp\left[jk(z_o - z_i)\sqrt{1 - \lambda^2(\xi^2 + \eta^2)}\right] e^{j2\pi(\xi x + \eta y)} \, d\xi \, d\eta
+$$
+
+
+
+<div class="callout callout-success">
+<div class="callout-title"><span class="callout-icon">✅</span>Angular Spectrum Method Summary</div>
+<div class="callout-content">
+
+
+
+$$
+u_i(x,y) \xrightarrow{\mathcal{F}} U_i(\xi,\eta) \xrightarrow{\times H} U_o(\xi,\eta) \xrightarrow{\mathcal{F}^{-1}} u_o(x,y)
+$$
+
+
+
+This is exact (within the scalar wave approximation) and handles both near-field and far-field diffraction. The Fresnel and Fraunhofer approximations are limiting cases of this general formulation.
+
+</div>
+</div>
+
+**Convolution Form**
+
+By the convolution theorem, multiplication in the frequency domain corresponds to convolution in the spatial domain:
+
+
+
+$$
+u_o(x,y) = u_i(x,y) * \mathcal{F}^{-1}\{H(\xi,\eta)\}
+$$
+
+
+
+The inverse Fourier transform of the transfer function $\mathcal{F}^{-1}\{H\}$ is the **impulse response** (point spread function) of free-space propagation.
+
+### Paraxial Approximation
+
+When the angular spectrum is concentrated near the optical axis (low spatial frequencies dominate), the **paraxial approximation** simplifies the transfer function.
+
+**Condition:** $\lambda^2(\xi^2 + \eta^2) \ll 1$ (spatial frequencies much smaller than $1/\lambda$)
+
+**Binomial expansion:** For small $a$:
+
+
+$$
+(1 - a)^{1/2} \approx 1 - \frac{a}{2}
+$$
+
+
+
+Applying this to the transfer function:
+
+
+$$
+\sqrt{1 - \lambda^2(\xi^2 + \eta^2)} \approx 1 - \frac{\lambda^2}{2}(\xi^2 + \eta^2)
+$$
+
+
+
+The paraxial transfer function becomes:
+
+
+$$
+H_{\text{paraxial}}(\xi,\eta) = \exp\left[jk\Delta z\right] \cdot \exp\left[-j\pi\lambda\Delta z(\xi^2 + \eta^2)\right]
+$$
+
+
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Physical Interpretation of the Factorized Form</div>
+<div class="callout-content">
+
+- **First factor** $\exp[jk\Delta z]$: A **global phase** that depends only on propagation distance. This is the on-axis phase accumulation and is often dropped since it doesn't affect intensity.
+- **Second factor** $\exp[-j\pi\lambda\Delta z(\xi^2 + \eta^2)]$: Produces **diffraction spreading**. Higher spatial frequencies (larger $\xi, \eta$) accumulate more phase, causing fine details to spread faster than coarse features.
+
+</div>
+</div>
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Fresnel Approximation</div>
+<div class="callout-content">
+
+The paraxial transfer function leads directly to the **Fresnel diffraction** integral. The quadratic phase factor $\exp[-j\pi\lambda\Delta z(\xi^2 + \eta^2)]$ is the signature of Fresnel diffraction.
+
+</div>
+</div>
 
 ### Transmitted Field and Angular Plane Wave Spectrum
 
@@ -3488,24 +4273,17 @@ $$
 
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>[LSI](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) System (filter)</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Free-Space Propagation as an LSI Filter</div>
 <div class="callout-content">
 
-Note similarity between this development and one-dimensional:
+This angular spectrum formulation has exactly the same structure as a 1D linear filter:
 
+| Domain | 1D Signal Processing | 2D Optical Propagation |
+|--------|---------------------|----------------------|
+| Spatial | $f(x) \to h(x) \to g(x) = f * h$ | $u_i(x,y) \to h(x,y) \to u_o(x,y) = u_i * h$ |
+| Frequency | $G(\xi) = F(\xi) \cdot H(\xi)$ | $U_o(\xi,\eta) = U_i(\xi,\eta) \cdot H(\xi,\eta)$ |
 
-$$
-f(x) \rightarrow \boxed{h(x)} \rightarrow g(x)
-$$
-
-
-
-
-$$
-F(\xi) \xrightarrow{H(\xi)} G(\xi) = F(\xi) \cdot H(\xi)
-$$
-
-
+Free-space propagation is a **linear shift-invariant system** with transfer function $H(\xi,\eta) = \exp\{jk\Delta z[1 - \lambda^2(\xi^2+\eta^2)]^{1/2}\}$. The same convolution/multiplication duality applies.
 
 </div>
 </div>
@@ -3624,7 +4402,12 @@ $$
 
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>y perpendicular to page</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Coordinate Convention</div>
+<div class="callout-content">
+
+In this 2D cross-section, the $y$-axis points out of the page (perpendicular to the diagram). The two plane waves propagate in the $x$-$z$ plane, symmetric about the $z$-axis. Their $k$-vectors have no $y$-component ($\gamma_y = 0$), so $\eta = 0$ in frequency space.
+
+</div>
 </div>
 
 ## Interference Pattern
@@ -4451,10 +5234,12 @@ $$
 ## Far Field Calculation
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Delta Functions in the Angular Spectrum</div>
 <div class="callout-content">
 
-Need $\delta$ function in transform distribution.
+The transmitted field contains discrete plane wave components (constant term plus two diffracted orders at $\pm f_0$). In frequency space, discrete components appear as **delta functions** — each delta represents a plane wave at that spatial frequency.
+
+The convolution with $\text{sinc}(\ell\xi)\text{sinc}(\ell\eta)$ spreads each delta into a sinc pattern, reflecting the finite aperture size $\ell$. Without the finite aperture, the far-field would consist of three infinitely sharp spots.
 
 </div>
 </div>

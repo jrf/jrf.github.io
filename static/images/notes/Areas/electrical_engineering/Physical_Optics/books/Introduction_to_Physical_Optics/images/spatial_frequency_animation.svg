@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320">
+  <style>
+    .title { font-family: sans-serif; font-size: 16px; font-weight: bold; }
+    .label { font-family: sans-serif; font-size: 12px; }
+    .sublabel { font-family: sans-serif; font-size: 10px; fill: #555; }
+    .math { font-family: serif; font-style: italic; font-size: 11px; }
+
+    /* Vertical stripes - oscillate horizontally */
+    @keyframes oscillate-x {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(20px); }
+    }
+    .pattern-vertical { animation: oscillate-x 2s ease-in-out infinite; }
+
+    /* Horizontal stripes - oscillate vertically */
+    @keyframes oscillate-y {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+    .pattern-horizontal { animation: oscillate-y 2s ease-in-out infinite; }
+
+    /* Diagonal pattern - oscillate diagonally */
+    @keyframes oscillate-diag {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(14px, 14px); }
+    }
+    .pattern-diagonal { animation: oscillate-diag 2s ease-in-out infinite; }
+
+  </style>
+
+  <!-- Background -->
+  <rect width="600" height="450" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="300" y="26" class="title" text-anchor="middle">Spatial Frequency Patterns: Direction of Oscillation</text>
+  <text x="300" y="44" class="sublabel" text-anchor="middle">νₓ and νᵧ are spatial frequencies (cycles per unit length) from the 2D Fourier transform</text>
+  <text x="300" y="60" class="sublabel" text-anchor="middle">Watch how each pattern moves — the wave oscillates perpendicular to the stripes</text>
+
+  <!-- ============ Pattern 1: High νₓ, νᵧ = 0 (Vertical stripes) ============ -->
+  <g transform="translate(50, 80)">
+    <!-- Clip mask for the pattern -->
+    <defs>
+      <clipPath id="clip1">
+        <rect x="0" y="0" width="120" height="120" rx="4"/>
+      </clipPath>
+    </defs>
+
+    <!-- Border -->
+    <rect x="0" y="0" width="120" height="120" rx="4" fill="none" stroke="#333" stroke-width="2"/>
+
+    <!-- Animated vertical stripes (extend beyond clip to allow movement) -->
+    <g clip-path="url(#clip1)">
+      <g class="pattern-vertical">
+        <defs>
+          <linearGradient id="vertGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#2980b9"/>
+            <stop offset="25%" stop-color="#fff"/>
+            <stop offset="50%" stop-color="#2980b9"/>
+            <stop offset="75%" stop-color="#fff"/>
+            <stop offset="100%" stop-color="#2980b9"/>
+          </linearGradient>
+        </defs>
+        <rect x="-40" y="0" width="200" height="120" fill="url(#vertGrad)"/>
+      </g>
+    </g>
+
+    <!-- Direction arrow (horizontal) -->
+    <g class="arrow" transform="translate(60, 140)">
+      <line x1="-30" y1="0" x2="30" y2="0" stroke="#c0392b" stroke-width="3"/>
+      <polygon points="30,0 20,-6 20,6" fill="#c0392b"/>
+      <polygon points="-30,0 -20,-6 -20,6" fill="#c0392b"/>
+    </g>
+
+    <!-- Labels -->
+    <text x="60" y="170" class="label" text-anchor="middle">νₓ ≠ 0, νᵧ = 0</text>
+    <text x="60" y="185" class="sublabel" text-anchor="middle">Vertical stripes</text>
+    <text x="60" y="200" class="sublabel" text-anchor="middle">Oscillates in x (horizontally)</text>
+  </g>
+
+  <!-- ============ Pattern 2: νₓ = 0, High νᵧ (Horizontal stripes) ============ -->
+  <g transform="translate(240, 80)">
+    <defs>
+      <clipPath id="clip2">
+        <rect x="0" y="0" width="120" height="120" rx="4"/>
+      </clipPath>
+    </defs>
+
+    <rect x="0" y="0" width="120" height="120" rx="4" fill="none" stroke="#333" stroke-width="2"/>
+
+    <g clip-path="url(#clip2)">
+      <g class="pattern-horizontal">
+        <defs>
+          <linearGradient id="horizGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#27ae60"/>
+            <stop offset="25%" stop-color="#fff"/>
+            <stop offset="50%" stop-color="#27ae60"/>
+            <stop offset="75%" stop-color="#fff"/>
+            <stop offset="100%" stop-color="#27ae60"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="-40" width="120" height="200" fill="url(#horizGrad)"/>
+      </g>
+    </g>
+
+    <!-- Direction arrow (vertical) -->
+    <g class="arrow" transform="translate(140, 60)">
+      <line x1="0" y1="-30" x2="0" y2="30" stroke="#c0392b" stroke-width="3"/>
+      <polygon points="0,30 -6,20 6,20" fill="#c0392b"/>
+      <polygon points="0,-30 -6,-20 6,-20" fill="#c0392b"/>
+    </g>
+
+    <text x="60" y="170" class="label" text-anchor="middle">νₓ = 0, νᵧ ≠ 0</text>
+    <text x="60" y="185" class="sublabel" text-anchor="middle">Horizontal stripes</text>
+    <text x="60" y="200" class="sublabel" text-anchor="middle">Oscillates in y (vertically)</text>
+  </g>
+
+  <!-- ============ Pattern 3: High νₓ, High νᵧ (Diagonal) ============ -->
+  <g transform="translate(430, 80)">
+    <defs>
+      <clipPath id="clip3">
+        <rect x="0" y="0" width="120" height="120" rx="4"/>
+      </clipPath>
+      <!-- Diagonal gradient: goes from top-left to bottom-right -->
+      <linearGradient id="diagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#8e44ad"/>
+        <stop offset="12.5%" stop-color="#fff"/>
+        <stop offset="25%" stop-color="#8e44ad"/>
+        <stop offset="37.5%" stop-color="#fff"/>
+        <stop offset="50%" stop-color="#8e44ad"/>
+        <stop offset="62.5%" stop-color="#fff"/>
+        <stop offset="75%" stop-color="#8e44ad"/>
+        <stop offset="87.5%" stop-color="#fff"/>
+        <stop offset="100%" stop-color="#8e44ad"/>
+      </linearGradient>
+    </defs>
+
+    <rect x="0" y="0" width="120" height="120" rx="4" fill="none" stroke="#333" stroke-width="2"/>
+
+    <g clip-path="url(#clip3)">
+      <g class="pattern-diagonal">
+        <rect x="-60" y="-60" width="240" height="240" fill="url(#diagGrad)"/>
+      </g>
+    </g>
+
+    <!-- Direction arrow (diagonal) -->
+    <g class="arrow" transform="translate(145, 135)">
+      <line x1="-21" y1="-21" x2="21" y2="21" stroke="#c0392b" stroke-width="3"/>
+      <polygon points="21,21 10,18 18,10" fill="#c0392b"/>
+      <polygon points="-21,-21 -10,-18 -18,-10" fill="#c0392b"/>
+    </g>
+
+    <text x="60" y="170" class="label" text-anchor="middle">νₓ ≠ 0, νᵧ ≠ 0</text>
+    <text x="60" y="185" class="sublabel" text-anchor="middle">Diagonal stripes</text>
+    <text x="60" y="200" class="sublabel" text-anchor="middle">Oscillates diagonally</text>
+  </g>
+
+  <!-- Red arrow legend -->
+  <g transform="translate(420, 300)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#c0392b" stroke-width="2"/>
+    <polygon points="20,0 14,-4 14,4" fill="#c0392b"/>
+    <text x="25" y="4" class="sublabel">= oscillation direction</text>
+  </g>
+</svg>

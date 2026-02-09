@@ -15,4 +15,5 @@ This is a Map of Contents for all topics related to Topology.
 - [Compactness](/notes/areas/mathematics/topology/definitions/compactness/)
 - [Isolated Point](/notes/areas/mathematics/topology/definitions/isolated_point/)
 - [Limit Point](/notes/areas/mathematics/topology/definitions/limit_point/)
+- [Metric](/notes/areas/mathematics/topology/definitions/metric/)
 - [Open Set](/notes/areas/mathematics/topology/definitions/open_set/)
