@@ -104,7 +104,7 @@ $$
 
 ## Applications
 
-- **[Fourier analysis](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)**: Complex exponentials as basis functions
+- **[Fourier analysis](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)**: Complex exponentials as [basis](/notes/areas/mathematics/linear_algebra/definitions/basis/) functions
 - **Signal processing**: Phasors and frequency analysis
 - **Quantum mechanics**: Wave functions
 - **Electrical engineering**: AC circuit analysis

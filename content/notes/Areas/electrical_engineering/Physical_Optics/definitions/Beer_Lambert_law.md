@@ -69,7 +69,7 @@ $$
 
 
 
-This line integral is exactly what [CT scanners](/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography/) measure — the [Radon transform](/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform/) of the attenuation coefficient.
+This line integral is exactly what [CT scanners](/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography/) [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) — the [Radon transform](/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform/) of the attenuation coefficient.
 
 ## Absorbance
 

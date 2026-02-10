@@ -17,7 +17,7 @@ The **uncertainty principle** expresses a fundamental limit on the precision wit
 
 ## Fourier Uncertainty Principle
 
-For any function $f(x)$ and its Fourier transform $F(\nu)$:
+For any function $f(x)$ and its [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) $F(\nu)$:
 
 
 
@@ -82,7 +82,7 @@ $$
 
 **Applications**:
 - Short pulses have broad spectra
-- Narrow spectral lines require long coherence times
+- Narrow spectral lines require long [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) times
 - Radar resolution limits
 - Musical notes: short notes have less definite pitch
 
@@ -97,7 +97,7 @@ The **time-bandwidth product** $\Delta t \cdot \Delta f$ characterizes signals:
 
 The uncertainty principle manifests as:
 - [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) limits (small apertures → wide angular spread)
-- Coherence length and bandwidth relationship
+- [Coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) length and bandwidth relationship
 - Pulse broadening in dispersive media
 
 ## See Also

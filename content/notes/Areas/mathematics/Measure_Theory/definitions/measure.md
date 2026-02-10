@@ -14,4 +14,4 @@ A (positive) *measure* $\mu$ on $X$ is a [map](/notes/areas/mathematics/set_theo
 
 3.  (M${}_{2}$): $\left. \left( A_{n} \right) \right._{n \in \mathbb{N}} \subseteq \mathcal{A}\mathrm{\text{ pairwise disjoint }} \Longrightarrow \mu\left. \left( \bigsqcup(n \in \mathbb{N})A_{n} \right) \right. = \sum_{n \in \mathbb{N}}\mu\left. \left( A_{n} \right) \right.$.
 
-where $\sqcup$ represents the union of disjoint sets.
+where $\sqcup$ represents the union of [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/) sets.

@@ -61,7 +61,7 @@ $$
 
 ## Delta Sequences (Nascent Deltas)
 
-Since the delta function is not a true function, it is often represented as the limit of a sequence of ordinary functions. A common choice is the Gaussian:
+Since the delta function is not a true function, it is often represented as the limit of a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of ordinary functions. A common choice is the Gaussian:
 
 
 
@@ -108,7 +108,7 @@ Other common delta sequences include:
 
 ## Relation to [Dirac_measure](/notes/areas/mathematics/measure_theory/definitions/dirac_measure/)
 
-The Dirac delta function can be viewed as the density of the [Dirac_measure](/notes/areas/mathematics/measure_theory/definitions/dirac_measure/) $\delta_0$ with respect to Lebesgue measure (in a distributional sense).
+The Dirac delta function can be viewed as the density of the [Dirac_measure](/notes/areas/mathematics/measure_theory/definitions/dirac_measure/) $\delta_0$ with respect to Lebesgue [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) (in a distributional sense).
 
 ## Related Articles
 

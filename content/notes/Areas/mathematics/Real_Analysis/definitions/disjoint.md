@@ -25,4 +25,4 @@ $$
 
 
 
-A collection of sets $\{A_i : i \in I\}$ is *pairwise disjoint* if $A_i \cap A_j = \emptyset$ for all $i \neq j$.
+A collection of sets $\{A_i : i \in I\}$ is *[pairwise disjoint](/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint/)* if $A_i \cap A_j = \emptyset$ for all $i \neq j$.

@@ -25,7 +25,7 @@ $$
 
 
 
-The vector $v$ is called an *eigenvector* of $T$ corresponding to $\lambda$.
+The vector $v$ is called an *[eigenvector](/notes/areas/mathematics/linear_algebra/definitions/eigenvector/)* of $T$ corresponding to $\lambda$.
 
 ## Matrix Form
 

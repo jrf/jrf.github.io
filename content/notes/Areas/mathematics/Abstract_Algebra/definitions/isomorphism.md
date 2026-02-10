@@ -23,19 +23,19 @@ Two structures are **isomorphic** if an isomorphism exists between them — they
 
 | Context | Isomorphism preserves |
 |---------|----------------------|
-| **Sets** | Just a bijection (no extra structure) |
+| **Sets** | Just a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) (no extra structure) |
 | **Groups** | $\phi(ab) = \phi(a)\phi(b)$ |
 | **Rings** | Addition and multiplication |
 | **Vector spaces** | Linear combinations |
 | **Topological spaces** | Open sets (homeomorphism) |
-| **Metric spaces** | Distances (isometry) |
-| **Inner product spaces** | Inner products (unitary isomorphism) |
+| **[Metric](/notes/areas/mathematics/topology/definitions/metric/) spaces** | Distances (isometry) |
+| **[Inner product](/notes/areas/mathematics/functional_analysis/definitions/inner_product/) spaces** | Inner products (unitary isomorphism) |
 
 ## Key Idea
 
 If $\phi: A \to B$ is an isomorphism, then:
 
-1. **Bijection**: $\phi$ is one-to-one and onto
+1. **[Bijection](/notes/areas/mathematics/set_theory/definitions/bijection/)**: $\phi$ is one-to-one and onto
 2. **Structure-preserving**: Operations in $A$ correspond to operations in $B$
 3. **Invertible**: $\phi^{-1}: B \to A$ is also an isomorphism
 
@@ -51,6 +51,6 @@ Isomorphic structures are "mathematically identical" — they have the same abst
 
 ## Related Concepts
 
-- [Bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) — an isomorphism is a structure-preserving bijection
+- [Bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) — an isomorphism is a structure-preserving [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/)
 - [homomorphism](/notes/areas/mathematics/abstract_algebra/definitions/homomorphism/) — structure-preserving map (not necessarily bijective)
 - [automorphism](/notes/areas/mathematics/abstract_algebra/definitions/automorphism/) — isomorphism from a structure to itself

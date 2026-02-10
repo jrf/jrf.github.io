@@ -519,7 +519,7 @@ $$
 
 
 
-Since $A = \left. (A \cap B) \right. \sqcup \left. (A\backslash B) \right.$ (where $\sqcup$ denotes the union of disjoint sets), we see that $\mathbb{1}_{A \cap B} + \mathbb{1}_{A\backslash B}$ can never equal 2 ()\*), thus part (ii) implies that
+Since $A = \left. (A \cap B) \right. \sqcup \left. (A\backslash B) \right.$ (where $\sqcup$ denotes the union of [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/) sets), we see that $\mathbb{1}_{A \cap B} + \mathbb{1}_{A\backslash B}$ can never equal 2 ()\*), thus part (ii) implies that
 
 
 
@@ -561,7 +561,7 @@ $$
 
 
 
-is equal to 0, and vice versa. Again, this is because $A \cap B$ and $A\backslash B$ are disjoint.
+is equal to 0, and vice versa. Again, this is because $A \cap B$ and $A\backslash B$ are [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/).
 
 ### (iv)
 
@@ -773,7 +773,7 @@ $$
 
 
 
-From: [Wikipedia: Surjective function](https://en.wikipedia.org/wiki/Surjective_function#Properties), we know that if $f:X \rightarrow Y$ is surjective and if $B$ is a subset of $Y$, then $\left. \left( f \circ f^{- 1} \right) \right.\left. (B) \right. = B$. That is, $B$ can be recovered from its [preimage](/notes/areas/mathematics/set_theory/definitions/preimage/) $f^{- 1}\left. (B) \right.$. Thus,
+From: [Wikipedia: Surjective function](https://en.wikipedia.org/wiki/Surjective_function#Properties), we know that if $f:X \rightarrow Y$ is surjective and if $B$ is a [subset](/notes/areas/mathematics/set_theory/definitions/subset/) of $Y$, then $\left. \left( f \circ f^{- 1} \right) \right.\left. (B) \right. = B$. That is, $B$ can be recovered from its [preimage](/notes/areas/mathematics/set_theory/definitions/preimage/) $f^{- 1}\left. (B) \right.$. Thus,
 
 
 
@@ -932,7 +932,7 @@ Let $\mathcal{A} ≔ \{ A \subseteq X:\# A \leq \#\mathbb{N}\mathrm{\text{ or }}
 
 ()$\subseteq$): By definition of a [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/), $\{ x\} \in \mathcal{A}$. Thus, by Remark 3.5, $\{ x\} \subseteq \mathcal{A}$ implies that $\sigma\left. \left( \{ x\} \right) \right. \subseteq \mathcal{A}$.
 
-()$\supseteq$): If $\{ x\} \in \mathcal{A}$, then by definition, either $A$ or $A^{c}$ is countable. Without loss of generality, assume that $A$ is countable. Then $A$ is a countable union of singletons, and so $A \in \sigma\left. \left( \{ x\} \right) \right.$ and $A^{c} \in \sigma\left. \left( \{ x\} \right) \right.$. This means that $\sigma\left. \left( \{ x\} \right) \right. \supseteq \mathcal{A}$.
+()$\supseteq$): If $\{ x\} \in \mathcal{A}$, then by definition, either $A$ or $A^{c}$ is [countable](/notes/areas/mathematics/set_theory/definitions/countable/). Without loss of generality, assume that $A$ is [countable](/notes/areas/mathematics/set_theory/definitions/countable/). Then $A$ is a [countable](/notes/areas/mathematics/set_theory/definitions/countable/) union of singletons, and so $A \in \sigma\left. \left( \{ x\} \right) \right.$ and $A^{c} \in \sigma\left. \left( \{ x\} \right) \right.$. This means that $\sigma\left. \left( \{ x\} \right) \right. \supseteq \mathcal{A}$.
 
 ## Exercise 3.4
 
@@ -1019,13 +1019,13 @@ $$
 
 
 
-Checking the conditions for a measure, we have:
+Checking the conditions for a [measure](/notes/areas/mathematics/measure_theory/definitions/measure/), we have:
 
 (M${}_{0}$): That $\mathcal{A}$ is a [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/) is given.
 
 (M${}_{1}$): Since $\varnothing$ contains no points, $x \notin \varnothing$ and so $\delta_{x}\left. (\varnothing) \right. = 0$.
 
-(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}} \subseteq \mathcal{A}$ be a sequence of pairwise disjoint [measurable sets](/notes/areas/mathematics/measure_theory/definitions/measure/). If $x \in \bigcup_{j \in \mathbb{N}}A_{j}$, $j_{0}$ with $x \in A_{j_{0}}$, i.e. that there is exactly one such set (and no more, since all sets that we are considering are pairwise disjoint) that contains $x$. Hence,
+(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}} \subseteq \mathcal{A}$ be a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of [pairwise disjoint](/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint/) [measurable sets](/notes/areas/mathematics/measure_theory/definitions/measure/). If $x \in \bigcup_{j \in \mathbb{N}}A_{j}$, $j_{0}$ with $x \in A_{j_{0}}$, i.e. that there is exactly one such set (and no more, since all sets that we are considering are [pairwise disjoint](/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint/)) that contains $x$. Hence,
 
 
 
@@ -1071,7 +1071,7 @@ $$
 
 (M${}_{1}$): Since $\varnothing$ contains no elements, applying the above [set_function](/notes/areas/mathematics/set_theory/definitions/set_function/) gives $|\varnothing| = \#\varnothing = 0$.
 
-(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}}$ be a sequence of pairwise disjoint sets in $\mathcal{A}$. We have three cases:
+(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}}$ be a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of [pairwise disjoint](/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint/) sets in $\mathcal{A}$. We have three cases:
 
 Case 1: All sets in $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}}$ are infinite and only finitely many, say the first $k$, are non-empty, then $A = \bigcup_{j \in \mathbb{N}}A_{j}$ is effectively a finite union of $k$ finite sets and it is clear that
 
@@ -1134,7 +1134,7 @@ $$
 
 it will always be zero since $\omega_{n} \notin \varnothing$. Thus, $P\left. (\varnothing) \right. = 0$.
 
-(M${}_{2}$): Let $\left. \left( A_{k} \right) \right._{k \in \mathbb{N}}$ be pairwise disjoint subsets of $\Omega$. Then
+(M${}_{2}$): Let $\left. \left( A_{k} \right) \right._{k \in \mathbb{N}}$ be [pairwise disjoint](/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint/) subsets of $\Omega$. Then
 
 
 
@@ -1169,7 +1169,7 @@ $$
 
 (M${}_{1}$): By definition of $\mu$, $\mu\left. (\varnothing) \right. = 0$.
 
-(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}}$ be pairwise disjoint sets in $\mathcal{A}$. Then
+(M${}_{2}$): Let $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}}$ be [pairwise disjoint](/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint/) sets in $\mathcal{A}$. Then
 
 
 
@@ -1189,7 +1189,7 @@ Restating Remark 5.2:
 
 > As for [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/)s, see Properties 3.2, one sees that $\varnothing \in \mathcal{D}$ and that finite disjoint unions are again in $\mathcal{D}:D,E \in \mathcal{D},D \cap E = \varnothing \Longrightarrow D \sqcup E \in \mathcal{D}$. Of course, every [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/) is a [Dynkin_system](/notes/areas/mathematics/measure_theory/definitions/dynkin_system/), but the converse is, in general, wrong.
 
-By definition, $X \in \mathcal{D}$ and, similar to [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/), complements are also in $\mathcal{D}$. So, we have that $\varnothing = X^{c} \in \mathcal{D}$. If $A,B \in \mathcal{D}$ are disjoint, we set $A_{1} = A;A_{2} = B;A_{j} = \varnothing\forall j \geq 3$. Then $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}}$ is a sequence of pairwise disjoint sets, and by (D${}_{3}$) we find that
+By definition, $X \in \mathcal{D}$ and, similar to [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/), complements are also in $\mathcal{D}$. So, we have that $\varnothing = X^{c} \in \mathcal{D}$. If $A,B \in \mathcal{D}$ are [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/), we set $A_{1} = A;A_{2} = B;A_{j} = \varnothing\forall j \geq 3$. Then $\left. \left( A_{j} \right) \right._{j \in \mathbb{N}}$ is a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of [pairwise disjoint](/notes/areas/mathematics/set_theory/definitions/pairwise_disjoint/) sets, and by (D${}_{3}$) we find that
 
 
 
@@ -1205,7 +1205,7 @@ Since $\left. \left( \Sigma_{1} \right) \right. =$(D${}_{1}$), $\left. \left( \S
 
 > The following exercise shows that [Dynkin_system](/notes/areas/mathematics/measure_theory/definitions/dynkin_system/)s and [sigma-algebra](/notes/areas/mathematics/measure_theory/definitions/sigma-algebra/)s are, in general, different. Let $X = \{ 1,2,3,\ldots,4k - 1,4k\}$ for some $k \in \mathbb{N}$. Then $\mathcal{D} = \{ A \subseteq X:\# A\mathrm{\text{ is even}}\}$.
 
-As given, $X$ has an even number of elements. For example, for $k = 1$, we have $X = \{ 4k - 3 = 1,4k - 2 = 2,4k - 1 = 3,4k = 4\}$. Similarly, for $k = 2$, we have $X = \{ 1,2,3,4,4k - 3 = 5,4k - 2 = 6,4k - 1 = 7,4k = 8\}$. It is now obvious that if $A,B \in \mathcal{D}$ are disjoint, then $A,B$ and $A \sqcup B$ contain an even number of elements. But if $A,B$ have a non-empty intersection, and if this intersection contains an odd number of elements, then $A \cup B$ contains an odd number of elements. For example:
+As given, $X$ has an even number of elements. For example, for $k = 1$, we have $X = \{ 4k - 3 = 1,4k - 2 = 2,4k - 1 = 3,4k = 4\}$. Similarly, for $k = 2$, we have $X = \{ 1,2,3,4,4k - 3 = 5,4k - 2 = 6,4k - 1 = 7,4k = 8\}$. It is now obvious that if $A,B \in \mathcal{D}$ are [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/), then $A,B$ and $A \sqcup B$ contain an even number of elements. But if $A,B$ have a non-empty intersection, and if this intersection contains an odd number of elements, then $A \cup B$ contains an odd number of elements. For example:
 
 
 

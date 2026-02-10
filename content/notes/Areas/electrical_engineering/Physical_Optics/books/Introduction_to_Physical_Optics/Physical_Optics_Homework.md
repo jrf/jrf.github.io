@@ -67,13 +67,13 @@ This is why the transform is **lossless** — no information is lost, just rearr
 
 **Why do we care?**
 
-1. **Simplifies convolution**: Convolution in the spatial domain becomes multiplication in the frequency domain. Filtering an image is just multiplying spectra.
+1. **Simplifies [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/)**: [Convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) in the spatial domain becomes multiplication in the frequency domain. Filtering an image is just multiplying spectra.
 
 2. **Reveals hidden structure**: Periodic patterns that are hard to see spatially become obvious peaks in the frequency domain.
 
-3. **Connects to physics**: Diffraction, interference, and imaging are naturally described in terms of spatial frequencies. A lens performs an optical Fourier transform.
+3. **Connects to physics**: [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/), interference, and imaging are naturally described in terms of spatial frequencies. A lens performs an optical [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/).
 
-4. **Enables efficient computation**: The Fast Fourier Transform (FFT) makes frequency analysis computationally practical.
+4. **Enables efficient computation**: The Fast [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) (FFT) makes frequency analysis computationally practical.
 
 <div class="callout callout-example">
 <div class="callout-title"><span class="callout-icon">📋</span>Analogy: A musical chord</div>
@@ -149,7 +149,7 @@ This is the **[Plancherel theorem](/notes/areas/mathematics/functional_analysis/
 
 ## Fourier Transforms in Optical Imaging
 
-In imaging, the Fourier transform maps from the **spatial domain** (brightness at each location) to the **spatial frequency domain** (how much of each grating pattern is present):
+In imaging, the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) maps from the **spatial domain** (brightness at each location) to the **spatial frequency domain** (how much of each grating pattern is present):
 
 
 
@@ -185,14 +185,14 @@ A photograph of a picket fence would show:
 
 ### Why Lenses Perform Fourier Transforms
 
-This isn't just mathematical convenience — **light physically computes Fourier transforms** through diffraction.
+This isn't just mathematical convenience — **light physically computes Fourier transforms** through [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/).
 
 When coherent light passes through an object and then through a lens:
 
 1. The object modulates the light's amplitude/phase at each point $(x, y)$
-2. Diffraction causes each point to spread into waves traveling in all directions
+2. [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) causes each point to spread into waves traveling in all directions
 3. The lens focuses waves traveling in the same direction to the same point
-4. At the back focal plane, the light distribution is the Fourier transform of the object
+4. At the back focal plane, the light distribution is the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the object
 
 <div class="callout callout-tip">
 <div class="callout-title"><span class="callout-icon">💡</span>The optical Fourier transform</div>
@@ -213,7 +213,7 @@ where $\lambda$ is wavelength and $f$ is focal length.
 </div>
 </div>
 
-This is why Fourier optics is so powerful: the mathematics directly describes what light does. Diffraction *is* Fourier transformation.
+This is why Fourier optics is so powerful: the mathematics directly describes what light does. [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) *is* Fourier transformation.
 
 ### Filtering in the Frequency Domain
 
@@ -251,7 +251,7 @@ $$
 
 
 
-where $H(\nu_x, \nu_y)$ is the transfer function of any filtering or apertures in the system.
+where $H(\nu_x, \nu_y)$ is the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) of any filtering or apertures in the system.
 
 This is why understanding Fourier transforms is essential for optics: every lens, aperture, and optical element can be understood as an operation in the frequency domain.
 
@@ -422,7 +422,7 @@ $$
 
 **The key concept: Separability**
 
-When a 2D function can be written as $g(x,y) = g_1(x) \cdot g_2(y)$, its 2D Fourier transform factors:
+When a 2D function can be written as $g(x,y) = g_1(x) \cdot g_2(y)$, its 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) factors:
 
 
 $$
@@ -506,7 +506,7 @@ $$
 
 **Physical interpretation:**
 
-The sinc² intensity pattern (called the **[Airy pattern](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/)** for circular apertures) describes the diffraction pattern from many optical elements.
+The sinc² intensity pattern (called the **[Airy pattern](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/)** for circular apertures) describes the [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern from many optical elements.
 
 ---
 
@@ -553,7 +553,7 @@ This duality — constant ↔ delta — is fundamental to understanding both [sa
 
 ## Problem 3: Fourier-Bessel Transform (Goodman 2.6)
 
-The **[Fourier-Bessel transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/)** (also called the **Hankel transform**) is the natural transform for functions with **circular symmetry**. Instead of complex exponentials, it uses [Bessel functions](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) as its basis.
+The **[Fourier-Bessel transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/)** (also called the **[Hankel transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/)**) is the natural transform for functions with **circular symmetry**. Instead of complex exponentials, it uses [Bessel functions](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) as its [basis](/notes/areas/mathematics/linear_algebra/definitions/basis/).
 
 **Definition:**
 
@@ -571,7 +571,7 @@ where:
 
 **Why Bessel functions?**
 
-When you have circular symmetry and write the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) in polar coordinates, the angular integration yields a Bessel function. It's the natural "building block" for radially symmetric functions, just as $e^{j\omega t}$ is for 1D signals.
+When you have circular symmetry and write the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) in polar coordinates, the angular integration yields a [Bessel function](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/). It's the natural "building block" for radially symmetric functions, just as $e^{j\omega t}$ is for 1D signals.
 
 ---
 
@@ -746,7 +746,7 @@ It's as localized as possible in *both* space and frequency simultaneously.
 
 **The claim:**
 
-$J_0(2\pi\rho_0 r)$ is an eigenfunction of any [linear shift-invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) (LSI) system with circularly symmetric [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/).
+$J_0(2\pi\rho_0 r)$ is an [eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/) of any [linear shift-invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) (LSI) system with circularly symmetric [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/).
 
 **What does this mean?**
 
@@ -776,7 +776,7 @@ $$
 
 
 
-3. The Bessel function transforms to a **delta ring in frequency space**
+3. The [Bessel function](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) transforms to a **delta ring in frequency space**
 
 4. For an LSI system, output = input × [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) (in frequency domain):
    
@@ -789,7 +789,7 @@ $$
 
 5. Transforming back: the output is $H(\rho_0) \cdot J_0(2\pi\rho_0 r)$
 
-**The eigenvalue:**
+**The [eigenvalue](/notes/areas/mathematics/linear_algebra/definitions/eigenvalue/):**
 
 
 
@@ -799,7 +799,7 @@ $$
 
 
 
-The eigenvalue is the transfer function evaluated at the spatial frequency $\rho_0$.
+The [eigenvalue](/notes/areas/mathematics/linear_algebra/definitions/eigenvalue/) is the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) evaluated at the spatial frequency $\rho_0$.
 
 **Physical interpretation:**
 
@@ -815,7 +815,7 @@ This problem asks us to analyze the [Fourier transform](/notes/areas/mathematics
 
 ### Part (a): Is it Linear?
 
-**Yes, the Fourier transform is linear.**
+**Yes, the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is linear.**
 
 A system is linear if it satisfies **[superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/)**:
 
@@ -857,13 +857,13 @@ $$
 
 ### Part (b): Does it Have a Transfer Function?
 
-**No, the Fourier transform system does not have a [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/).**
+**No, the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) system does not have a [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/).**
 
 **Why not?**
 
-A transfer function exists only for systems that are both:
+A [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) exists only for systems that are both:
 1. Linear ✓ (proven above)
-2. Shift-invariant ✗
+2. Shift-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) ✗
 
 <div class="callout callout-warning">
 <div class="callout-title"><span class="callout-icon">⚠️</span>The Fourier transform is NOT shift-invariant</div>
@@ -894,11 +894,11 @@ A shift in the spatial domain produces a **phase modulation** in the frequency d
 
 **Physical intuition:**
 
-The Fourier transform converts between fundamentally different representations (space ↔ frequency). A translation in one domain can't map to a translation in the other because they represent different physical quantities.
+The [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) converts between fundamentally different representations (space ↔ frequency). A translation in one domain can't map to a translation in the other because they represent different physical quantities.
 
 **Consequence:**
 
-Without shift-invariance, there's no [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) relationship, and thus no transfer function or impulse response. Each input must be analyzed directly through the transform integral.
+Without shift-invariance, there's no [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) relationship, and thus no [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) or [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/). Each input must be analyzed directly through the transform integral.
 
 ---
 
@@ -906,7 +906,7 @@ Without shift-invariance, there's no [convolution](/notes/areas/mathematics/real
 
 | Problem | Core Concept |
 |---------|--------------|
-| 1 | [Delta function](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/) scaling and the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) for sampling |
+| 1 | [Delta function](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/) scaling and the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) for [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) |
 | 2 | Fundamental transform pairs: rect↔sinc, separability |
 | 3 | [Fourier-Bessel transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/) for circular symmetry |
 | 4 | Bessel functions as eigenfunctions of radially symmetric systems |
@@ -917,6 +917,10 @@ Without shift-invariance, there's no [convolution](/notes/areas/mathematics/real
 # Homework 2: Computed Tomography and the Projection-Slice Theorem
 
 ## Problem 1: X-ray Projections and the Projection-Slice Theorem
+
+> Consider the three-dimensional object shown in the figure below. A two-dimensional slice of this object is illuminated with a line source of x-rays, and a linear detector array is placed behind the object. The x-rays are attenuated by the material in the path of the beam; the denser the material, the less intense the beam. Assume the signal produced at a single detector in the array is equal to the integral of the density along the beam direction.
+>
+> ![Problem 1 figure](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/pr1.png)
 
 This problem introduces the mathematical foundation of **[Computed Tomography](/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography/) (CT) imaging**.
 
@@ -951,11 +955,13 @@ $f(x, y)$ is the **density distribution of the cross-sectional slice** — it's 
 | $f(x,y)$ | Internal density at point $(x,y)$ | **Unknown** — can't see inside |
 | $p(y)$ | Detector signal at position $y$ | **Measured** — from part (a) |
 
-We measure $p(y)$. We want $f(x,y)$. The [projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/) tells us how to invert this relationship.
+We [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $p(y)$. We want $f(x,y)$. The [projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/) tells us how to invert this relationship.
 
 ---
 
 ## Part (a): What does a single projection measure?
+
+> What is the one-dimensional signal received by the detector array for an object cross-section $f(x, y)$ located at $z_0$ when the beam is projected along the $x$-axis as in the figure? Assume the array is a continuous function of $y$.
 
 Consider one detector element sitting at position $y$ on the detector array. The x-ray beam traveling to this detector passes through all points $(x, y)$ for $x \in (-\infty, \infty)$ at that fixed $y$ value.
 
@@ -982,7 +988,7 @@ $$
 
 In the mathematical model, the detector is **continuous** — infinitely many beams with infinitesimal spacing. The problem even says "Assume the array is a continuous function of $y$."
 
-In a real CT scanner, detector elements are discrete (maybe 1000+ elements across), so there's finite spacing. This introduces sampling considerations, but the theory treats it as continuous.
+In a real CT scanner, detector elements are discrete (maybe 1000+ elements across), so there's finite spacing. This introduces [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) considerations, but the theory treats it as continuous.
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Sampling considerations in practice</div>
@@ -1036,17 +1042,19 @@ These two representations contain *identical* information. The [Fourier transfor
 
 **Why this matters for CT:**
 
-The projection-slice theorem exploits this duality. Instead of measuring $f(x,y)$ directly (which we can't do — we can't see inside the body), we measure projections $p(y)$. Each projection gives us a *slice* of $F(\nu_x, \nu_y)$. Collect enough slices → reconstruct the full frequency domain → inverse transform → recover the spatial image.
+The projection-slice theorem exploits this duality. Instead of measuring $f(x,y)$ directly (which we can't do — we can't see inside the body), we [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) projections $p(y)$. Each projection gives us a *slice* of $F(\nu_x, \nu_y)$. Collect enough slices → reconstruct the full frequency domain → inverse transform → recover the spatial image.
 
 ---
 
 ## Part (b): The Projection-Slice Theorem
 
+> How is the one-dimensional Fourier transform of this distribution related to the two-dimensional Fourier transform of the cross-section $f(x,y)$? (Hint: Consider the two-dimensional Fourier transform along a particular line). This relationship is called the projection-slice theorem.
+
 This is the **key insight** that makes CT reconstruction possible.
 
-**Question:** How does the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the projection $p(y)$ relate to the 2D Fourier transform of $f(x,y)$?
+**Question:** How does the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the projection $p(y)$ relate to the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of $f(x,y)$?
 
-**The 2D Fourier transform of the object:**
+**The 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the object:**
 
 
 $$
@@ -1257,7 +1265,7 @@ Watch how each pattern oscillates in the direction perpendicular to its stripes:
 </div>
 
 
-**The 1D Fourier transform of the projection:**
+**The 1D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the projection:**
 
 
 $$
@@ -1306,7 +1314,7 @@ By collapsing the $x$ dimension, we lose access to any $\nu_x \neq 0$ informatio
 </div>
 </div>
 
-**Where does "$0 \cdot x$" come from?** Compare this to the 2D Fourier transform:
+**Where does "$0 \cdot x$" come from?** Compare this to the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
 
 
@@ -1349,12 +1357,14 @@ The 1D Fourier transform of a projection equals a 1D "slice" through the 2D Four
 
 **Visually:**
 - The object $f(x,y)$ lives in the spatial domain (x-y plane)
-- Its 2D Fourier transform $F(\nu_x, \nu_y)$ lives in the frequency domain ($\nu_x$-$\nu_y$ plane)
+- Its 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) $F(\nu_x, \nu_y)$ lives in the frequency domain ($\nu_x$-$\nu_y$ plane)
 - A projection along $x$ gives you the **vertical line** $\nu_x = 0$ in the frequency domain
 
 ---
 
 ## Part (c): Reconstructing the Full Image
+
+> Locate the region of the Fourier transform plane $\mathcal{F}\{f(x, y)\}$ which can be recovered from projecting a line of x-rays down the x-axis from part (b). What region can be recovered from a $y$-axis projection? Can you describe a technique for recovering the entire cross-sectional image $f(x,y)$ from many projections? If you can, you have just invented a method of computer tomography.
 
 **What do we get from each projection?**
 
@@ -1404,6 +1414,28 @@ But if you take **many projections at different angles** $\theta \in [0, \pi)$:
 
 ## Problem 2: Equivalent Area and Equivalent Bandwidth (Goodman 2.5)
 
+> The "equivalent area" $\Delta_{xy}$ of a function $g(x, y)$ can be defined by
+>
+> 
+
+$$
+\Delta_{xy} = \frac{\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} g(x, y) \, dx \, dy}{g(0, 0)},
+$$
+
+
+>
+> while the "equivalent bandwidth" $\Delta_{f_x f_y}$ of $g$ is defined in terms of its transform $G$ by
+>
+> 
+
+$$
+\Delta_{f_x f_y} = \frac{\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} G(f_x, f_y) \, df_x \, df_y}{G(0, 0)}.
+$$
+
+
+>
+> Show that $\Delta_{xy} \cdot \Delta_{f_x f_y} = 1$.
+
 This problem reveals a beautiful reciprocal relationship between a function's spatial extent and its frequency content — a manifestation of the [uncertainty principle](/notes/areas/electrical_engineering/physical_optics/definitions/uncertainty_principle/).
 
 ---
@@ -1430,7 +1462,7 @@ $$
 
 
 
-**Notation convention:** Lowercase $g$ denotes the spatial domain function; uppercase $G$ denotes its Fourier transform (frequency domain). This is standard: the transform of $g$ is $G$, the transform of $f$ is $F$, etc.
+**Notation convention:** Lowercase $g$ denotes the spatial domain function; uppercase $G$ denotes its [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) (frequency domain). This is standard: the transform of $g$ is $G$, the transform of $f$ is $F$, etc.
 
 ---
 
@@ -1488,7 +1520,7 @@ The equivalent width $\Delta_x$ (or area $\Delta_{xy}$ in 2D) answers the questi
 
 **Goal:** Show that $\Delta_{xy} \cdot \Delta_{f_x f_y} = 1$
 
-**Step 1: Use the Fourier transform at the origin**
+**Step 1: Use the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) at the origin**
 
 Look at the definition of $\Delta_{xy}$:
 
@@ -1500,7 +1532,7 @@ $$
 
 
 
-The numerator is the integral of $g$ over all space. We need to relate this to the Fourier transform $G$. The question is: *does this integral appear anywhere in the Fourier transform?*
+The numerator is the integral of $g$ over all space. We need to relate this to the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) $G$. The question is: *does this integral appear anywhere in the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)?*
 
 Start with the definition of the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
@@ -1553,7 +1585,7 @@ $$
 
 **Physical meaning:** The value of the spectrum at zero frequency (the "[DC component](/notes/areas/electrical_engineering/signals_systems/definitions/dc_component/)") equals the total integral of the function over all space. This makes intuitive sense: the zero-frequency component represents the average or total "mass" of the signal, with no oscillation.
 
-**Step 2: Use the inverse Fourier transform at the origin**
+**Step 2: Use the inverse [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) at the origin**
 
 Now look at the definition of $\Delta_{f_x f_y}$:
 
@@ -1565,9 +1597,9 @@ $$
 
 
 
-The numerator is the integral of $G$ over all frequencies. We need to relate this to the spatial function $g$. The question is: *does this integral appear anywhere in the inverse Fourier transform?*
+The numerator is the integral of $G$ over all frequencies. We need to relate this to the spatial function $g$. The question is: *does this integral appear anywhere in the inverse [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)?*
 
-Start with the definition of the inverse Fourier transform:
+Start with the definition of the inverse [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
 
 
@@ -1616,7 +1648,7 @@ $$
 
 
 
-**Physical meaning:** The value of the spatial function at the origin equals the total integral of the spectrum over all frequencies. This is the "dual" of Step 1 — the Fourier transform and its inverse have symmetric properties.
+**Physical meaning:** The value of the spatial function at the origin equals the total integral of the spectrum over all frequencies. This is the "dual" of Step 1 — the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) and its inverse have symmetric properties.
 
 **Step 3: Substitute into the definitions**
 
@@ -1715,138 +1747,19 @@ A function cannot be simultaneously compact in both space and frequency.
 
 ---
 
-## Problem 3: Bessel Functions as Eigenfunctions (Goodman 2.11/2.13)
+## Problem 3: Periodic Functions and the Comb Function (Goodman 2.11/2.13)
 
-This problem shows that [Bessel functions](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) play the same role for circularly symmetric systems that complex exponentials play for 1D systems.
-
----
-
-### Background: Eigenfunctions of LSI Systems
-
-For a [linear shift-invariant (LSI) system](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/):
-- In 1D: Complex exponentials $e^{j2\pi f_0 x}$ are eigenfunctions
-- The system multiplies the input by a scalar (the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) at that frequency)
-- Output = $H(f_0) \cdot e^{j2\pi f_0 x}$
-
-For **circularly symmetric** 2D systems, Bessel functions take this role.
-
----
-
-### The Claim
-
-$J_0(2\pi\rho_0 r)$ is an eigenfunction of any LSI system with circularly symmetric [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) $h(r)$.
-
----
-
-### The Proof
-
-**Step 1: Find the Fourier-Bessel transform of $J_0(2\pi\rho_0 r)$**
-
-For circularly symmetric functions, we use the [Fourier-Bessel (Hankel) transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/):
-
-
+> 
 
 $$
-\mathcal{B}\{g(r)\} = 2\pi \int_0^{\infty} r \, g(r) \, J_0(2\pi r \rho) \, dr
+p(x, y) = g(x, y) * \left[ \text{comb}\left(\frac{x}{X}\right) \text{comb}\left(\frac{y}{Y}\right) \right]
 $$
 
 
+>
+> defines a periodic function, with period $X$ in the $x$ direction and period $Y$ in the $y$ direction.
 
-From the transform pair (delta ring → Bessel):
-
-
-$$
-\mathcal{B}\{\delta(r - r_0)\} = 2\pi r_0 J_0(2\pi r_0 \rho)
-$$
-
-
-
-The Hankel transform is **self-reciprocal** (symmetric), so we can invert this:
-
-
-$$
-\mathcal{B}\{J_0(2\pi\rho_0 r)\} = \frac{1}{2\pi\rho_0}\delta(\rho - \rho_0)
-$$
-
-
-
-<div class="callout callout-tip">
-<div class="callout-title"><span class="callout-icon">💡</span>Key insight</div>
-<div class="callout-content">
-
-The Bessel function $J_0(2\pi\rho_0 r)$ transforms to a **delta ring** at radius $\rho_0$ in frequency space. It contains only a single radial frequency.
-
-</div>
-</div>
-
-**Step 2: Apply the LSI system**
-
-For an LSI system with impulse response $h(r)$ and transfer function $H(\rho) = \mathcal{B}\{h(r)\}$:
-
-- Input: $g(r) = J_0(2\pi\rho_0 r)$
-- Input spectrum: $G(\rho) = \frac{1}{2\pi\rho_0}\delta(\rho - \rho_0)$
-
-In the frequency domain, output = input × transfer function:
-
-
-$$
-G_{\text{out}}(\rho) = H(\rho) \cdot G(\rho) = H(\rho) \cdot \frac{1}{2\pi\rho_0}\delta(\rho - \rho_0)
-$$
-
-
-
-The [delta function](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/) sifting property picks out $H(\rho_0)$:
-
-
-$$
-G_{\text{out}}(\rho) = \frac{H(\rho_0)}{2\pi\rho_0}\delta(\rho - \rho_0) = H(\rho_0) \cdot G(\rho)
-$$
-
-
-
-**Step 3: Transform back to spatial domain**
-
-
-
-$$
-g_{\text{out}}(r) = H(\rho_0) \cdot J_0(2\pi\rho_0 r)
-$$
-
-
-
-The output is the input scaled by $H(\rho_0)$. This is exactly the definition of an eigenfunction!
-
----
-
-### The Eigenvalue
-
-
-
-$$
-\boxed{\lambda = H(\rho_0) = \mathcal{B}\{h(r)\}\big|_{\rho = \rho_0}}
-$$
-
-
-
-The eigenvalue is the transfer function evaluated at the spatial frequency $\rho_0$.
-
----
-
-### Physical Interpretation
-
-| 1D Systems | Circularly Symmetric 2D Systems |
-|------------|--------------------------------|
-| Eigenfunctions: $e^{j2\pi f_0 x}$ | Eigenfunctions: $J_0(2\pi\rho_0 r)$ |
-| Pure sinusoid at frequency $f_0$ | Radial oscillation at frequency $\rho_0$ |
-| System multiplies by $H(f_0)$ | System multiplies by $H(\rho_0)$ |
-
-Just as sinusoids are the "natural modes" of 1D LSI systems, Bessel functions are the natural modes of circularly symmetric systems. They pass through unchanged in shape — only scaled by the transfer function.
-
----
-
-## Problem 4: Periodic Functions and the Comb Function (Goodman 2.11/2.13)
-
-This problem explores how periodic functions arise from convolution with the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/), and how their Fourier transforms become discrete.
+This problem explores how periodic functions arise from [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) with the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/), and how their Fourier transforms become discrete.
 
 ---
 
@@ -1918,6 +1831,18 @@ This is exactly what happens when you tile a floor with identical tiles, or when
 
 ### Part (a): Fourier Transform of a Periodic Function
 
+> Show that the Fourier transform of $p$ can be written
+>
+> 
+
+$$
+P(f_x, f_y) = \sum_{n=-\infty}^{\infty} \sum_{m=-\infty}^{\infty} G\left(\frac{n}{X}, \frac{m}{Y}\right) \delta\left(f_x - \frac{n}{X}, f_y - \frac{m}{Y}\right)
+$$
+
+
+>
+> where $G$ is the Fourier transform of $g$.
+
 **Goal:** Show that
 
 
@@ -1928,7 +1853,7 @@ $$
 
 
 
-where $G$ is the Fourier transform of $g$.
+where $G$ is the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of $g$.
 
 ---
 
@@ -1944,7 +1869,7 @@ $$
 
 **Step 2: Scale the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/)**
 
-Substituting $x/X$ into the comb definition:
+Substituting $x/X$ into the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) definition:
 
 
 
@@ -1976,7 +1901,7 @@ $$
 
 
 
-**Step 3: Fourier transform of the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/)**
+**Step 3: [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/)**
 
 The [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) is its own [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/): $\mathcal{F}\{\text{comb}(x)\} = \text{comb}(f)$.
 
@@ -2028,7 +1953,7 @@ $$
 
 **Step 5: Apply the [convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/)**
 
-Convolution in space becomes multiplication in frequency:
+[Convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) in space becomes multiplication in frequency:
 
 
 
@@ -2076,7 +2001,7 @@ This is the 2D version of the [Fourier series](/notes/areas/mathematics/function
 ### Deep Dive: Delta Function Scaling
 
 <div class="callout callout-note">
-<div class="callout-title"><span class="callout-icon">📝</span>- Why does $\delta(x/X) = X \delta(x)$? (click to expand)</div>
+<div class="callout-title"><span class="callout-icon">📝</span>Why does $\delta(x/X) = X \delta(x)$?</div>
 <div class="callout-content">
 
 **The gotcha:** You must apply the scaling property to the *entire* argument of the delta.
@@ -2145,6 +2070,18 @@ For this to equal $\int f(x) \cdot [?] \, dx$, we need $[?] = X \delta(x)$.
 
 ### Part (b): Specific Example
 
+> Sketch the function $p(x, y)$ when
+>
+> 
+
+$$
+g(x, y) = \text{rect}\left(\frac{2x}{X}\right) \text{rect}\left(\frac{2y}{Y}\right)
+$$
+
+
+>
+> and find the corresponding Fourier transform $P(f_x, f_y)$.
+
 **Given:** $g(x, y) = \text{rect}\left(\frac{2x}{X}\right) \text{rect}\left(\frac{2y}{Y}\right)$
 
 This is a rectangle centered at the origin with width $X/2$ and height $Y/2$ — exactly one quarter of the unit cell area.
@@ -2161,6 +2098,8 @@ Imagine a checkerboard where each square is $X \times Y$, but only the bottom-le
 
 </div>
 </div>
+
+![Periodic array of rectangles p(x,y)](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/periodic_rectangles_3b.svg)
 
 **Finding $G(f_x, f_y)$:**
 
@@ -2241,7 +2180,17 @@ This is the same reason that a 50% duty cycle square wave in 1D contains only od
 
 ---
 
-## Problem 5: The Equivalent Object Theorem (Goodman 2.13/2.15)
+## Problem 4: The Equivalent Object Theorem (Goodman 2.13/2.15)
+
+> The input to a certain imaging system is an _object_ complex field distribution $U_o(x, y)$ of unlimited spatial frequency content, while the output of the system is an _image_ field distribution $U_i(x, y)$. The imaging system can be assumed to act as a linear, invariant lowpass filter with a transfer function that is identically zero outside the region $|f_x| \leq B_X / 2, |f_y| \leq B_Y / 2$ in the frequency domain. Show that there exists an "equivalent" object $U_o'(x, y)$ consisting of a rectangular array of point sources that produces exactly the same image $U_i$ as does the true object $U_o$, and that the field distribution across the equivalent object can be written
+>
+> 
+
+$$
+U_o'(x, y) = \sum_{n=-\infty}^{\infty} \sum_{m=-\infty}^{\infty} \left[ \int_{\xi=-\infty}^{\infty} \int_{\eta=-\infty}^{\infty} U_o(\xi, \eta) \, \text{sinc}(n - B_X \xi) \, \text{sinc}(m - B_Y \eta) \, d\xi \, d\eta \right] \delta\left(x - \frac{n}{B_X}, y - \frac{m}{B_Y}\right).
+$$
+
+
 
 This problem proves a remarkable result: for any bandlimited imaging system, there exists an equivalent object made entirely of point sources that produces exactly the same image.
 
@@ -2278,7 +2227,7 @@ This is analogous to how two audio signals that differ only in ultrasonic freque
 
 **Step 1: Express the image in terms of bandlimited content**
 
-The image is determined by convolving the object spectrum with the system's transfer function:
+The image is determined by convolving the object spectrum with the system's [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):
 
 
 
@@ -2302,7 +2251,7 @@ $$
 
 **Step 2: Represent the bandlimited spectrum as a [Fourier series](/notes/areas/mathematics/functional_analysis/definitions/fourier_series/)**
 
-Since $\tilde{\mathcal{U}}_o$ is nonzero only within a finite rectangle, we can expand it as a Fourier series over that region:
+Since $\tilde{\mathcal{U}}_o$ is nonzero only within a finite rectangle, we can expand it as a [Fourier series](/notes/areas/mathematics/functional_analysis/definitions/fourier_series/) over that region:
 
 
 
@@ -2324,7 +2273,7 @@ $$
 
 **Step 3: Relate coefficients to spatial integrals**
 
-This coefficient integral can be rewritten using the convolution theorem. The result involves the original object convolved with sinc functions:
+This coefficient integral can be rewritten using the [convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/). The result involves the original object convolved with sinc functions:
 
 
 
@@ -2345,7 +2294,7 @@ This is the **projection** of the original object onto a 2D sinc basis function 
 
 **Step 4: Construct the equivalent object**
 
-The inverse Fourier transform of $e^{j2\pi(f_x n/B_X + f_y m/B_Y)}$ is a delta function at position $(n/B_X, m/B_Y)$.
+The inverse [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of $e^{j2\pi(f_x n/B_X + f_y m/B_Y)}$ is a delta function at position $(n/B_X, m/B_Y)$.
 
 Therefore, the equivalent object is:
 
@@ -2379,7 +2328,7 @@ The equivalent object is a **rectangular array of point sources** located at pos
 
 **Why does the spacing matter?**
 
-The grid spacing is $1/B_X$ and $1/B_Y$ — exactly the [Nyquist sampling](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/) intervals for a signal bandlimited to $B_X/2$ and $B_Y/2$. This is no coincidence: the sampling theorem tells us that a bandlimited signal is completely determined by samples at the Nyquist rate.
+The grid spacing is $1/B_X$ and $1/B_Y$ — exactly the [Nyquist sampling](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/) intervals for a signal bandlimited to $B_X/2$ and $B_Y/2$. This is no coincidence: the [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) theorem tells us that a bandlimited signal is completely determined by samples at the Nyquist rate.
 
 <div class="callout callout-example">
 <div class="callout-title"><span class="callout-icon">📋</span>Application: Holography and optical processing</div>
@@ -2392,15 +2341,17 @@ This theorem justifies representing continuous objects as discrete arrays of poi
 
 ---
 
-## Problem 6: Angular Spectrum of Apertures (Goodman 3.5)
+## Problem 5: Angular Spectrum of Apertures (Goodman 3.5)
 
-This problem introduces the **angular spectrum representation** — a powerful method for analyzing [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) by decomposing a wavefront into plane waves traveling in different directions.
+> Assuming unit-amplitude normally incident plane-wave illumination, find the angular spectrum of
+
+This problem introduces the **[angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) representation** — a powerful method for analyzing [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) by decomposing a wavefront into plane waves traveling in different directions.
 
 ---
 
 ### Background: The Angular Spectrum
 
-When a plane wave illuminates an aperture, the field immediately after the aperture is:
+When a [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) illuminates an aperture, the field immediately after the aperture is:
 
 
 
@@ -2412,7 +2363,7 @@ $$
 
 where $t(x, y)$ is the **transmission function** of the aperture.
 
-The **angular spectrum** is simply the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of this field:
+The **[angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/)** is simply the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of this field:
 
 
 
@@ -2443,6 +2394,8 @@ where $\lambda$ is the wavelength. Higher spatial frequencies correspond to plan
 
 ### Part (a): Circular Aperture
 
+> A circular aperture of diameter $d$.
+
 **The aperture:** A circular opening of diameter $d$.
 
 **Transmission function:**
@@ -2465,9 +2418,9 @@ $$
 
 
 
-**Finding the angular spectrum:**
+**Finding the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/):**
 
-For circularly symmetric functions, the 2D Fourier transform reduces to the [Fourier-Bessel (Hankel) transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/):
+For circularly symmetric functions, the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) reduces to the [Fourier-Bessel (Hankel) transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/):
 
 
 
@@ -2545,7 +2498,7 @@ The jinc function has a central peak and concentric rings of decreasing amplitud
 
 **Physical interpretation:**
 
-The angular spectrum tells us how the light from the aperture is distributed among different propagation directions:
+The [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) tells us how the light from the aperture is distributed among different propagation directions:
 
 - **Central peak:** Most energy travels straight through (low spatial frequencies, small angles)
 - **Rings:** Some energy diffracts to larger angles (higher spatial frequencies)
@@ -2556,6 +2509,8 @@ The first zero occurs at $\rho_f = 1.22/d$, which corresponds to the angle $\the
 ---
 
 ### Part (b): Circular Opaque Disk
+
+> A circular opaque disk of diameter $d$.
 
 **The obstacle:** A circular opaque disk of diameter $d$.
 
@@ -2571,9 +2526,9 @@ $$
 
 This is the **complement** of the circular aperture — transparent everywhere except within the disk.
 
-**Finding the angular spectrum:**
+**Finding the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/):**
 
-By linearity of the Fourier transform:
+By linearity of the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
 
 
@@ -2583,7 +2538,7 @@ $$
 
 
 
-The Fourier transform of a constant is a delta function at the origin:
+The [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of a constant is a delta function at the origin:
 
 
 
@@ -2638,15 +2593,15 @@ $$
 
 | Component | What it represents |
 |-----------|--------------------|
-| $\delta(f_x, f_y)$ | The unobstructed plane wave — light that would pass if nothing were there |
+| $\delta(f_x, f_y)$ | The unobstructed [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) — light that would pass if nothing were there |
 | $-\frac{\pi d^2}{4} \text{jinc}(d\rho_f)$ | The diffracted wave — light removed by the disk |
 
 **Remarkable consequence:**
 
-Except for the central delta function (the DC component, representing the undiffracted beam), the angular spectrum of the opaque disk has the **same magnitude** as that of the circular aperture — they differ only in sign!
+Except for the central delta function (the [DC component](/notes/areas/electrical_engineering/signals_systems/definitions/dc_component/), representing the undiffracted beam), the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) of the opaque disk has the **same magnitude** as that of the circular aperture — they differ only in sign!
 
 This means:
-- The **diffraction patterns** (intensity distributions) are identical away from the center
+- The **[diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) patterns** (intensity distributions) are identical away from the center
 - An opaque disk and a circular aperture of the same size produce the same fringe pattern
 - Only the on-axis intensity differs (the disk blocks the direct beam; the aperture transmits it)
 
@@ -2668,13 +2623,12 @@ Babinet's principle explains a famous phenomenon: a bright spot appears at the c
 | 1(a) | A projection is a line integral — it collapses one dimension |
 | 1(b) | [Projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/): 1D FT of projection = slice of 2D FT |
 | 1(c) | Many projections at different angles → fill Fourier space → inverse FT recovers image |
-| 2 | Equivalent area × equivalent bandwidth = 1 (uncertainty principle) |
-| 3 | Bessel functions are eigenfunctions of circularly symmetric LSI systems |
-| 4 | Periodic functions have discrete spectra; [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) convolution creates periodicity |
-| 5 | Bandlimited systems can replace continuous objects with point source arrays |
-| 6 | Angular spectrum method; circ ↔ jinc transform; Babinet's principle |
+| 2 | Equivalent area × equivalent bandwidth = 1 ([uncertainty principle](/notes/areas/electrical_engineering/physical_optics/definitions/uncertainty_principle/)) |
+| 3 | Periodic functions have discrete spectra; [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) creates periodicity |
+| 4 | Bandlimited systems can replace continuous objects with point source arrays |
+| 5 | [Angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) method; circ ↔ jinc transform; Babinet's principle |
 
-This elegant mathematical relationship — that projections in real space correspond to slices in Fourier space — is why CT scanners rotate around the patient, acquiring projections from many angles to reconstruct the internal structure. The area-bandwidth product of Problem 2 quantifies the fundamental tradeoff between spatial and spectral localization. The angular spectrum representation of Problem 6 provides the foundation for understanding diffraction from arbitrary apertures.
+This elegant mathematical relationship — that projections in real space correspond to slices in Fourier space — is why CT scanners rotate around the patient, acquiring projections from many angles to reconstruct the internal structure. The area-bandwidth product of Problem 2 quantifies the fundamental tradeoff between spatial and spectral localization. The [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) representation of Problem 6 provides the foundation for understanding [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) from arbitrary apertures.
 
 ---
 
@@ -2684,16 +2638,16 @@ These mathematical tools form the foundation for analyzing optical systems, [dif
 
 - [Dirac delta function](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/) — Impulse functions and sifting property
 - [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) — Spatial ↔ frequency domain conversion
-- [Convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/) — Multiplication ↔ convolution duality
+- [Convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/) — Multiplication ↔ [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) duality
 - [Fourier-Bessel transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/) — For circularly symmetric functions
-- [Bessel functions](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) — Natural basis for radial symmetry
+- [Bessel functions](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) — Natural [basis](/notes/areas/mathematics/linear_algebra/definitions/basis/) for radial symmetry
 - [Radon transform](/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform/) — Line integrals (projections)
 - [Projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/) — Foundation of CT imaging
 - [Computed tomography](/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography/) — Medical imaging from projections
-- [Angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) — Plane wave decomposition of diffracted fields
-- [Airy pattern](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/) — Diffraction pattern of circular aperture (jinc function)
-- [Babinet's principle](/notes/areas/electrical_engineering/physical_optics/definitions/babinet_principle/) — Complementary screens produce related diffraction patterns
-- [Nyquist sampling](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/) — Sampling rate for bandlimited signals
-- [Sinc function](/notes/areas/electrical_engineering/signals_systems/definitions/sinc_function/) — Fourier transform of rectangle; ideal interpolation kernel
+- [Angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) — [Plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) decomposition of diffracted fields
+- [Airy pattern](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/) — [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern of circular aperture (jinc function)
+- [Babinet's principle](/notes/areas/electrical_engineering/physical_optics/definitions/babinet_principle/) — Complementary screens produce related [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) patterns
+- [Nyquist sampling](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/) — [Sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) rate for bandlimited signals
+- [Sinc function](/notes/areas/electrical_engineering/signals_systems/definitions/sinc_function/) — [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of rectangle; ideal interpolation kernel
 - [Rayleigh criterion](/notes/areas/electrical_engineering/physical_optics/definitions/rayleigh_criterion/) — Resolution limit for optical systems
 - [Scaling property](/notes/areas/electrical_engineering/signals_systems/definitions/fourier_scaling_property/) — Narrow in space ↔ wide in frequency

@@ -104,7 +104,7 @@ This is the minimum resolvable distance between two points.
 
 ### Photography
 
-The **f-number** relates to resolution. Higher f-numbers (smaller apertures) reduce resolution due to diffraction:
+The **f-number** relates to resolution. Higher f-numbers (smaller apertures) reduce resolution due to [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/):
 
 
 

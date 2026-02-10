@@ -17,7 +17,7 @@ A **discrete probability space** is a [probability_space](/notes/areas/mathemati
 
 ## Definition
 
-Let $\Omega = \{\omega_1, \omega_2, \ldots\}$ be a [countable](/notes/areas/mathematics/set_theory/definitions/countable/) set and $(p_n)_{n \in \mathbb{N}}$ be a sequence of real numbers $p_n \in [0,1]$ such that $\sum_{n \in \mathbb{N}} p_n = 1$.
+Let $\Omega = \{\omega_1, \omega_2, \ldots\}$ be a [countable](/notes/areas/mathematics/set_theory/definitions/countable/) set and $(p_n)_{n \in \mathbb{N}}$ be a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of real numbers $p_n \in [0,1]$ such that $\sum_{n \in \mathbb{N}} p_n = 1$.
 
 The triplet $(\Omega, \mathcal{P}(\Omega), \mathbb{P})$ is a *discrete probability space*, where:
 

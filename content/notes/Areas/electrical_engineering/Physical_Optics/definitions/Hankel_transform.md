@@ -49,7 +49,7 @@ This is the [Airy disk](/notes/areas/electrical_engineering/physical_optics/defi
 
 ## Properties
 
-- Self-inverse (like the Fourier transform for even functions)
+- Self-inverse (like the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) for even functions)
 - Reduces 2D problems with circular symmetry to 1D
 - Used extensively in optics for circular apertures and lenses
 

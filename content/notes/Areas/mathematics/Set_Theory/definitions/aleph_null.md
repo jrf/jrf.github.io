@@ -25,14 +25,14 @@ $$
 
 
 
-A set has cardinality $\aleph_0$ if and only if it is [countably infinite](/notes/areas/mathematics/set_theory/definitions/countable/)—that is, its elements can be put into a one-to-one correspondence with $\mathbb{N}$.
+A set has [cardinality](/notes/areas/mathematics/set_theory/definitions/cardinality/) $\aleph_0$ if and only if it is [countably infinite](/notes/areas/mathematics/set_theory/definitions/countable/)—that is, its elements can be put into a one-to-one correspondence with $\mathbb{N}$.
 
 ## Properties
 
 - $\aleph_0$ is the smallest infinite cardinal
 - $\aleph_0 + \aleph_0 = \aleph_0$
 - $\aleph_0 \cdot \aleph_0 = \aleph_0$
-- $2^{\aleph_0} = |\mathbb{R}| = \mathfrak{c}$ (the cardinality of the continuum)
+- $2^{\aleph_0} = |\mathbb{R}| = \mathfrak{c}$ (the [cardinality](/notes/areas/mathematics/set_theory/definitions/cardinality/) of the continuum)
 
 ## Examples of Sets with Cardinality $\aleph_0$
 
@@ -40,7 +40,7 @@ A set has cardinality $\aleph_0$ if and only if it is [countably infinite](/note
 - Integers $\mathbb{Z}$
 - Rational numbers $\mathbb{Q}$
 - Algebraic numbers
-- Any infinite subset of a countable set
+- Any infinite [subset](/notes/areas/mathematics/set_theory/definitions/subset/) of a [countable](/notes/areas/mathematics/set_theory/definitions/countable/) set
 
 ## Related
 

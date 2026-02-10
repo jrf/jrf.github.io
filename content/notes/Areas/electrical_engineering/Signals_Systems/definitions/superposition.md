@@ -37,7 +37,7 @@ for all scalars $a_1, a_2$ and all inputs $f_1, f_2$ in the domain of $\mathcal{
 
 ## Superposition Integral
 
-For a linear system with impulse response $h(x; x_0)$, the output is given by the superposition integral:
+For a linear system with [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) $h(x; x_0)$, the output is given by the superposition integral:
 
 
 

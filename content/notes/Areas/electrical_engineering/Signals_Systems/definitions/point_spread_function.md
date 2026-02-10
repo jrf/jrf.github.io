@@ -33,11 +33,11 @@ where $\delta(x - x_0)$ represents a point source at position $x_0$.
 
 - The PSF describes how a single point of light is "spread out" by the imaging system.
 - A perfect imaging system would have $h(x; x_0) = \delta(x - x_0)$ (no spreading).
-- Real systems have finite-width PSFs due to diffraction, aberrations, or defocus.
+- Real systems have finite-width PSFs due to [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/), aberrations, or defocus.
 
 ## Shift-Invariant Systems
 
-For shift-invariant (isoplanatic) systems, the PSF depends only on relative position:
+For shift-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) (isoplanatic) systems, the PSF depends only on relative position:
 
 
 
@@ -59,7 +59,7 @@ $$
 
 ## Examples of Shift-Invariant Effects
 
-- Diffraction
+- [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/)
 - Defocus (misfocusing)
 - Spherical aberration
 

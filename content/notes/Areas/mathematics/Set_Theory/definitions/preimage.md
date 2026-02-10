@@ -6,7 +6,7 @@ title: "preimage"
 
 ## Definition
 
-Let $f$ be a [function](/notes/areas/mathematics/set_theory/definitions/function/) from $X$ to $Y$. The *preimage* of a set $B \subseteq Y$ under $f$, denoted by $f^{- 1}\left. (B) \right.$ is the subset of $X$ defined by
+Let $f$ be a [function](/notes/areas/mathematics/set_theory/definitions/function/) from $X$ to $Y$. The *preimage* of a set $B \subseteq Y$ under $f$, denoted by $f^{- 1}\left. (B) \right.$ is the [subset](/notes/areas/mathematics/set_theory/definitions/subset/) of $X$ defined by
 
 
 

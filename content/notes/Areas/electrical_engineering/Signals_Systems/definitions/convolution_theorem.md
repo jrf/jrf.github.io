@@ -39,7 +39,7 @@ $$
 
 ## Proof Sketch
 
-Starting from the definition of convolution:
+Starting from the definition of [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/):
 
 
 
@@ -49,16 +49,16 @@ $$
 
 
 
-Taking the Fourier transform of both sides and using the shift property of the Fourier transform leads to the product of transforms.
+Taking the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of both sides and using the shift property of the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) leads to the product of transforms.
 
 ## Why It Matters
 
 The convolution theorem is one of the most powerful results in signal processing because:
 
-1. **Computational efficiency**: Convolution in the time domain is $O(N^2)$; multiplication in frequency domain is $O(N)$. Using FFT, the overall cost becomes $O(N \log N)$.
+1. **Computational efficiency**: [Convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) in the time domain is $O(N^2)$; multiplication in frequency domain is $O(N)$. Using FFT, the overall cost becomes $O(N \log N)$.
 
 2. **System analysis**: For a [linear shift-invariant (LSI) system](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) with [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) $h(t)$:
-   - Output = Input * Impulse response: $y(t) = x(t) * h(t)$
+   - Output = Input * [Impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/): $y(t) = x(t) * h(t)$
    - In frequency domain: $Y(f) = X(f) \cdot H(f)$
 
    The [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) $H(f)$ completely characterizes the system.
@@ -67,7 +67,7 @@ The convolution theorem is one of the most powerful results in signal processing
 
 ## Applications
 
-- **Fast convolution**: FFT-based convolution for large signals
+- **Fast [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/)**: FFT-based [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) for large signals
 - **Image processing**: Blurring, sharpening, edge detection
 - **Spectral analysis**: Understanding how filtering affects frequency content
 - **Deconvolution**: Recovering signals from blurred measurements

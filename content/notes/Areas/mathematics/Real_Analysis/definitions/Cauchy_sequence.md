@@ -14,7 +14,7 @@ Compare this to the definition of [convergence](/notes/areas/mathematics/real_an
 
 Proof: Assume $\left. \left( x_{n} \right) \right. \rightarrow x$. Let $\epsilon > 0$ be arbitrary. There exists an $N \in \mathbb{N}$ such that $n,m \geq N$ implies that $\left| x_{n} - x \right| < \frac{\epsilon}{2}$ and $\left| x_{m} - x \right| < \frac{\epsilon}{2}$.
 
-By the triangle inequality
+By the [triangle inequality](/notes/areas/mathematics/real_analysis/definitions/triangle_inequality/)
 
 
 

@@ -39,7 +39,7 @@ $$
 
 1. **Linearity**: $\mathcal{F}\{af + bg\} = a\mathcal{F}\{f\} + b\mathcal{F}\{g\}$
 
-2. **Convolution Theorem**: $\mathcal{F}\{f * g\} = \mathcal{F}\{f\} \cdot \mathcal{F}\{g\}$
+2. **[Convolution Theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/)**: $\mathcal{F}\{f * g\} = \mathcal{F}\{f\} \cdot \mathcal{F}\{g\}$
 
 3. **Shift Theorem**: $\mathcal{F}\{f(x - x_0)\} = e^{-2\pi i \xi \cdot x_0} \hat{f}(\xi)$
 

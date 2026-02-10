@@ -8,7 +8,7 @@ title: "image"
 
 The image of a [function](/notes/areas/mathematics/set_theory/definitions/function/) is the set of all output values it may produce.
 
-More generally, evaluating a given [function](/notes/areas/mathematics/set_theory/definitions/function/) $f$ at each element of a given subset $A$ of its [domain](/notes/areas/mathematics/set_theory/definitions/domain/) produces a set, called the "image of $A$ under (or through) $f$". Similarly, the inverse [image](/notes/areas/mathematics/set_theory/definitions/image/) (or [preimage](/notes/areas/mathematics/set_theory/definitions/preimage/)) of a given subset $B$ of the [codomain](/notes/areas/mathematics/set_theory/definitions/codomain/) of $f$, is the set of all elements of the [domain](/notes/areas/mathematics/set_theory/definitions/domain/) that map to the members of $B$.
+More generally, evaluating a given [function](/notes/areas/mathematics/set_theory/definitions/function/) $f$ at each element of a given [subset](/notes/areas/mathematics/set_theory/definitions/subset/) $A$ of its [domain](/notes/areas/mathematics/set_theory/definitions/domain/) produces a set, called the "image of $A$ under (or through) $f$". Similarly, the inverse [image](/notes/areas/mathematics/set_theory/definitions/image/) (or [preimage](/notes/areas/mathematics/set_theory/definitions/preimage/)) of a given [subset](/notes/areas/mathematics/set_theory/definitions/subset/) $B$ of the [codomain](/notes/areas/mathematics/set_theory/definitions/codomain/) of $f$, is the set of all elements of the [domain](/notes/areas/mathematics/set_theory/definitions/domain/) that map to the members of $B$.
 
 ![](/images/notes/Areas/mathematics/Set_Theory/definitions/../graphics/1920px-Codomain2.SVG.png)
 

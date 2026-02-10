@@ -16,7 +16,7 @@ Let $\lim a_{n} = a$ and $\lim b_{n} = b$. Then,
 
 ## Proof of (1)
 
-Consider the case where $c \neq 0$. We want to show that the sequence $\left. \left( ca_{n} \right) \right.$ converges to $ca$. Let $\epsilon > 0$ be arbitrary. Our goal is to find some point in the sequence $\left. \left( ca_{n} \right) \right.$ after which we have
+Consider the case where $c \neq 0$. We want to show that the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( ca_{n} \right) \right.$ converges to $ca$. Let $\epsilon > 0$ be arbitrary. Our goal is to find some point in the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( ca_{n} \right) \right.$ after which we have
 
 
 
@@ -56,7 +56,7 @@ $$
 
 
 
-The case $c = 0$ reduces to showing that the constant sequence $\left. (0,0,0,\ldots) \right.$ converges to 0, which is easily verified.
+The case $c = 0$ reduces to showing that the constant [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. (0,0,0,\ldots) \right.$ converges to 0, which is easily verified.
 
 ## Proof of (2)
 
@@ -70,7 +70,7 @@ $$
 
 
 
-can be made less than an arbitrary $\epsilon$ using the assumptions that $\left| a_{n} - a \right|$ and $\left| b_{n} - b \right|$ can be made as small as we like for large $n$. The first step is to use the triangle inequality to say
+can be made less than an arbitrary $\epsilon$ using the assumptions that $\left| a_{n} - a \right|$ and $\left| b_{n} - b \right|$ can be made as small as we like for large $n$. The first step is to use the [triangle inequality](/notes/areas/mathematics/real_analysis/definitions/triangle_inequality/) to say
 
 
 

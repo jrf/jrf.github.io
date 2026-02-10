@@ -30,7 +30,7 @@ where $h(x; x_0)$ is the response at position $x$ due to an impulse at position 
 ## Remarks
 
 - The impulse response completely characterizes a linear system.
-- For **shift-invariant** systems, $h(x; x_0) = h(x - x_0)$, and the system depends only on the relative displacement.
+- For **shift-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/)** systems, $h(x; x_0) = h(x - x_0)$, and the system depends only on the relative displacement.
 - In optics, the impulse response is called the [point_spread_function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/).
 - In PDEs, the impulse response is called the **Green's function**.
 
@@ -46,7 +46,7 @@ $$
 
 
 
-For shift-invariant systems, this becomes the [convolution integral](/notes/areas/mathematics/real_analysis/definitions/convolution/):
+For shift-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) systems, this becomes the [convolution integral](/notes/areas/mathematics/real_analysis/definitions/convolution/):
 
 
 

@@ -21,7 +21,7 @@ Let $(f_n)$ be a [sequence](/notes/areas/mathematics/real_analysis/definitions/s
 
 Let $c \in A$ and $\epsilon > 0$. 
 
-By uniform convergence, there exists $N$ such that $|f_n(x) - f(x)| < \epsilon/3$ for all $x \in A$ and all $n \geq N$.
+By [uniform convergence](/notes/areas/mathematics/real_analysis/definitions/uniform_convergence/), there exists $N$ such that $|f_n(x) - f(x)| < \epsilon/3$ for all $x \in A$ and all $n \geq N$.
 
 Since $f_N$ is continuous at $c$, there exists $\delta > 0$ such that $|x - c| < \delta$ implies $|f_N(x) - f_N(c)| < \epsilon/3$.
 

@@ -21,6 +21,6 @@ If $f:[a,b] \rightarrow \mathbb{R}$ is [continuous](/notes/areas/mathematics/rea
 
 Since $[a,b]$ is [compact](/notes/areas/mathematics/topology/definitions/compactness/) and $f$ is [continuous](/notes/areas/mathematics/real_analysis/definitions/continuity/), the image $f([a,b])$ is also compact, hence closed and bounded.
 
-Let $M = \sup f([a,b])$. Since $f([a,b])$ is closed and $M$ is a limit point of $f([a,b])$, we have $M \in f([a,b])$.
+Let $M = \sup f([a,b])$. Since $f([a,b])$ is closed and $M$ is a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) of $f([a,b])$, we have $M \in f([a,b])$.
 
 Thus there exists $x_1 \in [a,b]$ with $f(x_1) = M$. A similar argument works for the minimum.

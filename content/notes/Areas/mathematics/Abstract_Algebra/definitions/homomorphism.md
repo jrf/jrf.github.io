@@ -55,10 +55,10 @@ A homomorphism "respects" the structure. It may lose information (not injective)
 
 - $\phi: \mathbb{Z} \to \mathbb{Z}_n$ given by $\phi(k) = k \mod n$ (group homomorphism)
 - $\det: GL_n(\mathbb{R}) \to \mathbb{R}^*$ (the determinant is a group homomorphism)
-- Any linear transformation is a vector space homomorphism
+- Any [linear transformation](/notes/areas/mathematics/real_analysis/definitions/linear_transformation/) is a [vector space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) homomorphism
 
 ## Related Concepts
 
 - [isomorphism](/notes/areas/mathematics/abstract_algebra/definitions/isomorphism/) — bijective homomorphism
-- [automorphism](/notes/areas/mathematics/abstract_algebra/definitions/automorphism/) — isomorphism from a structure to itself
-- [Bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) — homomorphism + bijection = isomorphism
+- [automorphism](/notes/areas/mathematics/abstract_algebra/definitions/automorphism/) — [isomorphism](/notes/areas/mathematics/abstract_algebra/definitions/isomorphism/) from a structure to itself
+- [Bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) — homomorphism + [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) = [isomorphism](/notes/areas/mathematics/abstract_algebra/definitions/isomorphism/)

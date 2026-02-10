@@ -21,8 +21,8 @@ A set $K \subseteq \mathbb{R}$ is [compact](/notes/areas/mathematics/topology/de
 
 ($\Rightarrow$) Assume $K$ is compact.
 
-*Bounded:* The open cover $\{(-n, n) : n \in \mathbb{N}\}$ covers $K$. By compactness, a finite subcover exists, so $K \subseteq (-N, N)$ for some $N$.
+*Bounded:* The open cover $\{(-n, n) : n \in \mathbb{N}\}$ covers $K$. By [compactness](/notes/areas/mathematics/topology/definitions/compactness/), a finite subcover exists, so $K \subseteq (-N, N)$ for some $N$.
 
-*Closed:* Let $x$ be a limit point of $K$. For each $n$, there exists $x_n \in K$ with $|x_n - x| < 1/n$. The sequence $(x_n)$ has a convergent [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) (by compactness) converging to some $y \in K$. But $(x_n) \to x$, so $x = y \in K$.
+*Closed:* Let $x$ be a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) of $K$. For each $n$, there exists $x_n \in K$ with $|x_n - x| < 1/n$. The [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $(x_n)$ has a convergent [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) (by [compactness](/notes/areas/mathematics/topology/definitions/compactness/)) converging to some $y \in K$. But $(x_n) \to x$, so $x = y \in K$.
 
-($\Leftarrow$) Assume $K$ is closed and bounded. Let $(x_n)$ be a sequence in $K$. By [Bolzano-Weierstrass_Theorem](/notes/areas/mathematics/real_analysis/definitions/bolzano-weierstrass_theorem/), $(x_n)$ has a convergent subsequence. Since $K$ is closed, the limit is in $K$. Thus $K$ is compact.
+($\Leftarrow$) Assume $K$ is closed and bounded. Let $(x_n)$ be a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) in $K$. By [Bolzano-Weierstrass_Theorem](/notes/areas/mathematics/real_analysis/definitions/bolzano-weierstrass_theorem/), $(x_n)$ has a convergent [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/). Since $K$ is closed, the limit is in $K$. Thus $K$ is compact.

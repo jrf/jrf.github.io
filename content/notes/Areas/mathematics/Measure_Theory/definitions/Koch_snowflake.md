@@ -21,7 +21,7 @@ The **Koch snowflake** (also called the Koch curve or Koch star) is a fractal cu
 2. Replace the middle third of each edge with two sides of an equilateral triangle (pointing outward)
 3. Repeat step 2 for each edge of the resulting polygon
 
-This produces a sequence of curves $K_0, K_1, K_2, \ldots$ converging to the Koch snowflake $K_\infty$.
+This produces a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of curves $K_0, K_1, K_2, \ldots$ converging to the Koch snowflake $K_\infty$.
 
 ## Perimeter
 
@@ -77,7 +77,7 @@ This reflects that it is "more than" a 1-dimensional curve but "less than" a 2-d
 
 - Infinite perimeter enclosing finite area
 - Self-similar: each edge is a scaled copy of the whole boundary
-- Continuous but nowhere differentiable
+- Continuous but nowhere [differentiable](/notes/areas/mathematics/real_analysis/definitions/differentiable/)
 
 ## Related
 

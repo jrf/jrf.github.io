@@ -6,11 +6,11 @@ title: "subspace"
 
 ## Definition
 
-A subset $U$ of $V$ is called a *subspace* of $V$ if $U$ is also a [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) (using the same addition and scalar muliplication as on $V$).
+A [subset](/notes/areas/mathematics/set_theory/definitions/subset/) $U$ of $V$ is called a *subspace* of $V$ if $U$ is also a [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) (using the same addition and scalar muliplication as on $V$).
 
 ## Conditions for a Subspace
 
-A subset $U$ of $V$ is a subspace of $V$ *if and only if* $U$ satisfies the following three conditions:
+A [subset](/notes/areas/mathematics/set_theory/definitions/subset/) $U$ of $V$ is a subspace of $V$ *if and only if* $U$ satisfies the following three conditions:
 
 1.  Additive identity: $0 \in U$
 

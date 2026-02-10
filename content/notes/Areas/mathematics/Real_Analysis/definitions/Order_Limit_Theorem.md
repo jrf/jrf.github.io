@@ -25,6 +25,6 @@ Assume $\lim a_n = a$ and $\lim b_n = b$. Then:
 
 (1) Suppose $a < 0$. Let $\epsilon = -a/2 > 0$. Then for large $n$, $|a_n - a| < \epsilon$, so $a_n < a + \epsilon = a/2 < 0$, contradicting $a_n \geq 0$.
 
-(2) Apply (1) to the sequence $(b_n - a_n)$, which is $\geq 0$ and converges to $b - a$.
+(2) Apply (1) to the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $(b_n - a_n)$, which is $\geq 0$ and converges to $b - a$.
 
-(3) Apply (2) with the constant sequence $a_n = c$.
+(3) Apply (2) with the constant [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $a_n = c$.

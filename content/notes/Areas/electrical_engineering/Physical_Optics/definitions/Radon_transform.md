@@ -45,7 +45,7 @@ $$
 
 ## Connection to Fourier Transform
 
-The [projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/) states that the 1D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of a projection equals a slice through the 2D Fourier transform of the original function:
+The [projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/) states that the 1D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of a projection equals a slice through the 2D [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the original function:
 
 
 
@@ -57,7 +57,7 @@ $$
 
 ## Applications
 
-- **Medical imaging**: CT scanners measure Radon transforms (X-ray projections)
+- **Medical imaging**: CT scanners [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) Radon transforms (X-ray projections)
 - **Electron microscopy**: 3D reconstruction from 2D projections
 - **Radio astronomy**: Aperture synthesis imaging
 

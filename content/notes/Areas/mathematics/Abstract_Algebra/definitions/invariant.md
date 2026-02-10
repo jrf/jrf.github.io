@@ -17,7 +17,7 @@ A property or quantity is **invariant** under a transformation if it remains unc
 
 ## Definition
 
-Let $T: X \to X$ be a transformation on a set $X$. A subset $A \subseteq X$ is *invariant* under $T$ if:
+Let $T: X \to X$ be a transformation on a set $X$. A [subset](/notes/areas/mathematics/set_theory/definitions/subset/) $A \subseteq X$ is *invariant* under $T$ if:
 
 
 
@@ -39,7 +39,7 @@ $$
 
 ## Examples
 
-1. **Translation invariance**: A [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $\mu$ on $\mathbb{R}^n$ is translation invariant if $\mu(A + x) = \mu(A)$ for all measurable sets $A$ and all $x \in \mathbb{R}^n$. Lebesgue measure has this property.
+1. **Translation invariance**: A [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $\mu$ on $\mathbb{R}^n$ is translation invariant if $\mu(A + x) = \mu(A)$ for all measurable sets $A$ and all $x \in \mathbb{R}^n$. Lebesgue [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) has this property.
 
 2. **Rotation invariance**: A function $f: \mathbb{R}^2 \to \mathbb{R}$ is rotation invariant if $f(x, y)$ depends only on $\sqrt{x^2 + y^2}$.
 

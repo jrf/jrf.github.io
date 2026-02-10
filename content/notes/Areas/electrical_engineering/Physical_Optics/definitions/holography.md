@@ -51,7 +51,7 @@ Illuminating the hologram with the reference wave reconstructs the original obje
 
 ## Requirements
 
-- [Coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/): Source must have sufficient temporal and spatial coherence
+- [Coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/): Source must have sufficient temporal and spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/)
 - Stability: Sub-wavelength stability during recording
 
 ## Related Topics

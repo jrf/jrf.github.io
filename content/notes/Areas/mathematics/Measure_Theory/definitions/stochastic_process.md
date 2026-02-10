@@ -19,7 +19,7 @@ A **stochastic process** is a collection of random variables indexed by time or 
 
 A stochastic process is a family of random variables $\{X_t\}_{t \in T}$ defined on a [probability_space](/notes/areas/mathematics/measure_theory/definitions/probability_space/) $(\Omega, \mathcal{F}, P)$, where:
 
-- $T$ is the index set (often representing time)
+- $T$ is the [index set](/notes/areas/mathematics/set_theory/definitions/index_set/) (often representing time)
 - Each $X_t : \Omega \to S$ maps outcomes to a state space $S$
 
 ## Classification
@@ -31,7 +31,7 @@ A stochastic process is a family of random variables $\{X_t\}_{t \in T}$ defined
 
 ### By State Space $S$
 
-- **Discrete state space**: $S$ is countable (e.g., Markov chains)
+- **Discrete state space**: $S$ is [countable](/notes/areas/mathematics/set_theory/definitions/countable/) (e.g., Markov chains)
 - **Continuous state space**: $S = \mathbb{R}$ or $\mathbb{R}^n$ (e.g., diffusion processes)
 
 ## Examples

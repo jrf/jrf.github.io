@@ -6,9 +6,9 @@ title: "Physical Optics Notes"
 
 ## I. Introduction
 
-Physical optics is the study of the wave nature of light. Diffraction, polarization, [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) and interferometry are all physical optics effects, and play a key role in many modern optical systems. The first half of this course will be devoted to studying the key concepts of physical optics.
+Physical optics is the study of the wave nature of light. [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/), polarization, [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) and interferometry are all physical optics effects, and play a key role in many modern optical systems. The first half of this course will be devoted to studying the key concepts of physical optics.
 
-In the early 1960's, the mathematics of linear systems was applied to physical optics, providing a new and powerful way of analyzing optical systems. This analysis technique is now known as Fourier optics. With the tools of Fourier optics we will be able to explain the intricacies of [holography](/notes/areas/electrical_engineering/physical_optics/definitions/holography/), understand how astronomers can get incredibly detailed images of distant galaxies using radio telescopes separated by thousands of kilometers (a technique called Very Long Baseline Interferometry), calculate the diffraction effects of microscopes which limit their resolution, understand Synthetic Aperture Radar, describe methods of "seeing through" a turbulent atmosphere, understand how optical pattern recognition machines work, and much more. Before we start, however, it is useful to review the most important aspects of linear systems theory.
+In the early 1960's, the mathematics of linear systems was applied to physical optics, providing a new and powerful way of analyzing optical systems. This analysis technique is now known as Fourier optics. With the tools of Fourier optics we will be able to explain the intricacies of [holography](/notes/areas/electrical_engineering/physical_optics/definitions/holography/), understand how astronomers can get incredibly detailed images of distant galaxies using radio telescopes separated by thousands of kilometers (a technique called Very Long Baseline Interferometry), calculate the [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) effects of microscopes which limit their resolution, understand Synthetic Aperture Radar, describe methods of "seeing through" a turbulent atmosphere, understand how optical pattern recognition machines work, and much more. Before we start, however, it is useful to review the most important aspects of linear systems theory.
 
 ## II. Linear Systems
 
@@ -74,7 +74,7 @@ $$
 
 
 
-This is simply equivalent to treating the input $g_1(\bar{x}_1)$ as an infinite number of samples (delta functions) with varying strengths. By linear superposition, each one of these samples can be passed through the operator separately and added together at the output.
+This is simply equivalent to treating the input $g_1(\bar{x}_1)$ as an infinite number of samples (delta functions) with varying strengths. By linear [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/), each one of these samples can be passed through the operator separately and added together at the output.
 
 <div class="callout callout-example">
 <div class="callout-title"><span class="callout-icon">📋</span>Linear System and Superposition</div>
@@ -144,7 +144,7 @@ $$
 
 
 
-This is the **Superposition Integral** - the response to a single input point of strength $g_1(\bar{x}_0)$ located at $\bar{x}_0$.
+This is the **[Superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/) Integral** - the response to a single input point of strength $g_1(\bar{x}_0)$ located at $\bar{x}_0$.
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Assume system is shift-invariant</div>
@@ -201,9 +201,9 @@ $$
 
 
 
-In optics we are often interested in a special kind of linear operator called a **[shift-invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) operator** (completely analogous to the time-invariant operators in electronics).
+In optics we are often interested in a special kind of linear operator called a **[shift-invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/) operator** (completely analogous to the time-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) operators in electronics).
 
-If an operator is shift-invariant, then:
+If an operator is shift-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/), then:
 
 
 
@@ -270,8 +270,8 @@ This is not always true in optical systems. If the center of the image is "bette
 </div>
 </div>
 
-Several imaging effects **are** shift invariant:
-- Diffraction
+Several imaging effects **are** shift [invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/):
+- [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/)
 - Misfocussing
 - Spherical aberration
 
@@ -282,7 +282,7 @@ Some are **not**:
 
 ## Point Spread Function of Linear Shift-Invariant Systems
 
-Consider the point spread function of a **[linear shift-invariant (LSI)](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** system. If we place a delta function at the origin, we have:
+Consider the [point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/) of a **[linear shift-invariant (LSI)](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** system. If we place a delta function at the origin, we have:
 
 
 
@@ -313,7 +313,7 @@ $$
 
 
 
-This is the familiar **[convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) integral**. It will become apparent that many optical phenomena (imaging, diffraction, etc.) can be described in terms of **[point spread functions](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/)** and **[convolutions](/notes/areas/mathematics/real_analysis/definitions/convolution/)** in two dimensions.
+This is the familiar **[convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) integral**. It will become apparent that many optical phenomena (imaging, [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/), etc.) can be described in terms of **[point spread functions](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/)** and **[convolutions](/notes/areas/mathematics/real_analysis/definitions/convolution/)** in two dimensions.
 
 
 
@@ -334,7 +334,7 @@ Correlation = convolution for symmetric functions
 
 ## III. Fourier Transforms Applied to Linear Shift-Invariant Systems
 
-In electronics, we know that a temporal [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is a useful device for studying the behavior of linear circuits. For example, filters are easily described by a [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) $\tilde{H}(f)$, where $f$ is a temporal frequency variable. We shall see that optical propagation is conveniently described by a two-dimensional Fourier transform $\tilde{H}(f_x, f_y)$, where $f_x$ and $f_y$ are **spatial frequencies**.
+In electronics, we know that a temporal [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is a useful device for studying the behavior of linear circuits. For example, filters are easily described by a [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) $\tilde{H}(f)$, where $f$ is a temporal frequency variable. We shall see that optical propagation is conveniently described by a two-dimensional [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) $\tilde{H}(f_x, f_y)$, where $f_x$ and $f_y$ are **spatial frequencies**.
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Note</div>
@@ -347,7 +347,7 @@ $p(x,y)$ acts like a filter with **[impulse response](/notes/areas/electrical_en
 </div>
 
 To understand why the **[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)** is so useful for describing **[linear shift invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** systems, we recall that the **[superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/)** property allows us to:
-1. Express the input function as a weighted sum of simple waveforms (basis functions)
+1. Express the input function as a weighted sum of simple waveforms ([basis](/notes/areas/mathematics/linear_algebra/definitions/basis/) functions)
 2. Pass each waveform through the operator separately
 3. Sum the result at the end
 
@@ -377,7 +377,7 @@ $$
 
 
 
-This is the **Eigenfunction Equation**.
+This is the **[Eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/) Equation**.
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Contrast: Delta Function vs Eigenfunction Input</div>
@@ -800,7 +800,7 @@ The Mellin transform in $(x, f)$ becomes a [Fourier transform](/notes/areas/math
 
 ## Why Fourier Transform is Useful
 
-It is now clear why the **[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)** is so useful in analyzing a **[linear shift-invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** system. The input function can be decomposed into a linear combination of **[eigenfunctions](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** $\exp(j2\pi\bar{f} \cdot \bar{x})$.
+It is now clear why the **[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)** is so useful in analyzing a **[linear shift-invariant](/notes/areas/electrical_engineering/signals_systems/definitions/linear_shift-invariant_system/)** system. The input function can be decomposed into a [linear combination](/notes/areas/mathematics/linear_algebra/definitions/linear_combination/) of **[eigenfunctions](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** $\exp(j2\pi\bar{f} \cdot \bar{x})$.
 
 The amount of each **[eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** contained in the input is given by the **Forward [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)**:
 
@@ -846,7 +846,7 @@ $$
 
 
 
-This is the **Inverse Fourier Transform** (sum of results).
+This is the **Inverse [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)** (sum of results).
 
 <div class="callout callout-example">
 <div class="callout-title"><span class="callout-icon">📋</span>Biological Fourier Analysis: The Cochlea</div>
@@ -900,7 +900,7 @@ $$
 
 ### A. Spatial Frequency
 
-The spatial Fourier transform is similar to the more familiar temporal transform in many respects. Mathematically, the only difference is that it is two-dimensional as opposed to its one-dimensional temporal counterpart. However, there are several conceptual differences which are worth exploring.
+The spatial [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is similar to the more familiar temporal transform in many respects. Mathematically, the only difference is that it is two-dimensional as opposed to its one-dimensional temporal counterpart. However, there are several conceptual differences which are worth exploring.
 
 The concept of frequency is well understood for temporal signals. If a voltage has a temporal behavior expressed by:
 
@@ -1005,7 +1005,7 @@ $$
 
 
 
-where $A$ and $\phi$ are the amplitude and phase of the plane wave. In rectangular coordinates this becomes:
+where $A$ and $\phi$ are the amplitude and phase of the [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/). In rectangular coordinates this becomes:
 
 
 
@@ -1035,7 +1035,7 @@ $$
 
 
 
-Thus a complex spatial frequency component is physically equivalent to a plane wave, where the frequency of the component is proportional to the cosine of the propagation angle of the plane wave.
+Thus a complex spatial frequency component is physically equivalent to a [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/), where the frequency of the component is proportional to the cosine of the propagation angle of the [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/).
 
 
 
@@ -1064,9 +1064,9 @@ $$
 </div>
 </div>
 
-Negative and positive frequencies correspond to plane waves travelling in opposite directions (e.g., upward vs downward tilted). The spatial Fourier transform of an arbitrary two-dimensional field can be thought of as a **linear superposition of plane waves**, where:
-- The **angle** of the plane wave corresponds to the spatial frequency
-- The **amplitude and phase** of the plane wave corresponds to the complex Fourier component associated with that spatial frequency
+Negative and positive frequencies correspond to plane waves travelling in opposite directions (e.g., upward vs downward tilted). The spatial [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of an arbitrary two-dimensional field can be thought of as a **linear [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/) of plane waves**, where:
+- The **angle** of the [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) corresponds to the spatial frequency
+- The **amplitude and phase** of the [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) corresponds to the complex Fourier component associated with that spatial frequency
 
 ![Plane Wave Geometry: Angle to Spatial Frequency](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/plane_wave_geometry.svg)
 
@@ -1157,10 +1157,10 @@ For real **[transfer function](/notes/areas/electrical_engineering/signals_syste
 | Complex/Even | Complex/Even |
 | Complex/Odd | Complex/Odd |
 
-When a linear system is analyzed as a function of spatial variables, **causality no longer is required**. Values to the "right" of a point can effect the value of the point just as easily as values to the "left". The point spread function can then be symmetric, and **real transfer functions are possible**.
+When a linear system is analyzed as a function of spatial variables, **causality no longer is required**. Values to the "right" of a point can effect the value of the point just as easily as values to the "left". The [point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/) can then be symmetric, and **real transfer functions are possible**.
 ## Two-Dimensionality and Separability
 
-The most obvious difference between a temporal and spatial Fourier transform is the two-dimensional aspect of the latter. If we write the forward Fourier transform as:
+The most obvious difference between a temporal and spatial [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is the two-dimensional aspect of the latter. If we write the forward [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) as:
 
 
 
@@ -1196,9 +1196,9 @@ $$
 
 ## Circular Symmetry and Polar Coordinates
 
-Many problems in optics involve fields with **circular symmetry**. For these problems, it is useful to express the two-dimensional Fourier transform in polar coordinates. Consider a function with circular symmetry $u(\sqrt{x^2 + y^2})$.
+Many problems in optics involve fields with **circular symmetry**. For these problems, it is useful to express the two-dimensional [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) in polar coordinates. Consider a function with circular symmetry $u(\sqrt{x^2 + y^2})$.
 
-The two-dimensional Fourier transform of u is given by:
+The two-dimensional [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of u is given by:
 
 
 
@@ -1226,7 +1226,7 @@ $$
 
 
 
-The Fourier transform then becomes:
+The [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) then becomes:
 
 
 
@@ -1254,7 +1254,7 @@ $$
 
 
 
-Using the Bessel function identity:
+Using the [Bessel function](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) identity:
 
 
 $$
@@ -1332,7 +1332,7 @@ If a signal is **band-limited**, and it is sampled at a rate greater than or equ
 
 ### Sampling Theorem Proof
 
-A function $g(x,y)$ is **band-limited** if its Fourier transform $\tilde{G}(f_x, f_y)$ has compact support, i.e.:
+A function $g(x,y)$ is **band-limited** if its [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) $\tilde{G}(f_x, f_y)$ has compact support, i.e.:
 
 
 
@@ -1346,7 +1346,7 @@ where $B_x$ and $B_y$ are the bandlimits.
 
 ## Proof of Sampling Theorem
 
-Define a **sampling function** (the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/)):
+Define a **[sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) function** (the [Dirac comb](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/)):
 
 
 
@@ -1366,7 +1366,7 @@ $$
 
 
 
-Form a sampled version of $f(x,y)$ by multiplying with a sampling function:
+Form a sampled version of $f(x,y)$ by multiplying with a [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) function:
 
 
 
@@ -1385,7 +1385,7 @@ $$
 
 
 
-where $\mathcal{F}$ is the Forward Fourier Transform.
+where $\mathcal{F}$ is the Forward [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/).
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Why Sampling Creates Spectral Replicas</div>
@@ -1417,12 +1417,12 @@ $$
 
 
 
-where $**$ is a two-dimensional convolution.
+where $**$ is a two-dimensional [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/).
 
 The result shows:
 - Continuous spectrum $\tilde{G}(f_x)$ gets replicated at intervals of $\frac{1}{a}$
 - Sampled spectrum shows **folding** at the **folding frequency** $B_x$
-- The **Nyquist frequency** is $\frac{1}{a}$ (the sampling rate)
+- The **Nyquist frequency** is $\frac{1}{a}$ (the [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) rate)
 
 ### Nyquist Criterion
 
@@ -1448,11 +1448,11 @@ $$
 
 This is the **[Nyquist Criterion](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/)**.
 
-In real space, the Nyquist criterion says that the **highest frequency component** in the x direction (frequency $B_x$), must be **sampled at least twice**.
+In real space, the [Nyquist criterion](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/) says that the **highest frequency component** in the x direction (frequency $B_x$), must be **sampled at least twice**.
 
 ## Recovery via Low-Pass Filtering
 
-If we satisfy the Nyquist criterion, it is a simple matter to recover the original function $g(x,y)$ by low pass filtering the sampled result $g_s(x,y)$.
+If we satisfy the [Nyquist criterion](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/), it is a simple matter to recover the original function $g(x,y)$ by low pass filtering the sampled result $g_s(x,y)$.
 
 
 
@@ -1495,7 +1495,7 @@ This means each sample contributes its value only at its own position, with no i
 
 ### Aliasing
 
-What happens when the Nyquist criterion is violated? **Aliasing** results, where high frequencies fold over and look like lower ones.
+What happens when the [Nyquist criterion](/notes/areas/electrical_engineering/physical_optics/definitions/nyquist_criterion/) is violated? **Aliasing** results, where high frequencies fold over and look like lower ones.
 
 <div class="callout callout-warning">
 <div class="callout-title"><span class="callout-icon">⚠️</span>Aliasing</div>
@@ -1513,10 +1513,10 @@ Aliasing is irreversible — once frequencies are folded together, they cannot b
 </div>
 </div>
 
-Notice the important additional results which can be seen from the above proof of the sampling theorem:
+Notice the important additional results which can be seen from the above proof of the [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) theorem:
 
-- **Sampling in real space** produces a repeated continuous function in Fourier space
-- **Sampling in Fourier space** produces a repeated continuous function in real space
+- **[Sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) in real space** produces a repeated continuous function in Fourier space
+- **[Sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) in Fourier space** produces a repeated continuous function in real space
 
 ## VI. Common Transform Pairs
 
@@ -1598,7 +1598,7 @@ The imaging optics themselves act as a low-pass filter — the [optical transfer
 
 Even if the signal satisfies Nyquist, broadband noise may not:
 
-| Component | Spectrum | After Sampling |
+| Component | Spectrum | After [Sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) |
 |-----------|----------|----------------|
 | **Signal** | Band-limited (within Nyquist) | Clean replicated copies |
 | **Noise** | Broadband (extends beyond Nyquist) | Aliases fold into signal band |
@@ -1762,7 +1762,7 @@ $$
 
 
 
-where $\star$ denotes correlation (convolution with the conjugate-reversed function):
+where $\star$ denotes correlation ([convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) with the conjugate-reversed function):
 
 
 
@@ -1825,7 +1825,7 @@ $$
 
 **Shape:** A flat-topped pulse of width 1 centered at the origin.
 
-**Fourier transform:** $\mathcal{F}\{\text{rect}(x)\} = \text{sinc}(f_x)$
+**[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):** $\mathcal{F}\{\text{rect}(x)\} = \text{sinc}(f_x)$
 
 **In optics:** Models slit apertures, uniform illumination, and ideal bandpass filters.
 
@@ -1841,9 +1841,9 @@ $$
 
 **Shape:** An oscillating function that decays as $1/x$, with zeros at all nonzero integers. The central lobe has width 2; sidelobes alternate in sign.
 
-**Fourier transform:** $\mathcal{F}\{\text{sinc}(x)\} = \text{rect}(f_x)$
+**[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):** $\mathcal{F}\{\text{sinc}(x)\} = \text{rect}(f_x)$
 
-**In optics:** The diffraction pattern of a slit; the ideal interpolation kernel for bandlimited signals (Shannon reconstruction).
+**In optics:** The [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern of a slit; the ideal interpolation kernel for bandlimited signals (Shannon reconstruction).
 
 #### Triangle Function (Λ)
 
@@ -1857,9 +1857,9 @@ $$
 
 **Shape:** A symmetric triangle (tent) of width 2 and height 1.
 
-**Fourier transform:** $\mathcal{F}\{\Lambda(x)\} = \text{sinc}^2(f_x)$
+**[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):** $\mathcal{F}\{\Lambda(x)\} = \text{sinc}^2(f_x)$
 
-**In optics:** The autocorrelation of a rect (two rects convolved); appears in coherence theory and the MTF of defocused systems.
+**In optics:** The autocorrelation of a rect (two rects convolved); appears in [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) theory and the MTF of defocused systems.
 
 #### [Comb Function](/notes/areas/electrical_engineering/physical_optics/definitions/dirac_comb/) (Shah)
 
@@ -1873,9 +1873,9 @@ $$
 
 **Shape:** An infinite train of equally-spaced [delta functions](/notes/areas/mathematics/functional_analysis/definitions/dirac_delta_function/) at integer positions.
 
-**Fourier transform:** $\mathcal{F}\{\text{comb}(x)\} = \text{comb}(f_x)$ — the comb is its own Fourier transform.
+**[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):** $\mathcal{F}\{\text{comb}(x)\} = \text{comb}(f_x)$ — the comb is its own [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/).
 
-**In optics:** Represents sampling (multiplying by comb samples a function); diffraction gratings; the reason sampled spectra are periodic.
+**In optics:** Represents [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) (multiplying by comb samples a function); [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) gratings; the reason sampled spectra are periodic.
 
 #### Circle Function (circ)
 
@@ -1889,9 +1889,9 @@ $$
 
 **Shape:** A uniform disk of radius 1 in 2D.
 
-**Fourier transform:** $\mathcal{F}\{\text{circ}(r)\} = \dfrac{J_1(2\pi\rho)}{\rho}$ (the Airy pattern / jinc function)
+**[Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):** $\mathcal{F}\{\text{circ}(r)\} = \dfrac{J_1(2\pi\rho)}{\rho}$ (the Airy pattern / jinc function)
 
-**In optics:** Models circular apertures and lenses. Its transform is the [Airy disk](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/) — the fundamental diffraction limit for circular pupils.
+**In optics:** Models circular apertures and lenses. Its transform is the [Airy disk](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/) — the fundamental [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) limit for circular pupils.
 
 ---
 
@@ -2061,9 +2061,9 @@ In Fourier optics, this result describes:
 
 ### Useful Fourier Pairs for Apertures
 
-When apertures are scaled, the similarity theorem applies. These are the most common Fourier pairs in diffraction calculations:
+When apertures are scaled, the similarity theorem applies. These are the most common Fourier pairs in [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) calculations:
 
-| Aperture | Function | Fourier Transform |
+| Aperture | Function | [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) |
 |----------|----------|-------------------|
 | Rectangular (width $a$, height $b$) | $\text{rect}\left(\dfrac{x}{a}, \dfrac{y}{b}\right)$ | $ab \cdot \text{sinc}(a\xi) \cdot \text{sinc}(b\eta)$ |
 | Square (side $a$) | $\text{rect}\left(\dfrac{x}{a}, \dfrac{y}{a}\right)$ | $a^2 \cdot \text{sinc}(a\xi, a\eta)$ |
@@ -2362,7 +2362,7 @@ $$
 
 
 
-Each convolution "smooths" the result further. Sharp features get rounded, asymmetries cancel out, and the characteristic bell curve emerges. After just a few convolutions, even rectangular or triangular functions look nearly Gaussian.
+Each [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) "smooths" the result further. Sharp features get rounded, asymmetries cancel out, and the characteristic bell curve emerges. After just a few convolutions, even rectangular or triangular functions look nearly Gaussian.
 
 <div class="callout callout-info">
 <div class="callout-title"><span class="callout-icon">ℹ️</span>Central Limit Theorem</div>
@@ -2509,7 +2509,7 @@ $$
 
 
 
-To find other profiles of the general transfer function, we can rotate the line response to any angle (not necessary) just along x or y axis.
+To find other profiles of the general [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/), we can rotate the line response to any angle (not necessary) just along x or y axis.
 
 
 
@@ -2658,7 +2658,7 @@ $$
 
 
 - Spectrum of input: $\frac{1}{j2\pi z}$ (plus DC)
-- Transfer function: $H(z) = j2\pi z \, \mathcal{F}\{e_x(x)\}$
+- [Transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/): $H(z) = j2\pi z \, \mathcal{F}\{e_x(x)\}$
 
 <div class="callout callout-note">
 <div class="callout-title"><span class="callout-icon">📝</span>Note</div>
@@ -2854,7 +2854,7 @@ $$
 
 
 
-**Take the time Fourier transform** of the equation.
+**Take the time [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)** of the equation.
 
 <div class="callout callout-info">
 <div class="callout-title"><span class="callout-icon">ℹ️</span>Derivative mappings</div>
@@ -3315,7 +3315,7 @@ This is the [eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/
 
 ## Eigenfunctions of Free-Space Propagation
 
-The transverse plane wave factor $e^{jk(\gamma_x x + \gamma_y y)}$ is an **[eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** of the free-space propagation operator.
+The transverse [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) factor $e^{jk(\gamma_x x + \gamma_y y)}$ is an **[eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/)** of the free-space propagation operator.
 
 ### Why This Works
 
@@ -3329,7 +3329,7 @@ $$
 
 
 
-Propagating from $z_0$ to $z_1$ multiplies the field by the transfer function:
+Propagating from $z_0$ to $z_1$ multiplies the field by the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):
 
 
 
@@ -3601,7 +3601,7 @@ This is why apertures turn into **convolutions in Fourier space** — the gatewa
 
 ## Angular Plane Wave Spectrum
 
-The **angular plane wave spectrum** is the fundamental concept connecting spatial patterns to propagating waves. Any complex field distribution $u_i(x,y)$ at a plane $z = z_i$ can be decomposed into a superposition of plane waves traveling in different directions.
+The **angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) spectrum** is the fundamental concept connecting spatial patterns to propagating waves. Any complex field distribution $u_i(x,y)$ at a plane $z = z_i$ can be decomposed into a [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/) of plane waves traveling in different directions.
 
 ![Angular Plane Wave Spectrum](/images/notes/Areas/electrical_engineering/Physical_Optics/books/Introduction_to_Physical_Optics/images/angular_plane_wave_spectrum.svg)
 
@@ -3624,7 +3624,7 @@ This figure illustrates the duality between **spatial domain** and **frequency d
 
 ### Fourier Transform Relationship
 
-The angular spectrum $U_i(\xi, \eta)$ and the spatial field $u_i(x,y)$ form a [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) pair:
+The [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) $U_i(\xi, \eta)$ and the spatial field $u_i(x,y)$ form a [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) pair:
 
 
 
@@ -3653,7 +3653,7 @@ The inverse transform shows that $u_i(x,y)$ is a weighted sum of complex exponen
 
 ### Connecting Spatial Frequency to Propagation Angle
 
-A plane wave propagating in direction $(\gamma_x, \gamma_y, \gamma_z)$ has the form:
+A [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) propagating in direction $(\gamma_x, \gamma_y, \gamma_z)$ has the form:
 
 
 
@@ -3673,7 +3673,7 @@ $$
 
 
 
-Comparing with the Fourier basis $e^{j2\pi(\xi x + \eta y)}$, the spatial frequencies are:
+Comparing with the Fourier [basis](/notes/areas/mathematics/linear_algebra/definitions/basis/) $e^{j2\pi(\xi x + \eta y)}$, the spatial frequencies are:
 
 
 
@@ -3762,21 +3762,21 @@ $$
 
 ### Why This Matters
 
-The angular spectrum representation is powerful because:
+The [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) representation is powerful because:
 
-1. **Propagation becomes multiplication:** Each plane wave component propagates independently, just multiplied by the transfer function $H(\xi, \eta) = e^{jk\gamma_z \Delta z}$
+1. **Propagation becomes multiplication:** Each [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) component propagates independently, just multiplied by the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) $H(\xi, \eta) = e^{jk\gamma_z \Delta z}$
 
-2. **Diffraction is natural:** The finite extent of an aperture spreads the angular spectrum, causing the beam to diverge
+2. **[Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) is natural:** The finite extent of an aperture spreads the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/), causing the beam to diverge
 
 3. **Computation is efficient:** Propagation via FFT → multiply by $H$ → IFFT is $O(N \log N)$
 
 ### Angular Spectrum Diffraction Formulation
 
-The complete recipe for propagating a field from plane $z = z_i$ to plane $z = z_o$ using the angular spectrum method:
+The complete recipe for propagating a field from plane $z = z_i$ to plane $z = z_o$ using the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) method:
 
-**Step 1: Input field and its angular spectrum**
+**Step 1: Input field and its [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/)**
 
-The input field $u_i(x,y)$ at plane $z = z_i$ has angular spectrum:
+The input field $u_i(x,y)$ at plane $z = z_i$ has [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/):
 
 
 
@@ -3786,9 +3786,9 @@ $$
 
 
 
-**Step 2: Diffraction transfer function**
+**Step 2: [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)**
 
-The transfer function for propagation through distance $\Delta z = z_o - z_i$ is:
+The [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) for propagation through distance $\Delta z = z_o - z_i$ is:
 
 
 
@@ -3810,7 +3810,7 @@ $$
 
 **Step 3: Propagation in frequency domain**
 
-Multiply the angular spectrum by the transfer function:
+Multiply the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) by the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):
 
 
 
@@ -3859,9 +3859,9 @@ This is exact (within the scalar wave approximation) and handles both near-field
 </div>
 </div>
 
-**Convolution Form**
+**[Convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) Form**
 
-By the convolution theorem, multiplication in the frequency domain corresponds to convolution in the spatial domain:
+By the [convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/), multiplication in the frequency domain corresponds to [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) in the spatial domain:
 
 
 
@@ -3871,11 +3871,11 @@ $$
 
 
 
-The inverse Fourier transform of the transfer function $\mathcal{F}^{-1}\{H\}$ is the **impulse response** (point spread function) of free-space propagation.
+The inverse [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) $\mathcal{F}^{-1}\{H\}$ is the **[impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/)** ([point spread function](/notes/areas/electrical_engineering/signals_systems/definitions/point_spread_function/)) of free-space propagation.
 
 ### Paraxial Approximation
 
-When the angular spectrum is concentrated near the optical axis (low spatial frequencies dominate), the **paraxial approximation** simplifies the transfer function.
+When the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) is concentrated near the optical axis (low spatial frequencies dominate), the **paraxial approximation** simplifies the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/).
 
 **Condition:** $\lambda^2(\xi^2 + \eta^2) \ll 1$ (spatial frequencies much smaller than $1/\lambda$)
 
@@ -3888,7 +3888,7 @@ $$
 
 
 
-Applying this to the transfer function:
+Applying this to the [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):
 
 
 $$
@@ -3897,7 +3897,7 @@ $$
 
 
 
-The paraxial transfer function becomes:
+The paraxial [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) becomes:
 
 
 $$
@@ -3943,7 +3943,7 @@ $$
 
 ## Complete Example: Tilted Plane Wave Through Circular Aperture
 
-This section provides a complete angular-spectrum analysis of an oblique plane wave passing through a circular aperture.
+This section provides a complete angular-spectrum analysis of an oblique [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) passing through a circular aperture.
 
 ### Setup and Notation
 
@@ -3962,7 +3962,7 @@ This section provides a complete angular-spectrum analysis of an oblique plane w
 
 ### Step 1: Incident Plane Wave at Object Plane $z = z_0$
 
-A plane wave incident obliquely arrives at the object plane with the transverse factor:
+A [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) incident obliquely arrives at the object plane with the transverse factor:
 
 
 
@@ -4030,9 +4030,9 @@ $$
 
 
 
-where $T(\mathbf{f}) = \mathcal{F}\{t\}(\mathbf{f})$ is the aperture's Fourier transform.
+where $T(\mathbf{f}) = \mathcal{F}\{t\}(\mathbf{f})$ is the aperture's [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/).
 
-Therefore the angular spectrum of the transmitted field is:
+Therefore the [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) of the transmitted field is:
 
 
 
@@ -4073,7 +4073,7 @@ $$
 
 
 
-The angular spectrum is the **Airy-like radial profile centered at $\mathbf{f}_0$**.
+The [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) is the **Airy-like radial profile centered at $\mathbf{f}_0$**.
 
 ### Step 5: Free-Space Propagation from $z_0$ to $z_1$
 
@@ -4106,7 +4106,7 @@ If $|2\pi \mathbf{f}| > k$ then $k_z$ is imaginary → evanescent decay.
 </div>
 </div>
 
-The propagated angular spectrum is:
+The propagated [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) is:
 
 
 
@@ -4150,9 +4150,9 @@ $$
 
 ### Step 7: Special/Limiting Cases
 
-**Case (a): Small aperture** — If $T(\mathbf{s})$ is sharply peaked around $\mathbf{s} = 0$, approximate $k_z(\mathbf{s} + \mathbf{f}_0) \approx k_z(\mathbf{f}_0)$. The plane-wave factor acts almost like a true eigenfunction.
+**Case (a): Small aperture** — If $T(\mathbf{s})$ is sharply peaked around $\mathbf{s} = 0$, approximate $k_z(\mathbf{s} + \mathbf{f}_0) \approx k_z(\mathbf{f}_0)$. The plane-wave factor acts almost like a true [eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/).
 
-**Case (b): Fraunhofer (far-field)** — For large $\Delta z$, the field reduces to the FT of the exit pupil at scaled coordinates. The far-field intensity is $|T(\mathbf{f} - \mathbf{f}_0)|^2$ — the **Airy disk pattern shifted by incidence angle**.
+**Case (b): Fraunhofer (far-field)** — For large $\Delta z$, the field reduces to the FT of the exit pupil at scaled coordinates. The far-field intensity is $|T(\mathbf{f} - \mathbf{f}_0)|^2$ — the **[Airy disk](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/) pattern shifted by incidence angle**.
 
 **Case (c): Evanescent components** — If $\|\mathbf{f} - \mathbf{f}_0\| > k/(2\pi)$, then $k_z$ is imaginary and that component decays as $\exp(-|\text{Im}\, k_z| \Delta z)$. High spatial frequencies (fine details) are attenuated.
 
@@ -4254,7 +4254,7 @@ Note: This means that amplitudes of all plane waves is preserved. Only the phase
 </div>
 </div>
 
-$\Rightarrow$ Finally, the amplitude distribution at $z_e$ can be calculated by an inverse Fourier transform:
+$\Rightarrow$ Finally, the amplitude distribution at $z_e$ can be calculated by an inverse [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
 
 
@@ -4297,7 +4297,7 @@ $$
 
 
 
-**Diffraction from plane $z_i$ to plane $z_e$**
+**[Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) from plane $z_i$ to plane $z_e$**
 
 ## Similarity Between 1-dim and 2-dim Fourier Synthesis
 
@@ -4311,7 +4311,7 @@ $$
 
 
 **Two dim:**
-- No $y$ dependence: $e^{j\pi\gamma_x x}$ gives different phases of the plane wave
+- No $y$ dependence: $e^{j\pi\gamma_x x}$ gives different phases of the [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/)
 - $\gamma_x$ = effective phase change in x direction (equivalent to frequency of complex sinusoid)
 
 <div class="callout callout-note">
@@ -4468,7 +4468,7 @@ $$
 
 where $\gamma_x = \lambda\xi$, $\gamma_y = \lambda\eta$
 
-$\Rightarrow$ We should be able to write this in a convolution form by using the convolution theorem:
+$\Rightarrow$ We should be able to write this in a [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) form by using the [convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/):
 
 
 
@@ -4510,7 +4510,7 @@ $$
 
 
 
-We now need to calculate $h(x,y)$ by inverse Fourier transform:
+We now need to calculate $h(x,y)$ by inverse [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
 
 
@@ -4567,7 +4567,7 @@ $$
 
 Finally, $\mathcal{F}^{-1}\mathcal{F}^{-1}\{H(\xi,\eta)\} = \frac{\exp\{jk(z_e - z_i)\}}{j\lambda(z_e - z_i)} \exp\left[\frac{j\pi(x^2 + y^2)}{\lambda(z_e - z_i)}\right]$
 
-We thus have the convolution form (with $\frac{\pi}{\lambda} = \frac{k}{2}$):
+We thus have the [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) form (with $\frac{\pi}{\lambda} = \frac{k}{2}$):
 
 
 
@@ -4593,7 +4593,7 @@ $$
 
 *(Tie long awaited)*
 
-Recall from first quarter that Huygens' principle stated that any field distribution could be thought of as a superposition of spherical waves:
+Recall from first quarter that Huygens' principle stated that any field distribution could be thought of as a [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/) of spherical waves:
 
 
 
@@ -4792,7 +4792,7 @@ $$
 
 
 
-**Transfer function:**
+**[Transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):**
 
 
 
@@ -4823,11 +4823,11 @@ $$
 
 # Fraunhofer Diffraction Formula (Far Field)
 
-Note that this equation can be thought of as some phase factors multiplying the Fourier transform of the aperture transmittance and a quadratic phase factor $\exp\left\{\frac{jk[\alpha^2+\beta^2]}{2z}\right\}$
+Note that this equation can be thought of as some phase factors multiplying the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the aperture transmittance and a quadratic phase factor $\exp\left\{\frac{jk[\alpha^2+\beta^2]}{2z}\right\}$
 
 ## Fraunhofer Diffraction Formula (Far Field)
 
-In the Fourier transform form of the Fresnel diffraction formula, we note that we would have an exceedingly simple result if:
+In the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) form of the [Fresnel diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction/) formula, we note that we would have an exceedingly simple result if:
 
 
 
@@ -4875,7 +4875,7 @@ $$
 
 
 
-**Fraunhofer Diffraction Formula**
+**[Fraunhofer Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction/) Formula**
 # Intensity in Fraunhofer Diffraction
 
 $\Rightarrow$ $u_e(x,y)$ is the complex electric field at plane $z_e$
@@ -4892,7 +4892,7 @@ $$
 
 
 
-$\Rightarrow$ Extremely simple diffraction formula in Fraunhofer region:
+$\Rightarrow$ Extremely simple [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) formula in Fraunhofer region:
 
 
 
@@ -4910,7 +4910,7 @@ $$
 
 
 
-Or simply, the **intensity pattern** (as seen by eye, etc.) is the **squared magnitude of the two-dim Fourier Transform** (scaled by $\frac{1}{\lambda z}$).
+Or simply, the **intensity pattern** (as seen by eye, etc.) is the **squared magnitude of the two-dim [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)** (scaled by $\frac{1}{\lambda z}$).
 
 
 
@@ -4964,7 +4964,7 @@ $$
 
  — **Fresnel Approximation**
 
-$H_F(\xi,\eta) \rightarrow$ does not exist, because the Fourier transform operator is not shift invariant and thus has no transfer function associated with it.
+$H_F(\xi,\eta) \rightarrow$ does not exist, because the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) operator is not shift [invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) and thus has no [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) associated with it.
 
 <div class="callout callout-warning">
 <div class="callout-title"><span class="callout-icon">⚠️</span>Warning</div>
@@ -5061,7 +5061,7 @@ $$
 
 and $J_1(\pi)(1.22) = 0$
 
-$\therefore$ Zero of Bessel function is at:
+$\therefore$ Zero of [Bessel function](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) is at:
 
 
 
@@ -5161,7 +5161,7 @@ $$
 
 
 
-**Far Field Diffraction from an Aperture**
+**Far Field [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) from an Aperture**
 
 where $K$ is a value close to 1, and is dependent on the shape of the aperture.
 
@@ -5276,8 +5276,8 @@ The intensity pattern shows peaks at $x' = 0$, $x' = \pm f_0\lambda z$, with wid
 ## Key Observations
 
 **Note:**
-1. Distance from origin to first zero of sinc function $= \frac{\lambda z}{\ell}$
-2. Distance to next sinc function $= f_0\lambda z = \frac{\lambda z}{T}$
+1. Distance from origin to first zero of [sinc function](/notes/areas/electrical_engineering/signals_systems/definitions/sinc_function/) $= \frac{\lambda z}{\ell}$
+2. Distance to next [sinc function](/notes/areas/electrical_engineering/signals_systems/definitions/sinc_function/) $= f_0\lambda z = \frac{\lambda z}{T}$
 
 Since $f_0 = \frac{1}{T}$:
 
@@ -5449,14 +5449,14 @@ With $m = 8$ radians:
 - Note $\frac{m}{2} = 4$ and $J_1(4) \approx 0$
 - No first order terms
 
-The resulting diffraction pattern shows:
+The resulting [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern shows:
 - Orders at positions $q^{th}$, $3^{rd}$, $2^{nd}$, $1^{st}$, $0$, $1^{st}$, $2^{nd}$, $3^{rd}$, $4^{th}$...
 - Relative intensities determined by $J_q^2\left(\frac{m}{2}\right)$
 # Antennas and Huygens Arrays
 
 ## Far Field Diffraction Pattern for Square Antenna
 
-Recall the far field diffraction pattern for a single square antenna (width = $d$):
+Recall the far field [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern for a single square antenna (width = $d$):
 
 
 
@@ -5589,9 +5589,9 @@ $$
 
 
 
-where $\text{samp}(x)$ is some sampling function (not necessarily equally spaced delta functions) of finite length.
+where $\text{samp}(x)$ is some [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) function (not necessarily equally spaced delta functions) of finite length.
 
-From the convolution theorem, we simply have:
+From the [convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/), we simply have:
 
 
 
@@ -5659,7 +5659,7 @@ where $\alpha = \frac{\cos\theta'}{\lambda}$
 
 Then by simply providing a phase delay from one receiver (or transmitter) to the other, we can steer the beam.
 
-The width of a beam (given by diffraction) is reduced by the overall array size (maximum spatial frequency at the edges) and the angular range (given by maximum angle in which aliasing has not occurred) are independent quantities.
+The width of a beam (given by [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/)) is reduced by the overall array size (maximum spatial frequency at the edges) and the angular range (given by maximum angle in which aliasing has not occurred) are independent quantities.
 
 ## Phased Array Implementation
 
@@ -6368,7 +6368,7 @@ where we have dropped the constant phase term $t_\ell(x,y)$.
 
 ## Field at the Focal Plane
 
-To calculate the field at $z = f$ we use the Fresnel diffraction formula:
+To calculate the field at $z = f$ we use the [Fresnel diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction/) formula:
 
 
 
@@ -6378,7 +6378,7 @@ $$
 
 
 
-(Fourier Transform Form)
+([Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) Form)
 
 ## Substituting for $u^+(x,y)$:
 
@@ -6411,7 +6411,7 @@ $$
 
 
 
-If we measure the intensity at $z_0 = f$ we have:
+If we [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) the intensity at $z_0 = f$ we have:
 
 
 
@@ -6446,7 +6446,7 @@ t_0(x,y)
 ```
 
 - **Object:** $t_0(x,y)$
-- **Angular plane wave spectrum of object:** $\mathcal{FF}\{At_0(x,y)\} = F(\xi,\eta)$
+- **Angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) spectrum of object:** $\mathcal{FF}\{At_0(x,y)\} = F(\xi,\eta)$
 
 
 
@@ -6497,7 +6497,7 @@ $$
 
 
 
-where $F_0$ is the angular plane wave spectrum.
+where $F_0$ is the angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) spectrum.
 
 
 
@@ -6822,7 +6822,7 @@ $$
 
 ## Total Power Spectrum
 
-If $G_i(f_x)$, $i = 1, L$ is the diffraction pattern produced by a single particle of size $d_i$, total power spectrum is:
+If $G_i(f_x)$, $i = 1, L$ is the [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern produced by a single particle of size $d_i$, total power spectrum is:
 
 
 
@@ -6977,8 +6977,8 @@ $$
 
 ## Properties
 
-- K-L transform basis functions depend on **statistics** of image
-- Basis functions are given by the **eigenvectors** of the **autocorrelation matrix** of the statistical process
+- K-L transform [basis](/notes/areas/mathematics/linear_algebra/definitions/basis/) functions depend on **statistics** of image
+- [Basis](/notes/areas/mathematics/linear_algebra/definitions/basis/) functions are given by the **eigenvectors** of the **autocorrelation matrix** of the statistical process
 
 <div class="callout callout-important">
 <div class="callout-title"><span class="callout-icon">❗</span>Important</div>
@@ -6998,7 +6998,7 @@ And linear transform is **Fourier Transform**
 
 ## Examples (Shaw Stark, pg. 172)
 
-Applications where Fourier Transform is useful:
+Applications where [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is useful:
 - Handwriting
 - Printed matter
 - Homogeneous aerosols
@@ -7136,7 +7136,7 @@ $\therefore$ Since Fourier power spectrum is invariant to shifts in $x$ & $y$, t
 ## Mellin Transform
 
 - Transform in $\log(r)$ direction is a **Mellin transform**
-- Features are **no longer invariant** to translation
+- Features are **no longer [invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/)** to translation
 
 (Shaw Stark, pg. 175 & 174)
 # Complete Invariance: Position, Scale, and Orientation
@@ -7155,13 +7155,13 @@ Original   ┌─────────┐      ┌─────────
 
 ## Invariance Properties
 
-1. **Translational Invariance**: First Fourier transform + magnitude squared removes position dependence
+1. **Translational Invariance**: First [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) + magnitude squared removes position dependence
 
 2. **Scale & Rotation Invariance**:
    - Power spectrum will **inversely scale** with object
    - Power spectrum will **rotate directly** as object rotates
    - Log-polar distortion converts these to shifts
-   - Second Fourier transform + magnitude squared removes scale and rotation dependence
+   - Second [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) + magnitude squared removes scale and rotation dependence
 
 <div class="callout callout-tip">
 <div class="callout-title"><span class="callout-icon">💡</span>Tip</div>
@@ -7198,7 +7198,7 @@ Object          y₂              Image
 
 Consider:
 1. $t(x,y)$ in the object plane $(x_1, y_1)$
-2. Plane wave illumination of object $A$
+2. [Plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) illumination of object $A$
 
 
 
@@ -7348,7 +7348,7 @@ $$
 
 ## Impulse Response Formulation
 
-Every superposition, we can state the response of a linear system as the sum of impulse responses at point sources:
+Every [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/), we can state the response of a linear system as the sum of impulse responses at point sources:
 
 
 
@@ -7432,7 +7432,7 @@ $$
 
 
 
-Using Fresnel diffraction from $u_\ell'$ to $u_i$:
+Using [Fresnel diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction/) from $u_\ell'$ to $u_i$:
 
 
 
@@ -7473,7 +7473,7 @@ $$
 
 1. Since we are normally interested in image intensity, we can ignore $\exp\left[j\frac{k}{2d_i}(x_i^2+y_i^2)\right]$
 
-2. $\exp\left[j\frac{k}{2d_o}(x^2+y^2)\right]$ cannot be ignored, since the superposition integral is taken over $x_o$ & $y_o$. However, if we are interested in an **imaging condition**, the light at $x_i, y_i$ must come from a small region of the object.
+2. $\exp\left[j\frac{k}{2d_o}(x^2+y^2)\right]$ cannot be ignored, since the [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/) integral is taken over $x_o$ & $y_o$. However, if we are interested in an **imaging condition**, the light at $x_i, y_i$ must come from a small region of the object.
 
 ```
     (x_o,y_o)╱────────────╲
@@ -7570,7 +7570,7 @@ $$
 
 
 
-**(Space Invariant Form)**
+**(Space [Invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) Form)**
 
 Finally, let $\tilde{h} = \frac{1}{K\lambda^2 d_i^2} h$
 
@@ -7595,7 +7595,7 @@ $$
 
 ## Linear Shift-Invariant Superposition
 
-Then the original superposition integral becomes:
+Then the original [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/) integral becomes:
 
 
 
@@ -7656,7 +7656,7 @@ $$
 
 
 
-From the convolution theorem, we have:
+From the [convolution theorem](/notes/areas/electrical_engineering/signals_systems/definitions/convolution_theorem/), we have:
 
 
 
@@ -7879,7 +7879,7 @@ See smaller features if:
 
 ## Sinusoidal Diffraction Grating
 
-A sinusoidal diffraction grating (freq $f_o$) will diffract a pencil beam into 2 beams.
+A sinusoidal [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) grating (freq $f_o$) will diffract a pencil beam into 2 beams.
 
 - If too high, both beams miss the lens, and no light passes through
 - At some critical angle $\tan \theta = \frac{1}{2d_o}$, the two pencil beams just enter, and interference occurs in the output to generate a sinusoid
@@ -7925,8 +7925,8 @@ $$
 
 ## Types of Coherence
 
-1. Temporal coherence (longitudinal)
-2. Spatial coherence (transversal)
+1. Temporal [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) (longitudinal)
+2. Spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) (transversal)
 
 ---
 
@@ -7956,9 +7956,9 @@ $$
 
 
 
-**Examples of high temporal coherence:**
+**Examples of high temporal [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/):**
 - Pure monochromatic source such as a single mode highly filtered white light
-- Possibly low spatial coherence
+- Possibly low spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/)
 
 ---
 
@@ -7982,12 +7982,12 @@ $$
 \Rightarrow |\langle u(x_1) u^*(x_2) \rangle| = 1
 $$
 
- → perfect spatial coherence
+ → perfect spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/)
 
-If diffuse states $e^{i\phi(t)}$ ← function of time, and coherence is destroyed.
+If diffuse states $e^{i\phi(t)}$ ← function of time, and [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) is destroyed.
 
-**Examples of high spatial coherence:**
-1. Star (low temporal coherence)
+**Examples of high spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/):**
+1. Star (low temporal [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/))
 2. Arc lamp (low-medium temporal coh.)
 3. Gas laser (high temporal coh.)
 
@@ -8009,7 +8009,7 @@ Cross correlation between waves at two different points and two different times.
 
 ## Detailed Analysis
 
-**Note:** This does not imply that high spatial coherence means a plane wave illumination.
+**Note:** This does not imply that high spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) means a [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) illumination.
 
 **Example:**
 [Diagram showing diffuser creating spreading light]
@@ -8047,7 +8047,7 @@ $$
 \Rightarrow |\langle u(x_1) u^*(x_2) \rangle| = 1
 $$
 
- → Perfect spatial coherence
+ → Perfect spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/)
 # Mutual Coherence Function and Fringe Visibility
 
 
@@ -8085,7 +8085,7 @@ where $I_1 = \langle |E_1|^2 \rangle$, and $I_2 = \langle |E_2|^2 \rangle$
 
 ## Defining Mutual Coherence
 
-We can define the mutual coherence as:
+We can define the mutual [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) as:
 
 
 
@@ -8103,7 +8103,7 @@ $$
 
 
 
-[Diagram showing interference pattern with spatial coherence notation]
+[Diagram showing interference pattern with spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) notation]
 
 What is spatial coh. in this plane of pts $x_1$ & $x_2$?
 
@@ -8238,7 +8238,7 @@ $$
 
 → Spectral Power Density
 
-⇒ Thus, the temporal coherence part of the mutual coherence function is F.T. related to the bandwidth of the source ⇒
+⇒ Thus, the temporal [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) part of the mutual [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) function is F.T. related to the bandwidth of the source ⇒
 
 ---
 
@@ -8270,7 +8270,7 @@ $$
 
 
 Since:
-[Spectrum diagram] → [Coherence function with $\tau_o = \frac{1}{\Delta f}$]
+[Spectrum diagram] → [Coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) function with $\tau_o = \frac{1}{\Delta f}$]
 
 ⇒ Time delay when fringes no longer form
 
@@ -8282,7 +8282,7 @@ $$
 
 
 
-If $\Delta \tau > \tau_o$, no fringes → **Holography**
+If $\Delta \tau > \tau_o$, no fringes → **[Holography](/notes/areas/electrical_engineering/physical_optics/definitions/holography/)**
 
 ---
 
@@ -8460,7 +8460,7 @@ $$
 
 Thus, by moving one arm w.r.t. the other, we can obtain $\Gamma_{11}(\tau)$.
 
-⇒ Since $\Gamma_{11}(\tau)$ is F.T. related to the spectrum of the source, we can measure $\Gamma_{11}(\tau)$ with this device and perform FFT to compute spectrum.
+⇒ Since $\Gamma_{11}(\tau)$ is F.T. related to the spectrum of the source, we can [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $\Gamma_{11}(\tau)$ with this device and perform FFT to compute spectrum.
 
 ### ★ Fourier Transform Spectrometer
 # Fourier Spectrometer Advantages and Limitations
@@ -8487,7 +8487,7 @@ from very narrow lines
 
 [Diagram showing source with points x', x" projecting through lens to measurement plane]
 
-- Coherence measured in this plane
+- [Coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) measured in this plane
 - **Note:** Incoherent source can become coherent through propagation
 
 
@@ -8498,7 +8498,7 @@ $$
 
 
 
-⇒ $r_1 = r_2$, we can vary $d$ until no fringes form. This is the **coherence width**.
+⇒ $r_1 = r_2$, we can vary $d$ until no fringes form. This is the **[coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) width**.
 
 ---
 
@@ -8665,7 +8665,7 @@ or $\boxed{d = \frac{\bar{\lambda}}{\theta_s}}$ where $\theta_s = \frac{S}{R}$ =
 
 **Note:** From Fourier aperture produces: $\propto \frac{b}{\bar{\lambda}}$, $\sin\theta \approx \theta = \frac{\lambda}{b} = \tan\frac{\lambda}{b}$
 
-$\therefore b \approx \frac{R\bar{\lambda}}{S}$, exactly like above spatial coherence eqn.
+$\therefore b \approx \frac{R\bar{\lambda}}{S}$, exactly like above spatial [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) eqn.
 
 ---
 
@@ -8681,7 +8681,7 @@ $$
 
 
 
-where coherence function $\gamma = \frac{\Gamma_{12}(0)}{\sqrt{\Gamma_{11}(0)\Gamma_{22}(0)}}$
+where [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) function $\gamma = \frac{\Gamma_{12}(0)}{\sqrt{\Gamma_{11}(0)\Gamma_{22}(0)}}$
 
 **Same mathematics as diff pattern of coherent wave converging on $P_1$ after passing through transparency having amplitude transmittance proportional to intensity distribution of incoherent source.**
 
@@ -8691,11 +8691,11 @@ $I(x_s, y_s)$ at $P_1$
 
 ---
 
-This is exactly like the diffraction equation
+This is exactly like the [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) equation
 
-⇒ If $P_1$ & $P_2$ are close to the axis & far from source, we have an equation like Fraunhofer diffraction
+⇒ If $P_1$ & $P_2$ are close to the axis & far from source, we have an equation like [Fraunhofer diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction/)
 
-and hence $I(x_s, y_s)$ and $\gamma_{12}(0)$ are Fourier Transform related.
+and hence $I(x_s, y_s)$ and $\gamma_{12}(0)$ are [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) related.
 
 ---
 
@@ -8707,7 +8707,7 @@ and hence $I(x_s, y_s)$ and $\gamma_{12}(0)$ are Fourier Transform related.
 
 Assuming star is round, we have $\gamma_{12}(0)$ given as the F.T. of a circle ⇒
 
-[Graph showing $\gamma_{12}(0)$ vs P with width of coherence area marked, showing $J_1(anl)$ behavior starting at 1 and decreasing to first zero at 1.22]
+[Graph showing $\gamma_{12}(0)$ vs P with width of [coherence](/notes/areas/electrical_engineering/physical_optics/definitions/coherence/) area marked, showing $J_1(anl)$ behavior starting at 1 and decreasing to first zero at 1.22]
 
 
 
@@ -8735,7 +8735,7 @@ From known distance ⇒ diameter is 280 times that of the sun — **Red Giant**
 
 ## Notes:
 
-- Michelson in principle could also measure phase info. of $\gamma_{12}(0)$ and hence an inverse FT would reconstruct the intensity.
+- Michelson in principle could also [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) phase info. of $\gamma_{12}(0)$ and hence an inverse FT would reconstruct the intensity.
 
 - Atmospheric turbulence prevents this from happening in practice. Hence, Michelson measured short-term visibility magnitude only
 
@@ -8850,9 +8850,9 @@ $\therefore$ Incoherent light is linear in intensity
 
 ## Transfer Functions
 
-We must use an intensity convolution $I(x, y)$:
+We must use an intensity [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) $I(x, y)$:
 
-**Impulse response is** $|h(x, y)|^2$ and every thing is coherent from a pt. source. Every thing is coherent from a pt. source.
+**[Impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) is** $|h(x, y)|^2$ and every thing is coherent from a pt. source. Every thing is coherent from a pt. source.
 
 
 
@@ -8920,8 +8920,8 @@ $$
 
 
 Where:
-- $\mathcal{H}$ = **optical transfer function (OTF)**
-- $|\mathcal{H}|$ = **modulation transfer function (MTF)**
+- $\mathcal{H}$ = **[optical transfer function](/notes/areas/electrical_engineering/physical_optics/definitions/optical_transfer_function/) (OTF)**
+- $|\mathcal{H}|$ = **modulation [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) (MTF)**
 
 ---
 
@@ -9051,10 +9051,10 @@ $$
 
 ## I. Generalized Pupil Function
 
-[Diagram showing diffraction limited system with pupil function P(x,y)]
+[Diagram showing [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) limited system with pupil function P(x,y)]
 
-**Diffraction limited system**
-⇒ Impulse response = F.T. of pupil function (aperture)
+**[Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) limited system**
+⇒ [Impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) = F.T. of pupil function (aperture)
 
 ---
 
@@ -9077,9 +9077,9 @@ $$
 
 ## Coherent Case
 
-$\therefore$ Impulse response is F.T. of $\mathbb{P}(x,y)$
+$\therefore$ [Impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) is F.T. of $\mathbb{P}(x,y)$
 
-We also have the coherent transfer function = generalized pupil ftn.
+We also have the coherent [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) = generalized pupil ftn.
 
 
 
@@ -9182,11 +9182,11 @@ $$
 
 $x = \frac{l}{2}$, $\epsilon\frac{(x^2+y^2)}{2} = \epsilon\frac{l^2}{8}$
 
-Note: $W = 0$ ⇒ diffraction limit
+Note: $W = 0$ ⇒ [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) limit
 
 $f_o = \frac{l}{2\lambda d_i}$ ← lens diameter
 
-[Graph showing OTF curves for W=λ, W=λ/4, and W=0 (diffraction limit), with contrast reversal indicated]
+[Graph showing OTF curves for W=λ, W=λ/4, and W=0 ([diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) limit), with contrast reversal indicated]
 # Aberration Function Effects
 
 ## Aberration Function
@@ -9225,7 +9225,7 @@ $$
 
 where:
 - $I_{ob}(x)$ = object intensity (assume no phase component)
-- $K\left(\frac{x'}{q}\right)$ = amplitude impulse response of the lens
+- $K\left(\frac{x'}{q}\right)$ = amplitude [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) of the lens
 - $p$ = object distance
 - $q$ = image distance
 
@@ -9233,7 +9233,7 @@ where:
 
 ## Consider a square aperture of size "2a"
 
-**Amplitude Impulse Response:**
+**Amplitude [Impulse Response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/):**
 
 
 $$
@@ -9311,7 +9311,7 @@ $$
 
 
 
-**Intensity impulse response of square aperture (size "2a"):**
+**Intensity [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) of square aperture (size "2a"):**
 
 
 
@@ -9344,7 +9344,7 @@ $$
 
 ## B. Speckle
 
-**(Viewpoint #1: Angular plane wave spectrum)**
+**(Viewpoint #1: Angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) spectrum)**
 
 (Not just for laser light, but radar & sonar as well)
 
@@ -9356,7 +9356,7 @@ $$
 
 At the plane, we have the original illum. $A(x,y)$ times a random phase $e^{j\phi(x,y)}$ due to the surface
 
-→ We can decompose the amplitude at the surface into an angular plane wave spectrum. Thus, at this surface, all plane waves add together in such a way as to create a uniform amplitude function
+→ We can decompose the amplitude at the surface into an angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) spectrum. Thus, at this surface, all plane waves add together in such a way as to create a uniform amplitude function
 
 → If an optical system can capture all the plane waves and recombine them into an image, a uniform amplitude function results
 
@@ -9391,7 +9391,7 @@ where $I_o = \langle I \rangle$ = mean intensity
 
 The amplitude is no longer a constant, but rather is a random value which changes with every point on surface.
 
-This is **speckle**. Since the human eye captures only a very small angle of plane waves, speckle is usually seen with any diffuse object (diffuse means "rough" is scattered into a wide angular plane wave excitation).
+This is **speckle**. Since the human eye captures only a very small angle of plane waves, speckle is usually seen with any diffuse object (diffuse means "rough" is scattered into a wide angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) excitation).
 
 ## Speckle Statistics
 
@@ -9405,7 +9405,7 @@ This is **speckle**. Since the human eye captures only a very small angle of pla
 
 → Now consider an optical system which had a small aperture so that some of the plane waves were not passed through.
 
-[Diagram showing angular plane wave spectrum with limited aperture]
+[Diagram showing angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) spectrum with limited aperture]
 
 **Histogram of speckle:**
 
@@ -9427,13 +9427,13 @@ where $I_o = \langle I \rangle$ = mean intensity
 
 The amplitude is no longer a constant, but rather is a random value which changes with every point on surface.
 
-This is **speckle**. Since the human eye captures only a very small angle of plane waves, speckle is usually seen with any diffuse object (diffuse means "rough" is scattered into a wide angular plane wave excitation).
+This is **speckle**. Since the human eye captures only a very small angle of plane waves, speckle is usually seen with any diffuse object (diffuse means "rough" is scattered into a wide angular [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) excitation).
 
 ## Speckle (Viewpoint #2: Impulse response of optical system)
 
-→ The impulse response of an imaging system (sometimes called its point-spread function) is given by the Fourier transform of the aperture: $\mathcal{F}\{P(\lambda d_i \bar{x}, \lambda d_i \bar{y})\}$
+→ The [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) of an imaging system (sometimes called its point-spread function) is given by the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the aperture: $\mathcal{F}\{P(\lambda d_i \bar{x}, \lambda d_i \bar{y})\}$
 
-Thus, if the aperture is a circle, the impulse response is $\text{somb}(\rho)$
+Thus, if the aperture is a circle, the [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) is $\text{somb}(\rho)$
 
 [Diagram showing phase front $e^{i\phi_o}$ passing through aperture, creating $\text{somb}(r) \propto \frac{J_1(ar\bar{s})}{s}$]
 
@@ -9445,7 +9445,7 @@ When somb ftns overlap, amplitudes = sum. However, due to the random phase of ea
 
 ### Notes:
 ★ 1) As lens gets larger (better resolution) size of speckle gets smaller
-2) Size of speckle is ≈ diffraction limit of lens
+2) Size of speckle is ≈ [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) limit of lens
 # Apodization
 
 ## Apodization - What is it?
@@ -9466,7 +9466,7 @@ This is like an F.T. system, except that the aperture has been passed up to the 
 
 Resolve a double star system where one star is $10^2$ times brighter than the other:
 
-[Diagram showing bright star and dark companion with diffraction patterns, showing side lobes at $-\frac{2}{\lambda}$ and $\frac{2}{\lambda}$]
+[Diagram showing bright star and dark companion with [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) patterns, showing side lobes at $-\frac{2}{\lambda}$ and $\frac{2}{\lambda}$]
 
 - We desire to reduce the side lobes as much as possible
 
@@ -9482,7 +9482,7 @@ $I(u) \sim \frac{1}{u^2}$
 
 [Diagram showing triangular aperture function with width a]
 
-**Amplitude Impulse Response:**
+**Amplitude [Impulse Response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/):**
 
 
 $$
@@ -9529,7 +9529,7 @@ $$
 
 **Note:** As window gets "smoother", side lobes decrease faster.
 
-[Note: convolution represents a low-pass filter operation (in the case), reducing the high spatial freq's and hence the sidelobes]
+[Note: [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) represents a low-pass filter operation (in the case), reducing the high spatial freq's and hence the sidelobes]
 
 ---
 
@@ -9685,7 +9685,7 @@ $$
 
 
 
-(Hankel Transform)
+([Hankel Transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/))
 # Hankel Transform Examples
 
 ## Hankel Transform
@@ -9956,7 +9956,7 @@ $$
 
 ---
 
-From film, measure density variation, and infer log (exposure) through H&D curve
+From film, [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) density variation, and infer log (exposure) through H&D curve
 
 [Graph showing D vs log E with measured density and effective (log of) exposure marked]
 
@@ -10112,7 +10112,7 @@ $\sin\theta = \frac{\lambda}{\Lambda}$ ⇒ θ ≈ 3° ($\lambda = 5\mu m$)
 
 ### Bragg Condition:
 
-[Diagram showing Bragg diffraction geometry with angles θᵢ, θᵣ and grating spacing Λ]
+[Diagram showing Bragg [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) geometry with angles θᵢ, θᵣ and grating spacing Λ]
 
 - Acoustic waves look like mirrors with very small reflectances due to index discontinuity.
 - Prime indicates inside material
@@ -10144,9 +10144,9 @@ By Snell's laws: $\sin\theta = n\sin\theta'$ ⇒ $\boxed{2\Lambda\sin\theta = m\
 
 1) Bragg condition true only for "thick" gratings
 
-2) Only one diffraction order (plus zero order from unreflected light) is produced
+2) Only one [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) order (plus zero order from unreflected light) is produced
 
-3) Diffraction order occurs only at specific input angles (Bragg condition)
+3) [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) order occurs only at specific input angles (Bragg condition)
 
 ---
 
@@ -10156,15 +10156,15 @@ By Snell's laws: $\sin\theta = n\sin\theta'$ ⇒ $\boxed{2\Lambda\sin\theta = m\
 
 **Recall:** Gaussian confined in space bc ω₀ exists of plane waves: given by $\theta = \frac{\lambda}{\pi\omega_o}$
 
-[Diagram showing angular spectrum with K(θ) showing main lobe and side lobes at $\frac{\lambda}{L}$]
+[Diagram showing [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) with K(θ) showing main lobe and side lobes at $\frac{\lambda}{L}$]
 
-Acoustic wave of finite extent can be expressed as an angular spectrum of infinite extent plane waves (Angular Spectrum Decomposition)
+Acoustic wave of finite extent can be expressed as an [angular spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) of infinite extent plane waves ([Angular Spectrum](/notes/areas/electrical_engineering/physical_optics/definitions/angular_spectrum/) Decomposition)
 
 ---
 
 ## ★ Several specific acoustic plane waves may satisfy Bragg equation
 
-[Diagram showing multiple diffraction orders at angles with:
+[Diagram showing multiple [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) orders at angles with:
 - Off-axis "Acoustic plane" wave due to finite extent of transducer
 - Acoustic → "plane" wave component
 - Orders: 0, +1, +2 marked
@@ -10236,7 +10236,7 @@ $$
 \boxed{Q = \frac{2\pi\lambda L}{\Lambda^2}}
 $$
 
- ← Inversely related to number of diffraction orders present
+ ← Inversely related to number of [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) orders present
 
 
 
@@ -10286,7 +10286,7 @@ where $\theta_o = \lambda/\Lambda$
 
 [Graph showing $J_o(m/2)$, $J_1(m/2)$, $J_2(m/2)$ vs θ at positions θₒ, 2θₒ]
 
-[Graph showing Bessel Function Behavior with $J_o$, $J_1$, $J_2$ curves vs m]
+[Graph showing [Bessel Function](/notes/areas/mathematics/functional_analysis/definitions/bessel_function/) Behavior with $J_o$, $J_1$, $J_2$ curves vs m]
 
 **Note:** At certain modulation index m, the zero order can disappear.
 
@@ -10304,7 +10304,7 @@ $$
 
 
 
-Freq. mod.: ← Note: This changes the diffraction angle
+Freq. mod.: ← Note: This changes the [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) angle
 
 
 
@@ -10438,13 +10438,13 @@ $$
 
  ← **Freq. shift = Acoustic wavelength = Acoustic Freq.**
 
-(Higher order harmonics for higher diffraction orders)
+(Higher order harmonics for higher [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) orders)
 
 ---
 
 ### 2) Moving Grating (thin)
 
-[Diagram showing grating moving at velocity Vs with diffraction order produced at $\sin\theta = \frac{\lambda}{\Lambda}$]
+[Diagram showing grating moving at velocity Vs with [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) order produced at $\sin\theta = \frac{\lambda}{\Lambda}$]
 
 ★ **Shift theorem:** $f(x) \overset{\mathcal{F}}{\longleftrightarrow} F(u)$ : $f(x-\alpha) \overset{\mathcal{F}}{\longleftrightarrow} F(u)e^{-j2\pi\alpha u}$
 
@@ -10537,7 +10537,7 @@ $$
 
 where: $u = \frac{\sin\theta}{\lambda}$
 
-↑ Diffraction orders
+↑ [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) orders
 
 $\beta = \frac{1}{2\pi} \frac{\partial\phi}{\partial x} = \frac{(n-1)d}{\lambda T}$
 
@@ -10557,7 +10557,7 @@ $$
 
 
 
-We are usually interested in the first diffraction order $(m=1)$
+We are usually interested in the first [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) order $(m=1)$
 
 
 
@@ -10661,7 +10661,7 @@ where $\phi'(x) = |\phi(x)|_{\text{mod } \alpha}$
 
 ⇒ $\exp[j2\pi\phi'(x)]$ is also periodic in $\phi(x)$
 
-⇒ we can write this as a generalized Fourier Transform
+⇒ we can write this as a generalized [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/)
 # Fourier Analysis of Kinoforms
 
 
@@ -10832,9 +10832,9 @@ plane waves at angle $\frac{\sin\theta}{\lambda} = \frac{nN+1}{\alpha}$
 
 [Diagram showing staircase approximation with n=0 marked, height λ]
 
-**Plane wave component:** $\exp\left[j2\pi\frac{x}{\alpha}\right]$
+**[Plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) component:** $\exp\left[j2\pi\frac{x}{\alpha}\right]$
 
-**Diffraction Efficiency:** $\eta = \left|\text{sinc}\left(\frac{1}{N}\right)\right|^2$
+**[Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) Efficiency:** $\eta = \left|\text{sinc}\left(\frac{1}{N}\right)\right|^2$
 
 (true binary phase grating)
 
@@ -11134,17 +11134,17 @@ $$
 
 ### ★ High Pass, Low Pass, and Differentiation Filters
 
-**High Pass Transfer Function:**
+**High Pass [Transfer Function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):**
 
-[Diagram showing 1D transfer function t(ξ) with rectangular passband, labeled "one dim"]
+[Diagram showing 1D [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) t(ξ) with rectangular passband, labeled "one dim"]
 
 [Diagram showing 2D circular high-pass filter with hole in center, labeled "two-dim"]
 
 ---
 
-**Low Pass Transfer Function:**
+**Low Pass [Transfer Function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/):**
 
-[Diagram showing 1D transfer function t(ξ) with rectangular passband centered at origin, labeled "one-dim"]
+[Diagram showing 1D [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) t(ξ) with rectangular passband centered at origin, labeled "one-dim"]
 
 [Diagram showing 2D circular low-pass filter (filled circle), labeled "two-dim"]
 
@@ -11170,7 +11170,7 @@ $$
 
 
 
-[Diagram showing 1D transfer function t(ξ) = ξ (linear ramp), labeled "one dim"]
+[Diagram showing 1D [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) t(ξ) = ξ (linear ramp), labeled "one dim"]
 
 [Diagram showing 2D differentiation filter with phase variation φ = π on left half, φ = 0 on right half, labeled "two-dim filter (differentiation in one-dimension)"]
 # Another Application of Spatial Filters
@@ -11182,7 +11182,7 @@ $$
 [Diagram showing TV/monitor screen with scan lines]
 
 - Two-dim pictures are encoded on a one-dim time signal for transmission.
-- This encoding involves sampling the picture in the vertical direction.
+- This encoding involves [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) the picture in the vertical direction.
 
 [Diagram showing video signal f(t) with line 1, line 2, line 3 marked, labeled "525 of these lines = 1 frame and occurs every 1/30 sec."]
 
@@ -11203,7 +11203,7 @@ $$
 
 
 where:
-- $\gamma$ = sampling interval
+- $\gamma$ = [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) interval
 - $g(x,y)$ = original picture
 - $g_s(x,y)$ = sampled picture
 
@@ -11714,7 +11714,7 @@ $$
 \rightarrow
 $$
 
- The transfer function $H(\xi,\eta)$ is physically present in plane P2.
+ The [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/) $H(\xi,\eta)$ is physically present in plane P2.
 
 
 
@@ -11740,7 +11740,7 @@ $$
 
  To perform **convolutions** $\mathcal{F}$ correlations, we require
 
-**convolution** $\rightarrow$ $g(x,y) = f(x,y) * h(x,y)$ — convolution
+**[convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/)** $\rightarrow$ $g(x,y) = f(x,y) * h(x,y)$ — [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/)
 
 or $G(\xi,\eta) = F(\xi,\eta) \cdot H(\xi,\eta)$
 
@@ -11789,7 +11789,7 @@ $$
 
 ## Vander Lugt Filters
 
-[Diagram showing recording geometry with P1 and P2 planes, object wave h(x,y), and reference plane wave at angle θ]
+[Diagram showing recording geometry with P1 and P2 planes, object wave h(x,y), and reference [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) at angle θ]
 
 **Recording geometry:**
 
@@ -11799,7 +11799,7 @@ $$
 \rightarrow
 $$
 
- Form optical Fourier transform of $h(x,y)$ in P2 $\Rightarrow$ $H\left(\frac{x'}{\lambda f}, \frac{y'}{\lambda f}\right)$
+ Form optical [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of $h(x,y)$ in P2 $\Rightarrow$ $H\left(\frac{x'}{\lambda f}, \frac{y'}{\lambda f}\right)$
 
 
 
@@ -11848,7 +11848,7 @@ $$
 
 (Neglect all constants)
 
-[Diagram showing plane wave input going through filter with spectrum components, set up to observe impulse response]
+[Diagram showing [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) input going through filter with spectrum components, set up to observe [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/)]
 
 
 
@@ -11857,7 +11857,7 @@ t(x',y')
 $$
 
 
-(proportional to transfer function)
+(proportional to [transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/))
 
 
 
@@ -11894,16 +11894,16 @@ $$
 
 (See above diagram)
 
-Thus, we have recorded a filter whose impulse response is $h(x,y)$ (or $h^*(-x,-y)$).
+Thus, we have recorded a filter whose [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) is $h(x,y)$ (or $h^*(-x,-y)$).
 
 ---
 
-**Remember:** Cathey 7-2: superposition
+**Remember:** Cathey 7-2: [superposition](/notes/areas/electrical_engineering/signals_systems/definitions/superposition/)
 problem 1: image
 
 We have a filter: Using the Vander Lugt Filter to Perform Correlation
 
-[Diagram showing optical system with P1, P2, P3 planes: Unit Amplitude Plane Wave → Input f(x,y) → Vander Lugt Filter t(x',y') → Output g(x,y)]
+[Diagram showing optical system with P1, P2, P3 planes: Unit Amplitude [Plane Wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) → Input f(x,y) → Vander Lugt Filter t(x',y') → Output g(x,y)]
 # Vander Lugt Filter Output
 
 
@@ -11996,7 +11996,7 @@ $$
 \rightarrow
 $$
 
- We know: Maximum width of a convolution (or correlation) of two functions = sum of individual maximum widths
+ We know: Maximum width of a [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) (or correlation) of two functions = sum of individual maximum widths
 
 
 
@@ -12126,7 +12126,7 @@ Now general $h(x,y)$ is simply a superposition of many modulated gratings
 and $f(x,y) ** h^*(x,y)$
 $$
 
-F(\xi,\eta) \cdot H(\xi,\eta) \quad \text{(convolution)}
+F(\xi,\eta) \cdot H(\xi,\eta) \quad \text{([convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/))}
 
 $$
 
@@ -12194,7 +12194,7 @@ $$
 **Mathematically, we can write**
 $$
 
-\sigma = \iint f(x,y) \cdot \underbrace{R^*}_{g}(x,y)\,dx\,dy \quad \xleftarrow{\text{input pattern "A" or "B" or...}} \xleftarrow{\text{test pattern "A"}} \quad \text{Template match (Inner product)}
+\sigma = \iint f(x,y) \cdot \underbrace{R^*}_{g}(x,y)\,dx\,dy \quad \xleftarrow{\text{input pattern "A" or "B" or...}} \xleftarrow{\text{test pattern "A"}} \quad \text{Template match ([Inner product](/notes/areas/mathematics/functional_analysis/definitions/inner_product/))}
 
 $$
 We simply measure the value of $\sigma$ to see if it is large enough.
@@ -12363,7 +12363,7 @@ Thus $\mathcal{X}_{fk}(a,b)$ tests for the presence of "A" shifted by an amount 
 ## ★ Transfer function of matched filter:
 $$
 
-h(x,y) = k^*(-x,-y) \quad \text{(impulse response)}
+h(x,y) = k^*(-x,-y) \quad \text{([impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/))}
 
 $$
 
@@ -13566,7 +13566,7 @@ Bragg stack selects proper wavelength λ. Thus, it can work in white light.
 Let $a(x,y)$ be complex field of desired mode at mirror 1:
 $$
 
-\hat{a}(x,y) = \iint A(u,v)\exp[-j2\pi(xu+yv)]\,du\,dv \quad \text{(Plane wave expansion)}
+\hat{a}(x,y) = \iint A(u,v)\exp[-j2\pi(xu+yv)]\,du\,dv \quad \text{([Plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/) expansion)}
 
 $$
 At Mirror 2:
@@ -14312,7 +14312,7 @@ $$
 
 $$
 
-\text{Reference wave} = A = \exp[j2\pi\alpha y] \leftarrow \text{plane wave}
+\text{Reference wave} = A = \exp[j2\pi\alpha y] \leftarrow \text{[plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/)}
 
 $$
 $\Rightarrow$ If we use a read-out of $a$, we generate $A \Rightarrow$ playback

@@ -14,9 +14,9 @@ A family $\mathcal{D} \subseteq \mathcal{P}\left. (X) \right.$ is a *Dynkin syst
 
 3.  $\left. \left( D_{n} \right) \right._{n \in \mathbb{N}} \subseteq \mathcal{D}\mathrm{\text{ pairwise disjoint }} \Longrightarrow \bigsqcup(n \in \mathbb{N})D_{n} \in \mathcal{D}$
 
-where $\sqcup$ represents the union of disjoint sets.
+where $\sqcup$ represents the union of [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/) sets.
 
-We have that $\varnothing \in \mathcal{D}$ and that finite disjoint unions are again in $\mathcal{D}:D,E \in \mathcal{D} \Longrightarrow D \cap E = \varnothing \Longrightarrow D \sqcup E \in D$. Of course, every $\sigma$-algebra is a Dynkin system, but the converse is, in general, wrong (See [Measures_Integrals_and_Martingales](/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales/) -- Exercises 5.1 and 5.2).
+We have that $\varnothing \in \mathcal{D}$ and that finite [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/) unions are again in $\mathcal{D}:D,E \in \mathcal{D} \Longrightarrow D \cap E = \varnothing \Longrightarrow D \sqcup E \in D$. Of course, every $\sigma$-algebra is a Dynkin system, but the converse is, in general, wrong (See [Measures_Integrals_and_Martingales](/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales/) -- Exercises 5.1 and 5.2).
 
 ## Theorems
 

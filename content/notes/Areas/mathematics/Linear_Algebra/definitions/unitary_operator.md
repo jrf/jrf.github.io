@@ -52,11 +52,11 @@ Unitary operators preserve:
 | **Inner products** | $\langle Ux, Uy \rangle = \langle x, y \rangle$ |
 | **Norms** | $\|Ux\| = \|x\|$ |
 | **Angles** | The angle between vectors is unchanged |
-| **Orthogonality** | Orthogonal vectors remain orthogonal |
+| **[Orthogonality](/notes/areas/mathematics/linear_algebra/definitions/orthogonality/)** | Orthogonal vectors remain orthogonal |
 
 ## Intuition
 
-Unitary operators are the "rigid motions" of inner product spaces:
+Unitary operators are the "rigid motions" of [inner product](/notes/areas/mathematics/functional_analysis/definitions/inner_product/) spaces:
 - **Rotations** are unitary
 - **Reflections** are unitary
 - **Stretching** is NOT unitary (changes lengths)
@@ -66,7 +66,7 @@ They rearrange vectors without distorting the geometry.
 ## Examples
 
 - Rotation matrices in $\mathbb{R}^n$
-- The [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) on $L^2(\mathbb{R})$ (Plancherel theorem)
+- The [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) on $L^2(\mathbb{R})$ ([Plancherel theorem](/notes/areas/mathematics/functional_analysis/definitions/plancherel_theorem/))
 - Quantum mechanical time evolution operators
 
 ## Related Concepts

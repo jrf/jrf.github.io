@@ -34,7 +34,7 @@ where $\lambda$ is a scalar called the [eigenvalue](/notes/areas/mathematics/lin
 
 ## Example: Linear Shift-Invariant Operators
 
-For linear shift-invariant operators, the complex exponentials $e^{j2\pi \bar{f} \cdot \bar{x}}$ are eigenfunctions:
+For linear shift-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) operators, the complex exponentials $e^{j2\pi \bar{f} \cdot \bar{x}}$ are eigenfunctions:
 
 
 
@@ -44,9 +44,9 @@ $$
 
 
 
-where $H(\bar{f}_0)$ is the [eigenvalue](/notes/areas/mathematics/linear_algebra/definitions/eigenvalue/) (transfer function) associated with frequency $\bar{f}_0$.
+where $H(\bar{f}_0)$ is the [eigenvalue](/notes/areas/mathematics/linear_algebra/definitions/eigenvalue/) ([transfer function](/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function/)) associated with frequency $\bar{f}_0$.
 
-This property is why the [Fourier_transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is useful for analyzing linear shift-invariant systems: the input can be decomposed into eigenfunctions (complex exponentials), each of which passes through the system multiplied only by a complex constant.
+This property is why the [Fourier_transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) is useful for analyzing linear shift-[invariant](/notes/areas/mathematics/abstract_algebra/definitions/invariant/) systems: the input can be decomposed into eigenfunctions (complex exponentials), each of which passes through the system multiplied only by a complex constant.
 
 ## Related Articles
 

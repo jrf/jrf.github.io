@@ -21,6 +21,6 @@ Every bounded [sequence](/notes/areas/mathematics/real_analysis/definitions/sequ
 
 Let $(a_n)$ be a bounded [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/). Then there exists $M > 0$ such that $|a_n| \leq M$ for all $n$. 
 
-By the Nested Interval Property, we can construct a nested sequence of closed intervals $I_1 \supseteq I_2 \supseteq \cdots$ where each $I_k$ has length $M/2^{k-1}$ and contains infinitely many terms of $(a_n)$.
+By the [Nested Interval Property](/notes/areas/mathematics/real_analysis/definitions/nested_interval_property/), we can construct a nested [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of closed intervals $I_1 \supseteq I_2 \supseteq \cdots$ where each $I_k$ has length $M/2^{k-1}$ and contains infinitely many terms of $(a_n)$.
 
 By repeatedly selecting terms from these intervals, we obtain a [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) $(a_{n_k})$ that is Cauchy, and hence convergent by the [Cauchy_Criterion](/notes/areas/mathematics/real_analysis/definitions/cauchy_criterion/).

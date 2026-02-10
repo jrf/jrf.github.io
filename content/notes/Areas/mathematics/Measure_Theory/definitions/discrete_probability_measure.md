@@ -6,7 +6,7 @@ title: "discrete probability measure"
 
 ## Definition
 
-Let $\Omega = \{\omega_{1},\omega_{2},\ldots\}$ be a [countable](/notes/areas/mathematics/set_theory/definitions/countable/) set and $\left. \left( p_{n} \right) \right._{n \in \mathbb{N}}$ be a sequence of real numbers $p_{n} \in \left. \lbrack 0,1\rbrack \right.$ such that $\sum_{n \in \mathbb{N}}p_{n} = 1$. On $(\Omega,\mathcal{P}\left. (\Omega) \right.$ the set function
+Let $\Omega = \{\omega_{1},\omega_{2},\ldots\}$ be a [countable](/notes/areas/mathematics/set_theory/definitions/countable/) set and $\left. \left( p_{n} \right) \right._{n \in \mathbb{N}}$ be a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of real numbers $p_{n} \in \left. \lbrack 0,1\rbrack \right.$ such that $\sum_{n \in \mathbb{N}}p_{n} = 1$. On $(\Omega,\mathcal{P}\left. (\Omega) \right.$ the [set function](/notes/areas/mathematics/set_theory/definitions/set_function/)
 
 
 

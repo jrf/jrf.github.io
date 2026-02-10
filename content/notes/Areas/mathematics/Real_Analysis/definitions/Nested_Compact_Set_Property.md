@@ -19,9 +19,9 @@ If $K_1 \supseteq K_2 \supseteq K_3 \supseteq \cdots$ is a nested [sequence](/no
 
 ## Proof
 
-For each $n$, choose $x_n \in K_n$. Since $x_n \in K_1$ for all $n$ and $K_1$ is compact, the sequence $(x_n)$ has a convergent [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) $x_{n_k} \to x$ with $x \in K_1$.
+For each $n$, choose $x_n \in K_n$. Since $x_n \in K_1$ for all $n$ and $K_1$ is compact, the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $(x_n)$ has a convergent [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) $x_{n_k} \to x$ with $x \in K_1$.
 
-For any fixed $m$, the subsequence $(x_{n_k})$ is eventually in $K_m$ (since $n_k \geq m$ implies $x_{n_k} \in K_{n_k} \subseteq K_m$).
+For any fixed $m$, the [subsequence](/notes/areas/mathematics/real_analysis/definitions/subsequence/) $(x_{n_k})$ is eventually in $K_m$ (since $n_k \geq m$ implies $x_{n_k} \in K_{n_k} \subseteq K_m$).
 
 Since $K_m$ is closed, $x \in K_m$.
 

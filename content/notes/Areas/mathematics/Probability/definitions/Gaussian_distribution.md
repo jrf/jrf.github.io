@@ -58,7 +58,7 @@ Among all distributions with a given mean and variance, the Gaussian has maximum
 
 ## Fourier Transform
 
-The Gaussian is an eigenfunction of the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
+The Gaussian is an [eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/) of the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
 
 

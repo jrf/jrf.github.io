@@ -23,7 +23,7 @@ Let $\{A_i\}_{i \in I}$ be a family of sets. The set $I$ is called the *index se
 
 1. **Finite index set**: $\{A_1, A_2, A_3\}$ is indexed by $I = \{1, 2, 3\}$
 
-2. **Countable index set**: A sequence $(a_n)_{n \in \mathbb{N}}$ is indexed by $I = \mathbb{N}$
+2. **[Countable](/notes/areas/mathematics/set_theory/definitions/countable/) index set**: A [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $(a_n)_{n \in \mathbb{N}}$ is indexed by $I = \mathbb{N}$
 
 3. **Uncountable index set**: The collection of all open intervals $\{(a, b) : a, b \in \mathbb{R}, a < b\}$ can be indexed by $I = \{(a,b) \in \mathbb{R}^2 : a < b\}$
 

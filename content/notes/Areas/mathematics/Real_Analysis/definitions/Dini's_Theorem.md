@@ -21,8 +21,8 @@ Assume $f_n \to f$ [pointwise](/notes/areas/mathematics/real_analysis/definition
 
 Let $g_n = f - f_n$. Then $g_n \geq 0$, $g_n$ is continuous, $g_n \to 0$ pointwise, and $(g_n(x))$ is decreasing for each $x$.
 
-Given $\epsilon > 0$, define $K_n = \{x \in K : g_n(x) \geq \epsilon\}$. Each $K_n$ is closed (by continuity) and $K_n \supseteq K_{n+1}$ (since $g_n$ is decreasing).
+Given $\epsilon > 0$, define $K_n = \{x \in K : g_n(x) \geq \epsilon\}$. Each $K_n$ is closed (by [continuity](/notes/areas/mathematics/real_analysis/definitions/continuity/)) and $K_n \supseteq K_{n+1}$ (since $g_n$ is decreasing).
 
-Since $g_n \to 0$ pointwise, $\bigcap K_n = \emptyset$. By compactness, some $K_N = \emptyset$.
+Since $g_n \to 0$ pointwise, $\bigcap K_n = \emptyset$. By [compactness](/notes/areas/mathematics/topology/definitions/compactness/), some $K_N = \emptyset$.
 
-Thus for $n \geq N$, $g_n(x) < \epsilon$ for all $x \in K$, giving uniform convergence.
+Thus for $n \geq N$, $g_n(x) < \epsilon$ for all $x \in K$, giving [uniform convergence](/notes/areas/mathematics/real_analysis/definitions/uniform_convergence/).

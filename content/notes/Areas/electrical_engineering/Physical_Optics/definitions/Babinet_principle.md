@@ -59,7 +59,7 @@ $$
 
 
 
-The delta function represents the unobstructed plane wave. Therefore:
+The delta function represents the unobstructed [plane wave](/notes/areas/electrical_engineering/physical_optics/definitions/plane_wave/). Therefore:
 
 
 
@@ -83,7 +83,7 @@ $$
 
 
 
-The diffraction patterns have **identical intensity** except at the center.
+The [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) patterns have **identical intensity** except at the center.
 
 ### On-Axis Difference
 
@@ -97,14 +97,14 @@ This is the only difference between the patterns.
 
 When Fresnel proposed his wave theory of light, Poisson (a skeptic) pointed out it predicted a bright spot at the center of a circular disk's shadow — seemingly absurd. Arago then demonstrated this spot experimentally, confirming the wave theory.
 
-The spot occurs because diffracted waves from the disk's edge constructively interfere at the center. Babinet's principle explains why: the disk's diffraction pattern matches the aperture's, which has a central maximum.
+The spot occurs because diffracted waves from the disk's edge constructively interfere at the center. Babinet's principle explains why: the disk's [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern matches the aperture's, which has a central maximum.
 
 ## Applications
 
 | Application | How Babinet's Principle Helps |
 |-------------|------------------------------|
-| Calculating wire diffraction | Use easier slit calculation, add DC |
-| Particle sizing | Measure diffraction to determine size |
+| Calculating wire [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) | Use easier slit calculation, add DC |
+| Particle sizing | [Measure](/notes/areas/mathematics/measure_theory/definitions/measure/) [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) to determine size |
 | Optical testing | Complementary masks give identical fringes |
 
 ## See Also

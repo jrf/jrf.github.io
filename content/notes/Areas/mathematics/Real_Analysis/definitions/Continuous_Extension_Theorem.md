@@ -19,10 +19,10 @@ A [function](/notes/areas/mathematics/set_theory/definitions/function/) $f$ is [
 
 ## Proof
 
-($\Rightarrow$) Assume $f$ is uniformly continuous on $A$. For $c \in \overline{A} \setminus A$, there exists a sequence $(x_n) \subseteq A$ with $x_n \to c$.
+($\Rightarrow$) Assume $f$ is uniformly continuous on $A$. For $c \in \overline{A} \setminus A$, there exists a [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $(x_n) \subseteq A$ with $x_n \to c$.
 
 Since $(x_n)$ is Cauchy and $f$ is uniformly continuous, $(f(x_n))$ is Cauchy, hence convergent. Define $g(c) = \lim f(x_n)$.
 
-This is well-defined (independent of sequence choice) and $g$ is continuous on $\overline{A}$.
+This is well-defined (independent of [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) choice) and $g$ is continuous on $\overline{A}$.
 
 ($\Leftarrow$) If $g$ is continuous on the closed bounded set $\overline{A}$, then $g$ is uniformly continuous by the theorem on compact sets. Hence $f = g|_A$ is uniformly continuous.

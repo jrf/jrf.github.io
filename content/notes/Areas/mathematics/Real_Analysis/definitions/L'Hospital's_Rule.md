@@ -51,6 +51,6 @@ $$
 
 
 
-(using $f(a) = g(a) = 0$ by continuity).
+(using $f(a) = g(a) = 0$ by [continuity](/notes/areas/mathematics/real_analysis/definitions/continuity/)).
 
 As $x \to a^+$, we have $c_x \to a^+$, so the result follows.

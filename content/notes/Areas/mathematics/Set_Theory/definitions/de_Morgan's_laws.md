@@ -22,7 +22,7 @@ $$
 
 
 
-This holds for arbitrarily many sets $A_{i} \subset X,i \in I$ ($I$ stands for an arbitrary index set),
+This holds for arbitrarily many sets $A_{i} \subset X,i \in I$ ($I$ stands for an arbitrary [index set](/notes/areas/mathematics/set_theory/definitions/index_set/)),
 
 
 

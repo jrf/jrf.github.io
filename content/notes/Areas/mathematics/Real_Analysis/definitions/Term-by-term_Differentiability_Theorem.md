@@ -23,7 +23,7 @@ Let $(f_n)$ be a [sequence](/notes/areas/mathematics/real_analysis/definitions/s
 
 ## Proof Sketch
 
-The key is to use the [Mean_Value_Theorem](/notes/areas/mathematics/real_analysis/definitions/mean_value_theorem/) to show that uniform convergence of derivatives, combined with pointwise convergence at one point, implies uniform convergence of the functions.
+The key is to use the [Mean_Value_Theorem](/notes/areas/mathematics/real_analysis/definitions/mean_value_theorem/) to show that [uniform convergence](/notes/areas/mathematics/real_analysis/definitions/uniform_convergence/) of derivatives, combined with [pointwise convergence](/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence/) at one point, implies [uniform convergence](/notes/areas/mathematics/real_analysis/definitions/uniform_convergence/) of the functions.
 
 For any $x, y \in [a,b]$:
 
@@ -34,4 +34,4 @@ $$
 
 
 
-Apply MVT to bound the first and third terms using the uniform convergence of $(f_n')$.
+Apply MVT to bound the first and third terms using the [uniform convergence](/notes/areas/mathematics/real_analysis/definitions/uniform_convergence/) of $(f_n')$.

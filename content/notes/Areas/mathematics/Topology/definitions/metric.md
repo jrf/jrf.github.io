@@ -19,9 +19,9 @@ A **metric** on a set $X$ is a function $d: X \times X \to \mathbb{R}$ satisfyin
 
 1. **Positive definiteness**: $d(x, y) \geq 0$, with equality iff $x = y$
 2. **Symmetry**: $d(x, y) = d(y, x)$
-3. **Triangle inequality**: $d(x, z) \leq d(x, y) + d(y, z)$
+3. **[Triangle inequality](/notes/areas/mathematics/real_analysis/definitions/triangle_inequality/)**: $d(x, z) \leq d(x, y) + d(y, z)$
 
-A set equipped with a metric is called a **metric space**.
+A set equipped with a metric is called a **[metric space](/notes/areas/mathematics/topology/definitions/metric_space/)**.
 
 ## From Norms
 
@@ -54,5 +54,5 @@ A metric generalizes the concept of "distance" to abstract spaces. It tells you 
 ## Related Concepts
 
 - [Norm](/notes/areas/mathematics/functional_analysis/definitions/norm/) — induces a metric via $d(x,y) = \|x - y\|$
-- metric_space — a set with a metric
+- [metric_space](/notes/areas/mathematics/topology/definitions/metric_space/) — a set with a metric
 - [continuity](/notes/areas/mathematics/real_analysis/definitions/continuity/) — defined using metrics

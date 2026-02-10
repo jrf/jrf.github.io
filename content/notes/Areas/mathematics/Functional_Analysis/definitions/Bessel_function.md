@@ -61,7 +61,7 @@ $$
 
 ## Applications in Fourier Optics
 
-In the context of circularly symmetric functions, the two-dimensional [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) reduces to a **Hankel transform** (or Fourier-Bessel transform):
+In the context of circularly symmetric functions, the two-dimensional [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) reduces to a **[Hankel transform](/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform/)** (or Fourier-Bessel transform):
 
 
 

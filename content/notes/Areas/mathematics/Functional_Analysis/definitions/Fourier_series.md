@@ -60,7 +60,7 @@ $$
 
 ## Relationship to Fourier Transform
 
-| Fourier Series | Fourier Transform |
+| Fourier Series | [Fourier Transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) |
 |----------------|-------------------|
 | Periodic functions | Aperiodic functions |
 | Discrete spectrum (harmonics) | Continuous spectrum |
@@ -81,7 +81,7 @@ $$
 
 The Fourier series converges to $f(x)$ under various conditions:
 
-| Condition | Type of Convergence |
+| Condition | Type of [Convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) |
 |-----------|---------------------|
 | $f$ is piecewise smooth | Pointwise (to midpoint at jumps) |
 | $f$ is continuous | Uniform |
@@ -137,9 +137,9 @@ Coefficients decay as $1/n^2$ (faster than square wave) because the function is 
 
 ## Applications in Optics
 
-- **Diffraction gratings**: Periodic structures analyzed via Fourier series
-- **Periodic objects**: Produce discrete diffraction orders at harmonic frequencies
-- **Holography**: Periodic fringe patterns encode Fourier coefficients
+- **[Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) gratings**: Periodic structures analyzed via Fourier series
+- **Periodic objects**: Produce discrete [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) orders at harmonic frequencies
+- **[Holography](/notes/areas/electrical_engineering/physical_optics/definitions/holography/)**: Periodic fringe patterns encode Fourier coefficients
 
 ## 2D Generalization
 

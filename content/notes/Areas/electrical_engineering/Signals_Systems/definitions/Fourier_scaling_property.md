@@ -138,9 +138,9 @@ Wider Gaussian in space → narrower Gaussian in frequency.
 
 | Application | Implication |
 |-------------|-------------|
-| Diffraction | Smaller aperture → wider diffraction pattern |
+| [Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) | Smaller aperture → wider [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) pattern |
 | Pulses | Shorter pulse → broader spectrum |
-| Sampling | Finer sampling → wider representable bandwidth |
+| [Sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) | Finer [sampling](/notes/areas/electrical_engineering/signals_systems/definitions/sampling/) → wider representable bandwidth |
 | Uncertainty | Product of widths is constant |
 
 ## Connection to Uncertainty

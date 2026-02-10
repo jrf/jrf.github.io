@@ -562,7 +562,7 @@ $$
 
 
 
-for $\lambda \in \mathbb{F}$ and $f \in \mathbb{F}^{S}$. By definition, $\lambda f$ takes inputs in $S$. Since $f$ maps $S$ to $\mathbb{F}$, $f\left. (x) \right. \in \mathbb{F}$. By closure of $\mathbb{F}$ under scalar multiplication, $\lambda f\left. (x) \right. \in \mathbb{F}$, so scalar multiplication likewise holds.
+for $\lambda \in \mathbb{F}$ and $f \in \mathbb{F}^{S}$. By definition, $\lambda f$ takes inputs in $S$. Since $f$ maps $S$ to $\mathbb{F}$, $f\left. (x) \right. \in \mathbb{F}$. By [closure](/notes/areas/mathematics/topology/definitions/closure/) of $\mathbb{F}$ under scalar multiplication, $\lambda f\left. (x) \right. \in \mathbb{F}$, so scalar multiplication likewise holds.
 
 *Commutativity*: Let $f,g \in \mathbb{F}^{S}$. For any $x \in S$
 
@@ -622,7 +622,7 @@ $$
 
 by the additive identity in $\mathbb{F}$. So $0\left. (x) \right.$ is the identity in $\mathbb{F}^{S}$.
 
-*Additive inverse*: Given $f \in \mathbb{F}^{S}$, take $- f:S \rightarrow \mathbb{F}$ given by $\left. ( - f) \right.\left. (x) \right. = - f\left. (x) \right.$. By closure under scalar multiplication, $- f \in \mathbb{F}^{S}$. By the definition of addition, for any $x \in S$, we have
+*Additive inverse*: Given $f \in \mathbb{F}^{S}$, take $- f:S \rightarrow \mathbb{F}$ given by $\left. ( - f) \right.\left. (x) \right. = - f\left. (x) \right.$. By [closure](/notes/areas/mathematics/topology/definitions/closure/) under scalar multiplication, $- f \in \mathbb{F}^{S}$. By the definition of addition, for any $x \in S$, we have
 
 
 
@@ -678,7 +678,7 @@ $$
 
 by distributivity in $\mathbb{F}$.
 
-Thus, $\mathbb{F}^{S}$ is a vector space.
+Thus, $\mathbb{F}^{S}$ is a [vector space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/).
 
 # Section 1.B Exercises
 
@@ -910,7 +910,7 @@ For $\epsilon/2$, we can find a $\delta_{1}$ such that $\left| f\left. (x) \righ
 
 Similarly, for $\epsilon/2$, we can find a $\delta_{2}$ such that $\left| g\left. (x) \right. - g\left. (c) \right. \right| < \epsilon/2$ whenever $|x - c| < \delta_{2}$.
 
-Now, using the triangle inequality, we have
+Now, using the [triangle inequality](/notes/areas/mathematics/real_analysis/definitions/triangle_inequality/), we have
 
 
 
@@ -934,7 +934,7 @@ Thus we have shown that the [subspace](/notes/areas/mathematics/linear_algebra/d
 
 > The set of differentiable real-valued functions on $\mathbb{R}$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/) $\mathbb{R}^{\mathbb{R}}$.
 
-Proof: Let $\mathbb{D}$ denote the set of all differentiable functions on $\mathbb{R}$. It is clear that $\mathbb{D}$ inherits most of the required properties from the [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) of all functions on $\mathbb{R}$, so we only need to verify that $\mathbb{D}$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/). Let $f\left. (x) \right.$ and $g\left. (x) \right.$ be in $\mathbb{D}$, and let $c$ be an arbitrary real number. By the [Algebraic_Differentiability_Theorem](/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem/) (Abbott --- Theorem 5.2.4 part (i)), we know that
+Proof: Let $\mathbb{D}$ denote the set of all [differentiable](/notes/areas/mathematics/real_analysis/definitions/differentiable/) functions on $\mathbb{R}$. It is clear that $\mathbb{D}$ inherits most of the required properties from the [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) of all functions on $\mathbb{R}$, so we only need to verify that $\mathbb{D}$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/). Let $f\left. (x) \right.$ and $g\left. (x) \right.$ be in $\mathbb{D}$, and let $c$ be an arbitrary real number. By the [Algebraic_Differentiability_Theorem](/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem/) (Abbott --- Theorem 5.2.4 part (i)), we know that
 
 
 
@@ -994,7 +994,7 @@ $$
 
 Let us now show that $U$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/).
 
-\(1\) Remember that the additive identity of our [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) $\mathbb{C}^{\infty}$ is the sequence whose terms are all zero: $\left. (0,0,0,\ldots) \right.$. It is indeed the case that the limit of this sequence is zero, so it is an element of $U$.
+\(1\) Remember that the additive identity of our [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) $\mathbb{C}^{\infty}$ is the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) whose terms are all zero: $\left. (0,0,0,\ldots) \right.$. It is indeed the case that the limit of this [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) is zero, so it is an element of $U$.
 
 \(2\) Now take two sequences $\left. \left( z_{n} \right) \right._{n = 0}^{\infty}$ and $\left. \left( w_{n} \right) \right._{n = 0}^{\infty}$, both in $U$. Then
 
@@ -1010,7 +1010,7 @@ $$
 
 
 
-So the sequence $\left. \left( z_{n} + w_{n} \right) \right._{n = 0}^{\infty}$ is in $U$. This shows that $U$ is closed under vector addition.
+So the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( z_{n} + w_{n} \right) \right._{n = 0}^{\infty}$ is in $U$. This shows that $U$ is closed under vector addition.
 
 \(3\) Now let $\lambda$ be an arbitrary complex number. We see that
 
@@ -1026,7 +1026,7 @@ $$
 
 
 
-So the sequence $\left. \left( \lambda z_{n} \right) \right._{n = 0}^{\infty}$ is in $U$. This shows that $U$ is closed under scalar multiplication.
+So the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( \lambda z_{n} \right) \right._{n = 0}^{\infty}$ is in $U$. This shows that $U$ is closed under scalar multiplication.
 
 So we can therefore conclude that $U$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/) of $\mathbb{C}^{\infty}$
 
@@ -1262,7 +1262,7 @@ Of course this is not a [subspace](/notes/areas/mathematics/linear_algebra/defin
 
 Let $U = \{\left. \left( x_{1},x_{2},x_{3} \right) \right. \in \mathbb{F}^{3}:x_{1}x_{2}x_{3} = 0\}$.
 
-$U$ is not a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/) of $\mathbb{F}^{3}$. Take $u = \left. (0,1,1) \right. \in U$ and $w = \left. (1,1,0) \right. \in U$. Then, $u + w = \left. (1,2,1) \right. \notin U$. So this fails the condition of closure under vector addition.
+$U$ is not a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/) of $\mathbb{F}^{3}$. Take $u = \left. (0,1,1) \right. \in U$ and $w = \left. (1,1,0) \right. \in U$. Then, $u + w = \left. (1,2,1) \right. \notin U$. So this fails the condition of [closure](/notes/areas/mathematics/topology/definitions/closure/) under vector addition.
 
 ### (d)
 
@@ -1312,11 +1312,11 @@ Let $X = \{ f \in \mathbb{R}^{\left. ( - 4,4) \right.}:f\mathrm{\text{ is differ
 
 Prove the three properties of [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/)s.
 
-\(1\) The zero vector of the [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) $\mathbb{R}^{\left. ( - 4,4) \right.}$ is the function $0:\left. ( - 4,4) \right. \rightarrow \mathbb{R}$ defined by $0\left. (x) \right. = 0$. The zero function is differentiable and satisfies that $0'\left. (1) \right. = 3 \cdot 0\left. (2) \right. = 0$. So $0 \in X$.
+\(1\) The zero vector of the [vector_space](/notes/areas/mathematics/linear_algebra/definitions/vector_space/) $\mathbb{R}^{\left. ( - 4,4) \right.}$ is the function $0:\left. ( - 4,4) \right. \rightarrow \mathbb{R}$ defined by $0\left. (x) \right. = 0$. The zero function is [differentiable](/notes/areas/mathematics/real_analysis/definitions/differentiable/) and satisfies that $0'\left. (1) \right. = 3 \cdot 0\left. (2) \right. = 0$. So $0 \in X$.
 
-\(2\) Choose $f,g \in X$. We know that $\left. (f + g) \right.$ is differentiable by the [Algebraic_Differentiability_Theorem](/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem/) (Abbott --- Theorem 5.2.4 part i), and $\left. (f + g) \right.'\left. ( - 1) \right. = f'\left. ( - 1) \right. + g'\left. ( - 1) \right. = 3f\left. (2) \right. + 3g\left. (2) \right. = 3\left. \left\lbrack f\left. (2) \right. + g\left. (2) \right. \right\rbrack \right. = 3\left. \left\lbrack \left. (f + g) \right.\left. (2) \right. \right\rbrack \right.$. Thus $f + g \in X$.
+\(2\) Choose $f,g \in X$. We know that $\left. (f + g) \right.$ is [differentiable](/notes/areas/mathematics/real_analysis/definitions/differentiable/) by the [Algebraic_Differentiability_Theorem](/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem/) (Abbott --- Theorem 5.2.4 part i), and $\left. (f + g) \right.'\left. ( - 1) \right. = f'\left. ( - 1) \right. + g'\left. ( - 1) \right. = 3f\left. (2) \right. + 3g\left. (2) \right. = 3\left. \left\lbrack f\left. (2) \right. + g\left. (2) \right. \right\rbrack \right. = 3\left. \left\lbrack \left. (f + g) \right.\left. (2) \right. \right\rbrack \right.$. Thus $f + g \in X$.
 
-\(3\) Choose $a \in \mathbb{F}$ and $f \in X$. By the [Algebraic_Differentiability_Theorem](/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem/) (Abbott --- Theorem 5.2.4 part ii), we know that $af$ is differentiable, and that $\left. (af) \right.'\left. ( - 1) \right. = a\left. \left( f'\left. ( - 1) \right. \right) \right. = a\left. \left\lbrack 3f\left. (2) \right. \right\rbrack \right. = 3\left. \left\lbrack \left. (af) \right.\left. (2) \right. \right\rbrack \right.$. Thus $af \in X$.
+\(3\) Choose $a \in \mathbb{F}$ and $f \in X$. By the [Algebraic_Differentiability_Theorem](/notes/areas/mathematics/real_analysis/definitions/algebraic_differentiability_theorem/) (Abbott --- Theorem 5.2.4 part ii), we know that $af$ is [differentiable](/notes/areas/mathematics/real_analysis/definitions/differentiable/), and that $\left. (af) \right.'\left. ( - 1) \right. = a\left. \left( f'\left. ( - 1) \right. \right) \right. = a\left. \left\lbrack 3f\left. (2) \right. \right\rbrack \right. = 3\left. \left\lbrack \left. (af) \right.\left. (2) \right. \right\rbrack \right.$. Thus $af \in X$.
 
 ## Exercise 1.C.4
 
@@ -1871,7 +1871,7 @@ $$
 
 Then, we can let $a_{j} = 1$ and let all other $a$ terms be zero, so we then get $v_{j}$ back. Which means we can get any of the individual vectors back. So we have shown that $\text{span }\left. (L) \right.$ contains each $v_{j}$.
 
-\(3\) Suppose that $W$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/) containing $v_{1},\ldots,v_{m}$. Then we show that $W$ contains $\text{span }\left. (L) \right.$. Let $u \in \text{ span }\left. (L) \right.$. Then $u = a_{1}v_{1} + \cdots + a_{m}v_{m}$.[1] Since $W$ is a subspace, it is closed under scalar multiplication and addition, thus it contains $u$, so we know that $u \in W$. Thus, $u \in \text{ span }\left. (L) \right. \Rightarrow u \in W$ and thus $\text{span }\left. (L) \right. \subseteq W$.
+\(3\) Suppose that $W$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/) containing $v_{1},\ldots,v_{m}$. Then we show that $W$ contains $\text{span }\left. (L) \right.$. Let $u \in \text{ span }\left. (L) \right.$. Then $u = a_{1}v_{1} + \cdots + a_{m}v_{m}$.[1] Since $W$ is a [subspace](/notes/areas/mathematics/linear_algebra/definitions/subspace/), it is closed under scalar multiplication and addition, thus it contains $u$, so we know that $u \in W$. Thus, $u \in \text{ span }\left. (L) \right. \Rightarrow u \in W$ and thus $\text{span }\left. (L) \right. \subseteq W$.
 
 [1] [The Math Sorcerer](https://www.youtube.com/watch?v=qeILRsTnHSs)
 
@@ -2085,7 +2085,7 @@ Since the coefficient matrix is non-singular, the only solution is $x = y = z = 
 
 To say that "the list $1,z,\ldots,z^{m}$ is [linearly_independent](/notes/areas/mathematics/linear_algebra/definitions/linearly_independent/) in $\mathcal{P}\left. \left( \mathbb{F} \right) \right.$ (see [polynomial](/notes/areas/mathematics/linear_algebra/definitions/polynomial/)) for each non-negative integer $m$" means that the only choice of $a_{1},\ldots,a_{m} \in \mathbb{F}$ that makes $1 + a_{1}z + \cdots + a_{m}z^{m} = 0$ is $a_{1} = \cdots = a_{m} = 0$.
 
-From page 31 of Axler, we have the conclusion that "the coefficients of a polynomial are uniquely determined by the polynomial." Then, by the definition of [linearly_independent](/notes/areas/mathematics/linear_algebra/definitions/linearly_independent/) and using a similar method as in part c above, we can prove this case.
+From page 31 of Axler, we have the conclusion that "the coefficients of a [polynomial](/notes/areas/mathematics/linear_algebra/definitions/polynomial/) are uniquely determined by the [polynomial](/notes/areas/mathematics/linear_algebra/definitions/polynomial/)." Then, by the definition of [linearly_independent](/notes/areas/mathematics/linear_algebra/definitions/linearly_independent/) and using a similar method as in part c above, we can prove this case.
 
 Another proof: consider the [function](/notes/areas/mathematics/set_theory/definitions/function/)
 

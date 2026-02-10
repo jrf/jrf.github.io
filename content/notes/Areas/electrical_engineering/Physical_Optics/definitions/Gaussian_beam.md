@@ -66,7 +66,7 @@ where:
 
 ## Self-Fourier Property
 
-The Gaussian function is an eigenfunction of the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
+The Gaussian function is an [eigenfunction](/notes/areas/mathematics/linear_algebra/definitions/eigenfunction/) of the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/):
 
 
 

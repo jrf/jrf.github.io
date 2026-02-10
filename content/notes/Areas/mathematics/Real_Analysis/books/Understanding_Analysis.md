@@ -137,7 +137,7 @@ If $x \in \left. (A \cap B) \right.^{c}$, then $x \notin \left. (A \cap B) \righ
 
 > Prove the reverse inclusion $\left. (A \cap B) \right.^{c} \supseteq A^{c} \cup B^{c}$, and conclude that $\left. (A \cap B) \right.^{c} = A^{c} \cup B^{c}$.
 
-To show that $A^{c} \cup B^{c}$ is a subset of $\left. (A \cap B) \right.^{c}$, first let $x \in A^{c} \cup B^{c}$, then show that $x \in \left. (A \cap B) \right.^{c}$.
+To show that $A^{c} \cup B^{c}$ is a [subset](/notes/areas/mathematics/set_theory/definitions/subset/) of $\left. (A \cap B) \right.^{c}$, first let $x \in A^{c} \cup B^{c}$, then show that $x \in \left. (A \cap B) \right.^{c}$.
 
 If $x \in A^{c} \cup B^{c}$, then $x \in A^{c}$ *or* $x \in B^{c}$. This means that $x \notin A$ or $x \notin B$. This implies that it is not the case that ($x \in A$ and $x \in B$), which is the definition of $x \notin (A \cap B)$. Therefore, $x \in (A \cap B)^{c}$. This shows that $\left. (A \cap B) \right.^{c} \supseteq A^{c} \cup B^{c}$.
 
@@ -369,7 +369,7 @@ We need to show inclusion both ways to show equality:
 
 Starting with 1:
 
-Let $x \in g^{- 1}\left. (A \cap B) \right.$ and show that $x \in g^{- 1}\left. (A) \right. \cap g^{- 1}\left. (B) \right.$. If $x \in g^{- 1}\left. (A \cap B) \right.$, then $g\left. (x) \right. \in \left. (A \cap B) \right.$. This means that $g\left. (x) \right. \in A$ *and* $g\left. (x) \right. \in B$. By the definition of preimage, $x \in g^{- 1}\left. (A) \right.$ *and* $x \in g^{- 1}\left. (B) \right.$. Therefore, $x \in g^{- 1}\left. (A) \right. \cap g^{- 1}\left. (B) \right.$.
+Let $x \in g^{- 1}\left. (A \cap B) \right.$ and show that $x \in g^{- 1}\left. (A) \right. \cap g^{- 1}\left. (B) \right.$. If $x \in g^{- 1}\left. (A \cap B) \right.$, then $g\left. (x) \right. \in \left. (A \cap B) \right.$. This means that $g\left. (x) \right. \in A$ *and* $g\left. (x) \right. \in B$. By the definition of [preimage](/notes/areas/mathematics/set_theory/definitions/preimage/), $x \in g^{- 1}\left. (A) \right.$ *and* $x \in g^{- 1}\left. (B) \right.$. Therefore, $x \in g^{- 1}\left. (A) \right. \cap g^{- 1}\left. (B) \right.$.
 
 Now, for 2:
 
@@ -488,7 +488,7 @@ Note that, since this is an "if and only if" statement, we need to prove this in
 
 Now to the meat of the proof:
 
-In the forward direction ($\Rightarrow$): Assume that $i = \inf\left. (A) \right.$ and consider $i + \epsilon$ for some arbitrary $\epsilon > 0$. Since $i + \epsilon > l$ part (ii) from (a) implies that $i + \epsilon$ is not a [lower_bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/) for $A$. If this is the case, then there must be some element $a \in A$ for which $i + \epsilon > a$ (otherwise it would be a lower bound).
+In the forward direction ($\Rightarrow$): Assume that $i = \inf\left. (A) \right.$ and consider $i + \epsilon$ for some arbitrary $\epsilon > 0$. Since $i + \epsilon > l$ part (ii) from (a) implies that $i + \epsilon$ is not a [lower_bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/) for $A$. If this is the case, then there must be some element $a \in A$ for which $i + \epsilon > a$ (otherwise it would be a [lower bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/)).
 
 In the backward direction ($\Leftarrow$): Assume $i$ is a [lower_bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/) with the property that no matter how $\epsilon > 0$ is selected, $i + \epsilon$ is no longer a [lower_bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/) for $A$. Notice that this implies that if $l$ is any number greater than $i$, then $i$ is not a [lower_bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/). To prove that $i = \inf\left. (A) \right.$, we must verify part (ii) of (a). Because we have just argued that any number larger than $i$ cannot be a [lower_bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/), it follows that if $i$ is some other [lower_bound](/notes/areas/mathematics/real_analysis/definitions/lower_bound/), then $i \geq l$.
 
@@ -550,7 +550,7 @@ Next, show that if $d$ is any [upper_bound](/notes/areas/mathematics/real_analys
 
 We are given that $a$ is an [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) for $A$, and that $a \in A$.
 
-Since $a$ is an [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) for $A$, we just need to verify that part (ii) of Definition 1.3.2 holds and that if $d$ is any [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) for $A$, then $a \leq d$. By the definition of the upper bound, $a \leq d$ because $a$ is an element of $A$. So be Definition 1.3.2, $a = \sup A$.
+Since $a$ is an [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) for $A$, we just need to verify that part (ii) of Definition 1.3.2 holds and that if $d$ is any [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) for $A$, then $a \leq d$. By the definition of the [upper bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/), $a \leq d$ because $a$ is an element of $A$. So be Definition 1.3.2, $a = \sup A$.
 
 ## Exercise 1.3.9
 
@@ -802,7 +802,7 @@ $$
 
 
 
-In general, suppose that we have chosen $n_{1},n_{2},\ldots,n_{k - 1}$ such that $x_{n_{1}},x_{n_{2}},\ldots,x_{n_{k}} \in A$. Let $I_{k} = I_{1}\backslash\{ n_{1},n_{2},\ldots,n_{k - 1}\}$. $A$ is an infinite subset, so $A\backslash\{ x_{n_{1}},x_{n_{2}},\ldots,x_{n_{k}}\} \neq \varnothing$ and thus $I_{k} \neq \varnothing$. Thus, we may let $n_{k}$ be the smallest element of $I_{k}$ and continue constructing the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( n_{1},n_{2},\ldots \right) \right.$.
+In general, suppose that we have chosen $n_{1},n_{2},\ldots,n_{k - 1}$ such that $x_{n_{1}},x_{n_{2}},\ldots,x_{n_{k}} \in A$. Let $I_{k} = I_{1}\backslash\{ n_{1},n_{2},\ldots,n_{k - 1}\}$. $A$ is an infinite [subset](/notes/areas/mathematics/set_theory/definitions/subset/), so $A\backslash\{ x_{n_{1}},x_{n_{2}},\ldots,x_{n_{k}}\} \neq \varnothing$ and thus $I_{k} \neq \varnothing$. Thus, we may let $n_{k}$ be the smallest element of $I_{k}$ and continue constructing the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( n_{1},n_{2},\ldots \right) \right.$.
 
 All we are doing here is going through $B$ in the order $x_{1},x_{2},\ldots$ until we come to the first element of $A$. That element is $x_{n_{1}}$ for some positive integer $n_{1}$. Then we continue through $B$ until we come to another element of $A$. That element is $x_{n_{2}}$ for some positive integer $n_{2} > n_{1}$. At each stage we have only found finitely many members of $A$, and since $A$ is infinite we can keep going. It is intuitively clear that this procedure cannot miss any elements of $A$, because at each stage we take the first one in the listing that we haven't already taken.
 
@@ -834,13 +834,13 @@ Since there must be a [bijection](/notes/areas/mathematics/set_theory/definition
 
 > Given sets $A$ and $B$, explain why $A \sim B$ is equivalent to asserting $B \sim A$.
 
-Since $A \sim B$, we know that there is a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) $f:A \rightarrow B$. This means that we can define another [function](/notes/areas/mathematics/set_theory/definitions/function/) $g:B \rightarrow A$ that is bijective. More specifically, if $f:A \rightarrow B$ is a bijfection, then there exists an inverse [function](/notes/areas/mathematics/set_theory/definitions/function/) $f^{- 1}:B \rightarrow A$ which is also a bijection.
+Since $A \sim B$, we know that there is a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) $f:A \rightarrow B$. This means that we can define another [function](/notes/areas/mathematics/set_theory/definitions/function/) $g:B \rightarrow A$ that is bijective. More specifically, if $f:A \rightarrow B$ is a bijfection, then there exists an inverse [function](/notes/areas/mathematics/set_theory/definitions/function/) $f^{- 1}:B \rightarrow A$ which is also a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/).
 
 ### (c)
 
 > For three sets $A,B,C$, show that $A \sim B$ and $B \sim C$ implies that $A \sim C$. These three properties are what is meant by saying that $\sim$ is an *equivalence relation*.
 
-Since $A \sim B$, we know that there is a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) $g:A \rightarrow B$. Since $B \sim C$, there is a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) $f:B \rightarrow C$. Likewise, $h:A \rightarrow C$ is a bijection. Let us define $h = f \circ g$, meaning $f$ composed with $g$.
+Since $A \sim B$, we know that there is a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) $g:A \rightarrow B$. Since $B \sim C$, there is a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/) $f:B \rightarrow C$. Likewise, $h:A \rightarrow C$ is a [bijection](/notes/areas/mathematics/set_theory/definitions/bijection/). Let us define $h = f \circ g$, meaning $f$ composed with $g$.
 
 To show that $h$ is one-to-one, take $a_{1},a_{2} \in A$, where $a_{1} \neq a_{2}$ and show that $f\left. \left( g\left. \left( a_{1} \right) \right. \right) \right. \neq f\left. \left( g\left. \left( a_{2} \right) \right. \right) \right.$. Then, $a_{1} \neq a_{2}$ implies that $g\left. \left( a_{1} \right) \right. \neq g\left. \left( a_{2} \right) \right.$ because $g$ is one-to-one. And $g\left. \left( a_{1} \right) \right. \neq g\left. \left( a_{2} \right) \right.$ implies that $f\left. \left( g\left. \left( a_{1} \right) \right. \right) \right. \neq f\left. \left( g\left. \left( a_{2} \right) \right. \right) \right.$ because $f$ is one-to-one. Thus, $h = f \circ g$ is one-to-one.
 
@@ -860,7 +860,7 @@ One such example is $\{ n \in \mathbb{N}:\left. (n,n + 1) \right.\} = \left. (0,
 
 > Give an example of an uncountable collection of disjoint open intervals, or argue that no such collection exists.
 
-No such collection exists. Suppose that $C$ is any infinite collection of disjoint intervals. Every open interval contains at least one rational number $q_{I} \in \mathbb{I}$. Note that $q_{I} \neq q_{J}$ for $I = J$ since $I$ and $J$ must be disjoint, so the set $\{ I \in C:q_{I}\}$ is in one-to-one correspondence with the elements of $C$. But this set is [countable](/notes/areas/mathematics/set_theory/definitions/countable/), being a subset of $\mathbb{Q}$.
+No such collection exists. Suppose that $C$ is any infinite collection of [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/) intervals. Every open interval contains at least one rational number $q_{I} \in \mathbb{I}$. Note that $q_{I} \neq q_{J}$ for $I = J$ since $I$ and $J$ must be [disjoint](/notes/areas/mathematics/real_analysis/definitions/disjoint/), so the set $\{ I \in C:q_{I}\}$ is in one-to-one correspondence with the elements of $C$. But this set is [countable](/notes/areas/mathematics/set_theory/definitions/countable/), being a [subset](/notes/areas/mathematics/set_theory/definitions/subset/) of $\mathbb{Q}$.
 
 ## Exercise 1.5.7
 
@@ -936,7 +936,7 @@ $$
 
 ### (b)
 
-Fix $n \in \mathbb{N}$ and let $A_{n}$ be the algebraic numbers obtained as roots of polynomials with integer coefficients that have degree $n$. Using the fact that every polynomial has a finite number of roots, show that $A_{n}$ is countable.
+Fix $n \in \mathbb{N}$ and let $A_{n}$ be the algebraic numbers obtained as roots of polynomials with integer coefficients that have degree $n$. Using the fact that every [polynomial](/notes/areas/mathematics/linear_algebra/definitions/polynomial/) has a finite number of roots, show that $A_{n}$ is [countable](/notes/areas/mathematics/set_theory/definitions/countable/).
 
 ### (c)
 
@@ -1229,7 +1229,7 @@ For the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/)
 
 Assume $\left. \left( x_{n} \right) \right. \rightarrow x$. Let $\epsilon > 0$ be arbitrary. There exists an $N \in \mathbb{N}$ such that $n,m \geq N$ implies that $\left| x_{n} - x \right| < \frac{\epsilon}{2}$ and $\left| x_{m} - x \right| < \frac{\epsilon}{2}$.
 
-By the triangle inequality
+By the [triangle inequality](/notes/areas/mathematics/real_analysis/definitions/triangle_inequality/)
 
 
 
@@ -1270,7 +1270,7 @@ $$
 
 > Do the same for the product $\left. \left( x_{n}y_{n} \right) \right.$.
 
-Let $\epsilon > 0$ be arbitrary. We need to find an $N$ such that $n,m \geq$ implies that $\left| x_{n}y_{n} - x_{m}y_{m} \right| < \epsilon$. Employing the usual "adding zero" trick to exploit the triangle inequality gives
+Let $\epsilon > 0$ be arbitrary. We need to find an $N$ such that $n,m \geq$ implies that $\left| x_{n}y_{n} - x_{m}y_{m} \right| < \epsilon$. Employing the usual "adding zero" trick to exploit the [triangle inequality](/notes/areas/mathematics/real_analysis/definitions/triangle_inequality/) gives
 
 
 
@@ -1775,7 +1775,7 @@ and $\left. \left( y_{n + 1} \right) \right.$ converges as $n \rightarrow \infty
 
 > Where in the proof of Theorem 3.2.3 part (ii) does the assumption that the collection of [open_set](/notes/areas/mathematics/topology/definitions/open_set/)s be *finite* get used?
 
-We cannot always take minimums of ininfite sets. Thus the step where we let $\epsilon = \min\{(\epsilon)_{1},(\epsilon)_{2},\ldots,(\epsilon)_{n}\} > 0$ requires that we are working with a finite collection of [open_set](/notes/areas/mathematics/topology/definitions/open_set/)s. We can, however, take the infimum of an infinite set, but the infimum of the set could be 0.
+We cannot always take minimums of ininfite sets. Thus the step where we let $\epsilon = \min\{(\epsilon)_{1},(\epsilon)_{2},\ldots,(\epsilon)_{n}\} > 0$ requires that we are working with a finite collection of [open_set](/notes/areas/mathematics/topology/definitions/open_set/)s. We can, however, take the [infimum](/notes/areas/mathematics/real_analysis/definitions/infimum/) of an infinite set, but the [infimum](/notes/areas/mathematics/real_analysis/definitions/infimum/) of the set could be 0.
 
 ### (b)
 
@@ -1811,7 +1811,7 @@ Said differently, the set $\mathbb{N}^{c}$ is equivalent to $\mathbb{R}\backslas
 
 > $\{ x \in \mathbb{R}:x \neq 0\}$.
 
-Open. The limit point 0 is not contained in the set $\{ x \in \mathbb{R}:x \neq 0\}$.
+Open. The [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) 0 is not contained in the set $\{ x \in \mathbb{R}:x \neq 0\}$.
 
 ### (d)
 
@@ -1837,7 +1837,7 @@ Let $A$ be bounded above and let $s = \sup A$ which exists by the [axiom_of_comp
 
 If $s \in A$, then clearly $s \in \overline{A}$.
 
-If $s \notin A$, then we will show that $s$ is a limit point. Let $\epsilon > 0$ be arbitrary. Then, by the characterization of [supremum](/notes/areas/mathematics/real_analysis/definitions/supremum/), there exists an $a \in A$ such that $s - \epsilon < a$. Since $s \notin A$, we have $a \neq s$ and hence $V_{\epsilon}\left. (s) \right.j$ intersects $A$ in a point that is not $s$. Therefore, $s$ is a limit point of $A$ and hence $s \in \overline{A}$.
+If $s \notin A$, then we will show that $s$ is a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/). Let $\epsilon > 0$ be arbitrary. Then, by the characterization of [supremum](/notes/areas/mathematics/real_analysis/definitions/supremum/), there exists an $a \in A$ such that $s - \epsilon < a$. Since $s \notin A$, we have $a \neq s$ and hence $V_{\epsilon}\left. (s) \right.j$ intersects $A$ in a point that is not $s$. Therefore, $s$ is a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) of $A$ and hence $s \in \overline{A}$.
 
 ### (b)
 
@@ -1853,9 +1853,9 @@ Restating Theorem 3.2.8:
 
 > A set $F \subseteq \mathbb{R}$ is closed *if and only if* every [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/) contained in $F$ has a limit that is also an element of $F$.
 
-$\left. ( \Rightarrow ) \right.$: Assume that the set $F \subseteq \mathbb{R}$ is closed. Then $F$ contains its limit points. We will show that that every [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/) $\left. \left( a_{n} \right) \right.$ contained in $F$ has its limit in $F$ by showing that the limit of $\left. \left( a_{N} \right) \right.$ is either a limit point or possibly an isolated point of $F$. Because $\left. \left( a_{n} \right) \right.$ is Cauchy, we know $x = lima_{n}$ exists. If $a_{n} \neq x$ for all $x$, then it follows from Theorem 3.2.5 that $x$ is a limit point of $F$. Now consider a [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/) an where $a_{n} = x$ for some $n$. Because $\left. \left( a_{n} \right) \right. \subseteq F$ it follows that $x \in F$ as well. (Note that if $a_{n}$ is eventually equal to $x$, then it may not be true that $x$ is a limit point of $F$.)
+$\left. ( \Rightarrow ) \right.$: Assume that the set $F \subseteq \mathbb{R}$ is closed. Then $F$ contains its limit points. We will show that that every [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/) $\left. \left( a_{n} \right) \right.$ contained in $F$ has its limit in $F$ by showing that the limit of $\left. \left( a_{N} \right) \right.$ is either a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) or possibly an [isolated point](/notes/areas/mathematics/topology/definitions/isolated_point/) of $F$. Because $\left. \left( a_{n} \right) \right.$ is Cauchy, we know $x = lima_{n}$ exists. If $a_{n} \neq x$ for all $x$, then it follows from Theorem 3.2.5 that $x$ is a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) of $F$. Now consider a [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/) an where $a_{n} = x$ for some $n$. Because $\left. \left( a_{n} \right) \right. \subseteq F$ it follows that $x \in F$ as well. (Note that if $a_{n}$ is eventually equal to $x$, then it may not be true that $x$ is a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) of $F$.)
 
-$\left. ( \Leftarrow ) \right.$: Assume that every [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/) contained in $F$ has a limit that is also an element of $F$. To show that $F$ is closed we want to show that it contains its limit points. Let $x$ be a limit point of $F$. By Theorem 3.2.5, $x = lima_{n}$ for some [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( a_{n} \right) \right.$. Because $\left. \left( a_{n} \right) \right.$ converges, it must be a [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/). So $x$ is contained in $F$, and therefore $F$ is closed.
+$\left. ( \Leftarrow ) \right.$: Assume that every [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/) contained in $F$ has a limit that is also an element of $F$. To show that $F$ is closed we want to show that it contains its limit points. Let $x$ be a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) of $F$. By Theorem 3.2.5, $x = lima_{n}$ for some [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) $\left. \left( a_{n} \right) \right.$. Because $\left. \left( a_{n} \right) \right.$ converges, it must be a [Cauchy_sequence](/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence/). So $x$ is contained in $F$, and therefore $F$ is closed.
 
 ## Exercise 3.2.6
 
@@ -1865,9 +1865,9 @@ $\left. ( \Leftarrow ) \right.$: Assume that every [Cauchy_sequence](/notes/area
 
 > The Cantor set is closed.
 
-True. As the number of iterations of the Cantor set approaches infinity, we remove the union of all open middle-third intervals, and the union of an arbitrary collection of [open_set](/notes/areas/mathematics/topology/definitions/open_set/)s is open by Theorem 3.2.3.
+True. As the number of iterations of the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/) approaches infinity, we remove the union of all open middle-third intervals, and the union of an arbitrary collection of [open_set](/notes/areas/mathematics/topology/definitions/open_set/)s is open by Theorem 3.2.3.
 
-Then, by Theorem 3.2.13, the complement of what is left after removing all of these intervals, which is the Cantor set, must be closed.
+Then, by Theorem 3.2.13, the complement of what is left after removing all of these intervals, which is the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/), must be closed.
 
 # Section 3.3 Exercises
 
@@ -1959,7 +1959,7 @@ $$
 
 So, $C_{1} + C_{1} = \left. \lbrack 0,2/3\rbrack \right. \cup \left. \lbrack 2/3,4/3\rbrack \right. \cup \left. \lbrack 4/3,2\rbrack \right. = \left. \lbrack 0,2\rbrack \right.$, so for any $s \in \left. \lbrack 0,2\rbrack \right.$, we can find an $x_{1},y_{1} \in C_{1}$ such that $x_{1} + y_{1} = s$
 
-A way to visualize this (see below) result in the $\left. (x,y) \right.$-plane is to shade in the four squares corresponding to the components of $C_{1} \times C_{1}$. This is the Cantor set in two dimensions, or what is called the Sierpinski carpet. It is constructed by removing the middle third of the unit square in both the $x$ and $y$ directions.
+A way to visualize this (see below) result in the $\left. (x,y) \right.$-plane is to shade in the four squares corresponding to the components of $C_{1} \times C_{1}$. This is the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/) in two dimensions, or what is called the Sierpinski carpet. It is constructed by removing the middle third of the unit square in both the $x$ and $y$ directions.
 
 For each $s \in \left. \lbrack 0,2\rbrack \right.$, the line $x + y = s$ must intersect at least one of the squares. For each $n$, we can draw a similar picture (with increasing numbers of smaller squares), and our job is to argue that the line $x + y = s$ continues to intersect at least one of the smaller squares.
 
@@ -2027,7 +2027,7 @@ Let $\alpha$ be a fixed irrational number in the interval $\left. (0,1) \right.$
 
 > The Cantor set.
 
-The cantor set is compact.
+The [cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/) is compact.
 
 ### (d)
 
@@ -2043,7 +2043,7 @@ This set is compact.
 
 > Let's call a set *clompact* if it has the property that every closed cover (i.e., a cover consisting of closed sets) admits a finite subcover. Describe all of the clompact subsets of $\mathbb{R}$.
 
-If $A$ is a finite set then it is clearly clompact. Conversely, assume $A$ is compact. Because a singleton set is a closed set, the collection of singleton sets consisting of the elements of $A$ is a closed cover. This cover must have a finite subcover, and it follows that $A$ is a finite set. To summarize, a set is clompact if and only if it is finite.
+If $A$ is a finite set then it is clearly clompact. Conversely, assume $A$ is compact. Because a singleton set is a [closed set](/notes/areas/mathematics/topology/definitions/closed_set/), the collection of singleton sets consisting of the elements of $A$ is a closed cover. This cover must have a finite subcover, and it follows that $A$ is a finite set. To summarize, a set is clompact if and only if it is finite.
 
 # Section 3.4 Exercises
 
@@ -2061,7 +2061,7 @@ However, $P \cap K$ is not necessarily perfect. For example, let $K$ be a single
 
 > Does there exist a perfect set consisting of only rational numbers?
 
-No. By Theorem 1.5.6, the set $\mathbb{Q}$ is countable. Then, by Theorem 3.4.3, no such set consisting of only rational numbers is perfect.
+No. By Theorem 1.5.6, the set $\mathbb{Q}$ is [countable](/notes/areas/mathematics/set_theory/definitions/countable/). Then, by Theorem 3.4.3, no such set consisting of only rational numbers is perfect.
 
 ## Exercise 3.4.3
 
@@ -2255,9 +2255,9 @@ $$
 >
 > where for each $n \in \mathbb{N}$ $F_{n}$ is a closed set containing no non-empty open intervals.
 
-Let $F$ be a closed set containing no non-empty open intervals. Then $F^{c}$ is open and we claim that it must also be dense in $\mathbb{R}$. To see why, assume, $x,y \in \mathbb{R}$ satisfy $x < y$. By hypothesis, the open interval, $\left. (x,y) \right.$ is *not* contained in $F$ which means there exists a point $z \in F^{c}$ satisfying $x < z < y$. This proves that $F^{c}$ is dense.
+Let $F$ be a [closed set](/notes/areas/mathematics/topology/definitions/closed_set/) containing no non-empty open intervals. Then $F^{c}$ is open and we claim that it must also be dense in $\mathbb{R}$. To see why, assume, $x,y \in \mathbb{R}$ satisfy $x < y$. By hypothesis, the open interval, $\left. (x,y) \right.$ is *not* contained in $F$ which means there exists a point $z \in F^{c}$ satisfying $x < z < y$. This proves that $F^{c}$ is dense.
 
-Turning to the statement in the exercise, assume for contradiction that $\mathbb{R} = \bigcup_{n = 1}^{\infty}F_{n}$, where each $F_{n}$ is a closed set containing no non-empty open intervals. Taking complements we get $\varnothing = \bigcap_{n = 1}^{\infty}F_{n}^{c}$, and we have just seen that each $F_{c}^{n}$ is a dense [open_set](/notes/areas/mathematics/topology/definitions/open_set/) in $\mathbb{R}$. But this is a contradiction, because the intersection of dense [open_set](/notes/areas/mathematics/topology/definitions/open_set/)s is not empty, as Theorem 3.5.2 states.
+Turning to the statement in the exercise, assume for contradiction that $\mathbb{R} = \bigcup_{n = 1}^{\infty}F_{n}$, where each $F_{n}$ is a [closed set](/notes/areas/mathematics/topology/definitions/closed_set/) containing no non-empty open intervals. Taking complements we get $\varnothing = \bigcap_{n = 1}^{\infty}F_{n}^{c}$, and we have just seen that each $F_{c}^{n}$ is a dense [open_set](/notes/areas/mathematics/topology/definitions/open_set/) in $\mathbb{R}$. But this is a contradiction, because the intersection of dense [open_set](/notes/areas/mathematics/topology/definitions/open_set/)s is not empty, as Theorem 3.5.2 states.
 
 ## Exercise 3.5.6
 
@@ -2299,9 +2299,9 @@ The irrationals are dense in $\mathbb{R}$. See page 22 of Abbott.
 
 > The Cantor set.
 
-Nowhere-dense. By Exercise 3.2.6(d), we know that the Cantor set is closed.
+Nowhere-dense. By Exercise 3.2.6(d), we know that the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/) is closed.
 
-The closure of the Cantor set *is* the Cantor set, for it is closed. The interior of the Cantor set is empty, thus the Cantor set is nowhere dense.
+The [closure](/notes/areas/mathematics/topology/definitions/closure/) of the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/) *is* the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/), for it is closed. The interior of the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/) is empty, thus the [Cantor set](/notes/areas/mathematics/real_analysis/definitions/cantor_set/) is nowhere dense.
 
 ## Exercise 3.5.10
 
@@ -2571,7 +2571,7 @@ We say that $\lim\limits_{x \rightarrow \infty}f\left. (x) \right. = \infty$ if 
 
 ## Exercise 4.2.11 (Squeeze Theorem)
 
-Let $f,g$, and $h$ satisfy $f\left. (x) \right. \leq g\left. (x) \right. \leq h\left. (x) \right.$ for all $x$ in some common [domain](/notes/areas/mathematics/set_theory/definitions/domain/) $A$. If $\lim\limits_{x \rightarrow c}f\left. (x) \right. = L$ and $\lim\limits_{x \rightarrow c}h\left. (x) \right. = L$ at some limit point $c$ of $A$, show that $\lim\limits_{x \rightarrow c}g\left. (x) \right. = L$ as well.
+Let $f,g$, and $h$ satisfy $f\left. (x) \right. \leq g\left. (x) \right. \leq h\left. (x) \right.$ for all $x$ in some common [domain](/notes/areas/mathematics/set_theory/definitions/domain/) $A$. If $\lim\limits_{x \rightarrow c}f\left. (x) \right. = L$ and $\lim\limits_{x \rightarrow c}h\left. (x) \right. = L$ at some [limit point](/notes/areas/mathematics/topology/definitions/limit_point/) $c$ of $A$, show that $\lim\limits_{x \rightarrow c}g\left. (x) \right. = L$ as well.
 
 Let $\epsilon$ be arbitrary. Because $\lim\limits_{x \rightarrow c}f\left. (x) \right. = L$, there exists a $\delta_{1} > 0$ such that $0 < |x - c| < \delta_{1}$ implies $L - \epsilon < f\left. (x) \right. < L + \epsilon$. Likewise, there exists $\delta_{2} > 0$ such that $0 < |x - c| < \delta_{2}$ implies $L - \epsilon < h\left. (x) \right. < L + \epsilon$. Choosing $\delta = \min\{\delta_{1},\delta_{2}\}$, we see that
 
@@ -2653,7 +2653,7 @@ Restating Definition 4.3.1:
 
 > [continuity](/notes/areas/mathematics/real_analysis/definitions/continuity/): A [function](/notes/areas/mathematics/set_theory/definitions/function/) $f:A \rightarrow \mathbb{R}$ is *continuous* at a point $c \in A$ if, for all $\epsilon > 0$, there exists a $\delta > 0$ such that whenever $|x - c| < \delta$ (and $\in A$) it follows that $\left| f\left. (x) \right. - f\left. (c) \right. \right| < \epsilon$. If $f$ is continuous at every point in the [domain](/notes/areas/mathematics/set_theory/definitions/domain/) $A$, then we say that $f$ is continuous on $A$.
 
-Let $\epsilon > 0$ be arbitrary. If $c$ is an isolated point of $A$, then there exists a neighborhood $V_{\delta}\left. (c) \right.$ that intersects the set $A$ only at $c$. Because $x \in V_{\delta}\left. (c) \right. \cap A$ implies that $x = c$, we see that $f\left. (x) \right. = f\left. (c) \right. \in V_{\epsilon}\left. \left( f\left. (c) \right. \right) \right.$. Thus $f\left. (x) \right.$ is continuous at the isolated point $c$ using the criterion in Theorem 4.3.2 (ii).
+Let $\epsilon > 0$ be arbitrary. If $c$ is an [isolated point](/notes/areas/mathematics/topology/definitions/isolated_point/) of $A$, then there exists a neighborhood $V_{\delta}\left. (c) \right.$ that intersects the set $A$ only at $c$. Because $x \in V_{\delta}\left. (c) \right. \cap A$ implies that $x = c$, we see that $f\left. (x) \right. = f\left. (c) \right. \in V_{\epsilon}\left. \left( f\left. (c) \right. \right) \right.$. Thus $f\left. (x) \right.$ is continuous at the [isolated point](/notes/areas/mathematics/topology/definitions/isolated_point/) $c$ using the criterion in Theorem 4.3.2 (ii).
 
 ## Exercise 4.3.7
 
@@ -3147,7 +3147,7 @@ $\left. ( \Leftarrow ) \right.$: Given that $g$ can be continuously extended to 
 
 > Prove the [Extreme_Value_Theorem](/notes/areas/mathematics/real_analysis/definitions/extreme_value_theorem/).
 
-Restating the Extreme Value Theorem:
+Restating the [Extreme Value Theorem](/notes/areas/mathematics/real_analysis/definitions/extreme_value_theorem/):
 
 > If $f:K \rightarrow \mathbb{R}$ is continuous on a compact set $K \subseteq \mathbb{R}$, then $f$ attains a maximum and minimum value. In other words, there exist $x_{0},x_{1} \in K$ such that $f\left. \left( x_{0} \right) \right. \leq f\left. (x) \right. \leq f\left. \left( x_{1} \right) \right.$ for all $x \in K$.
 
@@ -3205,7 +3205,7 @@ Because $\delta_{1}$ and $\delta_{2}$ are both independent of $x$ and $y$, $\del
 
 > Finish the proof of the [Intermediate_Value_Theorem](/notes/areas/mathematics/real_analysis/definitions/intermediate_value_theorem/) using the [axiom_of_completeness](/notes/areas/mathematics/real_analysis/definitions/axiom_of_completeness/) started previously.
 
-Proceed via [proof_by_contradiction](/notes/areas/mathematics/proof_techniques/definitions/proof_by_contradiction/), and assume that $f\left. (c) \right. > 0$. If we set $(\epsilon)_{0} = f\left. (c) \right.$, then the [continuity](/notes/areas/mathematics/real_analysis/definitions/continuity/) of $f$ implies that there exists a $\delta_{0} > 0$ with the property that $x \in V_{\delta_{0}}\left. (c) \right.$ implies that $f\left. (x) \right. \in V_{(\epsilon)_{0}}\left. \left( f\left. (c) \right. \right) \right.$. But this implies that $f\left. (x) \right. > 0$ and thus $x \in K$ for all $x \in V_{\delta_{0}}\left. (c) \right.$. What this means is that if $c$ is an [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) on $K$, then $c - \delta_{0}$ is a smaller upper bound, violating the definition of the supremeum. We conclude that $f\left. (x) \right. > 0$ is not allowed.
+Proceed via [proof_by_contradiction](/notes/areas/mathematics/proof_techniques/definitions/proof_by_contradiction/), and assume that $f\left. (c) \right. > 0$. If we set $(\epsilon)_{0} = f\left. (c) \right.$, then the [continuity](/notes/areas/mathematics/real_analysis/definitions/continuity/) of $f$ implies that there exists a $\delta_{0} > 0$ with the property that $x \in V_{\delta_{0}}\left. (c) \right.$ implies that $f\left. (x) \right. \in V_{(\epsilon)_{0}}\left. \left( f\left. (c) \right. \right) \right.$. But this implies that $f\left. (x) \right. > 0$ and thus $x \in K$ for all $x \in V_{\delta_{0}}\left. (c) \right.$. What this means is that if $c$ is an [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) on $K$, then $c - \delta_{0}$ is a smaller [upper bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/), violating the definition of the supremeum. We conclude that $f\left. (x) \right. > 0$ is not allowed.
 
 Now assume $f\left. (c) \right. < 0$. This time, the [continuity](/notes/areas/mathematics/real_analysis/definitions/continuity/) of $f$ allows us to produce a neighborhood $V_{\delta_{1}}\left. (c) \right.$ where $x \in V_{\delta_{1}}\left. (c) \right.$ implies $f\left. (x) \right. < 0$. But this implies that a point such as $c + \delta_{1}/2$ is an element of K, violating the fact that $c$ is an [upper_bound](/notes/areas/mathematics/real_analysis/definitions/upper_bound/) for $K$.
 
@@ -3217,7 +3217,7 @@ This proves the [Intermediate_Value_Theorem](/notes/areas/mathematics/real_analy
 
 > Finish the proof of the [Intermediate_Value_Theorem](/notes/areas/mathematics/real_analysis/definitions/intermediate_value_theorem/) using the [Nested_Interval_Property](/notes/areas/mathematics/real_analysis/definitions/nested_interval_property/) started previously.
 
-By repeating the construction started in the text, we get a nested [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of intervals $I_{n} = \left. \left\lbrack a_{n},b_{n} \right\rbrack \right.$ where $f\left. \left( a_{n} \right) \right. < 0$ and $f\left. \left( b_{n} \right) \right. \geq 0$ for all $n \in \mathbb{N}$. By the Nested Interval Property, there exists a point $c \in \cap_{n = 1}^{\infty}I_{n}$. The fact that the lengths of the intervals are tending to zero means that the two [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/)s $\left. \left( a_{n} \right) \right.$ and $\left. \left( b_{n} \right) \right.$ each converge to $c$.
+By repeating the construction started in the text, we get a nested [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of intervals $I_{n} = \left. \left\lbrack a_{n},b_{n} \right\rbrack \right.$ where $f\left. \left( a_{n} \right) \right. < 0$ and $f\left. \left( b_{n} \right) \right. \geq 0$ for all $n \in \mathbb{N}$. By the [Nested Interval Property](/notes/areas/mathematics/real_analysis/definitions/nested_interval_property/), there exists a point $c \in \cap_{n = 1}^{\infty}I_{n}$. The fact that the lengths of the intervals are tending to zero means that the two [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/)s $\left. \left( a_{n} \right) \right.$ and $\left. \left( b_{n} \right) \right.$ each converge to $c$.
 
 Because $f$ is continuous at $c$, we get $f\left. (c) \right. = \lim f\left. \left( a_{n} \right) \right.$ where $f\left. \left( a_{n} \right) \right. < 0$ for all $n$. Then the [Order_Limit_Theorem](/notes/areas/mathematics/real_analysis/definitions/order_limit_theorem/) implies that $f\left. (c) \right. \leq 0$. Because we also have $f\left. (c) \right. = \lim f\left. \left( b_{n} \right) \right.$ with $f\left. \left( b_{n} \right) \right. \geq 0$, it must be that $f\left. (c) \right. \geq 0$. We conclude that $f\left. (c) \right. = 0$.
 
@@ -3836,13 +3836,13 @@ and thus $f$ is contractive on $I$.
 
 > Argue that there exists a piont $d \in \left. \lbrack 0,3\rbrack \right.$ where $h\left. (d) \right. = d$
 
-Set $g\left. (x) \right. = x - h\left. (x) \right.$. Because $g\left. (1) \right. = - 1$ and $g\left. (3) \right. = 1$, by the Intermediate Value Theorem, there must exist a $d \in \left. \lbrack 0,3\rbrack \right.$ where $g\left. (d) \right. = 0$. In terms of $h$, we note that this implies that $h\left. (d) \right. = d$, as desired.
+Set $g\left. (x) \right. = x - h\left. (x) \right.$. Because $g\left. (1) \right. = - 1$ and $g\left. (3) \right. = 1$, by the [Intermediate Value Theorem](/notes/areas/mathematics/real_analysis/definitions/intermediate_value_theorem/), there must exist a $d \in \left. \lbrack 0,3\rbrack \right.$ where $g\left. (d) \right. = 0$. In terms of $h$, we note that this implies that $h\left. (d) \right. = d$, as desired.
 
 ### (b)
 
 > Argue that at some piont $c$ we have $h'\left. (c) \right. = 1/3$.
 
-Applying the Mean Value Theorem to $h$ on the interval $\left. \lbrack 0,3\rbrack \right.$ implies that there exists a point $c \in \left. (0,3) \right.$ where
+Applying the [Mean Value Theorem](/notes/areas/mathematics/real_analysis/definitions/mean_value_theorem/) to $h$ on the interval $\left. \lbrack 0,3\rbrack \right.$ implies that there exists a point $c \in \left. (0,3) \right.$ where
 
 
 
@@ -4152,7 +4152,7 @@ $$
 
 > Explain how we know that the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) *cannot* be uniform on $\lbrack 0,\infty)$.
 
-For $\left. \left( g_{n} \right) \right.$, Theorem 6.2.6 tells us that if the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) were uniform then $g\left. (x) \right.$ would be continuous. However, $g\left. (x) \right.$ is not continuous at $x = 1$ and so the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) cannot be uniform on any [domain](/notes/areas/mathematics/set_theory/definitions/domain/) containing this point. In fact, the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) is not uniform over any [domain](/notes/areas/mathematics/set_theory/definitions/domain/) that has $x = 1$ as a limit point.
+For $\left. \left( g_{n} \right) \right.$, Theorem 6.2.6 tells us that if the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) were uniform then $g\left. (x) \right.$ would be continuous. However, $g\left. (x) \right.$ is not continuous at $x = 1$ and so the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) cannot be uniform on any [domain](/notes/areas/mathematics/set_theory/definitions/domain/) containing this point. In fact, the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) is not uniform over any [domain](/notes/areas/mathematics/set_theory/definitions/domain/) that has $x = 1$ as a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/).
 
 For $\left. \left( h_{n} \right) \right.$, each of the functions $h_{n}$ is continuous, but the limit [function](/notes/areas/mathematics/set_theory/definitions/function/) $h$ is not (since the limit is different depending on which side one approaches it from). Therefore, Theorem 6.2.6 tells us that the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) cannot be uniform.
 
@@ -4347,7 +4347,7 @@ $$
 
 
 
-The [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) is not uniform over $\left. \lbrack 0,1\rbrack \right.$, and in fact it is not uniform over any set that contains 1 as a limit point. Comparing $h = \lim g_{n}'$ to $g'$ is illuminating. Note in particular that $h\left. (1) \right. \neq g\left. (1) \right.$, so that it is possible for the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of derivatives to converge to the "wrong" value when the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) of $g_{n}'$ is not uniform. On the other hand, the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) of $g_{n}'$ is uniform on sets of the form $\left. \lbrack 0,c\rbrack \right.$ where $c < 1$, and this is reflected by the fact that $h\left. (x) \right. = g\left. (x) \right.$ on $\lbrack 0,1)$.
+The [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) is not uniform over $\left. \lbrack 0,1\rbrack \right.$, and in fact it is not uniform over any set that contains 1 as a [limit point](/notes/areas/mathematics/topology/definitions/limit_point/). Comparing $h = \lim g_{n}'$ to $g'$ is illuminating. Note in particular that $h\left. (1) \right. \neq g\left. (1) \right.$, so that it is possible for the [sequence](/notes/areas/mathematics/real_analysis/definitions/sequence/) of derivatives to converge to the "wrong" value when the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) of $g_{n}'$ is not uniform. On the other hand, the [convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/) of $g_{n}'$ is uniform on sets of the form $\left. \lbrack 0,c\rbrack \right.$ where $c < 1$, and this is reflected by the fact that $h\left. (x) \right. = g\left. (x) \right.$ on $\lbrack 0,1)$.
 
 ## Exercise 6.3.2
 
@@ -5351,7 +5351,7 @@ Restating Lemma 7.2.6:
 
 > For any bounded [function](/notes/areas/mathematics/set_theory/definitions/function/) $f$ on $\left. \lbrack a,b\rbrack \right.$, it is always the case that $U\left. (f) \right. \geq L\left. (f,P) \right.$.
 
-We know that $U\left. (f) \right.$ corresponds to the upper integral, or the infimum of the upper sums over the collection of all possible partitions $\mathcal{P}$.
+We know that $U\left. (f) \right.$ corresponds to the upper integral, or the [infimum](/notes/areas/mathematics/real_analysis/definitions/infimum/) of the upper sums over the collection of all possible partitions $\mathcal{P}$.
 
 We also know that $L\left. (f,P) \right.$ corresponds to the lower sum of some arbitrary partition $P$.
 
