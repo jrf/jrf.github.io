@@ -955,7 +955,7 @@ $f(x, y)$ is the **density distribution of the cross-sectional slice** — it's 
 | $f(x,y)$ | Internal density at point $(x,y)$ | **Unknown** — can't see inside |
 | $p(y)$ | Detector signal at position $y$ | **Measured** — from part (a) |
 
-We [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $p(y)$. We want $f(x,y)$. The [projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/) tells us how to invert this relationship.
+We measure $p(y)$. We want $f(x,y)$. The [projection-slice theorem](/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem/) tells us how to invert this relationship.
 
 ---
 
@@ -1042,7 +1042,7 @@ These two representations contain *identical* information. The [Fourier transfor
 
 **Why this matters for CT:**
 
-The projection-slice theorem exploits this duality. Instead of measuring $f(x,y)$ directly (which we can't do — we can't see inside the body), we [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) projections $p(y)$. Each projection gives us a *slice* of $F(\nu_x, \nu_y)$. Collect enough slices → reconstruct the full frequency domain → inverse transform → recover the spatial image.
+The projection-slice theorem exploits this duality. Instead of measuring $f(x,y)$ directly (which we can't do — we can't see inside the body), we measure projections $p(y)$. Each projection gives us a *slice* of $F(\nu_x, \nu_y)$. Collect enough slices → reconstruct the full frequency domain → inverse transform → recover the spatial image.
 
 ---
 

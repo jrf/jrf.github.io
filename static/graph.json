@@ -4909,10 +4909,6 @@
       "target": "/notes/areas/mathematics/real_analysis/definitions/pointwise_convergence"
     },
     {
-      "source": "/notes/areas/mathematics/real_analysis/definitions/uniform_convergence",
-      "target": "/notes/areas/mathematics/real_analysis/definitions/convergence"
-    },
-    {
       "source": "/notes/areas/mathematics/real_analysis/definitions/geometric_series_test",
       "target": "/notes/areas/mathematics/real_analysis/definitions/geometric_series_test"
     },
@@ -8882,10 +8878,6 @@
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/beer_lambert_law",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/beer_lambert_law",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform"
     },
     {
@@ -8975,10 +8967,6 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform",
       "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform",
@@ -9171,10 +9159,6 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/babinet_principle",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/diffraction"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/babinet_principle",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/babinet_principle",
@@ -9347,10 +9331,6 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/beer_lambert_law"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography",
@@ -10386,7 +10366,31 @@
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/convolution"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/electrical_engineering/signals_systems/definitions/transfer_function"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/real_analysis/definitions/convolution"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -10402,6 +10406,14 @@
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction"
     },
     {
@@ -10411,6 +10423,10 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
+    },
+    {
+      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
+      "target": "/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -10467,10 +10483,6 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -10610,10 +10622,6 @@
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence"
     },
     {
@@ -10643,10 +10651,6 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/coherence"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -10755,10 +10759,6 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/hankel_transform"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
@@ -11238,10 +11238,6 @@
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_homework",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_homework",
       "target": "/notes/areas/electrical_engineering/physical_optics/definitions/projection_slice_theorem"
     },
     {
@@ -11259,10 +11255,6 @@
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_homework",
       "target": "/notes/areas/mathematics/functional_analysis/definitions/fourier_transform"
-    },
-    {
-      "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_homework",
-      "target": "/notes/areas/mathematics/measure_theory/definitions/measure"
     },
     {
       "source": "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_homework",
@@ -12437,13 +12429,7 @@
       "/notes/areas/mathematics/measure_theory/books/measures_integrals_and_martingales",
       "/notes/areas/mathematics/measure_theory/definitions/sigma-additivity",
       "/notes/areas/mathematics/measure_theory/definitions/probability_measure",
-      "/notes/areas/mathematics/measure_theory/definitions/measurable_space",
-      "/notes/areas/electrical_engineering/physical_optics/definitions/beer_lambert_law",
-      "/notes/areas/electrical_engineering/physical_optics/definitions/radon_transform",
-      "/notes/areas/electrical_engineering/physical_optics/definitions/babinet_principle",
-      "/notes/areas/electrical_engineering/physical_optics/definitions/computed_tomography",
-      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_notes",
-      "/notes/areas/electrical_engineering/physical_optics/books/introduction_to_physical_optics/physical_optics_homework"
+      "/notes/areas/mathematics/measure_theory/definitions/measurable_space"
     ],
     "/notes/areas/mathematics/measure_theory/definitions/probability_measure": [
       "/notes/areas/mathematics/measure_theory/measure_theory",
@@ -12926,7 +12912,6 @@
       "/notes/areas/mathematics/real_analysis/real_analysis",
       "/notes/areas/mathematics/functional_analysis/definitions/fourier_series",
       "/notes/areas/mathematics/real_analysis/books/understanding_analysis",
-      "/notes/areas/mathematics/real_analysis/definitions/uniform_convergence",
       "/notes/areas/mathematics/real_analysis/definitions/cauchy_sequence",
       "/notes/areas/mathematics/real_analysis/definitions/limit",
       "/notes/areas/mathematics/real_analysis/definitions/dinis_theorem"

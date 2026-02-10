@@ -12,4 +12,4 @@ Compare this to the definition of [pointwise_convergence](/notes/areas/mathemati
 
 ## Related articles
 
-<https://math.stackexchange.com/questions/597765/pointwise-vs-uniform-[convergence](/notes/areas/mathematics/real_analysis/definitions/convergence/)>
+<https://math.stackexchange.com/questions/597765/pointwise-vs-uniform-convergence>

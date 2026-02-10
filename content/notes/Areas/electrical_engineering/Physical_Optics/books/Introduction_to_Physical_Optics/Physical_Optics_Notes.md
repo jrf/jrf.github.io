@@ -4678,6 +4678,33 @@ $$
 
 
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Term-by-Term Physical Interpretation</div>
+<div class="callout-content">
+
+**$u_e(x_2, y_2)$ — Output field.** The complex optical field at the observation plane. Contains both amplitude and phase; intensity is $|u_e|^2$.
+
+**$u_i(x_1, y_1)$ — Input field.** The field in the source/aperture plane. Encodes aperture shape, object transmission, phase masks, etc. Every point $(x_1, y_1)$ acts as a secondary radiator (Huygens).
+
+**$\iint dx_1\, dy_1$ — Superposition.** Every point in the input plane contributes to every point in the output plane. Diffraction is nonlocal — no ray tracing here. The output is the coherent sum of all secondary waves. This is where interference comes from.
+
+**$\exp\{jk(z_e - z_i)\}$ — Carrier phase.** A global phase advance corresponding to plane-wave propagation over distance $z_e - z_i$. Same for all $(x_2, y_2)$. Does not affect intensity, but matters if this field interferes with another.
+
+**$\dfrac{1}{j\lambda(z_e - z_i)}$ — Amplitude scaling.** $1/(z_e - z_i)$: spherical wave spreading (inverse square law for intensity). $1/\lambda$: normalization of the Huygens-Fresnel kernel (arises from $k = 2\pi/\lambda$). $j$: enforces the correct phase convention. Together these ensure energy conservation.
+
+**$\exp\!\left[\dfrac{jk}{2(z_e - z_i)}\left((x_1 - x_2)^2 + (y_1 - y_2)^2\right)\right]$ — Quadratic phase kernel (the heart of Fresnel diffraction).**
+- Represents the extra path length from $(x_1, y_1)$ to $(x_2, y_2)$, retained to second order (paraxial approximation)
+- Introduces position-dependent phase delays → constructive/destructive interference → diffraction fringes and Fresnel zones
+- Quadratic because off-axis rays travel slightly farther: $R \approx (z_e - z_i) + \frac{(x_2 - x_1)^2 + (y_2 - y_1)^2}{2(z_e - z_i)}$
+- This is where wave optics departs from ray optics
+
+**Structural meaning:** Propagation = [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) with a quadratic-phase kernel. Free-space propagation is a linear shift-invariant system whose [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) is a chirped spherical wave. This is why lenses cancel quadratic phase, and why Fresnel diffraction becomes Fourier optics in the far field.
+
+**One-line intuition:** Every point in the input plane emits a spherical wave; the output field is the coherent sum of those waves, with phase delays determined by geometry and wavelength.
+
+</div>
+</div>
+
 <div class="callout callout-important">
 <div class="callout-title"><span class="callout-icon">❗</span>Important</div>
 <div class="callout-content">
@@ -4721,7 +4748,7 @@ $$
 <div class="callout-title"><span class="callout-icon">📝</span>Note</div>
 <div class="callout-content">
 
-This implies small angles propagating
+Since $\theta \approx \frac{|x_1 - x_2|}{z_e - z_i}$, requiring $(z_e - z_i) \gg |x_1 - x_2|$ is equivalent to requiring $\theta \ll 1$ — the paraxial (small-angle) condition.
 
 </div>
 </div>
@@ -4739,7 +4766,7 @@ $$
 
 
 $$
-\exp(jkr) = \exp\left\{jk(z_e - z_i)\left[1 + \frac{(x_1 - x_2)^2 + (y_1 - y_2)^2}{2(z_e - z_i)^2} + \frac{[(x_1-x_2)^2 + (y_1-y_2)^2]^2}{8(z_e - z_i)^4} + \cdots\right]\right\}
+\exp(jkr) = \exp\left\{jk(z_e - z_i)\left[1 + \frac{(x_1 - x_2)^2 + (y_1 - y_2)^2}{2(z_e - z_i)^2} - \frac{[(x_1-x_2)^2 + (y_1-y_2)^2]^2}{8(z_e - z_i)^4} + \cdots\right]\right\}
 $$
 
 
@@ -4748,7 +4775,7 @@ $$
 <div class="callout-title"><span class="callout-icon">⚠️</span>Warning</div>
 <div class="callout-content">
 
-Requires small higher-order terms
+The Fresnel approximation keeps only the first two terms (constant + quadratic). For this to be valid, the next term — the fourth-order correction $\frac{[(x_1-x_2)^2 + (y_1-y_2)^2]^2}{8(z_e-z_i)^4}$ — must contribute negligible phase, i.e., its contribution $k(z_e - z_i) \times (\text{fourth-order term})$ must be $\ll 1$ radian. This is quantified by the Fresnel condition below.
 
 </div>
 </div>
@@ -4776,18 +4803,75 @@ $$
 
 (It may not actually be necessary)
 
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Big-Picture Interpretation: Why the Fresnel Approximation Works</div>
+<div class="callout-content">
+
+**What this section proved:** It is okay to replace a spherical wave with a quadratic phase — because the error is small.
+
+The exact distance $R$ between input and output points involves a square root. Factoring out the propagation distance gives $R = (z_e - z_i)\sqrt{1 + \varepsilon}$, where:
+
+
+
+$$
+\varepsilon = \frac{(x_1 - x_2)^2 + (y_1 - y_2)^2}{(z_e - z_i)^2}
+$$
+
+
+
+The binomial expansion $(1+\varepsilon)^{1/2} = 1 + \frac{1}{2}\varepsilon - \frac{1}{8}\varepsilon^2 + \cdots$ then gives:
+
+
+
+$$
+R \approx (z_e - z_i) + \frac{(x_1 - x_2)^2 + (y_1 - y_2)^2}{2(z_e - z_i)} - \frac{\left[(x_1 - x_2)^2 + (y_1 - y_2)^2\right]^2}{8(z_e - z_i)^3} + \cdots
+$$
+
+
+
+Inside $\exp(jkR)$, each term plays a distinct role:
+
+| Term | Role |
+|------|------|
+| Constant $(z_e - z_i)$ | Carrier phase |
+| Quadratic | Fresnel diffraction kernel |
+| Fourth-order and above | Small corrections (dropped) |
+
+**Why "small" means small:** The neglected fourth-order term contributes phase $k(z_e - z_i) \times \varepsilon^2/8$. The Fresnel condition above guarantees this is $\ll 1$ radian — too small to shift interference fringes.
+
+**Physical conditions for $\varepsilon \ll 1$:** Narrow apertures, long propagation distances, small diffraction angles — the paraxial regime.
+
+**Hierarchy of approximations:**
+
+| Approximation | Terms kept | Result |
+|---------------|-----------|--------|
+| Exact | All terms | Rayleigh–Sommerfeld |
+| Fresnel | Up to quadratic | Near-field diffraction |
+| Fraunhofer | Linearized phase | Far-field / Fourier transform |
+
+**One-sentence intuition:** You're approximating a sphere by a paraboloid — and the Fresnel condition proves the error is small.
+
+</div>
+</div>
+
 ## Two Forms for the Fresnel Diffraction Formula
 
 From here on, let $z$ simply be the distance between observation plane and aperture, i.e., $z = (z_e - z_i)$
 
 ### Convolution Form
 
-We had:
+
+
+$$
+U_2(x,y) = \frac{e^{jkz}}{j\lambda z} \iint U_1(\alpha,\beta)\, \exp\!\left[jk\frac{(x-\alpha)^2 + (y-\beta)^2}{2z}\right] d\alpha\, d\beta
+$$
+
+
 
 
 
 $$
-u_e(x,y) = \frac{\exp\{jkz\}}{j\lambda z} \iint u_i(\alpha,\beta) \exp\left\{\frac{jk[(x-\alpha)^2 + (y-\beta)^2]}{2z}\right\} d\alpha d\beta
+U_2(x,y) = \frac{e^{jkz}}{j\lambda z} \bigl[U_1 * h\bigr](x,y), \quad h(x,y) = \exp\!\left[jk\frac{x^2+y^2}{2z}\right]
 $$
 
 
@@ -4802,32 +4886,57 @@ $$
 
 
 
-By expanding out the quadratic times in the integral, we can arrive at a second form:
+By expanding out the quadratic phase in the integral and factoring, we arrive at a second form:
 
-### Fourier Transform Form
+---
 
-
-
-$$
-u_e(x,y) = \frac{\exp\{jkz\}}{j\lambda z} \exp\left\{\frac{jk(x^2+y^2)}{2z}\right\} \cdot \iint u_i(\alpha,\beta) \exp\left\{\frac{jk[\alpha^2+\beta^2]}{2z}\right\} \exp\left\{-j\frac{2\pi}{\lambda z}(x\alpha+y\beta)\right\} d\alpha d\beta
-$$
-
-
+### Fourier Transform Form (Quadratic-Phase / Fourier Form)
 
 
 
 $$
-\underbrace{\text{object plane}}_{\text{obj. plane}} \quad \underbrace{\text{Fourier Transform}}_{\xi = \frac{x}{\lambda z}, \eta = \frac{y}{\lambda z}} \quad \text{Form}
+U_2(x,y) = \frac{e^{jkz}}{j\lambda z} \exp\!\left[jk\frac{x^2+y^2}{2z}\right] \iint U_1(\alpha,\beta)\, \exp\!\left[jk\frac{\alpha^2+\beta^2}{2z}\right] \exp\!\left[-j\frac{2\pi}{\lambda z}(x\alpha+y\beta)\right] d\alpha\, d\beta
 $$
 
 
+
+Recognizing the remaining exponential as the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) kernel, this can be written compactly as:
+
+
+
+$$
+U_2(x,y) = \frac{e^{jkz}}{j\lambda z} \exp\!\left[jk\frac{x^2+y^2}{2z}\right] \mathcal{F}\!\left\{U_1(\alpha,\beta)\, \exp\!\left[jk\frac{\alpha^2+\beta^2}{2z}\right]\right\}\Bigg|_{f_x = \frac{x}{\lambda z},\; f_y = \frac{y}{\lambda z}}
+$$
+
+
+
+where the 2D Fourier transform is:
+
+
+
+$$
+\mathcal{F}\{g(\alpha,\beta)\}(f_x,f_y) = \iint g(\alpha,\beta)\, e^{-j2\pi(f_x\alpha + f_y\beta)}\, d\alpha\, d\beta
+$$
+
+
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-content">
+
+The first form writes Fresnel diffraction as a [convolution](/notes/areas/mathematics/real_analysis/definitions/convolution/) with a quadratic-phase [impulse response](/notes/areas/electrical_engineering/signals_systems/definitions/impulse_response/) $h(x,y)$, showing free-space propagation is a linear shift-invariant system. The second form factors the quadratic phase to reveal a scaled [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of a chirp-modulated input field. The spatial frequencies $f_x, f_y$ correspond to observation-plane coordinates via $f_x = x/(\lambda z)$, revealing the direct connection between free-space propagation and Fourier optics — and leading directly to the Fraunhofer (far-field) limit.
+
+</div>
+</div>
 # Fraunhofer Diffraction Formula (Far Field)
 
 Note that this equation can be thought of as some phase factors multiplying the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the aperture transmittance and a quadratic phase factor $\exp\left\{\frac{jk[\alpha^2+\beta^2]}{2z}\right\}$
 
 ## Fraunhofer Diffraction Formula (Far Field)
 
-In the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) form of the [Fresnel diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction/) formula, we note that we would have an exceedingly simple result if:
+In the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) form of the [Fresnel diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fresnel_diffraction/) formula, the input field $U_1(\alpha,\beta)$ is multiplied by a quadratic-phase chirp factor $\exp\{jk(\alpha^2+\beta^2)/2z\}$ before being Fourier transformed. This chirp encodes the curvature of the Fresnel kernel — it's what makes near-field diffraction different from a pure Fourier transform.
+
+If the propagation distance $z$ is large enough, the phase variation of this chirp across the entire aperture becomes negligible, and the exponential can be replaced by unity:
 
 
 
@@ -4837,7 +4946,7 @@ $$
 
 
 
-or:
+This requires:
 
 
 
@@ -4857,25 +4966,65 @@ $$
 
 **Fraunhofer Condition**
 
-If this is true, we have simply:
+For an input aperture of radius $a$, the maximum phase variation of the chirp factor is:
 
 
 
 $$
-\boxed{u_e(x,y) = \frac{\exp(jkz)}{j\lambda z} \exp\left\{\frac{jk(x^2+y^2)}{2z}\right\} \iint_{-\infty}^{\infty} u_i(\alpha,\beta) \exp\left[-j\frac{2\pi}{\lambda z}(x\alpha + y\beta)\right] d\alpha d\beta}
+\Delta\phi = k\frac{a^2}{2z} = \pi\frac{a^2}{\lambda z}
 $$
 
 
 
+Requiring $\Delta\phi \ll 1$ gives the equivalent condition:
+
 
 
 $$
-= \frac{\exp(jkz)}{j\lambda z} \exp\left\{\frac{jk(x^2+y^2)}{2z}\right\} \mathcal{F}\mathcal{F}\{u_i(\alpha,\beta)\}\bigg|_{\xi=\frac{x}{\lambda z}, \eta=\frac{y}{\lambda z}}
+\boxed{\frac{a^2}{\lambda z} \ll 1}
+$$
+
+
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-content">
+
+The quantity $a^2/\lambda z$ is the **Fresnel number**. In the small Fresnel number limit, the chirp factor drops out and Fresnel diffraction reduces to Fraunhofer diffraction — the field becomes proportional to the [Fourier transform](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) of the input.
+
+</div>
+</div>
+
+Under this condition, the quadratic phase term in the **input plane** is negligible, so the Fresnel diffraction equation reduces to:
+
+
+
+$$
+\boxed{U_2(x,y) = \frac{e^{jkz}}{j\lambda z} \exp\!\left[jk\frac{x^2+y^2}{2z}\right] \iint U_1(\alpha,\beta)\, \exp\!\left[-j\frac{2\pi}{\lambda z}(x\alpha + y\beta)\right] d\alpha\, d\beta}
+$$
+
+
+
+Recognizing the [Fourier](/notes/areas/mathematics/functional_analysis/definitions/fourier_transform/) kernel, this may be written as:
+
+
+
+$$
+U_2(x,y) = \frac{e^{jkz}}{j\lambda z} \exp\!\left[jk\frac{x^2+y^2}{2z}\right] \mathcal{F}\{U_1(\alpha,\beta)\}\bigg|_{f_x = \frac{x}{\lambda z},\; f_y = \frac{y}{\lambda z}}
 $$
 
 
 
 **[Fraunhofer Diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/fraunhofer_diffraction/) Formula**
+
+<div class="callout callout-note">
+<div class="callout-title"><span class="callout-icon">📝</span>Note</div>
+<div class="callout-content">
+
+This is the **Fraunhofer approximation** (far-field diffraction). The observation-plane coordinates map directly to spatial frequencies via $f_x = x/(\lambda z)$ and $f_y = y/(\lambda z)$, revealing diffraction as Fourier analysis — the far-field pattern is the Fourier transform of the aperture.
+
+</div>
+</div>
 # Intensity in Fraunhofer Diffraction
 
 $\Rightarrow$ $u_e(x,y)$ is the complex electric field at plane $z_e$
@@ -4897,7 +5046,7 @@ $\Rightarrow$ Extremely simple [diffraction](/notes/areas/electrical_engineering
 
 
 $$
-I_e(x,y) = \frac{1}{(\lambda z)^2} \left| \frac{\exp(jkz)}{j\lambda z} \exp\left\{\frac{jk(x^2+y^2)}{2z}\right\} \mathcal{F}\mathcal{F}\{u_i(\alpha,\beta)\}\right|^2
+I_e(x,y) = \left| \frac{\exp(jkz)}{j\lambda z} \exp\left\{\frac{jk(x^2+y^2)}{2z}\right\} \mathcal{F}\{u_i(\alpha,\beta)\}\right|^2
 $$
 
 
@@ -4905,7 +5054,7 @@ $$
 
 
 $$
-= \frac{1}{(\lambda z)^2} \left| \mathcal{F}\mathcal{F}\{u_i(\alpha,\beta)\}\bigg|_{\xi=\frac{x}{\lambda z}, \eta=\frac{y}{\lambda z}} \right|^2
+= \frac{1}{(\lambda z)^2} \left| \mathcal{F}\{u_i(\alpha,\beta)\}\bigg|_{\xi=\frac{x}{\lambda z}, \eta=\frac{y}{\lambda z}} \right|^2
 $$
 
 
@@ -4919,6 +5068,26 @@ $$
 $$
 
 
+
+<div class="callout callout-info">
+<div class="callout-title"><span class="callout-icon">ℹ️</span>Why Intensity = Squared Fourier Transform</div>
+<div class="callout-content">
+
+**Why intensity, not field?** Detectors (film, eye, photodiode) measure power, not phase. Phase information disappears unless you interfere fields. So the measurable quantity is $I = |U|^2$.
+
+**Why the phase terms cancel:** Substituting the Fraunhofer field into $I = U_2 \cdot U_2^*$, the exponential phase factors $e^{jkz}$ and $e^{jk(x^2+y^2)/2z}$ have unit magnitude and cancel in the product, leaving only the magnitude of the Fourier transform.
+
+**The prefactor $1/\lambda^2 z^2$:** This comes from $|1/(j\lambda z)|^2$. The $1/z^2$ is geometric spreading (inverse square law); the $1/\lambda^2$ is the Huygens-Fresnel normalization. It affects brightness, not pattern shape.
+
+**The punchline:** Fraunhofer diffraction intensity is the squared magnitude of the Fourier transform of the aperture field. This is the central result of Fourier optics — aperture shape determines the diffraction pattern:
+- Slits → $\mathrm{sinc}^2$
+- Gratings → comb spectra
+- Circular apertures → [Airy disk](/notes/areas/electrical_engineering/physical_optics/definitions/airy_disk/)
+
+This is the equation that turns optics into Fourier analysis.
+
+</div>
+</div>
 # Fraunhofer Condition
 
 The Fraunhofer condition is fairly severe:
@@ -6411,7 +6580,7 @@ $$
 
 
 
-If we [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) the intensity at $z_0 = f$ we have:
+If we measure the intensity at $z_0 = f$ we have:
 
 
 
@@ -8460,7 +8629,7 @@ $$
 
 Thus, by moving one arm w.r.t. the other, we can obtain $\Gamma_{11}(\tau)$.
 
-⇒ Since $\Gamma_{11}(\tau)$ is F.T. related to the spectrum of the source, we can [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) $\Gamma_{11}(\tau)$ with this device and perform FFT to compute spectrum.
+⇒ Since $\Gamma_{11}(\tau)$ is F.T. related to the spectrum of the source, we can measure $\Gamma_{11}(\tau)$ with this device and perform FFT to compute spectrum.
 
 ### ★ Fourier Transform Spectrometer
 # Fourier Spectrometer Advantages and Limitations
@@ -8735,7 +8904,7 @@ From known distance ⇒ diameter is 280 times that of the sun — **Red Giant**
 
 ## Notes:
 
-- Michelson in principle could also [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) phase info. of $\gamma_{12}(0)$ and hence an inverse FT would reconstruct the intensity.
+- Michelson in principle could also measure phase info. of $\gamma_{12}(0)$ and hence an inverse FT would reconstruct the intensity.
 
 - Atmospheric turbulence prevents this from happening in practice. Hence, Michelson measured short-term visibility magnitude only
 
@@ -9956,7 +10125,7 @@ $$
 
 ---
 
-From film, [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) density variation, and infer log (exposure) through H&D curve
+From film, measure density variation, and infer log (exposure) through H&D curve
 
 [Graph showing D vs log E with measured density and effective (log of) exposure marked]
 

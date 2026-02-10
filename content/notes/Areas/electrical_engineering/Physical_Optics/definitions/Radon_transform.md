@@ -57,7 +57,7 @@ $$
 
 ## Applications
 
-- **Medical imaging**: CT scanners [measure](/notes/areas/mathematics/measure_theory/definitions/measure/) Radon transforms (X-ray projections)
+- **Medical imaging**: CT scanners measure Radon transforms (X-ray projections)
 - **Electron microscopy**: 3D reconstruction from 2D projections
 - **Radio astronomy**: Aperture synthesis imaging
 

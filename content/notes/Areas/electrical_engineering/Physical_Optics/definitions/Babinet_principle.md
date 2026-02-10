@@ -104,7 +104,7 @@ The spot occurs because diffracted waves from the disk's edge constructively int
 | Application | How Babinet's Principle Helps |
 |-------------|------------------------------|
 | Calculating wire [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) | Use easier slit calculation, add DC |
-| Particle sizing | [Measure](/notes/areas/mathematics/measure_theory/definitions/measure/) [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) to determine size |
+| Particle sizing | Measure [diffraction](/notes/areas/electrical_engineering/physical_optics/definitions/diffraction/) to determine size |
 | Optical testing | Complementary masks give identical fringes |
 
 ## See Also
